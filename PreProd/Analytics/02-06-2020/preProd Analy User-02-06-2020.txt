@@ -1,0 +1,12 @@
+use platform_db;
+db.getCollection('analytics_etl_config_collection').insert({
+  "mongoCollection" : "org_user",
+    "sqlTableName" : "itinerary_c_mongo",
+    "sqlTableColumnNames" : [ 
+        "json", 
+        "orgId", 
+        "collection", 
+        "created_or_modified"
+    ],
+    "isTmc" : false
+})
