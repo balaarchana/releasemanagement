@@ -1,0 +1,2 @@
+use cs_xxxx_product
+db.getCollection('bridge_config').update({"configDomain":"wipro.com"},{$set:{"entUserProfileURL" : "https://mytravelapimprod.azurewebsites.net/api/TravelLob/GetEmpProfileInfo"}})
