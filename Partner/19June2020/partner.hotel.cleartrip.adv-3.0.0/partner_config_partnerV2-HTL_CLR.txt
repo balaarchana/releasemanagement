@@ -1,0 +1,41 @@
+{
+    "partnerType" : "Hotel",
+    "useProxy" : false,
+    "timeToLive" : 900000,
+    "image_Url" : "https://ui.cltpstatic.com",
+    "ServiceHeaders" : {
+        "Accept-Language" : "en",
+        "User-Agent" : "chrome",
+        "X-CT-SOURCETYPE" : "API",
+        "Content-Type" : "application/json"
+    },
+    "ServiceDetails" : {
+        "HotelModule" : "hotels",
+        "HotelAPI" : "api",
+        "GeoSearchService" : "geo-search",
+        "HotelSearchService" : "search",
+        "HotelSearchVersion" : "v2",
+        "HotelDetailService" : "detail",
+        "HotelDetailServiceVersion" : "v2",
+        "HotelProvisionalBookService" : "provisional-book",
+        "HotelProvisionalBookVersion" : "v2",
+        "HotelBookService" : "book",
+        "HotelBookVersion" : "v2",
+        "HotelTripResponseVersion" : "v2",
+        "HotelTripResponseService" : "trips",
+        "HotelCancelTripVersion" : "v2",
+        "HotelCancelTripService" : "cancel",
+        "HotelProvisionalBookAndLogVersion" : "v2",
+        "HotelProvisionalBookAndLogService" : "provisional-book-and-log",
+        "HotelFinalBookAndUpdateVersion" : "v2",
+        "HotelFinalBookAndUpdateService" : "final-book-and-update"
+    },
+    "isBookingAllow" : true,
+    "proxySet" : "true",
+    "proxyHost" : "10.235.115.10",
+    "proxyPort" : "8080",
+    "isActive" : true,
+    "Microservice_Name" : "partner.hotel.cleartrip",
+    "PartnerName" : "HTL_CLR",
+    "key" : "f233ff30-abf3-47eb-ae88-ec2442879e8d"
+}
