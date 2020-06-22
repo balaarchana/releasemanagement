@@ -1,0 +1,38 @@
+{
+    "PartnerType" : "Hotel",
+    "UseProxy" : false,
+    "timeToLive" : 900000,
+    "ServiceDetails" : {
+        "HotelCancelTripUrl" : "/hotels/api/v2/cancel",
+        "HotelRefundUrl" : "/hotels/api/v2/refund-info",
+        "HotelProvisionalBookUrl" : "/hotels/api/v2/provisional-book",
+        "HotelFinalBookAndUpdateUrl" : "/hotels/api/v2/final-book-and-update",
+        "GeoSearchService" : "geo-search",
+        "HotelSearchUrl" : "/hotels/api/v2/",
+        "HotelProvisionalBookAndLogUrl" : "/hotels/api/v2/provisional-book-and-log",
+        "HotelGetDetailUrl" : "/hotels/api/v2/detail",
+        "HotelBookUrl" : "/hotels/api/v2/book",
+        "HotelTripResponseUrl" : "/hotels/api/v2/trips",
+        "HotelSearchService" : "search"
+    },
+    "isBookingAllow" : true,
+    "ProxySet" : "true",
+    "IsActive" : true,
+    "Microservice_Name" : "partner.hotel.cleartrip",
+    "PartnerName" : "HTL_CLR",
+    "key" : "f233ff30-abf3-47eb-ae88-ec2442879e8d",
+    "isCSLBooked" : "true",
+    "ServiceHeaders" : {
+        "X-CT-SOURCETYPE" : "API",
+        "User-Agent" : "chrome",
+        "Accept-Language" : "en",
+        "Content-Type" : "application/json"
+    },
+    "image_Url" : "https://ui.cltpstatic.com",
+    "isActive" : true,
+    "partnerType" : "Hotel",
+    "proxyHost" : "10.235.115.10",
+    "proxyPort" : "8080",
+    "proxySet" : "true",
+    "useProxy" : false
+}
