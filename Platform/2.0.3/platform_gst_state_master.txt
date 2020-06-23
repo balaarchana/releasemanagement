@@ -1,0 +1,454 @@
+use platform_db
+db.platform_gst_state_master.insert([
+	{"stateName" : "Andaman and Nicobar Islands",
+    "stateCode" : "AN",
+    "TINNumber" : "35",
+    "searchKey" : "andaman and nicobar islands",
+    "status" : "1",
+    "isUnionTerritory" : true,
+    "created_DT_UTC" : "23-06-2020 05:55:15:628 UTC",
+    "createdBy" : "",
+    "created_DT_UTC_EPOCH" : NumberLong(1592909224)},
+    
+    {"stateName" : "Andhra Pradesh",
+    "stateCode" : "AP",
+    "TINNumber" : "28",
+    "searchKey" : "andhra pradesh",
+    "status" : "1",
+    "isUnionTerritory" : false,
+    "created_DT_UTC" : "23-06-2020 05:55:15:628 UTC",
+    "createdBy" : "",
+    "created_DT_UTC_EPOCH" : NumberLong(1592909224)},
+	
+	{"stateName" : "Andhra Pradesh (New)",
+    "stateCode" : "AD",
+    "TINNumber" : "37",
+    "searchKey" : "andhra pradesh (new)",
+    "status" : "1",
+    "isUnionTerritory" : false,
+    "created_DT_UTC" : "23-06-2020 05:55:15:628 UTC",
+    "createdBy" : "",
+    "created_DT_UTC_EPOCH" : NumberLong(1592909224)},
+	
+	{
+	"stateName" : "Arunachal Pradesh",
+    "stateCode" : "AR",
+    "TINNumber" : "12",
+    "searchKey" : "arunachal pradesh",
+    "status" : "1",
+    "isUnionTerritory" : false,
+   "created_DT_UTC" : "23-06-2020 05:55:15:628 UTC",
+    "createdBy" : "",
+    "created_DT_UTC_EPOCH" : NumberLong(1592909224)
+	},
+	
+{
+    "stateName" : "Assam",
+    "stateCode" : "AS",
+    "TINNumber" : "18",
+    "searchKey" : "assam",
+    "status" : "1",
+    "isUnionTerritory" : false,
+    "created_DT_UTC" : "23-06-2020 05:55:15:628 UTC",
+    "createdBy" : "",
+    "created_DT_UTC_EPOCH" : NumberLong(1592909224)
+},
+
+{
+    "stateName" : "Bihar",
+    "stateCode" : "BH",
+    "TINNumber" : "10",
+    "searchKey" : "bihar",
+    "status" : "1",
+    "isUnionTerritory" : false,
+    "created_DT_UTC" : "23-06-2020 05:55:15:628 UTC",
+    "createdBy" : "",
+    "created_DT_UTC_EPOCH" : NumberLong(1592909224)
+},
+
+{
+    "stateName" : "Chandigarh",
+    "stateCode" : "CH",
+    "TINNumber" : "04",
+    "searchKey" : "chandigarh",
+    "status" : "1",
+    "isUnionTerritory" : true,
+    "created_DT_UTC" : "23-06-2020 05:55:15:628 UTC",
+    "createdBy" : "",
+    "created_DT_UTC_EPOCH" : NumberLong(1592909224)
+},
+
+{
+    "stateName" : "Chattisgarh",
+    "stateCode" : "CT",
+    "TINNumber" : "22",
+    "searchKey" : "chattisgarh",
+    "status" : "1",
+    "isUnionTerritory" : false,
+   "created_DT_UTC" : "23-06-2020 05:55:15:628 UTC",
+    "createdBy" : "",
+    "created_DT_UTC_EPOCH" : NumberLong(1592909224)
+},
+
+{
+    "stateName" : "Dadra and Nagar Haveli",
+    "stateCode" : "DN",
+    "TINNumber" : "26",
+    "searchKey" : "dadra and nagar haveli",
+    "status" : "1",
+    "isUnionTerritory" : true,
+    "created_DT_UTC" : "23-06-2020 05:55:15:628 UTC",
+    "createdBy" : "",
+    "created_DT_UTC_EPOCH" : NumberLong(1592909224)
+},
+
+{
+    "stateName" : "Daman and Diu",
+    "stateCode" : "DD",
+    "TINNumber" : "25",
+    "searchKey" : "daman and diu",
+    "status" : "1",
+    "isUnionTerritory" : true,
+    "created_DT_UTC" : "23-06-2020 05:55:15:628 UTC",
+    "createdBy" : "",
+    "created_DT_UTC_EPOCH" : NumberLong(1592909224)
+},
+
+{
+    "stateName" : "Delhi",
+    "stateCode" : "DL",
+    "TINNumber" : "07",
+    "searchKey" : "delhi",
+    "status" : "1",
+    "isUnionTerritory" : true,
+    "created_DT_UTC" : "23-06-2020 05:55:15:628 UTC",
+    "createdBy" : "",
+    "created_DT_UTC_EPOCH" : NumberLong(1592909224)
+},
+
+{
+    "stateName" : "Goa",
+    "stateCode" : "GA",
+    "TINNumber" : "30",
+    "searchKey" : "goa",
+    "status" : "1",
+    "isUnionTerritory" : false,
+    "created_DT_UTC" : "23-06-2020 05:55:15:628 UTC",
+    "createdBy" : "",
+    "created_DT_UTC_EPOCH" : NumberLong(1592909224)
+},
+
+{
+    "stateName" : "Gujarat",
+    "stateCode" : "GJ",
+    "TINNumber" : "24",
+    "searchKey" : "gujarat",
+    "status" : "1",
+    "isUnionTerritory" : false,
+    "created_DT_UTC" : "23-06-2020 05:55:15:628 UTC",
+    "createdBy" : "",
+    "created_DT_UTC_EPOCH" : NumberLong(1592909224)
+},
+
+{
+    "stateName" : "Haryana",
+    "stateCode" : "HR",
+    "TINNumber" : "06",
+    "searchKey" : "haryana",
+    "status" : "1",
+    "isUnionTerritory" : false,
+    "created_DT_UTC" : "23-06-2020 05:55:15:628 UTC",
+    "createdBy" : "",
+    "created_DT_UTC_EPOCH" : NumberLong(1592909224)
+},
+
+{
+    "stateName" : "Himachal Pradesh",
+    "stateCode" : "HP",
+    "TINNumber" : "02",
+    "searchKey" : "himachal pradesh",
+    "status" : "1",
+    "isUnionTerritory" : false,
+    "created_DT_UTC" : "23-06-2020 05:55:15:628 UTC",
+    "createdBy" : "",
+    "created_DT_UTC_EPOCH" : NumberLong(1592909224)
+},
+
+{
+    "stateName" : "Jammu and Kashmir",
+    "stateCode" : "JK",
+    "TINNumber" : "01",
+    "searchKey" : "jammu and kashmir",
+    "status" : "1",
+    "isUnionTerritory" : true,
+    "created_DT_UTC" : "23-06-2020 05:55:15:628 UTC",
+    "createdBy" : "",
+    "created_DT_UTC_EPOCH" : NumberLong(1592909224)
+},
+
+{
+    "stateName" : "Jharkhand",
+    "stateCode" : "JH",
+    "TINNumber" : "20",
+    "searchKey" : "jharkhand",
+    "status" : "1",
+    "isUnionTerritory" : false,
+    "created_DT_UTC" : "23-06-2020 05:55:15:628 UTC",
+    "createdBy" : "",
+    "created_DT_UTC_EPOCH" : NumberLong(1592909224)
+},
+
+{
+    "stateName" : "Karnataka",
+    "stateCode" : "KA",
+    "TINNumber" : "29",
+    "searchKey" : "karnataka",
+    "status" : "1",
+    "isUnionTerritory" : false,
+    "created_DT_UTC" : "23-06-2020 05:55:15:628 UTC",
+    "createdBy" : "",
+    "created_DT_UTC_EPOCH" : NumberLong(1592909224)
+},
+
+{
+    "stateName" : "Kerala",
+    "stateCode" : "KL",
+    "TINNumber" : "32",
+    "searchKey" : "kerala",
+    "status" : "1",
+    "isUnionTerritory" : false,
+    "created_DT_UTC" : "23-06-2020 05:55:15:628 UTC",
+    "createdBy" : "",
+    "created_DT_UTC_EPOCH" : NumberLong(1592909224)
+},
+
+{
+    "stateName" : "Lakshadweep Islands",
+    "stateCode" : "LD",
+    "TINNumber" : "31",
+    "searchKey" : "lakshadweep islands",
+    "status" : "1",
+    "isUnionTerritory" : true,
+    "created_DT_UTC" : "23-06-2020 05:55:15:628 UTC",
+    "createdBy" : "",
+    "created_DT_UTC_EPOCH" : NumberLong(1592909224)
+},
+
+{
+    "stateName" : "Ladakh",
+    "stateCode" : "LA",
+    "TINNumber" : "38",
+    "searchKey" : "ladakh",
+    "status" : "1",
+    "isUnionTerritory" : true,
+    "created_DT_UTC" : "23-06-2020 05:55:15:628 UTC",
+    "createdBy" : "",
+    "created_DT_UTC_EPOCH" : NumberLong(1592909224)
+},
+
+{
+    "stateName" : "Madhya Pradesh",
+    "stateCode" : "MP",
+    "TINNumber" : "23",
+    "searchKey" : "madhya pradesh",
+    "status" : "1",
+    "isUnionTerritory" : false,
+   "created_DT_UTC" : "23-06-2020 05:55:15:628 UTC",
+    "createdBy" : "",
+    "created_DT_UTC_EPOCH" : NumberLong(1592909224)
+},
+
+{
+    "stateName" : "Maharashtra",
+    "stateCode" : "MH",
+    "TINNumber" : "27",
+    "searchKey" : "maharashtra",
+    "status" : "1",
+    "isUnionTerritory" : false,
+    "created_DT_UTC" : "23-06-2020 05:55:15:628 UTC",
+    "createdBy" : "",
+    "created_DT_UTC_EPOCH" : NumberLong(1592909224)
+},
+
+{
+    "stateName" : "Manipur",
+    "stateCode" : "MN",
+    "TINNumber" : "14",
+    "searchKey" : "manipur",
+    "status" : "1",
+    "isUnionTerritory" : false,
+    "created_DT_UTC" : "23-06-2020 05:55:15:628 UTC",
+    "createdBy" : "",
+    "created_DT_UTC_EPOCH" : NumberLong(1592909224)
+},
+
+
+{
+    "stateName" : "Meghalaya",
+    "stateCode" : "ME",
+    "TINNumber" : "17",
+    "searchKey" : "meghalaya",
+    "status" : "1",
+    "isUnionTerritory" : false,
+    "created_DT_UTC" : "23-06-2020 05:55:15:628 UTC",
+    "createdBy" : "",
+    "created_DT_UTC_EPOCH" : NumberLong(1592909224)
+},
+
+{
+    "stateName" : "Mizoram",
+    "stateCode" : "MI",
+    "TINNumber" : "15",
+    "searchKey" : "mizoram",
+    "status" : "1",
+    "isUnionTerritory" : false,
+    "created_DT_UTC" : "23-06-2020 05:55:15:628 UTC",
+    "createdBy" : "",
+    "created_DT_UTC_EPOCH" : NumberLong(1592909224)
+},
+
+{
+    "stateName" : "Nagaland",
+    "stateCode" : "NL",
+    "TINNumber" : "13",
+    "searchKey" : "nagaland",
+    "status" : "1",
+    "isUnionTerritory" : false,
+    "created_DT_UTC" : "23-06-2020 05:55:15:628 UTC",
+    "createdBy" : "",
+    "created_DT_UTC_EPOCH" : NumberLong(1592909224)
+},
+
+{
+    "stateName" : "Odisha",
+    "stateCode" : "OR",
+    "TINNumber" : "21",
+    "searchKey" : "odisha",
+    "status" : "1",
+    "isUnionTerritory" : false,
+    "created_DT_UTC" : "23-06-2020 05:55:15:628 UTC",
+    "createdBy" : "",
+    "created_DT_UTC_EPOCH" : NumberLong(1592909224)
+},
+
+{
+    "stateName" : "Pondicherry",
+    "stateCode" : "PY",
+    "TINNumber" : "34",
+    "searchKey" : "pondicherry",
+    "status" : "1",
+    "isUnionTerritory" : true,
+    "created_DT_UTC" : "23-06-2020 05:55:15:628 UTC",
+    "createdBy" : "",
+    "created_DT_UTC_EPOCH" : NumberLong(1592909224)
+},
+
+{
+    "stateName" : "Punjab",
+    "stateCode" : "PB",
+    "TINNumber" : "03",
+    "searchKey" : "punjab",
+    "status" : "1",
+    "isUnionTerritory" : false,
+    "created_DT_UTC" : "23-06-2020 05:55:15:628 UTC",
+    "createdBy" : "",
+    "created_DT_UTC_EPOCH" : NumberLong(1592909224)
+},
+
+{
+    "stateName" : "Rajasthan",
+    "stateCode" : "RJ",
+    "TINNumber" : "08",
+    "searchKey" : "rajasthan",
+    "status" : "1",
+    "isUnionTerritory" : false,
+    "created_DT_UTC" : "23-06-2020 05:55:15:628 UTC",
+    "createdBy" : "",
+    "created_DT_UTC_EPOCH" : NumberLong(1592909224)
+},
+
+{
+    "stateName" : "Sikkim",
+    "stateCode" : "SK",
+    "TINNumber" : "11",
+    "searchKey" : "Sikkim",
+    "status" : "1",
+    "isUnionTerritory" : false,
+   "created_DT_UTC" : "23-06-2020 05:55:15:628 UTC",
+    "createdBy" : "",
+    "created_DT_UTC_EPOCH" : NumberLong(1592909224)
+},
+
+{
+    "stateName" : "Tamil Nadu",
+    "stateCode" : "TN",
+    "TINNumber" : "33",
+    "searchKey" : "tamil nadu",
+    "status" : "1",
+    "isUnionTerritory" : false,
+    "created_DT_UTC" : "23-06-2020 05:55:15:628 UTC",
+    "createdBy" : "",
+    "created_DT_UTC_EPOCH" : NumberLong(1592909224)
+},
+
+{
+    "stateName" : "Telangana",
+    "stateCode" : "TS",
+    "TINNumber" : "36",
+    "searchKey" : "telangana",
+    "status" : "1",
+    "isUnionTerritory" : false,
+   "created_DT_UTC" : "23-06-2020 05:55:15:628 UTC",
+    "createdBy" : "",
+    "created_DT_UTC_EPOCH" : NumberLong(1592909224)
+},
+
+{
+    "stateName" : "Tripura",
+    "stateCode" : "TR",
+    "TINNumber" : "16",
+    "searchKey" : "tripura",
+    "status" : "1",
+    "isUnionTerritory" : false,
+    "created_DT_UTC" : "23-06-2020 05:55:15:628 UTC",
+    "createdBy" : "",
+    "created_DT_UTC_EPOCH" : NumberLong(1592909224)
+},
+
+{
+    "stateName" : "Uttar Pradesh",
+    "stateCode" : "UP",
+    "TINNumber" : "09",
+    "searchKey" : "uttar pradesh",
+    "status" : "1",
+    "isUnionTerritory" : false,
+  "created_DT_UTC" : "23-06-2020 05:55:15:628 UTC",
+    "createdBy" : "",
+    "created_DT_UTC_EPOCH" : NumberLong(1592909224)
+},
+
+{
+    "stateName" : "Uttarakhand",
+    "stateCode" : "UT",
+    "TINNumber" : "05",
+    "searchKey" : "uttarakhand",
+    "status" : "1",
+    "isUnionTerritory" : false,
+   "created_DT_UTC" : "23-06-2020 05:55:15:628 UTC",
+    "createdBy" : "",
+    "created_DT_UTC_EPOCH" : NumberLong(1592909224)
+},
+
+{
+    "stateName" : "West Bengal",
+    "stateCode" : "WB",
+    "TINNumber" : "19",
+    "searchKey" : "west bengal",
+    "status" : "1",
+    "isUnionTerritory" : false,
+   "created_DT_UTC" : "23-06-2020 05:55:15:628 UTC",
+    "createdBy" : "",
+    "created_DT_UTC_EPOCH" : NumberLong(1592909224)
+}
+	
+	])
