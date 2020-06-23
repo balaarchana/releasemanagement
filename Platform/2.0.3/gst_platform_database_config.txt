@@ -1,0 +1,10 @@
+use platform_db
+db.getCollection('platform_collection_config').update(
+        { },
+        { $addToSet: {product: {$each: ["invoice_config"]}}}
+        )
+		
+db.getCollection('platform_collection_config').update(
+        { },
+        { $addToSet: {default: {$each: ["platform_default_invoice_config"]}}}
+        )
