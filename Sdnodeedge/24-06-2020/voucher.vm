@@ -13,9 +13,6 @@
 
 <style>
 
-body {
-    font-family: sans-serif;
-}
 .mainleft{
 /* margin-left:80px; */
 width:50%;
@@ -66,9 +63,7 @@ font-weight: 'Semi-Bold';
 font-size: 14px;
 
 }
-.clientinfo{
-width:400px;
-}
+
 #topref{
 
 
@@ -514,14 +509,7 @@ padding-top: -1px;
 padding-bottom: -4px;
 
 }
-.addressAlign{
-border-right: 2px solid;
-height: auto;
-width: 430px;
-padding: 2px;
-margin-bottom: 10px;
-margin-right: 35px;
-}
+
 .vl4{
 border-left: 2px solid;
 height: 138px;
@@ -533,7 +521,7 @@ margin-left:430px;
 
 .vl5{
 border-left: 2px solid;
-height: 420px;
+height: 460px;
 text-align: right;
 padding: 2px;
 margin-left:430px;
@@ -925,7 +913,6 @@ font-size: 14px;
 {
 font-size: 14px;
 padding-bottom:5px;
-line-height:20px;
 }
 
 .nap{
@@ -968,15 +955,15 @@ border:2px solid;
 <div class="fontProperty">
 <div>
 	<div>
-		<div  style="margin-top:35px">
-			<span ><center id="mainname"> <img style="width:104px;height:30px;float:left;" src="https://4ctnedevblob.blob.core.windows.net/assets/squirrl.png" align="middle" />
-				Hotel Voucher<img style="width:104px;height:30px;float:right;" src="https://4ctnedevblob.blob.core.windows.net/assets/bosch.png" align="middle" /></center></span>
-
+		<div  style="margin-top:28px">
+			<span class="mainleft"><p id="mainname"> <img style="vertical-align:middle" class="imagehotel" src="https://4ctnedevblob.blob.core.windows.net/assets/HOTEL.png" />
+				Hotel Voucher</p></span>
+			<span class="mainright"> wiproway2go </span>
 		</div>
-        <hr class="firsthr" style="margin-top:30px"/>
+        <hr class="firsthr" style="margin-top:15px"/>
     </div>
 <div>
-    <div class = "addressAlign" style="float:left;line-height:1.4">
+    <div style="float:left;line-height:1.4">
       <b class="leftlist1" style="line-height:1.6">$voucher.getString("hotelName")</b><br/>
       #foreach( $address in $voucher.getJSONArray("address") )
 			<span>$address</span><br/>								
@@ -989,7 +976,7 @@ border:2px solid;
          </ul>
       </span>
     </div>
-    <div  style="line-height:1.4;">
+    <div style="float:right;line-height:1.4">
        <b class="tname">Traveller Name</b><br/>
       #if($voucher.has("passengerDetails") && $voucher.getJSONArray("passengerDetails").length() > 0)
 			#foreach( $user in $voucher.getJSONArray("passengerDetails") )
@@ -1055,11 +1042,11 @@ border:2px solid;
 
 </li>
 
-<li class="room1">#if($voucher.getInt("stay") == 1) $voucher.getInt("stay") Night #else $voucher.getInt("stay") Nights #end</li>
+<li class="room1">$voucher.getInt("stay") Nights</li>
 
 </ul>
 
-</td> 
+</td>
 
 </table></th>
 
@@ -1189,50 +1176,6 @@ $voucher.getString("confirmationNumber")
 
 <div class="mbottom">
 <div class="policy">
-
-<b class="paylist1">Client Information</b>
-<br />
-<div style="padding-bottom: 10px"></div>
-<table>
-<tr>
-<td>
-<div class="mess clientinfo">
-#if($voucher.has("otherDetails"))
-<span class="inclusionproperty"><b>Entity:</b> #if($voucher.getJSONObject("otherDetails").has("entityName"))
-$voucher.getJSONObject("otherDetails").getString("entityName")
-#else
-NA
-#end<br />
-<b>Address: </b>
-#if($voucher.getJSONObject("otherDetails").has("address"))
-$voucher.getJSONObject("otherDetails").getString("address")
-#else
-NA
-#end<br />
-<b>GSTIN: </b>
-#if($voucher.getJSONObject("otherDetails").has("gstNumber"))
-$voucher.getJSONObject("otherDetails").getString("gstNumber")
-#else
-NA
-#end<br />
- <b>State: </b>
-#if($voucher.getJSONObject("otherDetails").has("state"))
-$voucher.getJSONObject("otherDetails").getString("state")
-#else
-NA
-#end</span><br />
-#end
-  </div>
-</td>
-</tr>
-
-
-
-</table>
-
-
-</div>
-<div class="policy">
 #if($voucher.has("complimentaryServices"))
 <b class="paylist1">Inclusions</b>
 <table>
@@ -1240,21 +1183,14 @@ NA
 #foreach( $complimentary in $voucher.getJSONArray("complimentaryServices") )
 <div class="mess" style="display:flex">
 <li class="inclusionproperty">
-#if($complimentary=='Wifi')
 <img class="imagetick" src="https://4ctnedevblob.blob.core.windows.net/assets/TICK.png" />
-#else
-<img class="imagetick" src="https://4ctnedevblob.blob.core.windows.net/assets/TICK.png" />
-#end
-
-<span class="dslist">$complimentary</span>
+ <span class="dslist">$complimentary</span>
 </li>
   </div>
 #end 
 </ul>
-
 </table>
 #end
-
 
 </div>
 
@@ -1263,24 +1199,37 @@ NA
 <table>
 <ul class="descriptionleft">
 <li style="font-weight:bold;text-align:left;font-size:20px;padding-bottom:5px;">
-Support </li>
-</ul>
-</table>
-
-<br/>
-<table>
-<ul class="descriptionleft">
+Toll free number </li>
 <div class="contact" style="display:flex">
-<li style="font-weight:bold;text-align:left;font-size:20px;padding-bottom:5px;">
-Bosch Hotel Desk</li>
-
 <li>
 <img style="width:4%;height:4%;vertical-align:middle" src="https://4ctnedevblob.blob.core.windows.net/assets/PHONE.png" />
-<span class="mess1" style="padding-left:5px;vertical-align:middle">+91 80 6783 7777</span>
+<span class="mess1" style="padding-left:5px;vertical-align:middle">180030109679</span>
 </li>
+</div>
+<div class="contact" style="display:flex">
 <li>
 <img style="width:4%;height:4%;vertical-align:middle;margin-top:-5px" src="https://4ctnedevblob.blob.core.windows.net/assets/MAIL.png" />
-<span class="mess1" style="padding-left:5px;vertical-align:middle">boschbookings@squirrl.in</span>
+
+<span class="mess1" style="padding-left:5px;vertical-align:middle">hospitality.accomodation@wipro.com</span>
+</li>
+</div>
+
+</ul>
+</table>
+
+<br/>
+<table>
+<ul class="descriptionleft">
+<li style="font-weight:bold;text-align:left;font-size:20px;padding-bottom:5px;">
+India </li>
+<div class="contact" style="display:flex">
+<li>
+<img style="width:4%;height:4%;vertical-align:middle" src="https://4ctnedevblob.blob.core.windows.net/assets/PHONE.png" />
+<span class="mess1" style="padding-left:5px;vertical-align:middle">Toll free: +1800 3010 9679 </span>
+</li>
+<li>
+<img style="width:4%;height:4%;vertical-align:middle" src="https://4ctnedevblob.blob.core.windows.net/assets/PHONE.png" />
+<span class="mess1" style="padding-left:5px;vertical-align:middle">Toll Nos: +91 80 33587777, 80 67462222 </span>
 </li>
 </div>
 </ul>
@@ -1288,17 +1237,12 @@ Bosch Hotel Desk</li>
 <br/>
 <table>
 <ul class="descriptionleft">
-<li>
-<span class="mess1" >After Office Hours contact numbers</span>
-</li>
+<li style="font-weight:bold;text-align:left;font-size:20px;padding-bottom:5px;">
+US/Canada Geo </li>
 <div class="contact" style="display:flex">
 <li>
-<span class="mess1" >Mr.Anup B</span>
-</li>
-
-<li>
 <img style="width:4%;height:4%;vertical-align:middle" src="https://4ctnedevblob.blob.core.windows.net/assets/PHONE.png" />
-<span class="mess1" style="padding-left:5px;vertical-align:middle">+91 7349768704</span>
+<span class="mess1" style="padding-left:5px;vertical-align:middle">Toll free no: 1 844 704 7787 </span>
 </li>
 </div>
 </ul>
@@ -1307,14 +1251,16 @@ Bosch Hotel Desk</li>
 
 <table>
 <ul class="descriptionleft">
+<li style="font-weight:bold;text-align:left;font-size:20px;padding-bottom:5px;">
+UK/Europe Geo </li>
 <div class="contact" style="display:flex">
 <li>
-<span class="mess1" > Mr.Madhu J</span>
+<img style="width:4%;height:4%;vertical-align:middle" src="https://4ctnedevblob.blob.core.windows.net/assets/PHONE.png" />
+<span class="mess1" style="padding-left:5px;vertical-align:middle">Toll free No: + 00800 1400 7777</span>
 </li>
-
 <li>
 <img style="width:4%;height:4%;vertical-align:middle" src="https://4ctnedevblob.blob.core.windows.net/assets/PHONE.png" />
-<span class="mess1" style="padding-left:5px;vertical-align:middle">+91 9686104725</span>
+<span class="mess1" style="padding-left:5px;vertical-align:middle">Toll No: + 44-2035647912 </span>
 </li>
 </div>
 </ul>
@@ -1357,7 +1303,7 @@ Bosch Hotel Desk</li>
 
 
 
-<p id="footerrights">Infallible Travel Concepts Pvt Ltd</p>
+<p id="footerrights"> &copy; 2019, Wipro Limited</p>
 
 </div>
 
