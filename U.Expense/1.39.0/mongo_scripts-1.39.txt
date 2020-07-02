@@ -1,0 +1,1175 @@
+db.adminCommand("listDatabases").databases.forEach( function (database) {
+	if (database.name != "" && database.name.startsWith("cs_1")  && database.name.endsWith("_user")) {
+		db.getSiblingDB(database.name).getCollection("u_expense_config").update({},{
+			$set:{
+				"expenseCategoryFields" : {
+					"expenseMappingGroupVisibility" : {
+						"hiddenFor" : {
+							"approver" : [ 
+								"draft", 
+								"returned"
+							],
+							"reportOwner" : [],
+							"processor" : [ 
+								"draft", 
+								"returned", 
+								"submitted"
+							]
+						},
+						"readOnlyFor" : {
+							"approver" : [ 
+								"submitted", 
+								"processed", 
+								"closed", 
+								"approved"
+							],
+							"reportOwner" : [ 
+								"submitted", 
+								"processed", 
+								"closed", 
+								"approved"
+							],
+							"processor" : [ 
+								"processed", 
+								"closed"
+							]
+						},
+						"uiSchema" : {
+							"ui:widget" : "SelectWidget",
+							"classNames" : "mui-col-md-4"
+						}
+					},
+					"hotelDynamicFields" : [ 
+						{
+							"53575594" : {
+								"errorMessages" : {
+									"required" : "Please enter the check-in date"
+								},
+								"uiSchema" : {
+									"ui:widget" : "DateWidget",
+									"classNames" : "mui-col-md-4"
+								},
+								"title" : {
+									"en-in" : "Check-In Date"
+								},
+								"type" : "string",
+								"fieldType" : "cib",
+								"fieldId" : "53575594"
+							}
+						}, 
+						{
+							"36015703" : {
+								"errorMessages" : {
+									"required" : "Please enter the check-out date"
+								},
+								"uiSchema" : {
+									"ui:widget" : "DateWidget",
+									"classNames" : "mui-col-md-4"
+								},
+								"title" : {
+									"en-in" : "Check-Out Date"
+								},
+								"type" : "string",
+								"fieldType" : "cib",
+								"fieldId" : "36015703"
+							}
+						}
+					],
+					"staticFields" : [ 
+						{
+							"expenseCategorySubCategory" : {
+								"errorMessages" : {
+									"required" : "Select the expense type"
+								},
+								"hiddenFor" : {
+									"approver" : [ 
+										"draft", 
+										"returned"
+									],
+									"reportOwner" : [],
+									"processor" : [ 
+										"draft", 
+										"returned", 
+										"submitted"
+									]
+								},
+								"grouped" : true,
+								"subCategoryKey" : "expenseSubCategory",
+								"readOnlyFor" : {
+									"approver" : [ 
+										"submitted", 
+										"processed", 
+										"closed", 
+										"approved"
+									],
+									"reportOwner" : [ 
+										"submitted", 
+										"processed", 
+										"closed", 
+										"approved"
+									],
+									"processor" : [ 
+										"processed", 
+										"closed"
+									]
+								},
+								"uiSchema" : {
+									"ui:widget" : "SuperSelect",
+									"classNames" : "mui-col-md-4"
+								},
+								"categoryKey" : "expenseCategory",
+								"type" : "string",
+								"title" : "Expense Type",
+								"fieldType" : "common"
+							}
+						}, 
+						{
+							"date" : {
+								"errorMessages" : {
+									"required" : "Enter the transaction date"
+								},
+								"hiddenFor" : {
+									"approver" : [ 
+										"draft", 
+										"returned"
+									],
+									"reportOwner" : [],
+									"processor" : [ 
+										"draft", 
+										"returned", 
+										"submitted"
+									]
+								},
+								"readOnlyFor" : {
+									"approver" : [ 
+										"submitted", 
+										"processed", 
+										"closed", 
+										"approved"
+									],
+									"reportOwner" : [ 
+										"submitted", 
+										"processed", 
+										"closed", 
+										"approved"
+									],
+									"processor" : [ 
+										"processed", 
+										"closed"
+									]
+								},
+								"uiSchema" : {
+									"ui:hintText" : "Select Transaction Date",
+									"ui:widget" : "DateWidget",
+									"classNames" : "mui-col-md-4"
+								},
+								"title" : "Transaction Date",
+								"type" : "string",
+								"fieldType" : "common"
+							}
+						}, 
+						{
+							"justification" : {
+								"errorMessages" : {
+									"required" : "Enter the business purpose of the expense"
+								},
+								"hiddenFor" : {
+									"approver" : [ 
+										"draft", 
+										"returned"
+									],
+									"reportOwner" : [],
+									"processor" : [ 
+										"draft", 
+										"returned", 
+										"submitted"
+									]
+								},
+								"readOnlyFor" : {
+									"approver" : [ 
+										"submitted", 
+										"processed", 
+										"closed", 
+										"approved"
+									],
+									"reportOwner" : [ 
+										"submitted", 
+										"processed", 
+										"closed", 
+										"approved"
+									],
+									"processor" : [ 
+										"processed", 
+										"approved", 
+										"closed"
+									]
+								},
+								"uiSchema" : {
+									"ui:hintText" : "Business Purpose",
+									"classNames" : "mui-col-md-4"
+								},
+								"title" : "Business Purpose",
+								"type" : "string",
+								"fieldType" : "common"
+							}
+						}, 
+						{
+							"vendor" : {
+								"hiddenFor" : {
+									"approver" : [ 
+										"draft", 
+										"returned"
+									],
+									"reportOwner" : [],
+									"processor" : [ 
+										"draft", 
+										"returned", 
+										"submitted"
+									]
+								},
+								"readOnlyFor" : {
+									"approver" : [ 
+										"submitted", 
+										"processed", 
+										"closed", 
+										"approved"
+									],
+									"reportOwner" : [ 
+										"submitted", 
+										"processed", 
+										"closed", 
+										"approved"
+									],
+									"processor" : [ 
+										"processed", 
+										"approved", 
+										"closed"
+									]
+								},
+								"uiSchema" : {
+									"ui:hintText" : "Vendor",
+									"classNames" : "mui-col-md-4"
+								},
+								"title" : "Vendor",
+								"type" : "string",
+								"fieldType" : "common"
+							}
+						}, 
+						{
+							"location" : {
+								"errorMessages" : {
+									"required" : "Location is required"
+								},
+								"hiddenFor" : {
+									"approver" : [ 
+										"draft", 
+										"returned"
+									],
+									"reportOwner" : [],
+									"processor" : [ 
+										"draft", 
+										"returned", 
+										"submitted"
+									]
+								},
+								"readOnlyFor" : {
+									"approver" : [ 
+										"submitted", 
+										"processed", 
+										"closed", 
+										"approved"
+									],
+									"reportOwner" : [ 
+										"submitted", 
+										"processed", 
+										"closed", 
+										"approved"
+									],
+									"processor" : [ 
+										"processed", 
+										"closed"
+									]
+								},
+								"uiSchema" : {
+									"ui:hintText" : "Search Location",
+									"classNames" : "mui-col-md-4",
+									"ui:field" : "AutoCompleteWidget"
+								},
+								"title" : "Location",
+								"type" : "object",
+								"fieldType" : "common"
+							}
+						}, 
+						{
+							"paymentType" : {
+								"errorMessages" : {
+									"required" : "Enter the payment type"
+								},
+								"hiddenFor" : {
+									"approver" : [ 
+										"draft", 
+										"returned"
+									],
+									"reportOwner" : [],
+									"processor" : [ 
+										"draft", 
+										"returned", 
+										"submitted"
+									]
+								},
+								"domainList" : {
+									"companyPaid" : "Card",
+									"personalPaid" : "Cash"
+								},
+								"readOnlyFor" : {
+									"approver" : [ 
+										"submitted", 
+										"processed", 
+										"closed", 
+										"approved"
+									],
+									"reportOwner" : [ 
+										"submitted", 
+										"processed", 
+										"closed", 
+										"approved"
+									],
+									"processor" : [ 
+										"approved", 
+										"processed", 
+										"closed"
+									]
+								},
+								"uiSchema" : {
+									"ui:widget" : "SelectWidget",
+									"classNames" : "mui-col-md-4"
+								},
+								"type" : "string",
+								"title" : "Payment Type",
+								"fieldType" : "common"
+							}
+						}, 
+						{
+							"claimAmountData" : {
+								"errorMessages" : {
+									"pattern" : "You can enter amount up to 10 digits (Inclusive of max 2 decimal places).",
+									"required" : "Enter the transaction amount"
+								},
+								"hiddenFor" : {
+									"approver" : [ 
+										"draft", 
+										"returned"
+									],
+									"reportOwner" : [],
+									"processor" : [ 
+										"draft", 
+										"returned", 
+										"submitted"
+									]
+								},
+								"readOnlyFor" : {
+									"approver" : [ 
+										"submitted", 
+										"processed", 
+										"closed", 
+										"approved"
+									],
+									"reportOwner" : [ 
+										"submitted", 
+										"processed", 
+										"closed", 
+										"approved"
+									],
+									"processor" : [ 
+										"approved", 
+										"processed", 
+										"closed"
+									]
+								},
+								"uiSchema" : {
+									"ui:hintText" : "Enter Claim Amount",
+									"classNames" : "mui-col-md-4"
+								},
+								"pattern" : "^[+-]?(?!0*[.,]?0+$)[0-9]{0,8}[.,]?[0-9]{1,2}$",
+								"type" : "string",
+								"title" : "Amount",
+								"fieldType" : "common"
+							}
+						}, 
+						{
+							"currency" : {
+								"errorMessages" : {
+									"required" : "Enter the currency"
+								},
+								"hiddenFor" : {
+									"approver" : [ 
+										"draft", 
+										"returned"
+									],
+									"reportOwner" : [],
+									"processor" : [ 
+										"draft", 
+										"returned", 
+										"submitted"
+									]
+								},
+								"readOnlyFor" : {
+									"approver" : [ 
+										"submitted", 
+										"processed", 
+										"closed", 
+										"approved"
+									],
+									"reportOwner" : [ 
+										"submitted", 
+										"processed", 
+										"closed", 
+										"approved"
+									],
+									"processor" : [ 
+										"approved", 
+										"processed", 
+										"closed"
+									]
+								},
+								"uiSchema" : {
+									"ui:widget" : "SelectWidget",
+									"classNames" : "mui-col-md-4"
+								},
+								"title" : "Currency",
+								"type" : "string",
+								"fieldType" : "common"
+							}
+						}, 
+						{
+							"tax" : {
+								"errorMessages" : {
+									"pattern" : "Only numbers are allowed"
+								},
+								"hiddenFor" : {
+									"approver" : [ 
+										"draft", 
+										"returned"
+									],
+									"reportOwner" : [],
+									"processor" : [ 
+										"draft", 
+										"returned", 
+										"submitted"
+									]
+								},
+								"readOnlyFor" : {
+									"approver" : [ 
+										"submitted", 
+										"processed", 
+										"closed", 
+										"approved"
+									],
+									"reportOwner" : [ 
+										"submitted", 
+										"processed", 
+										"closed", 
+										"approved"
+									],
+									"processor" : [ 
+										"approved", 
+										"processed", 
+										"closed"
+									]
+								},
+								"pattern" : "^[0-9]*?[.]?[0-9]*$",
+								"uiSchema" : {
+									"ui:hintText" : "Enter Tax",
+									"classNames" : "mui-col-md-4"
+								},
+								"type" : "string",
+								"title" : "Tax",
+								"fieldType" : "common"
+							}
+						}, 
+						{
+							"userExpConversionRate" : {
+								"errorMessages" : {
+									"required" : "Enter the exchange rate"
+								},
+								"hiddenFor" : {
+									"approver" : [ 
+										"draft", 
+										"returned"
+									],
+									"reportOwner" : [],
+									"processor" : [ 
+										"draft", 
+										"returned", 
+										"submitted"
+									]
+								},
+								"readOnlyFor" : {
+									"approver" : [ 
+										"submitted", 
+										"processed", 
+										"closed", 
+										"approved"
+									],
+									"reportOwner" : [ 
+										"submitted", 
+										"processed", 
+										"closed", 
+										"approved"
+									],
+									"processor" : [ 
+										"approved", 
+										"processed", 
+										"closed"
+									]
+								},
+								"uiSchema" : {
+									"ui:hintText" : "Enter Exchange Rate",
+									"classNames" : "mui-col-md-4"
+								},
+								"label" : "Exchange Rate",
+								"type" : "string",
+								"title" : "Exchange Rate",
+								"fieldType" : "common"
+							}
+						}, 
+						{
+							"approvedAmount" : {
+								"errorMessages" : {
+									"pattern" : "You can enter amount up to 10 digits (Inclusive of max 2 decimal places)."
+								},
+								"hiddenFor" : {
+									"approver" : [ 
+										"draft", 
+										"returned"
+									],
+									"reportOwner" : [ 
+										"draft", 
+										"submitted", 
+										"returned"
+									],
+									"processor" : [ 
+										"draft", 
+										"returned", 
+										"submitted"
+									]
+								},
+								"readOnlyFor" : {
+									"approver" : [ 
+										"processed", 
+										"closed"
+									],
+									"reportOwner" : [ 
+										"processed", 
+										"closed", 
+										"approved"
+									],
+									"processor" : [ 
+										"processed", 
+										"closed"
+									]
+								},
+								"pattern" : "^[+-]?(?!0*[.,]?0+$)[0-9]{0,8}[.,]?[0-9]{1,2}$",
+								"uiSchema" : {
+									"classNames" : "mui-col-md-4"
+								},
+								"type" : "string",
+								"title" : "Approved Amount",
+								"fieldType" : "common"
+							}
+						}, 
+						{
+							"distance" : {
+								"errorMessages" : {
+									"pattern" : "Only numbers are allowed",
+									"required" : "Please enter the distance"
+								},
+								"hiddenFor" : {
+									"approver" : [ 
+										"draft", 
+										"returned"
+									],
+									"reportOwner" : [],
+									"processor" : [ 
+										"draft", 
+										"returned", 
+										"submitted"
+									]
+								},
+								"readOnlyFor" : {
+									"approver" : [ 
+										"submitted", 
+										"processed", 
+										"closed", 
+										"approved"
+									],
+									"reportOwner" : [ 
+										"draft", 
+										"returned", 
+										"submitted", 
+										"processed", 
+										"closed", 
+										"approved"
+									],
+									"processor" : [ 
+										"approved", 
+										"processed", 
+										"closed"
+									]
+								},
+								"uiSchema" : {
+									"classNames" : "mui-col-md-4"
+								},
+								"pattern" : "^(?!0*[.]?0+$)[0-9]*[.]?[0-9]+$",
+								"title" : "Distance",
+								"type" : "string",
+								"fieldType" : "common"
+							}
+						}, 
+						{
+							"milesKm" : {
+								"hiddenFor" : {
+									"approver" : [ 
+										"draft", 
+										"returned"
+									],
+									"reportOwner" : [],
+									"processor" : [ 
+										"draft", 
+										"returned", 
+										"submitted"
+									]
+								},
+								"domainList" : {
+									"km" : "Km",
+									"miles" : "Miles"
+								},
+								"readOnlyFor" : {
+									"approver" : [ 
+										"submitted", 
+										"processed", 
+										"closed", 
+										"approved"
+									],
+									"reportOwner" : [ 
+										"draft", 
+										"returned", 
+										"submitted", 
+										"processed", 
+										"closed", 
+										"approved"
+									],
+									"processor" : [ 
+										"approved", 
+										"processed", 
+										"closed"
+									]
+								},
+								"uiSchema" : {
+									"classNames" : "mui-col-md-4"
+								},
+								"title" : "Miles/Km",
+								"type" : "string",
+								"fieldType" : "common"
+							}
+						}, 
+						{
+							"receiptStatus" : {
+								"errorMessages" : {
+									"required" : "Enter receipt status"
+								},
+								"hiddenFor" : {
+									"approver" : [ 
+										"draft", 
+										"returned"
+									],
+									"reportOwner" : [],
+									"processor" : [ 
+										"draft", 
+										"returned", 
+										"submitted"
+									]
+								},
+								"domainList" : {
+									"noReceipt" : "No Receipt",
+									"receipt" : "Receipt"
+								},
+								"readOnlyFor" : {
+									"approver" : [ 
+										"submitted", 
+										"processed", 
+										"closed", 
+										"approved"
+									],
+									"reportOwner" : [ 
+										"submitted", 
+										"processed", 
+										"closed", 
+										"approved"
+									],
+									"processor" : [ 
+										"approved", 
+										"processed", 
+										"closed"
+									]
+								},
+								"uiSchema" : {
+									"ui:widget" : "SelectWidget",
+									"classNames" : "mui-col-md-4"
+								},
+								"type" : "string",
+								"title" : "Receipt Status",
+								"fieldType" : "common"
+							}
+						}, 
+						{
+							"comments" : {
+								"hiddenFor" : {
+									"approver" : [ 
+										"draft", 
+										"returned"
+									],
+									"reportOwner" : [],
+									"processor" : [ 
+										"draft", 
+										"returned", 
+										"submitted"
+									]
+								},
+								"readOnlyFor" : {
+									"approver" : [ 
+										"submitted", 
+										"processed", 
+										"closed", 
+										"approved"
+									],
+									"reportOwner" : [ 
+										"submitted", 
+										"processed", 
+										"closed", 
+										"approved"
+									],
+									"processor" : [ 
+										"processed", 
+										"approved", 
+										"closed"
+									]
+								},
+								"uiSchema" : {
+									"ui:hintText" : "Comments",
+									"classNames" : "mui-col-md-4"
+								},
+								"title" : "Comments",
+								"type" : "string",
+								"fieldType" : "common"
+							}
+						}, 
+						{
+							"personal" : {
+								"hiddenFor" : {
+									"approver" : [ 
+										"draft", 
+										"returned"
+									],
+									"reportOwner" : [],
+									"processor" : [ 
+										"draft", 
+										"returned", 
+										"submitted"
+									]
+								},
+								"readOnlyFor" : {
+									"approver" : [ 
+										"submitted", 
+										"processed", 
+										"closed", 
+										"approved"
+									],
+									"reportOwner" : [ 
+										"submitted", 
+										"processed", 
+										"closed", 
+										"approved"
+									],
+									"processor" : [ 
+										"approved", 
+										"processed", 
+										"closed"
+									]
+								},
+								"uiSchema" : {
+									"classNames" : "mui-col-md-4"
+								},
+								"type" : "boolean",
+								"title" : "Personal Expense (Do not reimburse)",
+								"fieldType" : "common"
+							}
+						}
+					],
+					"tADomainList" : {
+						"11523352149106" : {
+							"label" : "Travel Allowance",
+							"list" : {
+								"21523956324874" : "Travel Allowance"
+							}
+						}
+					},
+					"dynamicFields" : [],
+					"dynamicFieldsVisibility" : {
+						"hiddenFor" : {
+							"approver" : [ 
+								"draft", 
+								"returned"
+							],
+							"reportOwner" : [],
+							"processor" : [ 
+								"draft", 
+								"returned", 
+								"submitted"
+							]
+						},
+						"readOnlyFor" : {
+							"approver" : [ 
+								"submitted", 
+								"processed", 
+								"closed", 
+								"approved"
+							],
+							"reportOwner" : [ 
+								"submitted", 
+								"processed", 
+								"closed", 
+								"approved"
+							],
+							"processor" : [ 
+								"approved", 
+								"processed", 
+								"closed"
+							]
+						}
+					}
+				},
+				"reportHeaderFields" : {
+					"expenseMappingGroupVisibility" : {
+						"hiddenFor" : {
+							"approver" : [ 
+								"draft", 
+								"returned"
+							],
+							"reportOwner" : [],
+							"processor" : [ 
+								"draft", 
+								"returned", 
+								"submitted"
+							]
+						},
+						"readOnlyFor" : {
+							"approver" : [ 
+								"submitted", 
+								"processed", 
+								"closed", 
+								"approved"
+							],
+							"reportOwner" : [ 
+								"submitted", 
+								"processed", 
+								"closed", 
+								"approved"
+							],
+							"processor" : [ 
+								"processed", 
+								"closed"
+							]
+						},
+						"uiSchema" : {
+							"ui:widget" : "SelectWidget",
+							"classNames" : "mui-col-md-3"
+						}
+					},
+					"staticFields" : [ 
+						{
+							"reportname" : {
+								"errorMessages" : {
+									"required" : "Please enter the Report Name"
+								},
+								"hiddenFor" : {
+									"approver" : [ 
+										"draft", 
+										"returned"
+									],
+									"reportOwner" : [],
+									"processor" : [ 
+										"draft", 
+										"returned", 
+										"submitted"
+									]
+								},
+								"readOnlyFor" : {
+									"approver" : [ 
+										"submitted", 
+										"processed", 
+										"closed", 
+										"approved"
+									],
+									"reportOwner" : [ 
+										"submitted", 
+										"processed", 
+										"closed", 
+										"approved"
+									],
+									"processor" : [ 
+										"processed", 
+										"approved", 
+										"closed"
+									]
+								},
+								"uiSchema" : {
+									"ui:hintText" : "Enter Report Name",
+									"classNames" : "mui-col-md-3"
+								},
+								"title" : "Report Name",
+								"type" : "string"
+							}
+						}, 
+						{
+							"businesspurpose" : {
+								"errorMessages" : {
+									"required" : "Please provide justification"
+								},
+								"hiddenFor" : {
+									"approver" : [ 
+										"draft", 
+										"returned"
+									],
+									"reportOwner" : [],
+									"processor" : [ 
+										"draft", 
+										"returned", 
+										"submitted"
+									]
+								},
+								"readOnlyFor" : {
+									"approver" : [ 
+										"submitted", 
+										"processed", 
+										"closed", 
+										"approved"
+									],
+									"reportOwner" : [ 
+										"submitted", 
+										"processed", 
+										"closed", 
+										"approved"
+									],
+									"processor" : [ 
+										"processed", 
+										"approved", 
+										"closed"
+									]
+								},
+								"uiSchema" : {
+									"ui:hintText" : "Enter Business Purpose",
+									"classNames" : "mui-col-md-3"
+								},
+								"title" : "Business Purpose",
+								"type" : "string"
+							}
+						}, 
+						{
+							"tripNumber" : {
+								"errorMessages" : {
+									"required" : "Select the trip number"
+								},
+								"hiddenFor" : {
+									"approver" : [ 
+										"draft", 
+										"returned"
+									],
+									"reportOwner" : [],
+									"processor" : [ 
+										"draft", 
+										"returned", 
+										"submitted"
+									]
+								},
+								"domainList" : {
+									"NA" : "Non Travel"
+								},
+								"elementHeight" : 55,
+								"readOnlyFor" : {
+									"approver" : [ 
+										"submitted", 
+										"processed", 
+										"closed", 
+										"approved"
+									],
+									"reportOwner" : [ 
+										"submitted", 
+										"processed", 
+										"closed", 
+										"approved"
+									],
+									"processor" : [ 
+										"processed", 
+										"approved", 
+										"closed"
+									]
+								},
+								"uiSchema" : {
+									"ui:widget" : "SelectWidget",
+									"classNames" : "mui-col-md-3"
+								},
+								"title" : "Trip Number",
+								"type" : "string"
+							}
+						}, 
+						{
+							"reportDate" : {
+								"errorMessages" : {
+									"required" : "Please enter the Report Date"
+								},
+								"hiddenFor" : {
+									"approver" : [ 
+										"draft", 
+										"returned"
+									],
+									"reportOwner" : [],
+									"processor" : [ 
+										"draft", 
+										"returned", 
+										"submitted"
+									]
+								},
+								"readOnlyFor" : {
+									"approver" : [ 
+										"submitted", 
+										"processed", 
+										"closed", 
+										"approved"
+									],
+									"reportOwner" : [ 
+										"submitted", 
+										"processed", 
+										"closed", 
+										"approved"
+									],
+									"processor" : [ 
+										"processed", 
+										"approved", 
+										"closed"
+									]
+								},
+								"elementHeight" : 55,
+								"uiSchema" : {
+									"ui:widget" : "DateWidget",
+									"classNames" : "mui-col-md-3"
+								},
+								"title" : "Report Date",
+								"type" : "string"
+							}
+						}, 
+						{
+							"policy" : {
+								"errorMessages" : {
+									"required" : "Select the policy"
+								},
+								"hiddenFor" : {
+									"approver" : [ 
+										"draft", 
+										"returned"
+									],
+									"reportOwner" : [],
+									"processor" : [ 
+										"draft", 
+										"returned", 
+										"submitted"
+									]
+								},
+								"domainList" : {
+									"travelPolicyDomestic" : "Travel Policy – Domestic",
+									"travelPolicyInternational" : "Travel Policy – International",
+									"hardFurnishingLoanPolicy" : "Hard Furnishing Loan Policy",
+									"officeAdminExpensesPolicy" : "Office Admin Expenses Policy",
+									"emergencyFundPolicy" : "Emergency Fund Policy",
+									"personalCarPolicy" : "Personal Car Policy",
+									"relocationPolicy" : "Relocation Policy",
+									"internetMobilePolicy" : "Internet & Mobile Policy",
+									"officeExpensePolicy" : "Office Expense Policy",
+									"imprestCashAdvancePolicy" : "Imprest Cash Advance Policy"
+								},
+								"elementHeight" : 55,
+								"readOnlyFor" : {
+									"approver" : [ 
+										"submitted", 
+										"processed", 
+										"closed", 
+										"approved"
+									],
+									"reportOwner" : [ 
+										"submitted", 
+										"processed", 
+										"closed", 
+										"approved"
+									],
+									"processor" : [ 
+										"processed", 
+										"approved", 
+										"closed"
+									]
+								},
+								"uiSchema" : {
+									"ui:widget" : "SelectWidget",
+									"classNames" : "mui-col-md-3"
+								},
+								"title" : "Policy",
+								"type" : "string"
+							}
+						}, 
+						{
+							"comments" : {
+								"hiddenFor" : {
+									"approver" : [ 
+										"draft", 
+										"returned"
+									],
+									"reportOwner" : [],
+									"processor" : [ 
+										"draft", 
+										"returned", 
+										"submitted"
+									]
+								},
+								"readOnlyFor" : {
+									"approver" : [ 
+										"submitted", 
+										"processed", 
+										"closed", 
+										"approved"
+									],
+									"reportOwner" : [ 
+										"submitted", 
+										"processed", 
+										"closed", 
+										"approved"
+									],
+									"processor" : [ 
+										"processed", 
+										"approved", 
+										"closed"
+									]
+								},
+								"uiSchema" : {
+									"ui:hintText" : "Comments",
+									"classNames" : "mui-col-md-4"
+								},
+								"title" : "Comments",
+								"type" : "string",
+								"fieldType" : "common"
+							}
+						}
+					]
+				}
+			}
+		})
+	}
+})
