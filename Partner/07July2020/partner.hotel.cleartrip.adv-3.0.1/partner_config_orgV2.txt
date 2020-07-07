@@ -1,0 +1,14 @@
+db.getCollection('partner_config_orgV2').update(
+    {
+       
+    },  
+    // update
+    {
+       $rename:{"OrgDetails.Hotel.IN.Partners.HTL_CLR.Search_Credentail.CLR_Ipcc_Details.HTL_CLR":"OrgDetails.Hotel.IN.Partners.HTL_CLR.Search_Credentail.CLR_Ipcc_Details.HTLCLR",
+          		"OrgDetails.Hotel.IN.Partners.HTL_CLR.Book_Credentail.CLR_Ipcc_Details.HTL_CLR":"OrgDetails.Hotel.IN.Partners.HTL_CLR.Book_Credentail.CLR_Ipcc_Details.HTLCLR"}
+    },
+    {
+        "multi" : true,
+        "upsert" : false
+    }
+)
