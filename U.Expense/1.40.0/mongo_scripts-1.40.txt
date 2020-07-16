@@ -1,0 +1,14 @@
+db.adminCommand("listDatabases").databases.forEach( function (database) {
+	if (database.name != "" && database.name.startsWith("cs_1")  && database.name.endsWith("_user")) {
+		db.getSiblingDB(database.name).getCollection("u_expense_config").update({},{
+			$set:{
+				"duplicateCheck.dependencyData" : [ 
+			        "date", 
+			        "claimAmount", 
+			        "currency", 
+			        "expenseCategorySubCategory"
+			    ]
+			}
+		})
+	}
+})
