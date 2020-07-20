@@ -1,0 +1,179 @@
+use cs_xxxx_product
+db.org_user.replaceOne({"userName":"tmartin"},{"password" : "1000:b9c46af5a47aa4ab78047b2ff95442f5:f5f17602c511b970c943ec1a412a8e0e3bd1a0624e5c506044bc8592a92b1f67d09e16d0a8df25b06c77a37a965794510fa891ed013fa85c4d9fd57605dde66f",
+    "createdDate" : "23-07-2016 13:47:30 UTC",
+    "createdBy" : "10010000001",
+    "modifiedDate" : "03-11-2016 10:18:21 UTC",
+    "modifiedOn_DT_UTC_EPOCH" : NumberLong(1490675532638),
+    "modifiedBy" : "10010000122",
+    "userName" : "tmartin",
+    "userId" : "xxxx0000122",
+    "breakfast" : false,
+    "swimmingPool" : false,
+    "gym" : false,
+    "isActive" : true,
+    "designation" : "manager",
+    "emailNotfAllwd" : true,
+    "airlineSeatPref" : "Window",
+    "mealPref" : "Vegetarian Meal (Non-Dairy) (VGML)",
+    "smoking" : false,
+    "restaurant" : false,
+    "personalData" : "ysL5AjAeoJWUas4n9oYJItclniGShE0ljzpP/DD3q+59y2BWhaYBpj166rtymAQo7fCoJkr0tEoEr9JTw3AoIv4FjH9LrxviGpxYnH8fZ2lngVZsquhPKIqAO02qzReVMZMZ8o2bwN+diyoW2oN6iHSCwabhdn4kCqKj8pB7oPTJu55t74W2Qq4tv8S+RR0jOTckyLbMVKYESD8O4yU3KoFWYFZ4QxXSYfTHLtX9lmR/P6KtXYRvvLrTTu/qX0PzUDy0R5Bi7GgQyeIUHZV3FrxjsWsYKK9l6gsgT6/kzfrCeCz5YC6/r+sMrFrt4kZFpjWJEX8VFY8SDJt5h58pZoqz3fIriZCC7rBjahzwZenSCMb229qZ4aKxKNjU5GCgqeWi4s4NasZmP15+ZtFxr2iPGqm/xREywY+W/o1LV6BARs/hJFRqpAU8VRZgRMJMBcQ5dYEnakUhS6zzD0AHvpVmYpqSOkQJvnCeOpIoZ43XvILhstpIc2jnp76DKfXiMW8eNcOH2b7PJVhm2UAnrkB8N4fz1CTjZzDOe85XrCchto6po57DY1EmZmx2/EiB2i3OxXUquz46G+M4ieIGy2mmcsCvPGpdjS2wjSt29OxHUXdf0OgYC9SvbDpKtbVMAxP5D2t3NqD+yTZATsChAbnyaSPw5pGBP2PNquMh3UERxgILwf7WTgz5O6feozNyYwqR7TLggcZH+6dg2a2HqyR0kK+rtFEE+fYEqXZZPByyQ9h3suUhkvcvqkSPw3YJarFIgqSOl8T3Y6jRd0vqAgCugWFTFqhO6UdeSoyzCNfsvLiaiyH/rTGYT0haE7Uxl7WQFx/seQifgeiiV4/BeRbedV5AHPZnTXLjtJYW6pxoRLI4d8+6m1nrcWu4dc1AB3dKN+BX77Ih4YyOaZ9VTR3TsYUuvPVhxzDq47jT6g1Zmc+W0Dt9dFRbvoqk1M/HkbMJx398EKh8+1Vocb2MMCnKviwFRrv4nhGDpQNEYYq/jAFJhckBsBT31hWdjNw6LDR+rZTizGTqTdweeQAAl4sONKpg1kYHDpbdrCRZv902jJUq/EIEuS5bEG3He9vGrAVXSU8NOQEqwE51Y/1rj3HxIiYPb1Mvb/t7mKej5Mi8GWHgzMrZeQKw7V9XDFvEvESq5B1KMyVywPjjdevPnw5wjJrlqqkcLjWISmBZPa6Sqvo+2UzqrUfYpYUw20hEPIi1Oo2RQmLEVfX4XbJOfiiAcHIhherq2flAGhuPe7hYsg5PlYzSI7O2LhlyjdiC11m1dDW6fAJWkQHnSXvLulrhFAcI97Wju4rG3BoTBPRWuvlVAPnM5/6q5oSpiHXVIRYz0fvOSfRBVTtnWE2UJG8IE9ycehNuXxBBObwpCs65teFDp2tI8dGNYqeMl+2SpL76TeXEP8V9yBH/uH+D3nM9C5HWkga70nKoI1dU80/wb4RM075lXa46YAgMo+nYhvX2duKaRemSYPdH/BekGW6IzNf6yutfBlNlix/2wlyTBRd1yF1ksvr+sRnr86LOhXOg/lxZbVPbUDS9Lrqa45TLFK3BaAyAlVNVQN9lLHhVOomcpC1JZzBvMNUi03M6x0/632WhCuJfm4o45JnoGqpOa7KUVgdyyMQYSeYlyiIfjzLcTSLVDHvLk6c3dDImPzHD6+x8u/CecZqa9rKobBk2B7upMw1nZxtPq3GTshgSvyK78nWhulzWfYHUZnXMNyxeaE56GzA7KgyQJrJLLdYEMejLg3wQxsj15yCDtnfmF+wzrUdYP7+Ce2/ZMfOcXsEifvB+f6uxy58Y5WbdAsHFgO3nmRm3DITbWuvccCeb85OCFn2KDA4M8w/7OmgVxmT+CQ==",
+    "frequentFlierNo" : [ 
+        {
+            "number" : "Jet",
+            "carrierName" : "hj"
+        }
+    ],
+    "band" : "B2",
+    "managerDetails" : {
+        "Designation" : "Product Manager",
+        "managerId" : "123456",
+        "managerName" : "ABC"
+    },
+    "userroles" : [ 
+        {
+            "self" : [ 
+                6017, 
+                6018, 
+                6019, 
+                6020, 
+                6021, 
+                6022, 
+                6023, 
+                6024, 
+                6025, 
+                6026, 
+                6027, 
+                5010, 
+                5011, 
+                5012, 
+                5013, 
+                5014, 
+                5015, 
+                5016, 
+                5018, 
+                5530, 
+                5020, 
+                5021, 
+                5024, 
+                4010, 
+                4011, 
+                4012, 
+                4013, 
+                4014, 
+                4015, 
+                4016, 
+                4018, 
+                9010, 
+                9011, 
+                4020, 
+                9012, 
+                4021, 
+                4024, 
+                2110, 
+                2111, 
+                2112, 
+                3010, 
+                3011, 
+                3012, 
+                3013, 
+                3014, 
+                3015, 
+                3016, 
+                3017, 
+                3018, 
+                2010, 
+                2011, 
+                2012, 
+                2013, 
+                2014, 
+                2015, 
+                2016, 
+                2017, 
+                2018, 
+                7010, 
+                2019, 
+                7011, 
+                2020, 
+                7012, 
+                2021, 
+                7013, 
+                2022, 
+                7014, 
+                6010, 
+                6011, 
+                6012, 
+                6013, 
+                6015
+            ]
+        }
+    ],
+    "loginTime" : "20-07-2020 07:10:45:122 UTC",
+    "logoutTime" : "20-07-2020 07:08:15:771 UTC",
+    "locale" : "en-IN",
+    "lastLoginTime" : "20-07-2020 07:04:44:625 UTC",
+    "country" : "INDIA",
+    "bar" : false,
+    "language" : "English",
+    "WheelChairAsst" : false,
+    "internetConn" : false,
+    "timezone" : "(GMT+5:30) Asia/Kolkata",
+    "priorityBaggage" : false,
+    "onBoradMedic" : false,
+    "hotelType" : "Others",
+    "notfSMS" : true,
+    "modifiedOn_DT_UTC" : "03-06-2020 06:37:24:004 UTC",
+    "groups" : [ 
+        {
+            "groupTypeName" : "lead",
+            "groupName" : "new leads",
+            "groupId" : "21490263379715",
+            "groupTypeId" : "11490258600167",
+            "isActive" : false
+        }
+    ],
+    "countryCode" : "IN",
+    "currency" : "INR",
+    "otherSpclAsst" : "",
+    "specialAssistance" : "Others",
+    "isLockoutActive" : false,
+    "modifiedBy_label" : "Todd Martin",
+    "modifiedOn" : "Tue Mar 28 04:32:12 UTC 2017",
+    "roles" : [ 
+        {
+            "roleId" : "role_26",
+            "roleName" : "Test Role"
+        }, 
+        {
+            "roleId" : "role_6",
+            "roleName" : "Default Scott - Please Dont Modify"
+        }, 
+        {
+            "roleId" : "role_6",
+            "roleName" : "Default Scott - Please Dont Modify"
+        }, 
+        {
+            "roleId" : "role_24",
+            "roleName" : "Manager Role"
+        }, 
+        {
+            "roleId" : "role_14",
+            "roleName" : "Travel and expense"
+        }
+    ],
+    "failedLoginAttempts" : 0,
+    "failedLoginTime" : "17-07-2020 12:20:37:856 UTC",
+    "disclaimer" : {
+        "agree" : true,
+        "time" : "26-06-2020 04:57:00:333 UTC"
+    },
+    "searchFields" : {
+        "firstName" : "c60ba607dafb7a7150dcdf7ec61924b3",
+        "lastName" : "925d7518fc597af0e43f5606f9a51512",
+        "empId" : "508df4cb2f4d8f80519256258cfb975f",
+        "mobileNo" : "c345b392312554f34d9108e47661e1ed",
+        "email" : "246ca99ad0898d35c13d7608cfe45465",
+        "email_name" : "a4d19dbd2288322dff39bc7e3c8a9cb0"
+    },
+    "removeLockout" : "2019-09-24T05:39:06.444Z"
+})
