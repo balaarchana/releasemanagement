@@ -1,0 +1,12 @@
+use platform_db
+db.getCollection('core_config_general').update({},{$set:{"email_processor_config":{
+    "provider" : "outlook",
+    "tenant" : "258ac4e4-146a-411e-9dc8-79a9e12fd6da",
+    "client_id" : "e6548d1a-6d2e-46f4-a0ad-a784a9531845",
+    "scope" : [ 
+        "https://graph.microsoft.com/.default"
+    ],
+    "client_secret" : "Z8rvISF..E4._W4e-~9g72kaW~w5t.Y0BA",
+    "mailOwner" : "way2go.createtrdev@wipro.com",
+    "timeIntervalInMins" : 30
+}}})

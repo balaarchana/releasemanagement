@@ -1,0 +1,8 @@
+use platform_db
+db.getCollection('core_config_url').update({"type":"url"},{$set:{    
+	"env_logout_user" : "authentication/auth/logout",
+    "env_session_impersonate_from_sd":"sessionmanagement/session/impersonateFromSD",
+    "env_get_trip_form_type":"u.nodeedge.sbt/trip/form",
+    "env_trip_form_detail" : "u.nodeedge.sbt/trip/detail/form",
+    "env_org_user_list" : "org/org/userList"}})
+	
