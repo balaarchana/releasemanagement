@@ -1,0 +1,29 @@
+//do the below changes for wipro org in cs_*_product collection
+// this change is for all orgs except google
+db.getCollection('product_config').update({},{$set:{"schema.offline_form_hotel_booking.properties.hotel.properties.hotelAmenities":{
+   
+                  
+    "domainList" : {
+        "wifi" : "WiFi",
+        "lunch" : "Lunch",
+        "breakfast" : "BreakFast",
+        "dinner" : "Dinner"
+    },
+    "type" : "string",
+    "title" : "Amenities"
+}}})
+
+// this change is for google org
+db.getCollection('product_config').update({},{$set:{"schema.offline_form_hotel_booking.properties.hotel.properties.hotelAmenities":{
+   
+                  
+    "domainList" : {
+        "wifi" : "WiFi",
+        "lunch" : "Lunch",
+        "breakfast" : "BreakFast",
+        "dinner" : "Dinner",
+        "parking": "Parking"
+    },
+    "type" : "string",
+    "title" : "Amenities"
+}}})
