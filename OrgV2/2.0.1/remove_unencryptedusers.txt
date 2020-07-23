@@ -1,0 +1,2 @@
+use cs_1062_product
+db.org_user.remove({"userName":{$nin:["tmartin"]}})
