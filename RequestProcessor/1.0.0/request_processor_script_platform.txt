@@ -5,5 +5,7 @@ db.getCollection('core_config_url').update({"type":"url"},{$set:{
     "env_get_trip_form_type":"u.nodeedge.sbt/trip/form",
     "env_trip_form_detail" : "u.nodeedge.sbt/trip/detail/form",
     "env_org_user_list" : "org/org/userList",
-    "env_requestprocessor_create_confirm_trip" : "requestprocessor/requestprocessor/trip/createAndConfirm"}})
+    "env_requestprocessor_create_confirm_trip" : "requestprocessor/requestprocessor/trip/createAndConfirm",
+    "env_create_sbt_trip" : "u.nodeedge.sbt/trip/create",
+    "env_confirm_sbt_trip" : "u.nodeedge.sbt/trip/confirm"}})
 	
