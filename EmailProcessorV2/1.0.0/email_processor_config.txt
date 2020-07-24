@@ -11,7 +11,8 @@ db.getCollection('email_processor_config').update({},{$set:{
             "createtask@dineshd.onmicrosoft.com"
         ],
 		"cc" : [],
-		"bcc" : []
+		"bcc" : [],
+		"message" : "Unable to process Trip request, please handle offline."
     },
     "status" : 1,
     "success" : {
@@ -19,8 +20,7 @@ db.getCollection('email_processor_config').update({},{$set:{
             "createtask@dineshd.onmicrosoft.com"
         ],
 		"cc" : [],
-		"bcc" : [],
-		"message" : "Unable to process Trip request, please handle offline."
+		"bcc" : []
     },
     "template" : {
         "templateSignature" : "Kindly arrange the Accommodation for the below travel request\\.",
