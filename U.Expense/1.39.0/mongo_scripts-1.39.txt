@@ -1086,8 +1086,8 @@ db.adminCommand("listDatabases").databases.forEach( function (database) {
 									]
 								},
 								"domainList" : {
-									"travelPolicyDomestic" : "Travel Policy – Domestic",
-									"travelPolicyInternational" : "Travel Policy – International",
+									"travelPolicyDomestic" : "Travel Policy-Domestic",
+									"travelPolicyInternational" : "Travel Policy-International",
 									"hardFurnishingLoanPolicy" : "Hard Furnishing Loan Policy",
 									"officeAdminExpensesPolicy" : "Office Admin Expenses Policy",
 									"emergencyFundPolicy" : "Emergency Fund Policy",
