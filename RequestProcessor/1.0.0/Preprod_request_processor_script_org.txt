@@ -1,0 +1,20 @@
+use cs_1070_product
+db.createCollection('request_processor_actions')
+db.getCollection('request_processor_actions').update({"action":"login"},{$set:{"action" : "login",
+    "defaultData" : {
+    "sd" : "a9imnNMi5Q1ZpeGsUJtK/ZKCB6I0T4poyeiqIQNrPMcfv2E7jCQVa8GvpI32bGS0ASoQZfNIP7iMz5Hs4Smpojs/gRiObwrBGbAJjm/teQQy0jkr"
+}}},{upsert:true})
+	
+db.getCollection('request_processor_actions').update({"action":"createTrip"},{ "action" : "createTrip",
+    "defaultData" : {
+        "hotelItinerary" : {
+            "numberOfChild" : 0,
+            "numberOfInfant" : 0,
+            "numberOfRooms" : 1
+        },
+        "flightItinerary" : {
+            "numberOfChild" : 0,
+            "numberOfInfant" : 0,
+            "classOfService" : "economy"
+        }
+    }},{upsert:true})

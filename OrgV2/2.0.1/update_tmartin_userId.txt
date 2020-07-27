@@ -1,0 +1,9 @@
+For 1062 :
+ 
+use cs_1062_product
+db.org_user.update({"userName":"tmartin"},{$set:{"userId":"10620000001"}})
+
+For 9016:
+
+use cs_9016_product
+db.org_user.update({"userName":"tmartin"},{$set:{"userId":"90160000001"}})
