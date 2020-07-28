@@ -1,0 +1,4 @@
+use cs_XXXX_product
+db.getCollection('org_user').updateMany({ "disclaimer": { $exists: true } },{$set:{"disclaimer":{
+    "agree" : false
+}}})
