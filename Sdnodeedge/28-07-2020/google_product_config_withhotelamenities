@@ -1,3 +1,4 @@
+//do the below changes for google org in cs_*_product collection
 db.getCollection('product_config').update({},{$set:{"schema.offline_form_hotel_booking":{
     "type" : "object",
             "properties" : {
