@@ -1,0 +1,524 @@
+Note - Replace **** with marcopolo org id
+
+db.adminCommand("listDatabases").databases.forEach(function (database) {
+                  if (database.name != "" && database.name.startsWith("cs_****") && database.name.endsWith("_product")) {
+                     db.getSiblingDB(database.name).getCollection('product_config').update({}, {
+  
+  
+  
+                                        $set : 
+  {
+    "schema": {
+      "trip_form_type_International_Emergency": {
+        "type": "object",
+        "properties": {
+          "otherDetails": {
+            "type": "object",
+            "title": "Other Details",
+            "properties": {
+              "entityName": {
+                "domainList": {
+                  "MP Bombay–27": "MP Bombay - 27",
+                  "MP Bangalore-29": "MP Bangalore - 29"
+                },
+                "type": "string",
+                "title": "Entity Name"
+              },
+              "customerRequestNumber": {
+                "type": "string",
+                "title": "Customer Request Number"
+              },
+              "clientReferenceNumber": {
+                "type": "string",
+                "title": "Client Reference Number"
+              },
+              "tripRequestNumber": {
+                "type": "string",
+                "title": "Trip Request Number"
+              }
+            }
+          },
+          "travelPurpose": {
+            "type": "object",
+            "title": "Travel Purpose",
+            "properties": {
+              "purpose": {
+                "domainList": {
+                  "customerSalesMeeting": "Customer Sales Meeting",
+                  "transfer": "Transfer",
+                  "internalReview": "Internal Review",
+                  "customerProjectReview": "Customer Project Review",
+                  "training": "Training",
+                  "hiringMeetings": "Hiring Meetings"
+                },
+                "type": "string",
+                "title": "Purpose of Travel*"
+              }
+            },
+            "required": [
+              "purpose"
+            ]
+          }
+        }
+      },
+      "trip_form_type_International": {
+        "type": "object",
+        "properties": {
+          "otherDetails": {
+            "type": "object",
+            "title": "Other Details",
+            "properties": {
+              "entityName": {
+                "domainList": {
+                  "MP Bombay–27": "MP Bombay - 27",
+                  "MP Bangalore-29": "MP Bangalore - 29"
+                },
+                "type": "string",
+                "title": "Entity Name"
+              },
+              "customerRequestNumber": {
+                "type": "string",
+                "title": "Customer Request Number"
+              },
+              "clientReferenceNumber": {
+                "type": "string",
+                "title": "Client Reference Number"
+              },
+              "tripRequestNumber": {
+                "type": "string",
+                "title": "Trip Request Number"
+              }
+            }
+          },
+          "travelPurpose": {
+            "type": "object",
+            "title": "Travel Purpose",
+            "properties": {
+              "purpose": {
+                "domainList": {
+                  "customerSalesMeeting": "Customer Sales Meeting",
+                  "transfer": "Transfer",
+                  "internalReview": "Internal Review",
+                  "customerProjectReview": "Customer Project Review",
+                  "training": "Training",
+                  "hiringMeetings": "Hiring Meetings"
+                },
+                "type": "string",
+                "title": "Purpose of Travel*"
+              }
+            },
+            "required": [
+              "purpose"
+            ]
+          }
+        }
+      },
+      "trip_form_type_Domestic_Emergency": {
+        "type": "object",
+        "properties": {
+          "otherDetails": {
+            "type": "object",
+            "title": "Other Details",
+            "properties": {
+              "entityName": {
+                "domainList": {
+                  "MP Bombay–27": "MP Bombay - 27",
+                  "MP Bangalore-29": "MP Bangalore - 29"
+                },
+                "type": "string",
+                "title": "Entity Name"
+              },
+              "customerRequestNumber": {
+                "type": "string",
+                "title": "Customer Request Number"
+              },
+              "clientReferenceNumber": {
+                "type": "string",
+                "title": "Client Reference Number"
+              },
+              "tripRequestNumber": {
+                "type": "string",
+                "title": "Trip Request Number"
+              }
+            }
+          },
+          "travelPurpose": {
+            "type": "object",
+            "title": "Travel Purpose",
+            "properties": {
+              "purpose": {
+                "domainList": {
+                  "customerSalesMeeting": "Customer Sales Meeting",
+                  "transfer": "Transfer",
+                  "internalReview": "Internal Review",
+                  "customerProjectReview": "Customer Project Review",
+                  "training": "Training",
+                  "hiringMeetings": "Hiring Meetings"
+                },
+                "type": "string",
+                "title": "Purpose of Travel*"
+              }
+            },
+            "required": [
+              "purpose"
+            ]
+          }
+        }
+      },
+      "trip_form_type_Domestic": {
+        "type": "object",
+        "properties": {
+          "otherDetails": {
+            "type": "object",
+            "title": "Other Details",
+            "properties": {
+              "entityName": {
+                "domainList": {
+                  "MP Bombay–27": "MP Bombay - 27",
+                  "MP Bangalore-29": "MP Bangalore - 29"
+                },
+                "type": "string",
+                "title": "Entity Name"
+              },
+              "customerRequestNumber": {
+                "type": "string",
+                "title": "Customer Request Number"
+              },
+              "clientReferenceNumber": {
+                "type": "string",
+                "title": "Client Reference Number"
+              },
+              "tripRequestNumber": {
+                "type": "string",
+                "title": "Trip Request Number"
+              }
+            }
+          },
+          "travelPurpose": {
+            "type": "object",
+            "title": "Travel Purpose",
+            "properties": {
+              "purpose": {
+                "domainList": {
+                  "customerSalesMeeting": "Customer Sales Meeting",
+                  "transfer": "Transfer",
+                  "internalReview": "Internal Review",
+                  "customerProjectReview": "Customer Project Review",
+                  "training": "Training",
+                  "hiringMeetings": "Hiring Meetings"
+                },
+                "type": "string",
+                "title": "Purpose of Travel*"
+              }
+            },
+            "required": [
+              "purpose"
+            ]
+          }
+        }
+      }
+    },
+    "uiSchema": {
+      "trip_form_type_International_Emergency": {
+        "otherDetails": {
+          "gstNumber": {
+            "classNames": "mui-col-md-3",
+            "ui:disabled": true
+          },
+          "address": {
+            "classNames": "mui-col-md-3",
+            "ui:disabled": true
+          },
+          "entityName": {
+            "ui:widget": "SelectWidget",
+            "classNames": "mui-col-md-3"
+          },
+          "customerRequestNumber": {
+            "ui:options": {
+              "label": false
+            },
+            "classNames": "mui-col-md-3"
+          },
+          "ui:order": [
+            "clientReferenceNumber",
+            "tripRequestNumber",
+            "customerRequestNumber",
+            "entityName"
+          ],
+          "state": {
+            "classNames": "mui-col-md-3",
+            "ui:disabled": true
+          },
+          "clientReferenceNumber": {
+            "ui:options": {
+              "label": false
+            },
+            "classNames": "mui-col-md-3"
+          },
+          "tripRequestNumber": {
+            "ui:options": {
+              "label": false
+            },
+            "classNames": "mui-col-md-3"
+          },
+          "visaType": {
+            "ui:options": {
+              "label": false
+            },
+            "ui:widget": "SelectWidget",
+            "classNames": "mui-col-md-3",
+            "ui:placeholder": "Select Visa*"
+          }
+        },
+        "ui:order": [
+          "travelPurpose",
+          "otherDetails"
+        ],
+        "travelPurpose": {
+          "purpose": {
+            "ui:options": {
+              "label": false
+            },
+            "ui:widget": "SelectWidget",
+            "classNames": "mui-col-md-3",
+            "ui:placeholder": "Select Purpose*"
+          },
+          "ui:order": [
+            "purpose"
+          ]
+        }
+      },
+      "trip_form_type_International": {
+        "otherDetails": {
+          "gstNumber": {
+            "classNames": "mui-col-md-3",
+            "ui:disabled": true
+          },
+          "address": {
+            "classNames": "mui-col-md-3",
+            "ui:disabled": true
+          },
+          "entityName": {
+            "ui:widget": "SelectWidget",
+            "classNames": "mui-col-md-3"
+          },
+          "customerRequestNumber": {
+            "ui:options": {
+              "label": false
+            },
+            "classNames": "mui-col-md-3"
+          },
+          "ui:order": [
+            "clientReferenceNumber",
+            "tripRequestNumber",
+            "customerRequestNumber",
+            "entityName"
+          ],
+          "state": {
+            "classNames": "mui-col-md-3",
+            "ui:disabled": true
+          },
+          "clientReferenceNumber": {
+            "ui:options": {
+              "label": false
+            },
+            "classNames": "mui-col-md-3"
+          },
+          "tripRequestNumber": {
+            "ui:options": {
+              "label": false
+            },
+            "classNames": "mui-col-md-3"
+          },
+          "visaType": {
+            "ui:options": {
+              "label": false
+            },
+            "ui:widget": "SelectWidget",
+            "classNames": "mui-col-md-3",
+            "ui:placeholder": "Select Visa*"
+          }
+        },
+        "ui:order": [
+          "travelPurpose",
+          "otherDetails"
+        ],
+        "travelPurpose": {
+          "purpose": {
+            "ui:options": {
+              "label": false
+            },
+            "ui:widget": "SelectWidget",
+            "classNames": "mui-col-md-3",
+            "ui:placeholder": "Select Purpose*"
+          },
+          "ui:order": [
+            "purpose"
+          ]
+        }
+      },
+      "trip_form_type_Domestic_Emergency": {
+        "otherDetails": {
+          "gstNumber": {
+            "classNames": "mui-col-md-3",
+            "ui:disabled": true
+          },
+          "address": {
+            "classNames": "mui-col-md-3",
+            "ui:disabled": true
+          },
+          "entityName": {
+            "ui:widget": "SelectWidget",
+            "classNames": "mui-col-md-3"
+          },
+          "customerRequestNumber": {
+            "ui:options": {
+              "label": false
+            },
+            "classNames": "mui-col-md-3"
+          },
+          "ui:order": [
+            "clientReferenceNumber",
+            "tripRequestNumber",
+            "customerRequestNumber",
+            "entityName"
+          ],
+          "state": {
+            "classNames": "mui-col-md-3",
+            "ui:disabled": true
+          },
+          "clientReferenceNumber": {
+            "ui:options": {
+              "label": false
+            },
+            "classNames": "mui-col-md-3"
+          },
+          "tripRequestNumber": {
+            "ui:options": {
+              "label": false
+            },
+            "classNames": "mui-col-md-3"
+          },
+          "visaType": {
+            "ui:options": {
+              "label": false
+            },
+            "ui:widget": "SelectWidget",
+            "classNames": "mui-col-md-3",
+            "ui:placeholder": "Select Visa*"
+          }
+        },
+        "ui:order": [
+          "travelPurpose",
+          "otherDetails"
+        ],
+        "travelPurpose": {
+          "purpose": {
+            "ui:options": {
+              "label": false
+            },
+            "ui:widget": "SelectWidget",
+            "classNames": "mui-col-md-3",
+            "ui:placeholder": "Select Purpose*"
+          },
+          "ui:order": [
+            "purpose"
+          ]
+        }
+      },
+      "definitions": {
+        "MP Bombay–27": {
+          "gstNumber": "27XXXXXXXXXXXXX",
+          "address": "MP Bombay",
+          "state": "Maharastra"
+        },
+        "MP Bangalore-29": {
+          "gstNumber": "29XXXXXXXXXXXXX",
+          "address": "MP Bangalore",
+          "state": "Karnataka"
+        },
+        "labels": {
+          "gstNumber": "GSTIN",
+          "address": "Address",
+          "state": "State"
+        }
+      },
+      "trip_form_type_Domestic": {
+        "otherDetails": {
+          "gstNumber": {
+            "classNames": "mui-col-md-3",
+            "ui:disabled": true
+          },
+          "address": {
+            "classNames": "mui-col-md-3",
+            "ui:disabled": true
+          },
+          "entityName": {
+            "ui:widget": "SelectWidget",
+            "classNames": "mui-col-md-3"
+          },
+          "customerRequestNumber": {
+            "ui:options": {
+              "label": false
+            },
+            "classNames": "mui-col-md-3"
+          },
+          "ui:order": [
+            "clientReferenceNumber",
+            "tripRequestNumber",
+            "customerRequestNumber",
+            "entityName"
+          ],
+          "state": {
+            "classNames": "mui-col-md-3",
+            "ui:disabled": true
+          },
+          "clientReferenceNumber": {
+            "ui:options": {
+              "label": false
+            },
+            "classNames": "mui-col-md-3"
+          },
+          "tripRequestNumber": {
+            "ui:options": {
+              "label": false
+            },
+            "classNames": "mui-col-md-3"
+          },
+          "visaType": {
+            "ui:options": {
+              "label": false
+            },
+            "ui:widget": "SelectWidget",
+            "classNames": "mui-col-md-3",
+            "ui:placeholder": "Select Visa*"
+          }
+        },
+        "ui:order": [
+          "travelPurpose",
+          "otherDetails"
+        ],
+        "travelPurpose": {
+          "purpose": {
+            "ui:options": {
+              "label": false
+            },
+            "ui:widget": "SelectWidget",
+            "classNames": "mui-col-md-3",
+            "ui:placeholder": "Select Purpose*"
+          },
+          "ui:order": [
+            "purpose"
+          ]
+        }
+      }
+    }
+  }
+  
+  
+  
+  
+  
+  })
+  }}
+  )
