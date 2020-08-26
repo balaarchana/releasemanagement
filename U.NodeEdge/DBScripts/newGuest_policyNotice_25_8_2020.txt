@@ -1,4 +1,5 @@
 //For sending the Email regarding the privacy policy to New Guests
+// DB : cs_****_user
 
 db.getCollection('u_nodeedge_notification_config').update({},{$set:{
             "notificationEvents.NewGuest_PolicyNotice" : {
