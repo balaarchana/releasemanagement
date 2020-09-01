@@ -1,0 +1,29 @@
+//schema change 1st
+db.getCollection('product_config').update({},{$set:{"schema.offline_form_hotel_booking.properties.hotel.properties.supplierTax":{
+    "domainList" : {
+        "no" : "No",
+        "yes" : "Yes"
+    },
+    "type" : "string",
+    "title" : "Supplier Tax *"
+}}})
+
+//2nd
+db.getCollection('product_config').update({},{$push:{"schema.offline_form_hotel_booking.properties.hotel.required":
+   "supplierTax"
+}})
+
+
+
+
+//uischema 1st
+db.getCollection('product_config').update({},{$set:{"uiSchema.offline_form_hotel_booking.hotel.supplierTax":
+{
+    "ui:widget" : "SelectWidget",
+    "classNames" : "mui-col-md-3"
+}}})
+
+//2nd
+db.getCollection('product_config').update({},{$push:{"uiSchema.offline_form_hotel_booking.hotel.ui:order":
+   "supplierTax"
+}})
