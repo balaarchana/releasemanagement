@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8"></meta>
+<title>Invoice Voucher</title>
+<style type="text/css">
+th {
+	font-size: 14px;
+	//background-color: #236AB9;
+	text-align: left;
+	font-family: Arial;
+	border-bottom: 1px solid #ECECEC;
+	color: #03A9F4;
+}
+
+.orgName {
+	font-size: 14px;
+	font-family: Arial;
+	color: #484364;
+	font-weight: bold;
+	border:none;
+	padding: 5px 3px 5px 0px;
+}
+
+.address{
+	font-size: 12px;
+	font-family: Arial;
+	color: #92969f;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 12px;
+	//border: 1px solid black;
+	border: none;
+}
+
+td {
+	border-bottom: 1px solid #ECECEC;
+	color: #484364;
+	font-weight: normal; 
+	font-size: 12px; 
+	top: 15px;
+	font-family: Arial;
+}
+
+.fareTableRow {
+	height: 25px;
+}
+
+p {
+	margin: 0;
+	font-size: 12px;
+	font-family: Arial;
+	color: #484364;
+}
+</style>
+</head>
+
+<body>
+	<!-- whole frame -->
+	<div
+		style="width: 680px; height: 832px; margin: auto; background-color: #fff">
+		<br/>
+		
+		<!-- top bar -->
+		<div style="width: 100%; height: 10%">
+			<!-- top left -->
+			<div
+				style="width: 30%; height: 100%; display: inline-block; text-align: left; position: relative; float: left;">
+				<span
+					style="position: absolute; bottom: 5px; left: 0; margin-left: 24px;">
+					#if($voucher.has('supplierEntityLogoPath'))
+						<img src="$voucher.getString("supplierEntityLogoPath")" width="100px" height="45px" alt="no image"></img>
+					#else
+						<img src="https://4ctnedevblob.blob.core.windows.net/1001/kkgxg.jpg" width="100px" height="45px" alt="logo"></img>
+					#end
+				</span>
+			</div>
+			<!-- top middle -->
+			<!--<div
+				style="width: 35%; height: 100%; display: inline-block; position: relative;">
+				<span
+					style="margin-top: 5px; width: 95%; position: absolute; bottom: 0; left: 0; text-align:right;">
+					<p style="margin-top: 5px;" class="address">Phone : +91- 90 24565444</p>
+					<p style="margin-top: 5px;" class="address">GSTIN: $voucher.getString('supplierEntityGSTIN')</p>
+				</span>
+			</div>-->
+			<!-- top right -->
+			<div
+				style="width: 35%; height: 100%; float: right; align:right; display: inline-block; position: relative;">
+				<span
+					style="margin-top: 5px; width: 95%; position: absolute; bottom: 0; left: 0; margin-right: 54px; text-align:right;">
+					<p class="orgName">$voucher.getString('supplierEntityName')</p>
+					#foreach( $address in $voucher.getJSONArray("supplierEntityAddressLines") )
+					<p class="address">$address</p>
+					#end
+					<p class="address">$voucher.getString('supplierEntityCity')</p>
+					<p style="margin-top: 5px;" class="address">GSTIN: $voucher.getString('supplierEntityGSTIN')</p>
+				</span>
+			</div>
+		</div>
+
+		<br/>
+
+
+		<div style="width: 100%; height: 20%; background-color:  #f8f8fb;">
+			<!-- Biller details -->
+			<div
+				style="width: 45%; height: 100%; border: 0px solid gray; display: inline-block; text-align: left; position: relative; float: left;">
+				<span
+					style="position: absolute; left: 0;">
+					<table style="margin-top: 15px; margin-left: 25px;border:none;">
+						<col width="500"></col>
+						<tr>
+							<th style="border:none;text-align:left;font-weight:normal;color:#2f4da1;font-size:12px;">BILLED TO:</th>
+						</tr>
+						<tr>
+							<td class="orgName">$voucher.getString('billingEntityName')</td>
+						</tr>
+						#foreach( $address in $voucher.getJSONArray('billingEntityAddressLines') )
+						<tr>
+							<td style="border:none;" class="address">$address</td>
+						</tr>
+						#end
+						<tr>
+							<td style="border:none;" class="address">$voucher.getString('billingEntityCity')</td>
+						</tr>
+						<tr>
+							<td  style="border:none;" class="address">GSTIN: $voucher.getString('billingEntityGSTIN')</td>
+						</tr>
+						<tr>
+							<td style="border:none;" class="address">$voucher.getString('placeOfSupply')</td>
+						</tr>
+					</table>
+				</span>
+			</div>
+			
+			<!-- Invoice details -->
+			<div
+				style="width: 55%; height: 100%; border: 0px solid gray; float: right; display: inline-block; position: relative;">
+				<span
+					style="position: absolute;  margin-right: 5px;">
+					<table style="margin-top: 5px; margin-left: 5px;border:none;border-collapse:separate; border-spacing:5px">
+					<col width="300"></col><col width="400"></col>
+						<tr>
+							<th	style="border:none;text-align:left;"></th>
+							<th	style="border:none;text-align:right; margin-right: 55px; font-size:20px; font-weight:normal; color:#2f4da1;">Invoice</th>
+						</tr>
+						<tr>
+							<td	style="border:none;"> </td>
+							<td	style="border:none;"></td>
+						</tr>
+						<tr>
+							<td	style="border:none;background-color: white;padding: 6px;text-align:right;"><span style="color: #92969f;font-size: 12px;font-family: Arial;">HSN Code: </span><span style="color: #484364;font-size: 12px;font-family: Arial;">$voucher.getString('hsnCode')</span></td>
+							<td	style="border:none;background-color: white;padding: 6px;text-align:right;"><span style="color: #92969f;font-size: 12px;font-family: Arial;">Invoice No: </span><span style="color: #484364;font-size: 12px;font-family: Arial;">$voucher.getString('invoiceNumberStr')</span></td>
+						</tr>
+						<tr>
+							<td	style="border:none; "> </td>
+							<td	style="border:none;"></td>
+						</tr>
+						<tr>
+							<td	style="border:none;background-color: white;padding: 6px;text-align:right;"><span style="color: #92969f;font-size: 12px;font-family: Arial;">HSN Product: </span><span style="color: #484364;font-size: 12px;font-family: Arial;">$voucher.getString('hsnProduct').toUpperCase()</span></td>
+							<td	style="border:none;background-color: white;padding: 6px;text-align:right;"><span style="color: #92969f;font-size: 12px;font-family: Arial;">Invoice Date: </span><span style="color: #484364;font-size: 12px;font-family: Arial;">$voucher.getString('invoiceDate')</span></td>
+						</tr>
+					</table>
+				</span>
+			</div>
+		</div>
+
+		<br/>
+
+		<div>
+		<!-- Fare split up details -->
+			<table style="margin-left: auto; margin-right:auto; width: 90%;border:none;border-collapse:collapse; padding:2px;border-spacing:15px;">
+				<tr class="fareTableRow">
+					<th style="width:30%;color:#2f4da1;font-weight:normal;padding-left:15px;">ITEM DESCRIPTION</th>
+					<th style="width:45%;text-align:center;color:#2f4da1;font-weight:normal;">PERCENTAGE</th>
+					<th style="width:25%;text-align:right;color:#2f4da1;font-weight:normal;padding-right:15px;">AMOUNT (in INR)</th>
+				</tr>
+				#set($hotelTotalPricing = $voucher.getJSONObject('hotelTotalPricing'))
+				<tr class="fareTableRow">
+					<td style="font-size: 14px;padding-left:15px;">Base Fare</td>
+					<td style="text-align:center;font-size: 14px;"></td>
+					<td style="text-align:right;font-size: 14px;padding-right:15px;">$hotelTotalPricing.getString('baseRate')</td>
+				</tr>
+				<tr class="fareTableRow">
+					<td style="font-size: 14px;padding-left:15px;"></td>
+					<td style="text-align:center;font-size: 14px;"></td>
+					<td style="text-align:right;font-size: 14px;padding-right:15px;"></td>
+				</tr>
+				#set($i = 1)
+				#foreach( $split in $hotelTotalPricing.getJSONObject('totalTax').getJSONArray('splitUp'))
+				#if($i == 1)
+				<tr class="fareTableRow">
+					<td style="font-size: 14px;padding-left:15px;font-weight:bold;border-bottom:none;">Tax on Fare</td>
+					<td style="font-size: 14px;padding-left:15px;border-bottom:none;"></td>
+					<td style="font-size: 14px;padding-left:15px;border-bottom:none;"></td>
+				</tr>
+				#end
+				#set($i = 2)
+				<tr class="fareTableRow">
+					#if($split.has('fareDisplayName'))
+					<td style="font-size: 14px;padding-left:15px;">$split.getString('fareDisplayName')</td>
+					#else
+					<td style="font-size: 14px;padding-left:15px;">$split.getString('fareName')</td>
+					#end
+					#if($split.has('taxPerc'))
+					<td style="text-align:center;font-size: 14px;">$split.get('taxPerc')%</td>
+					#else
+					<td></td>
+					#end
+					<td style="text-align:right;font-size: 14px;padding-right:15px;">$split.getString('amount')</td>
+				</tr>
+				#end
+				<tr class="fareTableRow">
+					<td style="font-size: 14px;padding-left:15px;"></td>
+					<td style="text-align:center;font-size: 14px;"></td>
+					<td style="text-align:right;font-size: 14px;padding-right:15px;"></td>
+				</tr>
+				#set($i = 1)
+				#foreach( $split in $hotelTotalPricing.getJSONObject('totalOtherCharges').getJSONArray('splitUp') )
+				#if($i == 1)
+				<tr class="fareTableRow">
+					<td style="font-size: 14px;padding-left:15px;font-weight:bold;border-bottom:none;">Other Charges</td>
+					<td style="font-size: 14px;padding-left:15px;border-bottom:none;"></td>
+					<td style="font-size: 14px;padding-left:15px;border-bottom:none;"></td>
+				</tr>
+				#end
+				<tr class="fareTableRow">
+					#if($split.has('fareDisplayName'))
+					<td style="font-size: 14px;padding-left:15px;">$split.getString('fareDisplayName')</td>
+					#else
+					<td style="font-size: 14px;padding-left:15px;">$split.getString('fareName')</td>
+					#end
+					#if($split.has('taxPerc'))
+					<td style="text-align:center;font-size: 14px;">$split.get('taxPerc')%</td>
+					#else
+					<td></td>
+					#end
+					<td style="text-align:right;font-size: 14px;padding-right:15px;">$split.getString('amount')</td>
+					#set($i = 2)
+				</tr>
+				#end
+				<tr class="fareTableRow">
+					<td style="font-size: 14px;padding-left:15px;"></td>
+					<td style="text-align:center;font-size: 14px;"></td>
+					<td style="text-align:right;font-size: 14px;padding-right:15px;"></td>
+				</tr>
+				#set($i = 1)
+				#foreach( $split in $hotelTotalPricing.getJSONObject('totalTaxOnOtherCharges').getJSONArray('splitUp') )
+				#if($i == 1)
+				<tr class="fareTableRow">
+					<td style="font-size: 14px;font-weight:bold;padding-left:15px;border-bottom:none;">Tax on Other Charges</td>
+					<td style="font-size: 14px;padding-left:15px;border-bottom:none;"></td>
+					<td style="font-size: 14px;padding-left:15px;border-bottom:none;"></td>
+				</tr>
+				#end
+				<tr class="fareTableRow">
+					#if($split.has('fareDisplayName'))
+					<td style="font-size: 14px;padding-left:15px;">$split.getString('fareDisplayName')</td>
+					#else
+					<td style="font-size: 14px;padding-left:15px;">$split.getString('fareName')</td>
+					#end
+					#if($split.has('taxPerc'))
+					<td style="text-align:center;font-size: 14px;">$split.get('taxPerc')%</td>
+					#else
+					<td></td>
+					#end
+					<td style="text-align:right;font-size: 14px;padding-right:15px;">$split.getString('amount')</td>
+					#set($i = 2)
+				</tr>
+				#end
+				<tr class="fareTableRow">
+					<td style="font-size: 14px;padding-left:15px;"></td>
+					<td style="text-align:center;font-size: 14px;"></td>
+					<td style="text-align:right;font-size: 14px;padding-right:15px;"></td>
+				</tr>
+				<tr class="fareTableRow">
+					#set($total = $hotelTotalPricing.getJSONObject('approximateTotal'))
+					<td style="font-size: 14px;padding-left:15px;font-weight:bold;color: #484364;border-bottom:none;">Total Invoice Amount</td>
+					<td style="text-align:right;font-size: 14px;color:#92969f;border-bottom:none;">$total.getString('amountNumberName')</td>
+					<td style="text-align:right;font-size: 16px;padding-right:15px;font-weight:bold;color:#24449c;border-bottom:none;">INR $total.getString('amountStr')</td>
+				</tr>
+			</table>
+		</div>
+		
+		<div style="width: 100%; height: 10%">
+			<!-- bottom left -->
+			<div
+				style="width: 70%; height: 100%; border: 0px solid gray; display: inline-block; text-align: left; position: relative; float: left;">
+				<span
+					style="position: absolute; bottom: 0; left: 0; margin-left: 25px;">
+					<p style="color:#2f4da1;font-weight:normal;margin-bottom:5px;">PAYMENT TERMS</p>
+					<p style="color: #003440;">$voucher.getString('paymentTerms')</p>
+				</span>
+			</div>
+			<!-- bottom right -->
+			<!--<div
+				style="width: 30%; height: 100%; border: 0px solid gray; float: right; display: inline-block; position: relative;">
+				<span
+					style="width:95%; position: absolute; bottom: 0; left: 0; margin-right: 15px;text-align:right;">
+					<p style="color:#2f4da1;font-weight:normal;">FOR TRAVEL AGENT NAME</p>
+					<p style="color: #003440;">$voucher.getString('supplierEntityName')</p>
+				</span>
+			</div> -->
+		</div>
+		
+		<div style="border: 0px solid black; height: 10%">
+			<div
+				style="width: 100%; border: 0px solid gray; float: left; display: inline-block; margin-top: 20px; margin-left: 25px;">
+				<div style="width: 100%">
+					<p
+						style="margin-top: 10px; font-weight: normal; margin-top: 20px; color: #2f4da1;margin-bottom:5px;">FOR $voucher.getString('supplierEntityName').toUpperCase()</p>
+					<p
+						style="margin-top: 10px; font-weight: normal; margin-top: 20px; color: #2f4da1;">DIGITAL SIGNATURE</p>
+
+				</div>
+			</div>
+		</div>
+
+		<div style="width:100%;height:10%;margin:auto;text-align: center;position: relative;">
+            <span style="position: absolute;bottom: 0;left:150px; font-family: Arial;font-size:10px; color: #92969f;margin:top:30px;">Invoice is generated from way2go. Copyright © 2020 Wipro Limited. All rights reserved</span>
+        </div>
+	</div>
+</body>
+
+</html>
