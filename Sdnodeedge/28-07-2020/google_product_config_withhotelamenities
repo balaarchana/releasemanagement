@@ -1,0 +1,362 @@
+//do the below changes for google org in cs_*_product collection
+db.getCollection('product_config').update({},{$set:{"schema.offline_form_hotel_booking":{
+    "type" : "object",
+            "properties" : {
+                "hotel" : {
+                    "type" : "object",
+                    "title" : "",
+                    "properties" : {
+                        "purchaseId" : {
+                            "type" : "string",
+                            "title" : "Purchase Id"
+                        },
+                        "cancellationDueDate" : {
+                            "type" : "string",
+                            "title" : "Cancellation Due Date *",
+                            "fieldType" : "common"
+                        },
+                        "barRateAmount" : {
+                            "type" : "string",
+                            "title" : "Bar Rate"
+                        },
+                        "checkInDate" : {
+                            "type" : "string",
+                            "title" : "Check in Date *",
+                            "fieldType" : "common"
+                        },
+                        "rateUsed" : {
+                            "type" : "string",
+                            "title" : "Rate Used *"
+                        },
+                        "checkOutDate" : {
+                            "type" : "string",
+                            "title" : "Check out Date *",
+                            "fieldType" : "common"
+                        },
+                        "roomCancellationPolicy" : {
+                            "type" : "string",
+                            "title" : "Cancellation Policy *"
+                        },
+                        "amountAndCurrency" : {
+                            "type" : "string",
+                            "title" : "Total Rate *"
+                        },
+                        "propertyType" : {
+                            "domainList" : {
+                                "Contracted Hotels" : "Contracted Hotels",
+                                "Rented GH" : "Rented Guest House",
+                                "Flexi / Bulk Buy" : "Flexi / Bulk Buy",
+                                "Non Contracted Hotels" : "Non Contracted Hotels",
+                                "Company GH" : "Company Guest House"
+                            },
+                            "type" : "string",
+                            "title" : "Property Type *"
+                        },
+                        "contactNumber" : {
+                            "type" : "string",
+                            "title" : "Hotel Contact Number"
+                        },
+                        "disclaimer" : {
+                            "domainList" : {
+                                "no" : "No",
+                                "yes" : "Yes"
+                            },
+                            "type" : "string",
+                            "title" : "Tax Inclusion *"
+                        },
+                        "comments" : {
+                            "type" : "string",
+                            "title" : "Comments"
+                        },
+                        "hotelAmenities" : {
+                            "domainList" : {
+                                "wifi" : "WiFi",
+                                "lunch" : "Lunch",
+                                "breakfast" : "BreakFast",
+                                "dinner" : "Dinner",
+                                "parking": "Parking"
+                            },
+                            "type" : "string",
+                            "title" : "Amenities"
+                        },
+                        "address3" : {
+                            "type" : "string",
+                            "title" : "Address 3"
+                        },
+                        "address2" : {
+                            "type" : "string",
+                            "title" : "Address 2"
+                        },
+                        "address1" : {
+                            "type" : "string",
+                            "title" : "Address 1 *"
+                        },
+                        "checkInTime" : {
+                            "type" : "string",
+                            "title" : "Check in Time (in 24 hrs)"
+                        },
+                        "taxPerc" : {
+                            "type" : "string",
+                            "title" : "Tax % *"
+                        },
+                        "chargesPaidBy" : {
+                            "domainList" : {
+                                "bill_to_company" : "Bill to Company",
+                                "direct_payment" : "Direct Payment"
+                            },
+                            "type" : "string",
+                            "title" : "Payment Mode *"
+                        },
+                        "hotelName" : {
+                            "type" : "string",
+                            "title" : "Property Name *"
+                        },
+                        "baseRate" : {
+                            "type" : "string",
+                            "title" : "Base Rate *"
+                        },
+                        "confirmationNumber" : {
+                            "type" : "string",
+                            "title" : "Confirmation Number *"
+                        },
+                        "commissionPercentage" : {
+                            "type" : "string",
+                            "title" : "Commission Percentage"
+                        },
+                        "checkOutTime" : {
+                            "type" : "string",
+                            "title" : "Check out Time (in 24 hrs)"
+                        },
+                        "pnr" : {
+                            "type" : "string",
+                            "title" : "PNR *"
+                        },
+                        "serviceProvider" : {
+                            "domainList" : {
+                                "egencia" : "Egencia",
+                                "booking_com" : "Booking.com"
+                              
+                            },
+                          "type" : "string",
+                          "title" : "Service Provider"
+                        },
+                        "ratePerNight" : {
+                            "type" : "string",
+                            "title" : "Rate Per Night *"
+                        },
+                        "bookingDate" : {
+                            "type" : "string",
+                            "title" : "Booking Date *",
+                            "fieldType" : "common"
+                        },
+                        "onOffRadio" : {
+                            "type" : "string",
+                            "title" : "Test",
+                            "fieldType" : "common"
+                        },
+                        "specialPrefs" : {
+                            "type" : "string",
+                            "title" : "Special Request"
+                        },
+                        "totalTaxAmount" : {
+                            "type" : "string",
+                            "title" : "Tax Amount *",
+                            "fieldType" : "common"
+                        },
+                        "currencyCode" : {
+                            "domainList" : {
+                                "AED" : "AED",
+                                "ALL" : "ALL",
+                                "JPY" : "JPY",
+                                "EUR" : "EUR",
+                                "GBP" : "GBP",
+                                "USD" : "USD",
+                                "INR" : "INR",
+                                "CNY" : "CNY",
+                                "DZD" : "DZD"
+                            },
+                            "type" : "string",
+                            "title" : "Currency *"
+                        }
+                    },
+                    "required" : [ 
+                        "propertyType", 
+                        "hotelName", 
+                        "address1", 
+                        "checkInDate", 
+                        "checkOutDate", 
+                        "rateUsed", 
+                        "currencyCode", 
+                        "ratePerNight", 
+                        "disclaimer", 
+                        "taxPerc", 
+                        "totalTaxAmount", 
+                        "bookingDate", 
+                        "confirmationNumber", 
+                        "pnr", 
+                        "chargesPaidBy", 
+                        "cancellationDueDate", 
+                        "roomCancellationPolicy"
+                    ]
+                }
+            }
+        }}})
+
+//second
+db.getCollection('product_config').update({},{$set:{"uiSchema.offline_form_hotel_booking":{
+ "hotel" : {
+                "purchaseId" : {
+                    "classNames" : "mui-col-md-3"
+                },
+                "cancellationDueDate" : {
+                    "ui:widget" : "DateWidget",
+                    "classNames" : "mui-col-md-3"
+                },
+                "ui:order" : [ 
+                    "onOffRadio", 
+                    "propertyType", 
+                    "hotelName", 
+                    "address1", 
+                    "address2", 
+                    "address3", 
+                    "checkInDate", 
+                    "checkOutDate", 
+                    "checkInTime", 
+                    "checkOutTime", 
+                    "rateUsed", 
+                    "barRateAmount", 
+                    "contactNumber", 
+                    "hotelAmenities", 
+                    "currencyCode", 
+                    "ratePerNight", 
+                    "disclaimer", 
+                    "taxPerc", 
+                    "totalTaxAmount", 
+                    "amountAndCurrency", 
+                    "baseRate", 
+                    "bookingDate", 
+                    "confirmationNumber", 
+                    "pnr", 
+                    "chargesPaidBy", 
+                    "commissionPercentage", 
+                    "comments", 
+                    "specialPrefs", 
+                    "serviceProvider", 
+                    "purchaseId", 
+                    "cancellationDueDate", 
+                    "roomCancellationPolicy"
+                ],
+                "barRateAmount" : {
+                    "classNames" : "mui-col-md-3"
+                },
+                "checkInDate" : {
+                    "ui:widget" : "DateWidget",
+                    "classNames" : "mui-col-md-3"
+                },
+                "rateUsed" : {
+                    "classNames" : "mui-col-md-3"
+                },
+                "checkOutDate" : {
+                    "ui:widget" : "DateWidget",
+                    "classNames" : "mui-col-md-3"
+                },
+                "roomCancellationPolicy" : {
+                    "ui:widget" : "RoomCancellationPolicyWidget",
+                    "classNames" : "mui-col-md-6"
+                },
+                "amountAndCurrency" : {
+                    "classNames" : "mui-col-md-3",
+                    "ui:disabled" : true
+                },
+                "propertyType" : {
+                    "ui:widget" : "SelectWidget",
+                    "classNames" : "mui-col-md-6"
+                },
+                "contactNumber" : {
+                    "phone" : {
+                        "classNames" : "mui-col-md-12 minHeight"
+                    },
+                    "classNames" : "mui-col-md-3"
+                },
+                "disclaimer" : {
+                    "ui:widget" : "SelectWidget",
+                    "classNames" : "mui-col-md-3"
+                },
+                "comments" : {
+                    "classNames" : "mui-col-md-6"
+                },
+                "hotelAmenities" : {
+                    "ui:widget" : "AmenitiesWidget",
+                    "classNames" : "mui-col-md-3"
+                },
+                "address3" : {
+                    "classNames" : "mui-col-md-4"
+                },
+                "address2" : {
+                    "classNames" : "mui-col-md-4"
+                },
+                "address1" : {
+                    "classNames" : "mui-col-md-4"
+                },
+                "checkInTime" : {
+                    "ui:widget" : "TimeWidget",
+                    "classNames" : "mui-col-md-3"
+                },
+                "taxPerc" : {
+                    "classNames" : "mui-col-md-3"
+                },
+                "chargesPaidBy" : {
+                    "ui:widget" : "SelectWidget",
+                    "classNames" : "mui-col-md-3"
+                },
+                "hotelName" : {
+                    "ui:widget" : "PropertyNameWidget",
+                    "classNames" : "mui-col-md-6"
+                },
+                "baseRate" : {
+                    "classNames" : "mui-col-md-3",
+                    "ui:disabled" : true
+                },
+                "confirmationNumber" : {
+                    "classNames" : "mui-col-md-3"
+                },
+                "commissionPercentage" : {
+                    "classNames" : "mui-col-md-3"
+                },
+                "checkOutTime" : {
+                    "ui:widget" : "TimeWidget",
+                    "classNames" : "mui-col-md-3"
+                },
+                "pnr" : {
+                    "classNames" : "mui-col-md-3"
+                },
+                "serviceProvider" : {
+                    "ui:widget" : "SelectWidget",
+                    "classNames" : "mui-col-md-3"
+                },
+                "ratePerNight" : {
+                    "classNames" : "mui-col-md-3"
+                },
+                "bookingDate" : {
+                    "ui:widget" : "DateWidget",
+                    "classNames" : "mui-col-md-3"
+               },
+                "onOffRadio" : {
+                    "ui:widget" : "OfflineCustomRadio",
+                    "classNames" : "mui-col-md-12"
+                },
+                "specialPrefs" : {
+                    "classNames" : "mui-col-md-6"
+                },
+                "totalTaxAmount" : {
+                    "classNames" : "mui-col-md-3"
+                },
+                "currencyCode" : {
+                    "ui:widget" : "SelectWidget",
+                    "classNames" : "mui-col-md-3"
+                }
+            },
+            "ui:order" : [ 
+                "hotel"
+            ]
+}}})

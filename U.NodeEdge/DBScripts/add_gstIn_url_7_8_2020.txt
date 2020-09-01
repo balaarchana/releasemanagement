@@ -1,0 +1,3 @@
+//do the below changes in platform_db collection
+
+db.getCollection('core_config_url').update({"type" : "url"},{$set:{"env_get_gstin_details" : "invoice.engine/invoice/config/getBillingEntity"}})

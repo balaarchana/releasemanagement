@@ -1,0 +1,13 @@
+use platform_db
+
+db.getCollection("platform_org_master").update({orgId:9022},{$set:{"AnalyticsDashboard" : [ 
+        {
+            "FeatureId" : 9011.0,
+                    "client_secret":"=9Jq7uMiTf/A.26cCvYCT[Kj0NRxff8n",
+            "clientId": "88e44062-3707-4052-95ee-a489529c83f3",
+                    "groupId": "6cda0d06-0bb5-4cb0-80bb-91a1ab39b377",
+                    "tenant_id":"258ac4e4-146a-411e-9dc8-79a9e12fd6da",
+            "reportId":"215cf2d4-28ee-4978-8ced-e17e9fd472f3"
+        }
+    ]
+}})

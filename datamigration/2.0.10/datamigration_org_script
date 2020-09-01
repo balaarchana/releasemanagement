@@ -1,0 +1,3 @@
+use cs_xxxx_product
+db.createCollection("org_migration_success")
+db.createCollection("org_migration_failure")
