@@ -1,6 +1,6 @@
 //do the below changes for invoice org in cs_*_product collection
 
-
+use cs_1xxx_product
 db.getCollection('workflow_config').update({},{$set:{"sd_workflow" : [
     {
         "mode" : [ 

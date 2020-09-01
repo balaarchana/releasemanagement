@@ -1,0 +1,270 @@
+use cs_1xxx_product
+db.getCollection('invoice_config').update({},{$set:{
+    "invoiceSequence" : "1",
+    "products" : [ 
+        {
+            "flight" : "Flight"
+        }, 
+        {
+            "hotel" : "Hotel"
+        }
+    ],
+    "roundOffMode" : [ 
+        {
+            "proper" : "Proper"
+        }, 
+        {
+            "upper" : "Upper"
+        }, 
+        {
+            "lower" : "Lower"
+        }, 
+        {
+            "noRoundOff" : "No RoundOff"
+        }
+    ],
+    "otherCharges" : [ 
+        {
+            "paymentGatewayCharge" : "Payment Gateway Fee",
+            "enabled" : true
+        }, 
+        {
+            "markupFee" : "Markup Fee",
+            "enabled" : true
+        }, 
+        {
+            "serviceFee" : "Transaction Fee/Service Fee",
+            "enabled" : true
+        }, 
+        {
+            "cancellationCharges" : "Cancellation Fee",
+            "enabled" : true
+        }
+    ],
+    "paymentGatewayName" : [ 
+        {
+            "payU" : "PayU"
+        }, 
+        {
+            "paytm" : "Paytm"
+        }
+    ],
+    "paymentMode" : [ 
+        {
+            "creditCard" : "Credit Card"
+        }, 
+        {
+            "debitCard" : "Debit Card"
+        }
+    ],
+    "paymentTerms" : "All amounts are in rupees. Please make the payment within 07 days from the issue of date of this invoice.",
+    "flightConfig" : {
+        "mode" : [ 
+            {
+                "taxablePercentageEnabled" : true,
+                "commissionableFare" : "Commissionable Fare"
+            }, 
+            {
+                "onCommission" : "On Commission",
+                "taxablePercentageEnabled" : false
+            }, 
+            {
+                "taxablePercentageEnabled" : false,
+                "otherCharges" : "Other Charges"
+            }
+        ],
+        "otherChargesCategories" : [ 
+            {
+                "subProducts" : "Journey",
+                "enabled" : true
+            }, 
+            {
+                "cabinClass" : "Class",
+                "enabled" : true
+            }, 
+            {
+                "fareSlab" : "Fare Slab",
+                "enabled" : true
+            }, 
+            {
+                "airlines" : "Airlines",
+                "enabled" : false
+            }, 
+            {
+                "sector" : "Sector",
+                "enabled" : false
+            }, 
+            {
+                "passengerType" : "Passenger Type",
+                "enabled" : false
+            }
+        ],
+        "subProducts" : [ 
+            {
+                "domestic" : "Domestic"
+            }, 
+            {
+                "international" : "International"
+            }
+        ],
+        "cabinClass" : [ 
+            {
+                "firstClass" : "First Class"
+            }, 
+            {
+                "businessClass" : "Business Class"
+            }, 
+            {
+                "economyClass" : "Economy Class"
+            }
+        ],
+        "product" : {
+            "flight" : "Flight"
+        },
+        "passengerType" : [ 
+            {
+                "adult" : "Adult"
+            }, 
+            {
+                "child" : "Child"
+            }, 
+            {
+                "infant" : "Infant"
+            }
+        ],
+        "fareComponents" : [ 
+            {
+                "baseFare" : "Base Fare"
+            }, 
+            {
+                "commissionTax" : "Commission Tax"
+            }, 
+            {
+                "nonCommissionTax" : "Non-Commission Tax"
+            }, 
+            {
+                "totalFare" : "Total Fare"
+            }
+        ],
+        "amountTypes" : [ 
+            {
+                "percentage" : "Percentage",
+                "enabled" : true
+            }, 
+            {
+                "value" : "Value",
+                "enabled" : true
+            }
+        ],
+        "invoiceDate" : [ 
+            {
+                "bookingDate" : "Booking Date"
+            }, 
+            {
+                "travelDate" : "Travel Date"
+            }
+        ]
+    },
+    "hotelConfig" : {
+        "mode" : [ 
+            {
+                "taxablePercentageEnabled" : false,
+                "p2p" : "P2P"
+            }, 
+            {
+                "taxablePercentageEnabled" : false,
+                "otherCharges" : "P2A"
+            }
+        ],
+        "otherChargesCategories" : [ 
+            {
+                "cities" : "City",
+                "enabled" : true
+            }, 
+            {
+                "propertyType" : "Property Type",
+                "enabled" : false
+            }, 
+            {
+                "roomType" : "Room Type",
+                "enabled" : false
+            }, 
+            {
+                "starRating" : "Star Rating",
+                "enabled" : false
+            }, 
+            {
+                "roomCharges" : "Room Charges",
+                "enabled" : true
+            }
+        ],
+        "subProducts" : [],
+        "product" : {
+            "hotel" : "Hotel"
+        },
+        "fareComponents" : [ 
+            {
+                "hotelFare" : "Hotel Total Fare"
+            }, 
+            {
+                "roomFarePerNight" : "Base Fare"
+            }
+        ],
+        "propertyType" : [ 
+            {
+                "hotels" : "Hotels"
+            }, 
+            {
+                "resorts" : "Resorts"
+            }
+        ],
+        "amountTypes" : [ 
+            {
+                "percentage" : "Percentage",
+                "enabled" : true
+            }, 
+            {
+                "value" : "Value",
+                "enabled" : true
+            }
+        ],
+        "invoiceDate" : [ 
+            {
+                "checkinDate" : "Checkin Date"
+            }, 
+            {
+                "travelDate" : "Travel Date"
+            }
+        ],
+        "starRating" : [ 
+            {
+                "1" : "1 star"
+            }, 
+            {
+                "2" : "2 star"
+            }, 
+            {
+                "3" : "3 star"
+            }, 
+            {
+                "4" : "4 star"
+            }, 
+            {
+                "5" : "5 star"
+            }
+        ],
+        "roomType" : [ 
+            {
+                "premium" : "Premium"
+            }, 
+            {
+                "presidentialSuite" : "Presidential Suite"
+            }
+        ]
+    },
+    "createdBy" : "NA",
+    "updatedOn" : "2020-08-31T11:42:42.853Z",
+    "updatedOn_DT_UTC" : "31-08-2020 11:42:42:852 UTC",
+    "updatedOn_DT_UTC_EPOCH" : NumberLong(1598874162853)
+}})
+
