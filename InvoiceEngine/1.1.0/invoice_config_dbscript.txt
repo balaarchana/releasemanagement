@@ -173,7 +173,7 @@ db.getCollection('invoice_config').update({},{$set:{
             }, 
             {
                 "taxablePercentageEnabled" : false,
-                "otherCharges" : "P2A"
+                "otherCharges" : "Other Charges"
             }
         ],
         "otherChargesCategories" : [ 
