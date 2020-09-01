@@ -1,0 +1,42 @@
+//do the below changes for invoice org in cs_*_product collection
+
+
+db.getCollection('workflow_config').update({},{$set:{"sd_workflow" : [
+    {
+        "mode" : [ 
+            "online", 
+            "offline"
+        ],
+        "name" : "hotel_cancel",
+        "retrieve_pnr" : true
+    },
+    {
+        "mode" : [ 
+            "online", 
+            "offline"
+        ],
+        "name" : "flight_cancel",
+        "retrieve_pnr" : true
+    },
+    {
+        "mode" : [ 
+            "offline"
+        ],
+        "name" : "hotel_book"
+    },
+    {
+        "name" : "gst_hotel",
+        "mode" : [ 
+            "online", 
+            "offline"
+        ]
+    },
+    {
+        "name" : "gst_flight",
+        "mode" : [ 
+            "online", 
+            "offline"
+        ]
+    }
+]}})
+
