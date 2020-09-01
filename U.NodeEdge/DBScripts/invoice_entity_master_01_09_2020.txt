@@ -1,0 +1,26 @@
+
+//Create new Collection invoice_entity_master
+db.createCollection('invoice_entity_master');
+
+//Insert billing Entity record for the invoice_entity_master collection
+db.getCollection('invoice_entity_master').insert(
+{
+    "pincode" : "560068",
+    "city" : "Bengaluru",
+    "entityType" : "billingEntity",
+    "createdOn_DT_UTC_EPOCH" : NumberLong(1593595079390),
+    "gstin" : "fffffffffffffff",
+    "createdOn" : "2020-07-01T09:17:59.390Z",
+    "masterId" : "en_c742dc3b-6fdf-4df0-b784-ee830e465f12",
+    "createdBy" : "10740000122",
+    "name" : "ashedit",
+    "logoFilePath" : "https://pprgstorageaccount.blob.core.windows.net/1074/invoice.engine/logos/Logo_1593595070635.jpg",
+    "addressLine1" : "hosapalya mainroad",
+    "addressLine2" : "line ",
+    "state" : "Karnataka",
+    "createdOn_DT_UTC" : "01-07-2020 09:17:59:390 UTC",
+    "updatedOn" : "2020-07-01T09:19:06.255Z",
+    "updatedOn_DT_UTC" : "01-07-2020 09:19:06:255 UTC",
+    "updatedOn_DT_UTC_EPOCH" : NumberLong(1593595146255)
+}
+);
