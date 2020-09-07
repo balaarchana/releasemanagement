@@ -1,3 +1,5 @@
+//check if schema.offline_form_hotel_booking data is there or not. if its not there, copy from 1003 and paste it and execute below script.
+
 //schema change 1st
 db.getCollection('product_config').update({},{$set:{"schema.offline_form_hotel_booking.properties.hotel.properties.supplierTax":{
     "domainList" : {
@@ -15,7 +17,7 @@ db.getCollection('product_config').update({},{$push:{"schema.offline_form_hotel_
 
 
 
-
+//check if uiSchema.offline_form_hotel_booking data is there or not. if its not there, copy from 1003 and paste it and execute below script.
 //uischema 1st
 db.getCollection('product_config').update({},{$set:{"uiSchema.offline_form_hotel_booking.hotel.supplierTax":
 {
