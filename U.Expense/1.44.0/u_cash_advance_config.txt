@@ -1,0 +1,1215 @@
+use cs_1xxx_user
+db.createCollection('u_cash_advance_config')
+db.getCollection('u_cash_advance_config').update({},{$set:{
+"allowedCurrencyCodes" : [ 
+        "GBP", 
+        "USD", 
+        "EUR"
+    ],
+    "allowOnlyDomesticCurrency" : false,
+    "cashAdvanceSequence" : {
+        "value" : "00000000"
+    },
+    "paymentModes" : [ 
+        {
+            "modeName" : "cash",
+            "modeDisplayName" : "Cash",
+            "enabled" : true
+        }, 
+        {
+            "modeName" : "forexCard",
+            "modeDisplayName" : "Forex Card",
+            "enabled" : true
+        }, 
+        {
+            "modeName" : "prepaidTravelCard",
+            "modeDisplayName" : "Prepaid Travel Card",
+            "enabled" : false
+        }
+    ],
+    "formFields" : {
+        "type" : {
+            "fieldLabel" : "Cash Advance Type",
+            "mandatory" : true,
+            "enabled" : true,
+            "widget" : "radio",
+            "values" : {
+                "travel" : "Travel",
+                "nontravel" : "Non-Travel"
+            },
+            "hiddenFor" : {
+                "user" : [],
+                "approver" : [ 
+                    "draft", 
+                    "returned"
+                ],
+                "processor" : [ 
+                    "draft", 
+                    "returned", 
+                    "submitted"
+                ],
+                "admin" : [ 
+                    "draft", 
+                    "returned", 
+                    "submitted", 
+                    "approved"
+                ]
+            },
+            "readOnlyFor" : {
+                "user" : [ 
+                    "submitted", 
+                    "approved", 
+                    "processed", 
+                    "issued", 
+                    "closed", 
+                    "deleted"
+                ],
+                "approver" : [ 
+                    "submitted", 
+                    "approved", 
+                    "processed", 
+                    "issued", 
+                    "closed"
+                ],
+                "processor" : [ 
+                    "approved", 
+                    "processed", 
+                    "issued", 
+                    "closed"
+                ],
+                "admin" : [ 
+                    "processed", 
+                    "issued", 
+                    "closed"
+                ]
+            }
+        },
+        "cashAdvanceName" : {
+            "fieldLabel" : "Request Name",
+            "mandatory" : true,
+            "enabled" : true,
+            "hiddenFor" : {
+                "user" : [],
+                "approver" : [ 
+                    "draft", 
+                    "returned"
+                ],
+                "processor" : [ 
+                    "draft", 
+                    "returned", 
+                    "submitted"
+                ],
+                "admin" : [ 
+                    "draft", 
+                    "returned", 
+                    "submitted", 
+                    "approved"
+                ]
+            },
+            "readOnlyFor" : {
+                "user" : [ 
+                    "submitted", 
+                    "approved", 
+                    "processed", 
+                    "issued", 
+                    "closed", 
+                    "deleted"
+                ],
+                "approver" : [ 
+                    "submitted", 
+                    "approved", 
+                    "processed", 
+                    "issued", 
+                    "closed"
+                ],
+                "processor" : [ 
+                    "approved", 
+                    "processed", 
+                    "issued", 
+                    "closed"
+                ],
+                "admin" : [ 
+                    "processed", 
+                    "issued", 
+                    "closed"
+                ]
+            }
+        },
+        "date" : {
+            "fieldLabel" : "Date",
+            "mandatory" : true,
+            "enabled" : true,
+            "hiddenFor" : {
+                "user" : [],
+                "approver" : [ 
+                    "draft", 
+                    "returned"
+                ],
+                "processor" : [ 
+                    "draft", 
+                    "returned", 
+                    "submitted"
+                ],
+                "admin" : [ 
+                    "draft", 
+                    "returned", 
+                    "submitted", 
+                    "approved"
+                ]
+            },
+            "readOnlyFor" : {
+                "user" : [ 
+                    "submitted", 
+                    "approved", 
+                    "processed", 
+                    "issued", 
+                    "closed", 
+                    "deleted"
+                ],
+                "approver" : [ 
+                    "submitted", 
+                    "approved", 
+                    "processed", 
+                    "issued", 
+                    "closed"
+                ],
+                "processor" : [ 
+                    "approved", 
+                    "processed", 
+                    "issued", 
+                    "closed"
+                ],
+                "admin" : [ 
+                    "processed", 
+                    "issued", 
+                    "closed"
+                ]
+            }
+        },
+        "businessPurpose" : {
+            "fieldLabel" : "Business Purpose",
+            "mandatory" : true,
+            "enabled" : true,
+            "hiddenFor" : {
+                "user" : [],
+                "approver" : [ 
+                    "draft", 
+                    "returned"
+                ],
+                "processor" : [ 
+                    "draft", 
+                    "returned", 
+                    "submitted"
+                ],
+                "admin" : [ 
+                    "draft", 
+                    "returned", 
+                    "submitted", 
+                    "approved"
+                ]
+            },
+            "readOnlyFor" : {
+                "user" : [ 
+                    "submitted", 
+                    "approved", 
+                    "processed", 
+                    "issued", 
+                    "closed", 
+                    "deleted"
+                ],
+                "approver" : [ 
+                    "submitted", 
+                    "approved", 
+                    "processed", 
+                    "issued", 
+                    "closed"
+                ],
+                "processor" : [ 
+                    "approved", 
+                    "processed", 
+                    "issued", 
+                    "closed"
+                ],
+                "admin" : [ 
+                    "processed", 
+                    "issued", 
+                    "closed"
+                ]
+            }
+        },
+        "comments" : {
+            "fieldLabel" : "Comments",
+            "mandatory" : false,
+            "enabled" : true,
+            "hiddenFor" : {
+                "user" : [],
+                "approver" : [ 
+                    "draft", 
+                    "returned"
+                ],
+                "processor" : [ 
+                    "draft", 
+                    "returned", 
+                    "submitted"
+                ],
+                "admin" : [ 
+                    "draft", 
+                    "returned", 
+                    "submitted", 
+                    "approved"
+                ]
+            },
+            "readOnlyFor" : {
+                "user" : [ 
+                    "submitted", 
+                    "approved", 
+                    "processed", 
+                    "issued", 
+                    "closed", 
+                    "deleted"
+                ],
+                "approver" : [ 
+                    "submitted", 
+                    "approved", 
+                    "processed", 
+                    "issued", 
+                    "closed"
+                ],
+                "processor" : [ 
+                    "approved", 
+                    "processed", 
+                    "issued", 
+                    "closed"
+                ],
+                "admin" : [ 
+                    "processed", 
+                    "issued", 
+                    "closed"
+                ]
+            }
+        },
+        "tripNumber" : {
+            "fieldLabel" : "Trip Number",
+            "mandatory" : true,
+            "enabled" : true,
+            "hiddenFor" : {
+                "user" : [],
+                "approver" : [ 
+                    "draft", 
+                    "returned"
+                ],
+                "processor" : [ 
+                    "draft", 
+                    "returned", 
+                    "submitted"
+                ],
+                "admin" : [ 
+                    "draft", 
+                    "returned", 
+                    "submitted", 
+                    "approved"
+                ]
+            },
+            "readOnlyFor" : {
+                "user" : [ 
+                    "submitted", 
+                    "approved", 
+                    "processed", 
+                    "issued", 
+                    "closed", 
+                    "deleted"
+                ],
+                "approver" : [ 
+                    "submitted", 
+                    "approved", 
+                    "processed", 
+                    "issued", 
+                    "closed"
+                ],
+                "processor" : [ 
+                    "approved", 
+                    "processed", 
+                    "issued", 
+                    "closed"
+                ],
+                "admin" : [ 
+                    "processed", 
+                    "issued", 
+                    "closed"
+                ]
+            }
+        },
+        "customField1" : {
+            "fieldLabel" : "Custom Field 1",
+            "mandatory" : true,
+            "enabled" : true,
+            "widget" : "text",
+            "hiddenFor" : {
+                "user" : [],
+                "approver" : [ 
+                    "draft", 
+                    "returned"
+                ],
+                "processor" : [ 
+                    "draft", 
+                    "returned", 
+                    "submitted"
+                ],
+                "admin" : [ 
+                    "draft", 
+                    "returned", 
+                    "submitted", 
+                    "approved"
+                ]
+            },
+            "readOnlyFor" : {
+                "user" : [ 
+                    "submitted", 
+                    "approved", 
+                    "processed", 
+                    "issued", 
+                    "closed", 
+                    "deleted"
+                ],
+                "approver" : [ 
+                    "submitted", 
+                    "approved", 
+                    "processed", 
+                    "issued", 
+                    "closed"
+                ],
+                "processor" : [ 
+                    "approved", 
+                    "processed", 
+                    "issued", 
+                    "closed"
+                ],
+                "admin" : [ 
+                    "processed", 
+                    "issued", 
+                    "closed"
+                ]
+            }
+        },
+        "customField2" : {
+            "fieldLabel" : "Custom Field 2",
+            "mandatory" : true,
+            "enabled" : true,
+            "widget" : "select",
+            "values" : {
+                "travel" : "Testing1",
+                "nontravel" : "Testing2"
+            },
+            "hiddenFor" : {
+                "user" : [],
+                "approver" : [ 
+                    "draft", 
+                    "returned"
+                ],
+                "processor" : [ 
+                    "draft", 
+                    "returned", 
+                    "submitted"
+                ],
+                "admin" : [ 
+                    "draft", 
+                    "returned", 
+                    "submitted", 
+                    "approved"
+                ]
+            },
+            "readOnlyFor" : {
+                "user" : [ 
+                    "submitted", 
+                    "approved", 
+                    "processed", 
+                    "issued", 
+                    "closed", 
+                    "deleted"
+                ],
+                "approver" : [ 
+                    "submitted", 
+                    "approved", 
+                    "processed", 
+                    "issued", 
+                    "closed"
+                ],
+                "processor" : [ 
+                    "approved", 
+                    "processed", 
+                    "issued", 
+                    "closed"
+                ],
+                "admin" : [ 
+                    "processed", 
+                    "issued", 
+                    "closed"
+                ]
+            }
+        },
+        "customField3" : {
+            "fieldLabel" : "Custom Field 3",
+            "mandatory" : true,
+            "enabled" : true,
+            "widget" : "check",
+            "hiddenFor" : {
+                "user" : [],
+                "approver" : [ 
+                    "draft", 
+                    "returned"
+                ],
+                "processor" : [ 
+                    "draft", 
+                    "returned", 
+                    "submitted"
+                ],
+                "admin" : [ 
+                    "draft", 
+                    "returned", 
+                    "submitted", 
+                    "approved"
+                ]
+            },
+            "readOnlyFor" : {
+                "user" : [ 
+                    "submitted", 
+                    "approved", 
+                    "processed", 
+                    "issued", 
+                    "closed", 
+                    "deleted"
+                ],
+                "approver" : [ 
+                    "submitted", 
+                    "approved", 
+                    "processed", 
+                    "issued", 
+                    "closed"
+                ],
+                "processor" : [ 
+                    "approved", 
+                    "processed", 
+                    "issued", 
+                    "closed"
+                ],
+                "admin" : [ 
+                    "processed", 
+                    "issued", 
+                    "closed"
+                ]
+            }
+        }
+    },
+    "breakUpAllowed" : true,
+    "arrayFields" : {
+        "amount" : {
+            "fieldLabel" : "Amount",
+            "mandatory" : true,
+            "enabled" : true,
+            "hiddenFor" : {
+                "user" : [],
+                "approver" : [ 
+                    "draft", 
+                    "returned"
+                ],
+                "processor" : [ 
+                    "draft", 
+                    "returned", 
+                    "submitted"
+                ],
+                "admin" : [ 
+                    "draft", 
+                    "returned", 
+                    "submitted", 
+                    "approved"
+                ]
+            },
+            "readOnlyFor" : {
+                "user" : [ 
+                    "submitted", 
+                    "approved", 
+                    "processed", 
+                    "issued", 
+                    "closed", 
+                    "deleted"
+                ],
+                "approver" : [ 
+                    "submitted", 
+                    "approved", 
+                    "processed", 
+                    "issued", 
+                    "closed"
+                ],
+                "processor" : [ 
+                    "approved", 
+                    "processed", 
+                    "issued", 
+                    "closed"
+                ],
+                "admin" : [ 
+                    "processed", 
+                    "issued", 
+                    "closed"
+                ]
+            }
+        },
+        "currency" : {
+            "fieldLabel" : "Currency",
+            "mandatory" : true,
+            "enabled" : true,
+            "hiddenFor" : {
+                "user" : [],
+                "approver" : [ 
+                    "draft", 
+                    "returned"
+                ],
+                "processor" : [ 
+                    "draft", 
+                    "returned", 
+                    "submitted"
+                ],
+                "admin" : [ 
+                    "draft", 
+                    "returned", 
+                    "submitted", 
+                    "approved"
+                ]
+            },
+            "readOnlyFor" : {
+                "user" : [ 
+                    "submitted", 
+                    "approved", 
+                    "processed", 
+                    "issued", 
+                    "closed", 
+                    "deleted"
+                ],
+                "approver" : [ 
+                    "submitted", 
+                    "approved", 
+                    "processed", 
+                    "issued", 
+                    "closed"
+                ],
+                "processor" : [ 
+                    "approved", 
+                    "processed", 
+                    "issued", 
+                    "closed"
+                ],
+                "admin" : [ 
+                    "processed", 
+                    "issued", 
+                    "closed"
+                ]
+            }
+        },
+        "paymentMode" : {
+            "fieldLabel" : "Payment Mode",
+            "mandatory" : true,
+            "enabled" : true,
+            "hiddenFor" : {
+                "user" : [],
+                "approver" : [ 
+                    "draft", 
+                    "returned"
+                ],
+                "processor" : [ 
+                    "draft", 
+                    "returned", 
+                    "submitted"
+                ],
+                "admin" : [ 
+                    "draft", 
+                    "returned", 
+                    "submitted", 
+                    "approved"
+                ]
+            },
+            "readOnlyFor" : {
+                "user" : [ 
+                    "submitted", 
+                    "approved", 
+                    "processed", 
+                    "issued", 
+                    "closed", 
+                    "deleted"
+                ],
+                "approver" : [ 
+                    "submitted", 
+                    "approved", 
+                    "processed", 
+                    "issued", 
+                    "closed"
+                ],
+                "processor" : [ 
+                    "approved", 
+                    "processed", 
+                    "issued", 
+                    "closed"
+                ],
+                "admin" : [ 
+                    "processed", 
+                    "issued", 
+                    "closed"
+                ]
+            }
+        },
+        "description" : {
+            "fieldLabel" : "Description",
+            "mandatory" : false,
+            "enabled" : true,
+            "hiddenFor" : {
+                "user" : [],
+                "approver" : [ 
+                    "draft", 
+                    "returned"
+                ],
+                "processor" : [ 
+                    "draft", 
+                    "returned", 
+                    "submitted"
+                ],
+                "admin" : [ 
+                    "draft", 
+                    "returned", 
+                    "submitted", 
+                    "approved"
+                ]
+            },
+            "readOnlyFor" : {
+                "user" : [ 
+                    "submitted", 
+                    "approved", 
+                    "processed", 
+                    "issued", 
+                    "closed", 
+                    "deleted"
+                ],
+                "approver" : [ 
+                    "submitted", 
+                    "approved", 
+                    "processed", 
+                    "issued", 
+                    "closed"
+                ],
+                "processor" : [ 
+                    "approved", 
+                    "processed", 
+                    "issued", 
+                    "closed"
+                ],
+                "admin" : [ 
+                    "processed", 
+                    "issued", 
+                    "closed"
+                ]
+            }
+        },
+        "approvedAmount" : {
+            "fieldLabel" : "Approved Amount",
+            "mandatory" : false,
+            "enabled" : true,
+            "hiddenFor" : {
+                "user" : [ 
+                    "draft", 
+                    "returned", 
+                    "submitted", 
+                    "deleted"
+                ],
+                "approver" : [ 
+                    "draft", 
+                    "returned"
+                ],
+                "processor" : [ 
+                    "draft", 
+                    "returned", 
+                    "submitted"
+                ],
+                "admin" : [ 
+                    "draft", 
+                    "returned", 
+                    "submitted"
+                ]
+            },
+            "readOnlyFor" : {
+                "user" : [ 
+                    "approved", 
+                    "processed", 
+                    "issued", 
+                    "closed"
+                ],
+                "approver" : [ 
+                    "approved", 
+                    "processed", 
+                    "issued", 
+                    "closed"
+                ],
+                "processor" : [ 
+                    "processed", 
+                    "issued", 
+                    "closed"
+                ],
+                "admin" : [ 
+                    "approved", 
+                    "processed", 
+                    "issued", 
+                    "closed"
+                ]
+            }
+        },
+        "exchangeRate" : {
+            "fieldLabel" : "Exchange Rate",
+            "mandatory" : true,
+            "enabled" : true,
+            "hiddenFor" : {
+                "user" : [ 
+                    "draft", 
+                    "returned", 
+                    "submitted", 
+                    "approved", 
+                    "processed", 
+                    "deleted"
+                ],
+                "approver" : [ 
+                    "draft", 
+                    "returned", 
+                    "submitted", 
+                    "approved", 
+                    "processed"
+                ],
+                "processor" : [ 
+                    "draft", 
+                    "returned", 
+                    "submitted", 
+                    "approved", 
+                    "processed"
+                ],
+                "admin" : [ 
+                    "draft", 
+                    "returned", 
+                    "submitted", 
+                    "approved"
+                ]
+            },
+            "readOnlyFor" : {
+                "user" : [ 
+                    "issued", 
+                    "closed"
+                ],
+                "approver" : [ 
+                    "submitted", 
+                    "approved", 
+                    "processed", 
+                    "closed"
+                ],
+                "processor" : [ 
+                    "issued", 
+                    "closed"
+                ],
+                "admin" : [ 
+                    "issued", 
+                    "closed"
+                ]
+            }
+        },
+        "arrayCustomField1" : {
+            "fieldLabel" : "Custom Field 1",
+            "mandatory" : true,
+            "enabled" : true,
+            "widget" : "text",
+            "hiddenFor" : {
+                "user" : [],
+                "approver" : [ 
+                    "draft", 
+                    "returned"
+                ],
+                "processor" : [ 
+                    "draft", 
+                    "returned", 
+                    "submitted"
+                ],
+                "admin" : [ 
+                    "draft", 
+                    "returned", 
+                    "submitted", 
+                    "approved"
+                ]
+            },
+            "readOnlyFor" : {
+                "user" : [ 
+                    "submitted", 
+                    "approved", 
+                    "processed", 
+                    "issued", 
+                    "closed", 
+                    "deleted"
+                ],
+                "approver" : [ 
+                    "submitted", 
+                    "approved", 
+                    "processed", 
+                    "closed"
+                ],
+                "processor" : [ 
+                    "approved", 
+                    "processed", 
+                    "issued", 
+                    "closed"
+                ],
+                "admin" : [ 
+                    "processed", 
+                    "issued", 
+                    "closed"
+                ]
+            }
+        },
+        "arrayCustomField2" : {
+            "fieldLabel" : "Custom Field 2",
+            "mandatory" : true,
+            "enabled" : true,
+            "widget" : "text",
+            "hiddenFor" : {
+                "user" : [],
+                "approver" : [ 
+                    "draft", 
+                    "returned"
+                ],
+                "processor" : [ 
+                    "draft", 
+                    "returned", 
+                    "submitted"
+                ],
+                "admin" : [ 
+                    "draft", 
+                    "returned", 
+                    "submitted", 
+                    "approved"
+                ]
+            },
+            "readOnlyFor" : {
+                "user" : [ 
+                    "submitted", 
+                    "approved", 
+                    "processed", 
+                    "issued", 
+                    "closed", 
+                    "deleted"
+                ],
+                "approver" : [ 
+                    "submitted", 
+                    "approved", 
+                    "processed", 
+                    "closed"
+                ],
+                "processor" : [ 
+                    "approved", 
+                    "processed", 
+                    "issued", 
+                    "closed"
+                ],
+                "admin" : [ 
+                    "processed", 
+                    "issued", 
+                    "closed"
+                ]
+            }
+        },
+        "arrayCustomField3" : {
+            "fieldLabel" : "Custom Field 3",
+            "mandatory" : true,
+            "enabled" : true,
+            "widget" : "text",
+            "hiddenFor" : {
+                "user" : [],
+                "approver" : [ 
+                    "draft", 
+                    "returned"
+                ],
+                "processor" : [ 
+                    "draft", 
+                    "returned", 
+                    "submitted"
+                ],
+                "admin" : [ 
+                    "draft", 
+                    "returned", 
+                    "submitted", 
+                    "approved"
+                ]
+            },
+            "readOnlyFor" : {
+                "user" : [ 
+                    "submitted", 
+                    "approved", 
+                    "processed", 
+                    "issued", 
+                    "closed", 
+                    "deleted"
+                ],
+                "approver" : [ 
+                    "submitted", 
+                    "approved", 
+                    "processed", 
+                    "closed"
+                ],
+                "processor" : [ 
+                    "approved", 
+                    "processed", 
+                    "issued", 
+                    "closed"
+                ],
+                "admin" : [ 
+                    "processed", 
+                    "issued", 
+                    "closed"
+                ]
+            }
+        }
+    },
+    "buttonFields" : {
+        "saveButton" : {
+            "fieldLabel" : "Save",
+            "mandatory" : true,
+            "enabled" : true,
+            "hiddenFor" : {
+                "user" : [ 
+                    "submitted", 
+                    "approved", 
+                    "processed", 
+                    "issued", 
+                    "closed", 
+                    "deleted"
+                ],
+                "approver" : [ 
+                    "draft", 
+                    "returned", 
+                    "approved", 
+                    "processed", 
+                    "issued", 
+                    "closed", 
+                    "deleted"
+                ],
+                "processor" : [ 
+                    "draft", 
+                    "returned", 
+                    "submitted", 
+                    "processed", 
+                    "issued", 
+                    "closed", 
+                    "deleted"
+                ],
+                "admin" : [ 
+                    "draft", 
+                    "returned", 
+                    "submitted", 
+                    "approved", 
+                    "issued", 
+                    "closed", 
+                    "deleted"
+                ]
+            }
+        },
+        "submitButton" : {
+            "fieldLabel" : "Submit",
+            "mandatory" : true,
+            "enabled" : true,
+            "hiddenFor" : {
+                "user" : [ 
+                    "submitted", 
+                    "approved", 
+                    "processed", 
+                    "issued", 
+                    "closed", 
+                    "deleted"
+                ],
+                "approver" : [ 
+                    "draft", 
+                    "returned", 
+                    "approved", 
+                    "processed", 
+                    "issued", 
+                    "closed", 
+                    "deleted"
+                ],
+                "processor" : [ 
+                    "draft", 
+                    "returned", 
+                    "submitted", 
+                    "processed", 
+                    "issued", 
+                    "closed", 
+                    "deleted"
+                ],
+                "admin" : [ 
+                    "draft", 
+                    "returned", 
+                    "submitted", 
+                    "approved", 
+                    "issued", 
+                    "closed", 
+                    "deleted"
+                ]
+            }
+        },
+        "cancelButton" : {
+            "fieldLabel" : "Cancel",
+            "mandatory" : true,
+            "enabled" : true,
+            "hiddenFor" : {
+                "user" : [],
+                "approver" : [],
+                "processor" : [],
+                "admin" : []
+            }
+        },
+        "recallButton" : {
+            "fieldLabel" : "Recall",
+            "mandatory" : true,
+            "enabled" : true,
+            "hiddenFor" : {
+                "user" : [ 
+                    "draft", 
+                    "returned", 
+                    "approved", 
+                    "processed", 
+                    "issued", 
+                    "closed", 
+                    "deleted"
+                ],
+                "approver" : [ 
+                    "draft", 
+                    "returned", 
+                    "submitted", 
+                    "approved", 
+                    "processed", 
+                    "issued", 
+                    "closed", 
+                    "deleted"
+                ],
+                "processor" : [ 
+                    "draft", 
+                    "returned", 
+                    "submitted", 
+                    "approved", 
+                    "processed", 
+                    "issued", 
+                    "closed", 
+                    "deleted"
+                ],
+                "admin" : [ 
+                    "draft", 
+                    "returned", 
+                    "submitted", 
+                    "approved", 
+                    "processed", 
+                    "issued", 
+                    "closed", 
+                    "deleted"
+                ]
+            }
+        },
+        "approveButton" : {
+            "fieldLabel" : "Approve",
+            "mandatory" : true,
+            "enabled" : true,
+            "hiddenFor" : {
+                "user" : [ 
+                    "draft", 
+                    "returned", 
+                    "submitted", 
+                    "approved", 
+                    "processed", 
+                    "issued", 
+                    "closed", 
+                    "deleted"
+                ],
+                "approver" : [ 
+                    "draft", 
+                    "returned", 
+                    "approved", 
+                    "processed", 
+                    "issued", 
+                    "closed", 
+                    "deleted"
+                ],
+                "processor" : [ 
+                    "draft", 
+                    "returned", 
+                    "submitted", 
+                    "processed", 
+                    "issued", 
+                    "closed", 
+                    "deleted"
+                ],
+                "admin" : [ 
+                    "draft", 
+                    "returned", 
+                    "submitted", 
+                    "approved", 
+                    "processed", 
+                    "issued", 
+                    "closed", 
+                    "deleted"
+                ]
+            }
+        },
+        "issueButton" : {
+            "fieldLabel" : "Issue",
+            "mandatory" : true,
+            "enabled" : true,
+            "hiddenFor" : {
+                "user" : [ 
+                    "draft", 
+                    "returned", 
+                    "submitted", 
+                    "approved", 
+                    "processed", 
+                    "issued", 
+                    "closed", 
+                    "deleted"
+                ],
+                "approver" : [ 
+                    "draft", 
+                    "returned", 
+                    "submitted", 
+                    "approved", 
+                    "processed", 
+                    "issued", 
+                    "closed", 
+                    "deleted"
+                ],
+                "processor" : [ 
+                    "draft", 
+                    "returned", 
+                    "submitted", 
+                    "approved", 
+                    "processed", 
+                    "issued", 
+                    "closed", 
+                    "deleted"
+                ],
+                "admin" : [ 
+                    "draft", 
+                    "returned", 
+                    "submitted", 
+                    "approved", 
+                    "issued", 
+                    "closed", 
+                    "deleted"
+                ]
+            }
+        }
+    },
+    "allowedOpenCA" : 5,
+    "caStatusDisplayNames" : {
+        "draft" : "Unsubmitted",
+        "returned" : "Sent Back",
+        "submitted" : "Submitted",
+        "approved" : "Approved",
+        "processed" : "Processed",
+        "issued" : "Issued",
+        "closed" : "Closed",
+        "deleted" : "Deleted"
+    }
+}},{upsert:true})
