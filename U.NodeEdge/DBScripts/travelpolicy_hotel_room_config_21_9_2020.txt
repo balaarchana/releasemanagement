@@ -1,3 +1,9 @@
+//Create new collection u_nodeedgeprocessorsbt_config
+//DB: cs_****_user
+db.createCollection("u_nodeedgeprocessorsbt_config")
+
+
+//Creating hotel and room travel policy configuration
 db.getCollection('u_nodeedgeprocessorsbt_config').insert([
 
 {
