@@ -1,0 +1,220 @@
+//Create new collection u_nodeedgeprocessorsbt_config
+//DB: cs_****_user
+db.createCollection("u_nodeedgeprocessorsbt_config")
+
+
+//Creating hotel and room travel policy configuration
+db.getCollection('u_nodeedgeprocessorsbt_config').insert([
+
+{
+    "userEligibility" : {
+        "empBand" : [ 
+            "C1", "C2",
+            "D1", "D2"
+        ],
+        "serviceName" : "HotelSearch"
+    },
+    "conditions" : {
+        "starRating" : [ 
+            "3", 
+            "4", 
+            "5"
+        ],
+        "duration" : {
+            "days" : "10"
+        },
+        "locationExcluded" : ["goa","ooty"],
+        "propertyType" : [],
+        "paxType" : [ 
+            "ADT", 
+            "CHD", 
+            "INF"
+        ],
+        "advanceBookingDays" : "3",
+        "proximityDistanceKms" : "3",
+        "isNearByOffice" : false,
+        "includeAirportTransfer" : false,
+        "country" : "",
+        "state" : "",
+        "city" : ""
+    },
+    "isActive" : true
+},
+{
+    "userEligibility" : {
+        "empBand" : [ 
+            "C1", "C2",
+            "D1", "D2"
+        ],
+        "serviceName" : "HotelPropertyAndRate"
+    },
+    "conditions" : {
+        "isNonRefundable" : false,
+        "roomTypeName" : [ 
+            "Deluxe Double Room", 
+            "Luxury Double Room", 
+            "Royal Club Double Room", 
+            "One-Bedroom Suite", 
+            "Executive Suite", 
+            "Royal Suite", 
+            "Premium Double Room", 
+            "Double Or Twin Studio", 
+            "One-bedroom Apartment", 
+            "Two-bedroom Apartment"
+        ],
+        "minFare" : {
+            "currencyCode" : "INR",
+            "amount" : "1"
+        },
+        "maxFare" : {
+            "currencyCode" : "INR",
+            "amount" : "5000"
+        },
+        "paymentType" : [ 
+            "PostPay", 
+            "PrePay"
+        ]
+    },
+    "isActive" : true
+},
+{
+    "userEligibility" : {
+        "empBand" : [ 
+            "A1", "A2",
+            "B1", "B2"
+        ],
+        "serviceName" : "HotelSearch"
+    },
+    "conditions" : {
+        "starRating" : [ 
+            "2", 
+            "3", 
+            "4"
+        ],
+        "duration" : {
+            "days" : "7"
+        },
+        "locationExcluded" : ["goa","ooty"],
+        "propertyType" : [],
+        "paxType" : [ 
+            "ADT", 
+            "CHD", 
+            "INF"
+        ],
+        "advanceBookingDays" : "3",
+        "proximityDistanceKms" : "3",
+        "isNearByOffice" : false,
+        "includeAirportTransfer" : false,
+        "country" : "India",
+        "state" : "",
+        "city" : ""
+    },
+    "isActive" : true
+},
+{
+    "userEligibility" : {
+        "empBand" : [ 
+            "A1", "A2",
+            "B1", "B2"
+        ],
+        "serviceName" : "HotelPropertyAndRate"
+    },
+    "conditions" : {
+        "isNonRefundable" : true,
+        "roomTypeName" : [ 
+            "Deluxe Double Room", 
+            "Luxury Double Room", 
+            "Royal Club Double Room", 
+            "One-Bedroom Suite", 
+            "Executive Suite", 
+            "Royal Suite", 
+            "Premium Double Room", 
+            "Double Or Twin Studio", 
+            "One-bedroom Apartment", 
+            "Two-bedroom Apartment"
+        ],
+        "minFare" : {
+            "currencyCode" : "INR",
+            "amount" : "1"
+        },
+        "maxFare" : {
+            "currencyCode" : "INR",
+            "amount" : "3000"
+        },
+        "paymentType" : [ 
+            "PostPay", 
+            "PrePay"
+        ]
+    },
+    "isActive" : true
+},
+{
+    "userEligibility" : {
+        "empBand" : [ 
+            "ALL"
+        ],
+        "serviceName" : "HotelSearch"
+    },
+    "conditions" : {
+        "starRating" : [ 
+            "1","2", 
+            "3", 
+            "4"
+        ],
+        "duration" : {
+            "days" : "10"
+        },
+        "locationExcluded" : ["Chennai"],
+        "propertyType" : [],
+        "paxType" : [ 
+            "ADT", 
+            "CHD", 
+            "INF"
+        ],
+        "advanceBookingDays" : "3",
+        "proximityDistanceKms" : "3",
+        "isNearByOffice" : false,
+        "includeAirportTransfer" : false,
+        "country" : "",
+        "state" : "",
+        "city" : ""
+    },
+    "isActive" : true
+},
+{
+    "userEligibility" : {
+        "empBand" : [ 
+            "ALL"
+        ],
+        "serviceName" : "HotelPropertyAndRate"
+    },
+    "conditions" : {
+        "isNonRefundable" : true,
+        "roomTypeName" : [ 
+            "Deluxe Double Room", 
+            "Luxury Double Room", 
+            "Royal Club Double Room", 
+            "One-Bedroom Suite", 
+            "Executive Suite", 
+            "Royal Suite", 
+            "Premium Double Room", 
+            "Double Or Twin Studio", 
+            "One-bedroom Apartment", 
+            "Two-bedroom Apartment"
+        ],
+        "minFare" : {
+            "currencyCode" : "INR",
+            "amount" : "1"
+        },
+        "maxFare" : {
+            "currencyCode" : "INR",
+            "amount" : "4000"
+        },
+        "paymentType" : [ 
+            "PostPay", 
+            "PrePay"
+        ]
+    },
+    "isActive" : true
+}
+])
