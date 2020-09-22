@@ -1,0 +1,72 @@
+use cs_1xxx_product
+db.getCollection('email_processor_config').update({"template.templateName":"bosch-hotel"},
+{$set:{
+"success.message":"Trip created successfully with w2GTripNumber :: ",
+"template":{
+    "templateSignature" : "Kindly arrange the Accommodation for the below travel request\\.",
+    "templateName" : "bosch-hotel",
+    "type" : "trip_single_hotel_create_confirm_itravel",
+    "templateFields" : [ 
+        {
+            "fieldNames" : [ 
+                "primaryTravellerId"
+            ],
+            "type" : "textField",
+            "fieldSignature" : [ 
+                "cc[ ]*:.*?([a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\\.[a-zA-Z0-9_-]+)"
+            ],
+            "status" : NumberInt(1)
+        }, 
+        {
+            "fieldNames" : [ 
+                "enterpriseTripNumber"
+            ],
+            "type" : "textField",
+            "fieldSignature" : [ 
+                "travel[ ]*request[ ]*number[ ]*:[ ]*([0-9A-Za-z]+)"
+            ],
+            "status" : NumberInt(1)
+        }, 
+        {
+            "fieldNames" : [ 
+                "country"
+            ],
+            "type" : "textField",
+            "fieldSignature" : [ 
+                "to[ ]*country[ ]*:[ ]*(\\w+[ +\\w+]*)$"
+            ],
+            "status" : NumberInt(1)
+        }, 
+        {
+            "fieldNames" : [ 
+                "startDate"
+            ],
+            "type" : "textField",
+            "fieldSignature" : [ 
+                "Travel[ ]*Start[ ]*date[ ]*:[ ]*([0-9]{2}/[0-9]{2}/[0-9]{4})"
+            ],
+            "status" : NumberInt(1)
+        }, 
+        {
+            "fieldNames" : [ 
+                "endDate"
+            ],
+            "type" : "textField",
+            "fieldSignature" : [ 
+                "Travel[ ]*End[ ]*Date[ ]*:[ ]*([0-9]{2}/[0-9]{2}/[0-9]{4})"
+            ],
+            "status" : NumberInt(1)
+        }, 
+        {
+            "fieldNames" : [ 
+                "location"
+            ],
+            "type" : "textField",
+            "fieldSignature" : [ 
+                "to[ ]*location[ ]*:[ ]*(\\w+[ +\\w+]*)$"
+            ],
+            "status" : NumberInt(1)
+        }
+    ]
+}}})
+
