@@ -1,0 +1,4 @@
+Use platform_db
+db.getCollection('core_config_servicebus').update({},{$set:{"SB_TOPIC_PART_H_LOCALDB_REQ": "part_h_localDB_req",
+"SB_SUBSCRIBE_PART_H_LOCALDB_REQ_PH_LOCALDB" : "part_h_localDB_req_subscription_p.h.localDB"
+}})
