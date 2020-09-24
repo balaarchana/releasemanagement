@@ -1,6 +1,5 @@
-db.adminCommand("listDatabases").databases.forEach( function (database) {
-	if (database.name != "" && database.name.startsWith("cs_1")  && database.name.endsWith("_user")) {
-		db.getSiblingDB(database.name).getCollection("u_cash_advance_config").update({},{
+use cs_1xxx_user
+db.getCollection("u_cash_advance_config").update({},{
 			$set:{
 				"formFields" : {
 				    "cashAdvanceName" : {
@@ -596,5 +595,3 @@ db.adminCommand("listDatabases").databases.forEach( function (database) {
 				"breakUpAllowed": 1
 			}
 		})
-	}
-})
