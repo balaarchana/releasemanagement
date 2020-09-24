@@ -591,6 +591,9 @@ db.adminCommand("listDatabases").databases.forEach( function (database) {
 				        "enabled" : true
 				    }
 				} 
+			},
+			$unset: {
+				"breakUpAllowed": 1
 			}
 		})
 	}
