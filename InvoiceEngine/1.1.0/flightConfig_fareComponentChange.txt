@@ -1,0 +1,108 @@
+use cs_1xxx_product
+db.getCollection('invoice_config').update({},{$set:{
+    "flightConfig" : {
+        "mode" : [ 
+            {
+                "taxablePercentageEnabled" : true,
+                "commissionableFare" : "Commissionable Fare"
+            }, 
+            {
+                "onCommission" : "On Commission",
+                "taxablePercentageEnabled" : false
+            }, 
+            {
+                "taxablePercentageEnabled" : false,
+                "otherCharges" : "Other Charges"
+            }
+        ],
+        "otherChargesCategories" : [ 
+            {
+                "subProducts" : "Journey",
+                "enabled" : true
+            }, 
+            {
+                "cabinClass" : "Class",
+                "enabled" : true
+            }, 
+            {
+                "fareSlab" : "Fare Slab",
+                "enabled" : true
+            }, 
+            {
+                "airlines" : "Airlines",
+                "enabled" : false
+            }, 
+            {
+                "sector" : "Sector",
+                "enabled" : false
+            }, 
+            {
+                "passengerType" : "Passenger Type",
+                "enabled" : false
+            }
+        ],
+        "subProducts" : [ 
+            {
+                "domestic" : "Domestic"
+            }, 
+            {
+                "international" : "International"
+            }
+        ],
+        "cabinClass" : [ 
+            {
+                "firstClass" : "First Class"
+            }, 
+            {
+                "businessClass" : "Business Class"
+            }, 
+            {
+                "economyClass" : "Economy Class"
+            }
+        ],
+        "product" : {
+            "flight" : "Flight"
+        },
+        "passengerType" : [ 
+            {
+                "adult" : "Adult"
+            }, 
+            {
+                "child" : "Child"
+            }, 
+            {
+                "infant" : "Infant"
+            }
+        ],
+        "fareComponents" : [ 
+            {
+                "baseFare" : "Base Fare"
+            }, 
+            {
+                "commissionTax" : "Commission Tax"
+            }, 
+            {
+                "nonCommissionTax" : "Non-Commission Tax"
+            }
+        ],
+        "amountTypes" : [ 
+            {
+                "percentage" : "Percentage",
+                "enabled" : true
+            }, 
+            {
+                "value" : "Value",
+                "enabled" : true
+            }
+        ],
+        "invoiceDate" : [ 
+            {
+                "bookingDate" : "Booking Date"
+            }, 
+            {
+                "travelDate" : "Travel Date"
+            }
+        ]
+    }
+}})
+
