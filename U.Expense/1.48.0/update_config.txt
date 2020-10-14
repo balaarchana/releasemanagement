@@ -1,41 +1,4 @@
-use cs_xxxx_user;
-
-<-- Script for deleting all documents from cash advance details collection -->
-
-db.u_cash_advance_details.remove({});
-
-<-- Script for creating cash advance audit rule collection and inserting rules -->
-
-db.u_cash_advance_audit_rule.insert([
-	{
-	    "ruleName" : "unsettledCAcount",
-	    "ruleDescription" : "No. of allowed advance requests by a user",
-	    "limit" : 5,
-	    "ruleViolationType" : "soft",
-	    "ruleViolationMessage" : "You already have more than 5 advances unsettled",
-	    "status" : "ACTIVE"
-	},
-	{
-	    "ruleName" : "maxAllowedTotalRequestedAmount",
-	    "ruleDescription" : "Maximum amount allowed to be raised in a cash advance",
-	    "amountLimits" : [ 
-	        {
-	            "limit" : 100000,
-	            "currency" : "INR"
-	        }, 
-	        {
-	            "limit" : 1000,
-	            "currency" : "USD"
-	        }
-	    ],
-	    "ruleViolationType" : "hard",
-	    "ruleViolationMessage" : "Requested Amount exceeded company limit",
-	    "status" : "ACTIVE"
-	}
-]);
-
-<-- Script for updating latest cash advance config -->
-
+use cs_xxxx_user
 db.getCollection("u_cash_advance_config").update({},{
 	$set: {
 	    "allowedCurrencyCodes" : [ 
@@ -1187,3 +1150,5 @@ db.getCollection("u_cash_advance_config").update({},{
 	    }
 	}
 });
+
+-------------------------------------------------------------------------------------------------------------------------------
