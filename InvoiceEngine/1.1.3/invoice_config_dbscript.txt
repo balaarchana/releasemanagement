@@ -1,0 +1,7 @@
+use cs_1xxx_product
+db.getCollection('invoice_config').update({},{$set:{
+    "invoiceSequenceHotel" : "0",
+    "invoiceSequenceFlight" : "0",
+    "startOfCurrentFiscalYear" : "2020-03-01"
+}})
+
