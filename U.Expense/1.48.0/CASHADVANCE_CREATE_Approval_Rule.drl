@@ -1,0 +1,26 @@
+package client_1001
+
+import com.wipro.c4.core.rules.module.approval.ApprovalRule;
+import org.json.JSONArray;
+import org.json.JSONObject;
+
+dialect "java"
+
+
+rule "Rule 1 "
+	when
+	aR:ApprovalRule((aR.getFloat("totalRequestedAmount")>=0) || (aR.getFloat("totalRequestedAmount")<0) );
+	then
+	aR.put("ApprovalRequired",true);
+	aR.put("ApprovalMatrix","T:1");
+end
+
+rule "Rule 2 "
+	when
+	aR:ApprovalRule((aR.getFloat("totalRequestedAmount")>=0) && (aR.getFloat("totalRequestedAmount")<10) && (aR.getString("currency").equals("INR")) );
+	then
+	aR.put("ApprovalRequired",false);
+end
+
+
+
