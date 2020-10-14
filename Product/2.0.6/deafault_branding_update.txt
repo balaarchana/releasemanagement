@@ -1,0 +1,5 @@
+use platform_db
+db.getCollection('platform_default_product_config').update({},{$set:{"orgBrandImage":{
+    "path":"product/defaultbrandimage.png",
+    "modifiedBy":"10010000122",
+    "modifiedOn_DT_UTC":"10-10-2020 05:02:51:629 UTC"}}})
