@@ -5,7 +5,7 @@ db.u_cash_advance_audit_rule.insert([
 	    "ruleDescription" : "No. of allowed advance requests by a user",
 	    "limit" : 5,
 	    "ruleViolationType" : "soft",
-	    "ruleViolationMessage" : "More than 5 cash advances are pending to be settled",
+	    "ruleViolationMessage" : "More than 5 cash advances are pending to be settled by the employee",
 	    "status" : "ACTIVE"
 	},
 	{
