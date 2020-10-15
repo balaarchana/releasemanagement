@@ -1,0 +1,9 @@
+db.adminCommand("listDatabases").databases.forEach( function (database) {  
+ if (database.name != "" && database.name.startsWith("cs_")  && database.name.endsWith("_product") ) {
+   db.getSiblingDB(database.name).getCollection('product_config').update({},{$set:{"orgBrandImage":{
+    "path":"product/defaultbrandimage.png",
+    "modifiedBy":"10010000122",
+    "modifiedOn_DT_UTC":"10-10-2020 05:02:51:629 UTC"}}})
+    
+    }
+})
