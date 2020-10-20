@@ -1,0 +1,8 @@
+db.adminCommand("listDatabases").databases.forEach( function (database) {
+if (database.name != "" && database.name.startsWith("cs_") && database.name.endsWith("_product") ) {
+    db = db.getSiblingDB(database.name)
+    db.createCollection("org_band")
+    db.createCollection("org_department")
+    db.createCollection("org_onboarding_history")
+    }
+})

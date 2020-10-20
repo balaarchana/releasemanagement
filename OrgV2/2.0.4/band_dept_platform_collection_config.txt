@@ -1,0 +1,9 @@
+use platform_db
+db.getCollection('platform_collection_config').update(
+        { },
+        { $addToSet: {"product": {$each: [
+		"org_band",
+		"org_department",
+		"org_onboarding_history"
+		]}}}
+        )
