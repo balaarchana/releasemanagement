@@ -1,0 +1,329 @@
+use cs_xxxx_user
+db.getCollection("u_cash_advance_config").update({},{
+	$set: {
+	    "buttonFields" : {
+	        "submitButton" : {
+	            "hiddenFor" : {
+	                "approver" : [ 
+	                    "draft", 
+	                    "returned", 
+	                    "submitted", 
+	                    "approved", 
+	                    "processed", 
+	                    "issued", 
+	                    "closed", 
+	                    "deleted"
+	                ],
+	                "admin" : [ 
+	                    "draft", 
+	                    "returned", 
+	                    "submitted", 
+	                    "approved", 
+	                    "issued", 
+	                    "closed", 
+	                    "deleted"
+	                ],
+	                "user" : [ 
+	                    "submitted", 
+	                    "approved", 
+	                    "processed", 
+	                    "issued", 
+	                    "closed", 
+	                    "deleted"
+	                ],
+	                "processor" : [ 
+	                    "draft", 
+	                    "returned", 
+	                    "submitted", 
+	                    "processed", 
+	                    "issued", 
+	                    "closed", 
+	                    "deleted"
+	                ]
+	            },
+	            "fieldLabel" : "Submit",
+	            "mandatory" : true,
+	            "enabled" : true
+	        },
+	        "cancelButton" : {
+	            "hiddenFor" : {
+	                "approver" : [],
+	                "admin" : [],
+	                "user" : [],
+	                "processor" : []
+	            },
+	            "fieldLabel" : "Cancel",
+	            "mandatory" : true,
+	            "enabled" : true
+	        },
+	        "recallButton" : {
+	            "hiddenFor" : {
+	                "approver" : [ 
+	                    "draft", 
+	                    "returned", 
+	                    "submitted", 
+	                    "approved", 
+	                    "processed", 
+	                    "issued", 
+	                    "closed", 
+	                    "deleted"
+	                ],
+	                "admin" : [ 
+	                    "draft", 
+	                    "returned", 
+	                    "submitted", 
+	                    "approved", 
+	                    "processed", 
+	                    "issued", 
+	                    "closed", 
+	                    "deleted"
+	                ],
+	                "user" : [ 
+	                    "draft", 
+	                    "returned", 
+	                    "approved", 
+	                    "processed", 
+	                    "issued", 
+	                    "closed", 
+	                    "deleted"
+	                ],
+	                "processor" : [ 
+	                    "draft", 
+	                    "returned", 
+	                    "submitted", 
+	                    "approved", 
+	                    "processed", 
+	                    "issued", 
+	                    "closed", 
+	                    "deleted"
+	                ]
+	            },
+	            "fieldLabel" : "Recall",
+	            "mandatory" : true,
+	            "enabled" : true
+	        },
+	        "issueButton" : {
+	            "hiddenFor" : {
+	                "approver" : [ 
+	                    "draft", 
+	                    "returned", 
+	                    "submitted", 
+	                    "approved", 
+	                    "processed", 
+	                    "issued", 
+	                    "closed", 
+	                    "deleted"
+	                ],
+	                "admin" : [ 
+	                    "draft", 
+	                    "returned", 
+	                    "submitted", 
+	                    "approved", 
+	                    "issued", 
+	                    "closed", 
+	                    "deleted"
+	                ],
+	                "user" : [ 
+	                    "draft", 
+	                    "returned", 
+	                    "submitted", 
+	                    "approved", 
+	                    "processed", 
+	                    "issued", 
+	                    "closed", 
+	                    "deleted"
+	                ],
+	                "processor" : [ 
+	                    "draft", 
+	                    "returned", 
+	                    "submitted", 
+	                    "approved", 
+	                    "processed", 
+	                    "issued", 
+	                    "closed", 
+	                    "deleted"
+	                ]
+	            },
+	            "fieldLabel" : "Issue",
+	            "mandatory" : true,
+	            "enabled" : true
+	        },
+	        "saveButton" : {
+	            "hiddenFor" : {
+	                "approver" : [ 
+	                    "draft", 
+	                    "returned", 
+	                    "submitted", 
+	                    "approved", 
+	                    "processed", 
+	                    "issued", 
+	                    "closed", 
+	                    "deleted"
+	                ],
+	                "admin" : [ 
+	                    "draft", 
+	                    "returned", 
+	                    "submitted", 
+	                    "approved", 
+	                    "issued", 
+	                    "closed", 
+	                    "deleted"
+	                ],
+	                "user" : [ 
+	                    "submitted", 
+	                    "approved", 
+	                    "processed", 
+	                    "issued", 
+	                    "closed", 
+	                    "deleted"
+	                ],
+	                "processor" : [ 
+	                    "draft", 
+	                    "returned", 
+	                    "submitted", 
+	                    "processed", 
+	                    "issued", 
+	                    "closed", 
+	                    "deleted"
+	                ]
+	            },
+	            "fieldLabel" : "Save",
+	            "mandatory" : true,
+	            "enabled" : true
+	        },
+	        "approveButton" : {
+	            "hiddenFor" : {
+	                "approver" : [ 
+	                    "draft", 
+	                    "returned", 
+	                    "approved", 
+	                    "processed", 
+	                    "issued", 
+	                    "closed", 
+	                    "deleted"
+	                ],
+	                "admin" : [ 
+	                    "draft", 
+	                    "returned", 
+	                    "submitted", 
+	                    "approved", 
+	                    "processed", 
+	                    "issued", 
+	                    "closed", 
+	                    "deleted"
+	                ],
+	                "user" : [ 
+	                    "draft", 
+	                    "returned", 
+	                    "submitted", 
+	                    "approved", 
+	                    "processed", 
+	                    "issued", 
+	                    "closed", 
+	                    "deleted"
+	                ],
+	                "processor" : [ 
+	                    "draft", 
+	                    "returned", 
+	                    "submitted", 
+	                    "processed", 
+	                    "issued", 
+	                    "closed", 
+	                    "deleted"
+	                ]
+	            },
+	            "fieldLabel" : "Approve",
+	            "mandatory" : true,
+	            "enabled" : true
+	        },
+	        "rejectButton" : {
+	            "hiddenFor" : {
+	                "approver" : [ 
+	                    "draft", 
+	                    "returned", 
+	                    "approved", 
+	                    "processed", 
+	                    "issued", 
+	                    "closed", 
+	                    "deleted"
+	                ],
+	                "admin" : [ 
+	                    "draft", 
+	                    "returned", 
+	                    "submitted", 
+	                    "approved", 
+	                    "processed", 
+	                    "issued", 
+	                    "closed", 
+	                    "deleted"
+	                ],
+	                "user" : [ 
+	                    "draft", 
+	                    "returned", 
+	                    "submitted", 
+	                    "approved", 
+	                    "processed", 
+	                    "issued", 
+	                    "closed", 
+	                    "deleted"
+	                ],
+	                "processor" : [ 
+	                    "draft", 
+	                    "returned", 
+	                    "submitted", 
+	                    "processed", 
+	                    "issued", 
+	                    "closed", 
+	                    "deleted"
+	                ]
+	            },
+	            "fieldLabel" : "Send Back",
+	            "mandatory" : true,
+	            "enabled" : true
+	        },
+	        "addItemButton" : {
+	            "hiddenFor" : {
+	                "approver" : [ 
+	                    "draft", 
+	                    "returned",
+                            "submitted", 
+	                    "approved", 
+	                    "processed", 
+	                    "issued", 
+	                    "closed", 
+	                    "deleted"
+	                ],
+	                "admin" : [ 
+	                    "draft", 
+	                    "returned", 
+	                    "submitted", 
+	                    "approved", 
+	                    "issued", 
+	                    "closed", 
+	                    "deleted"
+	                ],
+	                "user" : [ 
+	                    "submitted", 
+	                    "approved", 
+	                    "processed", 
+	                    "issued", 
+	                    "closed", 
+	                    "deleted"
+	                ],
+	                "processor" : [ 
+	                    "draft", 
+	                    "returned", 
+	                    "submitted", 
+	                    "processed", 
+	                    "issued", 
+	                    "closed", 
+	                    "deleted"
+	                ]
+	            },
+	            "fieldLabel" : "Add Item",
+	            "mandatory" : true,
+	            "enabled" : true
+	        }
+	    }
+	}
+});
