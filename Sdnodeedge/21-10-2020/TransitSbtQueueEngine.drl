@@ -1,0 +1,92 @@
+
+import com.wipro.c4.core.rules.module.travel.TransitSbtQueueEngine;
+import org.json.JSONObject;
+import com.google.gson.Gson;
+import org.json.JSONArray;
+import java.util.Arrays;
+import java.util.List;
+
+dialect "java"
+
+rule "Transit Domestic"
+
+    when
+    transitSbtQueueEngine:TransitSbtQueueEngine(eval(getQueueType(transitSbtQueueEngine)).equalsIgnoreCase("TRAN_DOM"));
+    then
+  	transitSbtQueueEngine.setQueue("Transit_Domestic");
+    
+end
+
+rule "Transit International"
+
+    when
+    transitSbtQueueEngine:TransitSbtQueueEngine(eval(getQueueType(transitSbtQueueEngine)).equalsIgnoreCase("TRAN_INT"));
+    then
+  	transitSbtQueueEngine.setQueue("Transit_International");
+    
+end
+
+rule "Transit US"
+
+    when
+    transitSbtQueueEngine:TransitSbtQueueEngine(eval(getQueueType(transitSbtQueueEngine)).equalsIgnoreCase("US"));
+    then
+  	transitSbtQueueEngine.setQueue("Transit_America");
+    
+end
+
+rule "Transit Europe" 
+
+    when
+    transitSbtQueueEngine:TransitSbtQueueEngine(eval(getQueueType(transitSbtQueueEngine)).equalsIgnoreCase("UK"));
+    then
+  	transitSbtQueueEngine.setQueue("Transit_Europe");
+    
+end
+
+rule "Transit APAC"
+
+    when
+    transitSbtQueueEngine:TransitSbtQueueEngine(eval(getQueueType(transitSbtQueueEngine)).equalsIgnoreCase("OTHERS"));
+    then
+  	transitSbtQueueEngine.setQueue("Transit_Others");
+    
+end
+
+function String getQueueType(Object taskObjectInfo){
+	String status = "TRAN_DOM";	 
+	JSONObject data = new JSONObject(new Gson().toJson(taskObjectInfo));
+	JSONObject taskObject = data.has("taskDetails")?data.getJSONObject("taskDetails"):new JSONObject();
+	String travellerHomeCountry = taskObject.has("travellerHomeCountry") ? taskObject.getString("travellerHomeCountry") : null; 
+	
+	List<String> us_And_Americas_Continent_Country_Code_List = Arrays.asList("GT","AG","VG","AI","VI","CA","GD","AW","CR","CU","PR","NI","TT","GP","PA","DO","DM","BB","HT","JM","HN","BS","BZ","SX","SV","US","MQ","MS","KY","MX","GD","PY","CO","VE","CL","SR","BO","EC","GF","AR","GY","BR","PE","UY","FK"); 
+	List<String> uk_And_Eu_Continent_Country_Code_List = Arrays.asList("VA","CH","AD","EE","IS","AM","AL","CZ","GE","AT","IE","GI","NL","PT","NO","LV","LT","LU","ES","IT","RO","PL","BE","FR","BG","DK","HR","DE","HU","BA","FI","BY","FO","MC","CY","MK","SK","MT","SI","SM","SE","GB","TR");
+		
+	if(travellerHomeCountry == null || travellerHomeCountry.equalsIgnoreCase("IN")){			
+		JSONObject itinerayObject = taskObject.has("itinerary") ? taskObject.getJSONObject("itinerary")
+				: new JSONObject();
+		JSONArray segmentArray = itinerayObject.has("segment") ? itinerayObject.getJSONArray("segment")
+				: new JSONArray();
+		for (int segmentIndex = 0; segmentIndex < segmentArray.length(); segmentIndex++) {
+			JSONArray detailsArray = segmentArray.getJSONObject(segmentIndex).getJSONArray("details");
+			for (int detailIndex = 0; detailIndex < detailsArray.length(); detailIndex++) {
+				JSONObject source = detailsArray.getJSONObject(detailIndex).getJSONObject("source");
+				JSONObject destination = detailsArray.getJSONObject(detailIndex).getJSONObject("destination");
+				if ((!(source.getString("countryCode").equalsIgnoreCase("IN"))) 						
+						|| (!(destination.getString("countryCode").equalsIgnoreCase("IN")))) {
+					status = "TRAN_INT";
+					break;
+				} 
+			}
+		}		
+	} else if(us_And_Americas_Continent_Country_Code_List.contains(travellerHomeCountry.toUpperCase())){
+		status = "US";
+	}else if(uk_And_Eu_Continent_Country_Code_List.contains(travellerHomeCountry.toUpperCase())){
+		status = "UK";
+	}else {
+	// if traveler base country code is not US/Americas/UK/EU/IN then queue will be set as Transit_Others
+		status = "OTHERS";
+	}
+		return status;
+}
+	
