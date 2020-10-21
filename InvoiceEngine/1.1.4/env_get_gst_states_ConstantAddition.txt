@@ -1,0 +1,3 @@
+platform_db
+
+db.getCollection('core_config_url').update({"type":"url"},{$set:{"env_get_gst_states":"platform/platform/gstStates"}})
