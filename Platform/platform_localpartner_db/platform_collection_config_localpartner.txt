@@ -1,0 +1,9 @@
+use platform_db
+db.getCollection('platform_collection_config').update(
+        { },
+        { $addToSet: {"localpartner": {$each: ["partner_hotel_stc_hotelInfo",
+    "partner_hotel_stc_roomInfo",
+    "partner_hotel_stc_roomRateInfo",
+    "partner_hotel_stc_cancelInfo",
+    "partner_hotel_stc_fopInfo"]}}}
+        )
