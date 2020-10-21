@@ -1,0 +1,5 @@
+"use platform_db
+db.getCollection('core_config_servicebus').update({},{$set:{""SB_TOPIC_PART_H_GRNCONNECT_REQ""  : ""part_h_grnconnect_req"",
+""SB_SUBSCRIBE_PART_H_GRNCONNECT_REQ_PH_ GRNCONNECT"" : ""part_h_grnconnect_req_subscription_p.h.grnconnect""
+}})
+"
