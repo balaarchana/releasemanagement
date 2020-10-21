@@ -1,0 +1,186 @@
+use platform_db
+db.platform_default_org_user.replaceOne({"userName": "tmartin"}, {
+  "airlineSeatPref": "",
+  "country": "INDIA",
+  "personalData": "MOaq07dzNT+mAy5XOUYfd2JMKzDwo22dU4OSYcNdUBE8XzE8GKSFhbPENEWuk3kawyv3LDfOC73IK/Ur7rHMDIw+x87zB8ivBh5nsIxWlXbJeoC8ggWCZOdpT9E6q/nC+pYLdhoG6ON/Ng848nA+4+jyOiD/Blo1g9Fp9Qi1RbIyutYRTngyQLAnwExJ0ApWXO6YPsKg1oRJFFHjEBHYykTfzWi/h1H4romYBtMIopNRkLlKRqwqTs7hNzs42qNf+ZmjrDtPlFHvgdB6E1PeMCF1FGTqk62+GfXTVa0Gkfsk8/GMX786xAfpoV/Mott0AIip/TfVAtXjV6KP7c/6oGMi1gwHcDuvvNmWnkLJJT8y3B4e4ACYJzEXKzPFxBCsIxOrKsOgsfb+QR9y+mwMzt/34GlR2qJwZnIEcaOUscs5m1w5HS+k+uBgvptTgzUmB5LpwXm023XJ1lxmMrSEGpN8P8LHQGsquw92v7da5d5EIuYIz9uqjN3hn/hTCV//XH5Yod8ih/RC7JjTceXKbxjtE0Qbqq7B+zLh5+hh6AR2TQewJ6A4yD9zolW4I8Eyczy7Hjc7L+dW0nszIzm21Rp6x3F54mbUfUiC/ZbC+eMFRkPkiKDsl3YzC8hg3MQyubUsvZQKY1xqJKPGdeEwNuNu3kakplmzRggWsubiDaHX4gEZUsbWZPSyn7nQhiJYGhJrimMwmCysBt2o64ZHESwhSyRrrsKf4gPD1QDNWMZC4UXelBG3/y9SXVylOgVLPt9MiZShl0nK5s2JXRxDA1f9eZhn/J3C9ykxaZzYQOh3O4/cS2RvI2PDYZfF0UGqVFscPVtXR31aOxs6cvql5YCGHH+iJ+W/QqJell8Kef/0+KI0eitFnsQirPldDqP56hFI9Ex9MX8BoXylNSgM2tNORXbsk5wlhjXlLZtDG0Yi7OWJoiHl2ooHq9mB7J5UCqRZlyIbDuubxjn7ra7qEBlqwEcjZjw89AKtmMyeqdHA/6hWuHyG7I9e+w2gxpSx0JEETAEEKNVWfP1qfbqedbBC5prMVD9t/aPDoc6rCmtLLIOYVTYyN0ak1c5umAZwik3CUKeQzVD/G8mq/RXX+1T5qPsRBFAkfH+qemn9FQVyUTAk7byxJPELGtlJGzJf+00I4tnpw2CE9slVbZ9aYy04lEd65z6sKL+XKSCNZTdTN8KD",
+  "language": "English",
+  "isActive": true,
+  "modifiedOn_DT_UTC": "08-06-2017 08:57:58:431 UTC",
+  "notfSMS": true,
+  "otherSpclAsst": "fgbvb",
+  "password": "1000:98058dd5c398e83b1736b7c27191210d:cee82408ec0416356937336bd255f730f4610f4b1f4e1d8c4223bbccbbf39c1a6598655903a92f978ca5b7ca05ae874cc21dc8229b0119be9ff5516918998e48",
+  "bar": false,
+  "userroles": [
+    {
+      "self": [
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        3010,
+        3011,
+        3012,
+        3013,
+        3014,
+        3015,
+        3016,
+        3017,
+        3018,
+        4010,
+        4011,
+        4012,
+        4013,
+        4014,
+        4015,
+        4016,
+        4018,
+        4020,
+        4024,
+        5010,
+        5011,
+        5012,
+        5013,
+        5014,
+        5015,
+        5016,
+        5018,
+        5020,
+        5024,
+        6010,
+        6011,
+        9010,
+        2110,
+        2111,
+        2112,
+        9012,
+        2021,
+        2022,
+        6010,
+        6011,
+        6012,
+        6015,
+        6019,
+	7010,
+	7011,
+	7012,
+	7013,
+	7014,
+	7015
+      ]
+    }
+  ],
+  "specialAssistance": "Wheel Chair Ramp(WCHR)",
+  "band": "6",
+  "failedLoginTime": "04-07-2017 08:47:29:423 UTC",
+  "managerDetails": {
+    "Designation": "Pratice Head",
+    "managerUserId": "10010000002",
+    "managerId": "987546",
+    "managerName": "Dora Travis"
+  },
+  "onBoradMedic": false,
+  "failedLoginAttempts": 0,
+  "swimmingPool": false,
+  "modifiedOn_DT_UTC_EPOCH": 1490703630697,
+  "logoutTime": "05-07-2017 10:12:20:778 UTC",
+  "isLockoutActive": false,
+  "modifiedDate": "03-11-2016 10:18:21 UTC",
+  "emailNotfAllwd": true,
+  "gym": false,
+  "designation": "manager",
+  "hotelType": "Wheel Chair Ramp(WCHR)",
+  "breakfast": false,
+  "timezone": "(GMT+5:30) IST",
+  "roles": [
+    {
+      "roleName": "Manager"
+    },
+    {
+      "roleId": "role_50",
+      "roleName": "Delegator Role"
+    },
+    {
+      "roleId": "role_52",
+      "roleName": "Coca"
+    },
+    {
+      "roleId": "role_55",
+      "roleName": "product settings"
+    }
+  ],
+  "locale": "en-IN",
+  "modifiedOn": "Tue Mar 28 12:20:30 UTC 2017",
+  "loginTime": "05-07-2017 09:36:05:574 UTC",
+  "mealPref": "",
+  "countryCode": "IN",
+  "smoking": true,
+  "priorityBaggage": false,
+  "modifiedBy": "10010000122",
+  "currency": "INR",
+  "searchFields": {
+    "firstName": "c60ba607dafb7a7150dcdf7ec61924b3",
+    "lastName": "925d7518fc597af0e43f5606f9a51512",
+    "empId": "508df4cb2f4d8f80519256258cfb975f",
+    "email_name": "57af2c0633f38b868917a670c7ff9dda",
+    "mobileNo": "c345b392312554f34d9108e47661e1ed",
+    "email": "17f4ec6b776ed188acddd38d902d0d22"
+  },
+  "WheelChairAsst": false,
+  "restaurant": false,
+  "groups": [
+    {
+      "groupTypeName": "Organisation",
+      "groupName": "NGIT",
+      "groupId": "21482490093548",
+      "groupTypeId": "11474267885163",
+      "isActive": false
+    },
+    {
+      "groupTypeName": "Location",
+      "groupName": "Chicago",
+      "groupId": "21474977397068",
+      "groupTypeId": "11474969481416"
+    },
+    {
+      "groupTypeName": "Queue",
+      "groupName": "International",
+      "groupId": "21486382196020",
+      "groupTypeId": "11486382160081"
+    },
+    {
+      "groupTypeName": "Queue",
+      "groupName": "Domestic",
+      "groupId": "21486382266471",
+      "groupTypeId": "11486382160081"
+    }
+  ],
+  "userName": "tmartin",
+  "userId": "10010000122",
+  "FeatureId": [
+    "1018",
+    "1012",
+    "1011",
+    "1017",
+    "1010",
+    "1016",
+    "1021",
+    "1013",
+    "1020",
+    "2110",
+    "2111"
+  ],
+  "lastLoginTime": "05-07-2017 08:14:40:930 UTC",
+  "frequentFlierNo": [
+    {}
+  ],
+  "createdDate": "23-07-2016 13:47:30 UTC",
+  "createdBy": "10010000001",
+  "internetConn": false
+})
