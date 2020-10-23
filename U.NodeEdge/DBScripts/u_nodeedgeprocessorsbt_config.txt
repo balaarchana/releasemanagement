@@ -1,0 +1,6 @@
+
+//for Travel Policy Fix (createdOn parameter issue)
+//cs_1095_user PP issue
+
+
+db.getCollection('u_nodeedgeprocessorsbt_config').remove({"policyId":"POLICY_000006"})
