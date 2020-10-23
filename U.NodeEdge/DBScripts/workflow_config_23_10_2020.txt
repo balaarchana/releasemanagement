@@ -1,0 +1,46 @@
+
+
+// workflow_config change for the Invoice button appearance on SD task page
+// DB: cs_1081_product
+
+db.getCollection('workflow_config').update({},{$set:{
+    "sd_workflow" : [ 
+        {
+            "mode" : [ 
+                "online", 
+                "offline"
+            ],
+            "name" : "hotel_cancel",
+            "retrieve_pnr" : true
+        }, 
+        {
+            "mode" : [ 
+                "online", 
+                "offline"
+            ],
+            "name" : "flight_cancel",
+            "retrieve_pnr" : true
+        }, 
+        {
+            "mode" : [ 
+                "offline"
+            ],
+            "name" : "hotel_book"
+        }, 
+        {
+            "name" : "gst_hotel",
+            "mode" : [ 
+                "online", 
+                "offline"
+            ]
+        }, 
+        {
+            "name" : "gst_flight",
+            "mode" : [ 
+                "online", 
+                "offline"
+            ]
+        }
+    ]
+    
+    }})
