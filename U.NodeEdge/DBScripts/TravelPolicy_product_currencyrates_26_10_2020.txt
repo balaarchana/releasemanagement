@@ -1,0 +1,10 @@
+	
+	
+	
+	//Requirements for 1095 org cs_1095_product
+	
+	//Run the below query in 1003 Org
+	db.product_currencyrates.find().forEach(function(d){ db.getSiblingDB('cs_1095_product')['product_currencyrates'].insert(d); });
+	
+	//Run the below query in 1095 Org
+	db.getCollection('product_config').update({},{$set:{"baseCurrency":"INR"}})
