@@ -1,0 +1,20 @@
+use cs_xxxx_product
+db.getCollection('email_processor_config').update(
+  { "template.templateName":"bosch-hotel", "template.templateFields.fieldNames.0":"startDate" },
+  { "$set": { "template.templateFields.$.fieldSignature.0": "Travel[ ]*Start[ ]*date[ ]*:[ ]*([0-9]{1,2}\\/[0-9]{1,2}\\/[0-9]{4})" } }
+)
+  
+db.getCollection('email_processor_config').update(
+  { "template.templateName":"bosch-hotel", "template.templateFields.fieldNames.0":"endDate" },
+  { "$set": { "template.templateFields.$.fieldSignature.0": "Travel[ ]*End[ ]*Date[ ]*:[ ]*([0-9]{1,2}\\/[0-9]{1,2}\\/[0-9]{4})" } }
+)
+  
+db.getCollection('email_processor_config').update(
+  { "template.templateName":"hotel", "template.templateFields.fieldNames.0":"checkinDate" },
+  { "$set": { "template.templateFields.$.fieldSignature.0": "Check-in[ ]*date[ ]*:[ ]*([0-9]{1,2}\\/[0-9]{1,2}\\/[0-9]{4})[ ]*$" } }
+)
+  
+db.getCollection('email_processor_config').update(
+  { "template.templateName":"hotel", "template.templateFields.fieldNames.0":"checkoutDate" },
+  { "$set": { "template.templateFields.$.fieldSignature.0": "Check-out[ ]*date[ ]*:[ ]*([0-9]{1,2}\\/[0-9]{1,2}\\/[0-9]{4})[ ]*$" } }
+)
