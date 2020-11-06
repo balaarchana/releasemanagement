@@ -1,0 +1,68 @@
+API :org/master/bands/create
+
+Request:
+{
+  "key": "ef75a06087abdf4cfe136c55cf12f2e6",
+  "data": [
+    {
+      "band": "A1",
+      "bandDescription": "Auto generated"
+    },
+    {
+      "band": "A2",
+      "bandDescription": "Auto generated"
+    },
+    {
+      "band": "B1",
+      "bandDescription": "Auto generated"
+    },
+    {
+      "band": "B2",
+      "bandDescription": "Auto generated"
+    },
+    {
+      "band": "C1",
+      "bandDescription": "Auto generated"
+    },
+    {
+      "band": "C2",
+      "bandDescription": "Auto generated"
+    },
+    {
+      "band": "Group B1",
+      "bandDescription": "Auto generated"
+    },
+    {
+      "band": "Group AA",
+      "bandDescription": "Auto generated"
+    },
+    {
+      "band": "Group B3",
+      "bandDescription": "Auto generated"
+    },
+    {
+      "band": "Group C1",
+      "bandDescription": "Auto generated"
+    },
+    {
+      "band": "Level F1",
+      "bandDescription": "Auto generated"
+    },
+    {
+      "band": "Level FF",
+      "bandDescription": "Auto generated"
+    },
+    {
+      "band": "Level XX",
+      "bandDescription": "Auto generated"
+    }
+  ]
+}
+
+Response:
+{
+    "outputCode": 200,
+    "outputStatus": "success",
+    "message": "success",
+    "data": "Band Successfully Created"
+}
