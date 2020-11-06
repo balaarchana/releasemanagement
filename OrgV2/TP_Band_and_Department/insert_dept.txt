@@ -1,0 +1,467 @@
+use cs_xxxx_product
+db.getCollection('org_department').insertMany(
+[{
+    
+    "departmentName" : "Marketing",
+    "departmentDescription" : "Marketing department",
+    "departmentId" : "W2G0000DE_001",
+    "parentId" : "",
+    "departmentLabel" : "Marketing",
+    "status" : "1",
+    "isActive" : true,
+    "createdOn_DT_UTC_EPOCH" : NumberLong(1490675532659),
+    "createdOn_DT_UTC" : "16-06-2020 12:12:17:099 UTC",
+    "createdBy" : "10010000122",
+    "modifiedOn_DT_UTC_EPOCH" : NumberLong(1490675532638),
+    "modifiedOn_DT_UTC" : "17-06-2020 12:12:17:099 UTC",
+    "modifiedBy" : "10010000122"
+}
+
+,
+{
+    
+    "departmentName" : "Sales",
+    "departmentDescription" : "Sales department",
+    "departmentId" : "W2G0000DE_002",
+    "parentId" : "",
+    "departmentLabel" : "Sales",
+    "status" : "1",
+    "isActive" : true,
+    "createdOn_DT_UTC_EPOCH" : NumberLong(1490675532659),
+    "createdOn_DT_UTC" : "16-06-2020 12:12:17:099 UTC",
+    "createdBy" : "10010000122",
+    "modifiedOn_DT_UTC_EPOCH" : NumberLong(1490675532638),
+    "modifiedOn_DT_UTC" : "17-06-2020 12:12:17:099 UTC",
+    "modifiedBy" : "10010000122"
+}
+
+,
+{
+    
+    "departmentName" : "India",
+    "departmentDescription" : "Marketing India department",
+    "departmentId" : "W2G0000DE_003",
+    "parentId" : "W2G0000DE_001",
+    "departmentLabel" : "Marketing|India",
+    "status" : "1",
+    "isActive" : true,
+    "createdOn_DT_UTC_EPOCH" : NumberLong(1490675532659),
+    "createdOn_DT_UTC" : "16-06-2020 12:12:17:099 UTC",
+    "createdBy" : "10010000122",
+    "modifiedOn_DT_UTC_EPOCH" : NumberLong(1490675532638),
+    "modifiedOn_DT_UTC" : "17-06-2020 12:12:17:099 UTC",
+    "modifiedBy" : "10010000122"
+}
+
+,
+{
+    
+    "departmentName" : "Europe",
+    "departmentDescription" : "Marketing Europe department",
+    "departmentId" : "W2G0000DE_004",
+    "parentId" : "W2G0000DE_001",
+    "departmentLabel" : "Marketing|Europe",
+    "status" : "1",
+    "isActive" : true,
+    "createdOn_DT_UTC_EPOCH" : NumberLong(1490675532659),
+    "createdOn_DT_UTC" : "16-06-2020 12:12:17:099 UTC",
+    "createdBy" : "10010000122",
+    "modifiedOn_DT_UTC_EPOCH" : NumberLong(1490675532638),
+    "modifiedOn_DT_UTC" : "17-06-2020 12:12:17:099 UTC",
+    "modifiedBy" : "10010000122"
+}
+
+,
+{
+    
+    "departmentName" : "Middle East",
+    "departmentDescription" : "Marketing Middle East department",
+    "departmentId" : "W2G0000DE_005",
+    "parentId" : "W2G0000DE_001",
+    "departmentLabel" : "Marketing|Middle East",
+    "status" : "1",
+    "isActive" : true,
+    "createdOn_DT_UTC_EPOCH" : NumberLong(1490675532659),
+    "createdOn_DT_UTC" : "16-06-2020 12:12:17:099 UTC",
+    "createdBy" : "10010000122",
+    "modifiedOn_DT_UTC_EPOCH" : NumberLong(1490675532638),
+    "modifiedOn_DT_UTC" : "17-06-2020 12:12:17:099 UTC",
+    "modifiedBy" : "10010000122"
+}
+
+,
+{
+    
+    "departmentName" : "South",
+    "departmentDescription" : "Marketing India South department",
+    "departmentId" : "W2G0000DE_006",
+    "parentId" : "W2G0000DE_003",
+    "departmentLabel" : "Marketing|India|South",
+    "status" : "1",
+    "isActive" : true,
+    "createdOn_DT_UTC_EPOCH" : NumberLong(1490675532659),
+    "createdOn_DT_UTC" : "16-06-2020 12:12:17:099 UTC",
+    "createdBy" : "10010000122",
+    "modifiedOn_DT_UTC_EPOCH" : NumberLong(1490675532638),
+    "modifiedOn_DT_UTC" : "17-06-2020 12:12:17:099 UTC",
+    "modifiedBy" : "10010000122"
+}
+
+,
+{
+    
+    "departmentName" : "East",
+    "departmentDescription" : "Marketing India East department",
+    "departmentId" : "W2G0000DE_007",
+    "parentId" : "W2G0000DE_003",
+    "departmentLabel" : "Marketing|India|East",
+    "status" : "1",
+    "isActive" : true,
+    "createdOn_DT_UTC_EPOCH" : NumberLong(1490675532659),
+    "createdOn_DT_UTC" : "16-06-2020 12:12:17:099 UTC",
+    "createdBy" : "10010000122",
+    "modifiedOn_DT_UTC_EPOCH" : NumberLong(1490675532638),
+    "modifiedOn_DT_UTC" : "17-06-2020 12:12:17:099 UTC",
+    "modifiedBy" : "10010000122"
+}
+
+,
+{
+    
+    "departmentName" : "West",
+    "departmentDescription" : "Marketing India West department",
+    "departmentId" : "W2G0000DE_008",
+    "parentId" : "W2G0000DE_003",
+    "departmentLabel" : "Marketing|India|West",
+    "status" : "1",
+    "isActive" : true,
+    "createdOn_DT_UTC_EPOCH" : NumberLong(1490675532659),
+    "createdOn_DT_UTC" : "16-06-2020 12:12:17:099 UTC",
+    "createdBy" : "10010000122",
+    "modifiedOn_DT_UTC_EPOCH" : NumberLong(1490675532638),
+    "modifiedOn_DT_UTC" : "17-06-2020 12:12:17:099 UTC",
+    "modifiedBy" : "10010000122"
+}
+
+,
+{
+    
+    "departmentName" : "Bangalore",
+    "departmentDescription" : "Marketing India South Bangalore department",
+    "departmentId" : "W2G0000DE_009",
+    "parentId" : "W2G0000DE_006",
+    "departmentLabel" : "Marketing|India|South|Bangalore",
+    "status" : "1",
+    "isActive" : true,
+    "createdOn_DT_UTC_EPOCH" : NumberLong(1490675532659),
+    "createdOn_DT_UTC" : "16-06-2020 12:12:17:099 UTC",
+    "createdBy" : "10010000122",
+    "modifiedOn_DT_UTC_EPOCH" : NumberLong(1490675532638),
+    "modifiedOn_DT_UTC" : "17-06-2020 12:12:17:099 UTC",
+    "modifiedBy" : "10010000122"
+}
+
+,
+{
+    
+    "departmentName" : "Hyderabad",
+    "departmentDescription" : "Marketing India South Hyderabad department",
+    "departmentId" : "W2G0000DE_0010",
+    "parentId" : "W2G0000DE_006",
+    "departmentLabel" : "Marketing|India|South|Hyderabad",
+    "status" : "1",
+    "isActive" : true,
+    "createdOn_DT_UTC_EPOCH" : NumberLong(1490675532659),
+    "createdOn_DT_UTC" : "16-06-2020 12:12:17:099 UTC",
+    "createdBy" : "10010000122",
+    "modifiedOn_DT_UTC_EPOCH" : NumberLong(1490675532638),
+    "modifiedOn_DT_UTC" : "17-06-2020 12:12:17:099 UTC",
+    "modifiedBy" : "10010000122"
+}
+
+,
+{
+    
+    "departmentName" : "Chennai",
+    "departmentDescription" : "Marketing India South Chennai department",
+    "departmentId" : "W2G0000DE_0011",
+    "parentId" : "W2G0000DE_006",
+    "departmentLabel" : "Marketing|India|South|Chennai",
+    "status" : "1",
+    "isActive" : true,
+    "createdOn_DT_UTC_EPOCH" : NumberLong(1490675532659),
+    "createdOn_DT_UTC" : "16-06-2020 12:12:17:099 UTC",
+    "createdBy" : "10010000122",
+    "modifiedOn_DT_UTC_EPOCH" : NumberLong(1490675532638),
+    "modifiedOn_DT_UTC" : "17-06-2020 12:12:17:099 UTC",
+    "modifiedBy" : "10010000122"
+}
+
+,
+{
+    
+    "departmentName" : "MG Road",
+    "departmentDescription" : "Marketing India South Bangalore MG Road department",
+    "departmentId" : "W2G0000DE_0012",
+    "parentId" : "W2G0000DE_009",
+    "departmentLabel" : "Marketing|India|South|Bangalore|MG Road",
+    "status" : "1",
+    "isActive" : true,
+    "createdOn_DT_UTC_EPOCH" : NumberLong(1490675532659),
+    "createdOn_DT_UTC" : "16-06-2020 12:12:17:099 UTC",
+    "createdBy" : "10010000122",
+    "modifiedOn_DT_UTC_EPOCH" : NumberLong(1490675532638),
+    "modifiedOn_DT_UTC" : "17-06-2020 12:12:17:099 UTC",
+    "modifiedBy" : "10010000122"
+}
+
+,
+{
+    
+    "departmentName" : "E-City",
+    "departmentDescription" : "Marketing India South Bangalore E-City department",
+    "departmentId" : "W2G0000DE_0013",
+    "parentId" : "W2G0000DE_009",
+    "departmentLabel" : "Marketing|India|South|Bangalore|E-City",
+    "status" : "1",
+    "isActive" : true,
+    "createdOn_DT_UTC_EPOCH" : NumberLong(1490675532659),
+    "createdOn_DT_UTC" : "16-06-2020 12:12:17:099 UTC",
+    "createdBy" : "10010000122",
+    "modifiedOn_DT_UTC_EPOCH" : NumberLong(1490675532638),
+    "modifiedOn_DT_UTC" : "17-06-2020 12:12:17:099 UTC",
+    "modifiedBy" : "10010000122"
+}
+,
+{
+    
+    "departmentName" : "Manyata",
+    "departmentDescription" : "Marketing India South Bangalore Manyata department",
+    "departmentId" : "W2G0000DE_0014",
+    "parentId" : "W2G0000DE_009",
+    "departmentLabel" : "Marketing|India|South|Bangalore|Manyata",
+    "status" : "1",
+    "isActive" : true,
+    "createdOn_DT_UTC_EPOCH" : NumberLong(1490675532659),
+    "createdOn_DT_UTC" : "16-06-2020 12:12:17:099 UTC",
+    "createdBy" : "10010000122",
+    "modifiedOn_DT_UTC_EPOCH" : NumberLong(1490675532638),
+    "modifiedOn_DT_UTC" : "17-06-2020 12:12:17:099 UTC",
+    "modifiedBy" : "10010000122"
+}
+
+,
+{
+    
+    "departmentName" : "India",
+    "departmentDescription" : "Sales India department",
+    "departmentId" : "W2G0000DE_0015",
+    "parentId" : "W2G0000DE_002",
+    "departmentLabel" : "Sales|India",
+    "status" : "1",
+    "isActive" : true,
+    "createdOn_DT_UTC_EPOCH" : NumberLong(1490675532659),
+    "createdOn_DT_UTC" : "16-06-2020 12:12:17:099 UTC",
+    "createdBy" : "10010000122",
+    "modifiedOn_DT_UTC_EPOCH" : NumberLong(1490675532638),
+    "modifiedOn_DT_UTC" : "17-06-2020 12:12:17:099 UTC",
+    "modifiedBy" : "10010000122"
+}
+
+,
+{
+    
+    "departmentName" : "Europe",
+    "departmentDescription" : "Sales Europe department",
+    "departmentId" : "W2G0000DE_0016",
+    "parentId" : "W2G0000DE_002",
+    "departmentLabel" : "Sales|Europe",
+    "status" : "1",
+    "isActive" : true,
+    "createdOn_DT_UTC_EPOCH" : NumberLong(1490675532659),
+    "createdOn_DT_UTC" : "16-06-2020 12:12:17:099 UTC",
+    "createdBy" : "10010000122",
+    "modifiedOn_DT_UTC_EPOCH" : NumberLong(1490675532638),
+    "modifiedOn_DT_UTC" : "17-06-2020 12:12:17:099 UTC",
+    "modifiedBy" : "10010000122"
+}
+
+,
+{
+    
+    "departmentName" : "Middle East",
+    "departmentDescription" : "Sales Middle East department",
+    "departmentId" : "W2G0000DE_0017",
+    "parentId" : "W2G0000DE_002",
+    "departmentLabel" : "Sales|Middle East",
+    "status" : "1",
+    "isActive" : true,
+    "createdOn_DT_UTC_EPOCH" : NumberLong(1490675532659),
+    "createdOn_DT_UTC" : "16-06-2020 12:12:17:099 UTC",
+    "createdBy" : "10010000122",
+    "modifiedOn_DT_UTC_EPOCH" : NumberLong(1490675532638),
+    "modifiedOn_DT_UTC" : "17-06-2020 12:12:17:099 UTC",
+    "modifiedBy" : "10010000122"
+}
+
+,
+{
+    
+    "departmentName" : "South",
+    "departmentDescription" : "Sales India South department",
+    "departmentId" : "W2G0000DE_0018",
+    "parentId" : "W2G0000DE_0015",
+    "departmentLabel" : "Sales|India|South",
+    "status" : "1",
+    "isActive" : true,
+    "createdOn_DT_UTC_EPOCH" : NumberLong(1490675532659),
+    "createdOn_DT_UTC" : "16-06-2020 12:12:17:099 UTC",
+    "createdBy" : "10010000122",
+    "modifiedOn_DT_UTC_EPOCH" : NumberLong(1490675532638),
+    "modifiedOn_DT_UTC" : "17-06-2020 12:12:17:099 UTC",
+    "modifiedBy" : "10010000122"
+}
+
+,
+{
+    
+    "departmentName" : "East",
+    "departmentDescription" : "Sales India East department",
+    "departmentId" : "W2G0000DE_0019",
+    "parentId" : "W2G0000DE_0015",
+    "departmentLabel" : "Sales|India|East",
+    "status" : "1",
+    "isActive" : true,
+    "createdOn_DT_UTC_EPOCH" : NumberLong(1490675532659),
+    "createdOn_DT_UTC" : "16-06-2020 12:12:17:099 UTC",
+    "createdBy" : "10010000122",
+    "modifiedOn_DT_UTC_EPOCH" : NumberLong(1490675532638),
+    "modifiedOn_DT_UTC" : "17-06-2020 12:12:17:099 UTC",
+    "modifiedBy" : "10010000122"
+}
+
+,
+{
+    
+    "departmentName" : "West",
+    "departmentDescription" : "Sales India West department",
+    "departmentId" : "W2G0000DE_0020",
+    "parentId" : "W2G0000DE_0015",
+    "departmentLabel" : "Sales|India|West",
+    "status" : "1",
+    "isActive" : true,
+    "createdOn_DT_UTC_EPOCH" : NumberLong(1490675532659),
+    "createdOn_DT_UTC" : "16-06-2020 12:12:17:099 UTC",
+    "createdBy" : "10010000122",
+    "modifiedOn_DT_UTC_EPOCH" : NumberLong(1490675532638),
+    "modifiedOn_DT_UTC" : "17-06-2020 12:12:17:099 UTC",
+    "modifiedBy" : "10010000122"
+}
+
+,
+{
+    
+    "departmentName" : "Bangalore",
+    "departmentDescription" : "Sales India South Bangalore department",
+    "departmentId" : "W2G0000DE_0021",
+    "parentId" : "W2G0000DE_0018",
+    "departmentLabel" : "Sales|India|South|Bangalore",
+    "status" : "1",
+    "isActive" : true,
+    "createdOn_DT_UTC_EPOCH" : NumberLong(1490675532659),
+    "createdOn_DT_UTC" : "16-06-2020 12:12:17:099 UTC",
+    "createdBy" : "10010000122",
+    "modifiedOn_DT_UTC_EPOCH" : NumberLong(1490675532638),
+    "modifiedOn_DT_UTC" : "17-06-2020 12:12:17:099 UTC",
+    "modifiedBy" : "10010000122"
+}
+
+,
+{
+    
+    "departmentName" : "Hyderabad",
+    "departmentDescription" : "Sales India South Hyderabad department",
+    "departmentId" : "W2G0000DE_0022",
+    "parentId" : "W2G0000DE_0018",
+    "departmentLabel" : "Sales|India|South|Hyderabad",
+    "status" : "1",
+    "isActive" : true,
+    "createdOn_DT_UTC_EPOCH" : NumberLong(1490675532659),
+    "createdOn_DT_UTC" : "16-06-2020 12:12:17:099 UTC",
+    "createdBy" : "10010000122",
+    "modifiedOn_DT_UTC_EPOCH" : NumberLong(1490675532638),
+    "modifiedOn_DT_UTC" : "17-06-2020 12:12:17:099 UTC",
+    "modifiedBy" : "10010000122"
+}
+
+,
+{
+    
+    "departmentName" : "Chennai",
+    "departmentDescription" : "Sales India South Chennai department",
+    "departmentId" : "W2G0000DE_0023",
+    "parentId" : "W2G0000DE_0018",
+    "departmentLabel" : "Sales|India|South|Chennai",
+    "status" : "1",
+    "isActive" : true,
+    "createdOn_DT_UTC_EPOCH" : NumberLong(1490675532659),
+    "createdOn_DT_UTC" : "16-06-2020 12:12:17:099 UTC",
+    "createdBy" : "10010000122",
+    "modifiedOn_DT_UTC_EPOCH" : NumberLong(1490675532638),
+    "modifiedOn_DT_UTC" : "17-06-2020 12:12:17:099 UTC",
+    "modifiedBy" : "10010000122"
+}
+
+,
+{
+    
+    "departmentName" : "MG Road",
+    "departmentDescription" : "Sales India South Bangalore MG Road department",
+    "departmentId" : "W2G0000DE_0024",
+    "parentId" : "W2G0000DE_0021",
+    "departmentLabel" : "Sales|India|South|Bangalore|MG Road",
+    "status" : "1",
+    "isActive" : true,
+    "createdOn_DT_UTC_EPOCH" : NumberLong(1490675532659),
+    "createdOn_DT_UTC" : "16-06-2020 12:12:17:099 UTC",
+    "createdBy" : "10010000122",
+    "modifiedOn_DT_UTC_EPOCH" : NumberLong(1490675532638),
+    "modifiedOn_DT_UTC" : "17-06-2020 12:12:17:099 UTC",
+    "modifiedBy" : "10010000122"
+}
+
+,
+{
+    
+    "departmentName" : "E-City",
+    "departmentDescription" : "Sales India South Bangalore E-City department",
+    "departmentId" : "W2G0000DE_0025",
+    "parentId" : "W2G0000DE_0021",
+    "departmentLabel" : "Sales|India|South|Bangalore|E-City",
+    "status" : "1",
+    "isActive" : true,
+    "createdOn_DT_UTC_EPOCH" : NumberLong(1490675532659),
+    "createdOn_DT_UTC" : "16-06-2020 12:12:17:099 UTC",
+    "createdBy" : "10010000122",
+    "modifiedOn_DT_UTC_EPOCH" : NumberLong(1490675532638),
+    "modifiedOn_DT_UTC" : "17-06-2020 12:12:17:099 UTC",
+    "modifiedBy" : "10010000122"
+}
+
+,
+{
+    
+    "departmentName" : "Manyata",
+    "departmentDescription" : "Sales India South Bangalore Manyata department",
+    "departmentId" : "W2G0000DE_0026",
+    "parentId" : "W2G0000DE_0021",
+    "departmentLabel" : "Sales|India|South|Bangalore|Manyata",
+    "status" : "1",
+    "isActive" : true,
+    "createdOn_DT_UTC_EPOCH" : NumberLong(1490675532659),
+    "createdOn_DT_UTC" : "16-06-2020 12:12:17:099 UTC",
+    "createdBy" : "10010000122",
+    "modifiedOn_DT_UTC_EPOCH" : NumberLong(1490675532638),
+    "modifiedOn_DT_UTC" : "17-06-2020 12:12:17:099 UTC",
+    "modifiedBy" : "10010000122"
+}])
