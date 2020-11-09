@@ -1,0 +1,8 @@
+db.adminCommand("listDatabases").databases.forEach( function (database) {
+if (database.name != "" && database.name.startsWith("cs_") && database.name.endsWith("_product") ) {
+db = db.getSiblingDB(database.name)
+db.getCollection('org_profile').update(
+{},
+{$set: { "fieldList.0.organizationInformation.value.department": { "value":"","order":"2"} }})
+}
+})
