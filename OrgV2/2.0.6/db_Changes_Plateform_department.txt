@@ -1,0 +1,3 @@
+use platform_db
+db.getCollection('platform_default_org_profile').update({},
+{$set: { "fieldList.0.organizationInformation.value.department": { "value":"","order":"2"} }})
