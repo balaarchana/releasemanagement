@@ -1,0 +1,13 @@
+use cs_xxxx_user
+db.getCollection("u_cash_advance_config").update({},
+{
+   $unset: {
+        "expenseSequence": {
+           
+        },
+        "batchSequence": {
+            
+        }
+    }
+}	
+);
