@@ -15,4 +15,4 @@ db.u_expense_sequence.insert([
 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
-Note: expenseSequence and batchSequence values should be copied from corresponding values from u_expense_config collection when executing this script in prod db
+Note: expenseSequence and batchSequence values should be copied from corresponding values from u_expense_config collection before executing this script
