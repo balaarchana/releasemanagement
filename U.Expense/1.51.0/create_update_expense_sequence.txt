@@ -5,7 +5,7 @@ db.u_expense_sequence.insert([
         "value" : "00000000"
     },
     "expenseSequence" : {
-        "value" : "00010743"
+        "value" : "00010744"
     },
     "batchSequence" : {
         "value" : "00000171"
