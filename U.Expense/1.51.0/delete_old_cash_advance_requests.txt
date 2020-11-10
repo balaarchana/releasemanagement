@@ -1,2 +1,6 @@
 use cs_xxxx_user
 db.u_cash_advance_details.remove({});
+
+----------------------------------------------
+
+db.u_cash_advance_audit_rule.remove({});
