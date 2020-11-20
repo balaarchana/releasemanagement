@@ -1,0 +1,19 @@
+package client_1001
+
+import com.wipro.c4.core.rules.module.expense.ExpenseRule;
+import org.json.JSONArray;
+import org.json.JSONObject;
+
+dialect "java"
+
+rule "Rule 1"
+	when
+	eR:ExpenseRule(eR.has("expenseReportStatus") && eR.has("claimAmount") && eR.has("approvedAmount"));
+	then
+			if(("SUBMITTED".equals(eR.getString("expenseReportStatus")) || "APPROVED".equals(eR.getString("expenseReportStatus"))) && (Double.parseDouble(eR.getString("approvedAmount")) > Double.parseDouble(eR.getString("claimAmount")))){
+				JSONObject	approvedAmount= new JSONObject()
+					.put("violationType", "HARD_LIMIT")
+					.put("message", "expense.rule.approved.amount.limit.exceeded");
+			eR.setRuleOutput(new JSONObject().put("violation",approvedAmount));
+			}
+end
