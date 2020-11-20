@@ -1,0 +1,3 @@
+use platform_db
+db.getCollection('core_config_url').updateMany({"type" : "url"},{$set:{ "env_get_master_groups_v2" : "org/v2/groups/master"}})
+
