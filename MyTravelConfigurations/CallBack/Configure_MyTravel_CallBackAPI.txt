@@ -1,2 +1,2 @@
-db.getCollection('callback').update({"topic":"task_response_pool", "orgs.orgId":1003}, {$set:{"orgs.$.callback.url":"https://mytravelapimdev.azurewebsites.net/api/TravelLob/CallbackAPI"}})
-db.getCollection('callback').update({"topic":"notification_req", "orgs.orgId":1003}, {$set:{"orgs.$.callback.url":"https://mytravelapimdev.azurewebsites.net/api/TravelLob/CallbackAPI"}})
+db.getCollection('callback').update({"topic":"task_response_pool", "orgs.orgId":1003}, {$set:{"orgs.$.callback.url":"https://ApiWiproMyTravelLobQA.azurewebsites.net/api/TravelLob/CallbackAPI"}})
+db.getCollection('callback').update({"topic":"notification_req", "orgs.orgId":1003}, {$set:{"orgs.$.callback.url":"https://ApiWiproMyTravelLobQA.azurewebsites.net/api/TravelLob/CallbackAPI"}})
