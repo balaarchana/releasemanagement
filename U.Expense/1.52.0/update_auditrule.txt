@@ -1,0 +1,28 @@
+use cs_xxxx_user
+db.u_cash_advance_audit_rule.insert([
+	{
+	    "ruleName" : "unsettledCAcount",
+	    "ruleDescription" : "No. of allowed advance requests by a user",
+	    "limit" : 5,
+	    "ruleViolationType" : "soft",
+	    "ruleViolationMessage" : "More than 5 advances are pending to be settled by the employee",
+	    "status" : "ACTIVE"
+	},
+	{
+	    "ruleName" : "maxAllowedTotalRequestedAmount",
+	    "ruleDescription" : "Maximum amount allowed to be raised in a cash advance",
+	    "amountLimits" : [ 
+	        {
+	            "limit" : 500000,
+	            "currency" : "INR"
+	        }, 
+	        {
+	            "limit" : 500000,
+	            "currency" : "USD"
+	        }
+	    ],
+	    "ruleViolationType" : "hard",
+	    "ruleViolationMessage" : "Amount requested is beyond company limit",
+	    "status" : "ACTIVE"
+	}
+]);
