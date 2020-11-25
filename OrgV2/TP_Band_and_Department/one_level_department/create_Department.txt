@@ -1,0 +1,102 @@
+use cs_xxxx_product
+db.getCollection('org_department').insertMany(
+[
+{
+    
+    "departmentName" : "Strategy",
+    "departmentDescription" : "Strategy department",
+    "departmentId" : "W2G0000DE_001",
+    "parentId" : "",
+    "departmentLabel" : "Strategy",
+    "status" : "1",
+    "isActive" : true,
+    "createdOn_DT_UTC_EPOCH" : NumberLong(1490675532659),
+    "createdOn_DT_UTC" : "16-06-2020 12:12:17:099 UTC",
+    "createdBy" : "10010000122",
+    "modifiedOn_DT_UTC_EPOCH" : NumberLong(1490675532638),
+    "modifiedOn_DT_UTC" : "17-06-2020 12:12:17:099 UTC",
+    "modifiedBy" : "10010000122"
+},
+
+{
+    "departmentName" : "Sales",
+    "departmentDescription" : "Sales department",
+    "departmentId" : "W2G0000DE_002",
+    "parentId" : "",
+    "departmentLabel" : "Sales",
+    "status" : "1",
+    "isActive" : true,
+    "createdOn_DT_UTC_EPOCH" : NumberLong(1490675532659),
+    "createdOn_DT_UTC" : "16-06-2020 12:12:17:099 UTC",
+    "createdBy" : "10010000122",
+    "modifiedOn_DT_UTC_EPOCH" : NumberLong(1490675532638),
+    "modifiedOn_DT_UTC" : "17-06-2020 12:12:17:099 UTC",
+    "modifiedBy" : "10010000122"
+},
+
+{
+    "departmentName" : "Information Technology",
+    "departmentDescription" : "Information Technology department",
+    "departmentId" : "W2G0000DE_003",
+    "parentId" : "",
+    "departmentLabel" : "Information Technology",
+    "status" : "1",
+    "isActive" : true,
+    "createdOn_DT_UTC_EPOCH" : NumberLong(1490675532659),
+    "createdOn_DT_UTC" : "16-06-2020 12:12:17:099 UTC",
+    "createdBy" : "10010000122",
+    "modifiedOn_DT_UTC_EPOCH" : NumberLong(1490675532638),
+    "modifiedOn_DT_UTC" : "17-06-2020 12:12:17:099 UTC",
+    "modifiedBy" : "10010000122"
+},
+
+{
+    "departmentName" : "Finance",
+    "departmentDescription" : "Finance department",
+    "departmentId" : "W2G0000DE_004",
+    "parentId" : "",
+    "departmentLabel" : "Finance",
+    "status" : "1",
+    "isActive" : true,
+    "createdOn_DT_UTC_EPOCH" : NumberLong(1490675532659),
+    "createdOn_DT_UTC" : "16-06-2020 12:12:17:099 UTC",
+    "createdBy" : "10010000122",
+    "modifiedOn_DT_UTC_EPOCH" : NumberLong(1490675532638),
+    "modifiedOn_DT_UTC" : "17-06-2020 12:12:17:099 UTC",
+    "modifiedBy" : "10010000122"
+},
+
+{
+    "departmentName" : "Marketing",
+    "departmentDescription" : "Marketing department",
+    "departmentId" : "W2G0000DE_005",
+    "parentId" : "",
+    "departmentLabel" : "Marketing",
+    "status" : "1",
+    "isActive" : true,
+    "createdOn_DT_UTC_EPOCH" : NumberLong(1490675532659),
+    "createdOn_DT_UTC" : "16-06-2020 12:12:17:099 UTC",
+    "createdBy" : "10010000122",
+    "modifiedOn_DT_UTC_EPOCH" : NumberLong(1490675532638),
+    "modifiedOn_DT_UTC" : "17-06-2020 12:12:17:099 UTC",
+    "modifiedBy" : "10010000122"
+},
+
+{
+    "departmentName" : "HR",
+    "departmentDescription" : "HR department",
+    "departmentId" : "W2G0000DE_006",
+    "parentId" : "",
+    "departmentLabel" : "HR",
+    "status" : "1",
+    "isActive" : true,
+    "createdOn_DT_UTC_EPOCH" : NumberLong(1490675532659),
+    "createdOn_DT_UTC" : "16-06-2020 12:12:17:099 UTC",
+    "createdBy" : "10010000122",
+    "modifiedOn_DT_UTC_EPOCH" : NumberLong(1490675532638),
+    "modifiedOn_DT_UTC" : "17-06-2020 12:12:17:099 UTC",
+    "modifiedBy" : "10010000122"
+}
+
+]
+)
