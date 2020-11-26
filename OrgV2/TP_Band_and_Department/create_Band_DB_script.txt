@@ -1,0 +1,99 @@
+==========================================
+Script to insert band 
+------------------------------------------
+
+use cs_xxxx_product
+db.getCollection('org_band').insertMany(
+[
+{
+    "createdDate" : "25-11-2020 06:30:21:003 UTC",
+    "bandId" : "BAND_1346_01",
+    "createdBy" : "13460000122",
+    "activeBand" : true,
+    "createdOn_DT_UTC_EPOCH" : NumberLong(1606285821003),
+    "band" : "A1",
+    "status" : "1",
+    "bandDescription" : "Auto generated"
+},
+
+{
+    "createdDate" : "25-11-2020 06:30:21:124 UTC",
+    "bandId" : "BAND_1346_02",
+    "createdBy" : "13460000122",
+    "activeBand" : true,
+    "createdOn_DT_UTC_EPOCH" : NumberLong(1606285821124),
+    "band" : "A2",
+    "status" : "1",
+    "bandDescription" : "Auto generated"
+},
+
+{
+    "createdDate" : "25-11-2020 06:30:21:184 UTC",
+    "bandId" : "BAND_1346_03",
+    "createdBy" : "13460000122",
+    "activeBand" : true,
+    "createdOn_DT_UTC_EPOCH" : NumberLong(1606285821184),
+    "band" : "B1",
+    "status" : "1",
+    "bandDescription" : "Auto generated"
+},
+
+{
+    "createdDate" : "25-11-2020 06:30:21:224 UTC",
+    "bandId" : "BAND_1346_04",
+    "createdBy" : "13460000122",
+    "activeBand" : true,
+    "createdOn_DT_UTC_EPOCH" : NumberLong(1606285821224),
+    "band" : "B2",
+    "status" : "1",
+    "bandDescription" : "Auto generated"
+},
+
+{
+    "bandId" : "BAND_1346_05",
+    "createdBy" : "13460000122",
+    "activeBand" : true,
+    "createdOn_DT_UTC_EPOCH" : NumberLong(1606285821258),
+    "band" : "B3",
+    "status" : "1",
+    "bandDescription" : "Auto generated"
+},
+
+{
+    "createdDate" : "25-11-2020 06:30:21:293 UTC",
+    "bandId" : "BAND_1346_06",
+    "createdBy" : "13460000122",
+    "activeBand" : true,
+    "createdOn_DT_UTC_EPOCH" : NumberLong(1606285821293),
+    "band" : "C1",
+    "status" : "1",
+    "bandDescription" : "Auto generated"
+},
+
+{
+    "createdDate" : "25-11-2020 06:30:21:328 UTC",
+    "bandId" : "BAND_1346_07",
+    "createdBy" : "13460000122",
+    "activeBand" : true,
+    "createdOn_DT_UTC_EPOCH" : NumberLong(1606285821328),
+    "band" : "C2",
+    "status" : "1",
+    "bandDescription" : "Auto generated"
+},
+
+{
+    "createdDate" : "25-11-2020 06:30:21:364 UTC",
+    "bandId" : "BAND_1346_08",
+    "createdBy" : "13460000122",
+    "activeBand" : true,
+    "createdOn_DT_UTC_EPOCH" : NumberLong(1606285821364),
+    "band" : "D",
+    "status" : "1",
+    "bandDescription" : "Auto generated"
+}
+
+]
+)
+
+
+
