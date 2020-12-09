@@ -1,0 +1,45 @@
+{
+  "name": "abt",
+  "workflow": [
+    {
+      "name": "plan",
+      "featureId": "4031"
+    },
+    {
+      "name": "trip_details",
+      "featureId": "4032"
+    },
+    {
+      "name": "hotel_search",
+      "featureId": "4036",
+      "allow_skip_search": true
+    },
+    {
+      "name": "trip_preconfirmation",
+      "featureId": "4040",
+      "approval": true,
+      "payment": false,
+      "partner_book": false
+    },
+    {
+      "name": "trip_confirmation",
+      "featureId": "4041"
+    }
+  ],
+  "sd_workflow": [
+    {
+      "name": "hotel_book_payment",
+      "mode": [
+        "deposit"
+      ]
+    },
+    {
+      "name": "hotel_cancel",
+      "mode": [
+        "online",
+        "offline"
+      ],
+      "retrieve_pnr": true
+    }
+  ]
+}
