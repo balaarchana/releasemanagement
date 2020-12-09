@@ -1,0 +1,69 @@
+package client_1001
+
+import com.wipro.c4.core.rules.module.approval.ApprovalRule;
+import org.json.JSONArray;
+import org.json.JSONObject;
+
+dialect "java"
+
+rule "Rule 1 self booking preapproved"
+	when
+	aR:ApprovalRule((aR.getBoolean("selfBookingTravel") == true));
+	then
+	aR.put("ApprovalRequired",false);
+end
+
+rule "Rule 2 Scot Taylor domestic pre approve"
+	when
+	aR:ApprovalRule((aR.getBoolean("selfBookingTravel") == false) && 
+					(aR.getString("userId").equals("12310000395")) &&
+					(aR.getString("tripType").equals("domestic"))
+					);
+	then
+	aR.put("ApprovalRequired",false);
+end
+
+rule "Rule 3 Scot Taylor international > 20K"
+	when
+	aR:ApprovalRule((aR.getBoolean("selfBookingTravel") == false) && 
+					(aR.getString("userId").equals("12310000395")) &&
+					(aR.getString("tripType").equals("international")) &&
+					(aR.getFloat("amount") > 20000)
+					);
+	then
+	aR.put("ApprovalMatrix","T:1>T:2>G:BFM");
+	aR.put("ApprovalRequired",true);
+end
+
+rule "Rule 4 Scot Taylor international < 20K"
+	when
+	aR:ApprovalRule((aR.getBoolean("selfBookingTravel") == false) && 
+					(aR.getString("userId").equals("12310000395")) &&
+					(aR.getString("tripType").equals("international")) &&
+					(aR.getFloat("amount") <= 20000)
+					);
+	then
+	aR.put("ApprovalRequired",true);
+	aR.put("ApprovalMatrix","T:1>G:BFM");
+end
+
+rule "Rule 5 dora travis assumed tmartin as dora for 1231 org"
+	when
+	aR:ApprovalRule((aR.getBoolean("selfBookingTravel") == false) && 
+					(aR.getString("userId").equals("12310000122"))
+					);
+	then
+	aR.put("ApprovalRequired",true);
+	aR.put("ApprovalMatrix","G:BFM");
+end
+
+rule "Rule 6 other users"
+	when
+	aR:ApprovalRule((aR.getBoolean("selfBookingTravel") == false) && 
+					!(aR.getString("userId").equals("12310000395")) &&
+					!(aR.getString("userId").equals("12310000122")) &&
+					);
+	then
+	aR.put("ApprovalRequired",true);
+	aR.put("ApprovalMatrix","T:1>G:BFM");
+end
