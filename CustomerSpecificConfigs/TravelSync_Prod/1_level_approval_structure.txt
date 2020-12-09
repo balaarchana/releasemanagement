@@ -1,0 +1,11 @@
+To configure manager with one level approval. please copy the content under below path
+
+Path - cs_1111_product>>"approval_engine_org_structure"
+
+{
+    "_fromUserName" : "mpalanganda",
+    "_fromUserId" : "11110000001",
+    "typeOfRel" : "1",
+    "_toUserName" : "jprashanth",
+    "_toUserId" : "11110000002"
+}
