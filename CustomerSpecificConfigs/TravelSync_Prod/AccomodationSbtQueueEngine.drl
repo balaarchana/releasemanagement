@@ -1,0 +1,18 @@
+import com.wipro.c4.core.rules.module.travel.AccomodationSbtQueueEngine;
+import org.json.JSONObject;
+import com.google.gson.Gson;
+import org.json.JSONArray;
+
+dialect "java"
+rule "Acco"
+
+    when
+    accomodationSbtQueueEngine:AccomodationSbtQueueEngine(eval(getQueueType(accomodationSbtQueueEngine)).equalsIgnoreCase("ACCO"));
+    then
+  	accomodationSbtQueueEngine.setQueue("Accommodation");
+
+end
+
+function String getQueueType(Object taskObjectInfo){
+			return "ACCO";
+	}
