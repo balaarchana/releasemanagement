@@ -1,0 +1,943 @@
+use cs_xxxx_user
+db.getCollection("u_cash_advance_config").update({},{
+	$set: {
+    "allowedCurrencyCodes" : [ 
+        "USD", 
+        "EUR", 
+        "GBP", 
+        "INR"
+    ],
+    "allowOnlyDomesticCurrency" : false,
+    "paymentModes" : [ 
+        {
+            "modeName" : "cash",
+            "modeDisplayName" : "Cash",
+            "enabled" : true
+        }, 
+        {
+            "modeName" : "card",
+            "modeDisplayName" : "Card",
+            "enabled" : true
+        }, 
+        {
+            "modeName" : "forex",
+            "modeDisplayName" : "Forex",
+            "enabled" : true
+        }
+    ],
+    "customFields" : [ 
+        {
+            "hiddenFor" : {
+                "approver" : [ 
+                    "draft", 
+                    "rejected"
+                ],
+                "admin" : [ 
+                    "draft", 
+                    "rejected", 
+                    "submitted", 
+                    "approved"
+                ],
+                "user" : []
+            },
+            "fieldName" : "customField1",
+            "widget" : "text",
+            "fieldLabel" : "Custom Field 1",
+            "readOnlyFor" : {
+                "approver" : [ 
+                    "submitted", 
+                    "approved", 
+                    "issued", 
+                    "closed"
+                ],
+                "admin" : [ 
+                    "issued", 
+                    "closed"
+                ],
+                "user" : [ 
+                    "submitted", 
+                    "approved", 
+                    "issued", 
+                    "closed", 
+                    "deleted"
+                ]
+            },
+            "mandatory" : true,
+            "enabled" : false
+        }, 
+        {
+            "hiddenFor" : {
+                "approver" : [ 
+                    "draft", 
+                    "rejected"
+                ],
+                "admin" : [ 
+                    "draft", 
+                    "rejected", 
+                    "submitted", 
+                    "approved"
+                ],
+                "user" : [],
+                "processor" : [ 
+                    "draft", 
+                    "rejected", 
+                    "submitted"
+                ]
+            },
+            "fieldName" : "customField2",
+            "widget" : "select",
+            "fieldLabel" : "Custom Field 2",
+            "values" : {
+                "nontravel" : "Testing2",
+                "travel" : "Testing1"
+            },
+            "readOnlyFor" : {
+                "approver" : [ 
+                    "submitted", 
+                    "approved", 
+                    "issued", 
+                    "closed"
+                ],
+                "admin" : [ 
+                    "issued", 
+                    "closed"
+                ],
+                "user" : [ 
+                    "submitted", 
+                    "approved", 
+                    "issued", 
+                    "closed", 
+                    "deleted"
+                ]
+            },
+            "mandatory" : true,
+            "enabled" : false
+        }, 
+        {
+            "hiddenFor" : {
+                "approver" : [ 
+                    "draft", 
+                    "rejected"
+                ],
+                "admin" : [ 
+                    "draft", 
+                    "rejected", 
+                    "submitted", 
+                    "approved"
+                ],
+                "user" : []
+            },
+            "fieldName" : "customField3",
+            "widget" : "check",
+            "fieldLabel" : "Custom Field 3",
+            "readOnlyFor" : {
+                "approver" : [ 
+                    "submitted", 
+                    "approved", 
+                    "issued", 
+                    "closed"
+                ],
+                "admin" : [ 
+                    "issued", 
+                    "closed"
+                ],
+                "user" : [ 
+                    "submitted", 
+                    "approved", 
+                    "issued", 
+                    "closed", 
+                    "deleted"
+                ]
+            },
+            "mandatory" : true,
+            "enabled" : false
+        }
+    ],
+    "formFields" : {
+        "cashAdvanceName" : {
+            "hiddenFor" : {
+                "approver" : [ 
+                    "draft", 
+                    "rejected"
+                ],
+                "admin" : [ 
+                    "rejected", 
+                    "submitted"
+                ],
+                "user" : []
+            },
+            "fieldLabel" : "Advance Name",
+            "readOnlyFor" : {
+                "approver" : [ 
+                    "submitted", 
+                    "approved", 
+                    "issued", 
+                    "returned", 
+                    "closed"
+                ],
+                "admin" : [ 
+                    "approved", 
+                    "issued", 
+                    "returned", 
+                    "closed"
+                ],
+                "user" : [ 
+                    "submitted", 
+                    "approved", 
+                    "issued", 
+                    "returned", 
+                    "closed", 
+                    "deleted"
+                ]
+            },
+            "mandatory" : true,
+            "enabled" : true
+        },
+        "businessPurpose" : {
+            "hiddenFor" : {
+                "approver" : [ 
+                    "draft", 
+                    "rejected"
+                ],
+                "admin" : [ 
+                    "rejected", 
+                    "submitted"
+                ],
+                "user" : []
+            },
+            "fieldLabel" : "Business Purpose",
+            "readOnlyFor" : {
+                "approver" : [ 
+                    "submitted", 
+                    "approved", 
+                    "issued", 
+                    "returned", 
+                    "closed"
+                ],
+                "admin" : [ 
+                    "approved", 
+                    "issued", 
+                    "returned", 
+                    "closed"
+                ],
+                "user" : [ 
+                    "submitted", 
+                    "approved", 
+                    "issued", 
+                    "returned", 
+                    "closed", 
+                    "deleted"
+                ]
+            },
+            "mandatory" : true,
+            "enabled" : true
+        },
+        "comments" : {
+            "hiddenFor" : {
+                "approver" : [ 
+                    "draft", 
+                    "rejected"
+                ],
+                "admin" : [ 
+                    "draft", 
+                    "rejected", 
+                    "submitted"
+                ],
+                "user" : []
+            },
+            "fieldLabel" : "Comments",
+            "readOnlyFor" : {
+                "approver" : [ 
+                    "submitted", 
+                    "approved", 
+                    "issued", 
+                    "returned", 
+                    "closed"
+                ],
+                "admin" : [ 
+                    "approved", 
+                    "issued", 
+                    "returned", 
+                    "closed"
+                ],
+                "user" : [ 
+                    "submitted", 
+                    "approved", 
+                    "issued", 
+                    "returned", 
+                    "closed", 
+                    "deleted"
+                ]
+            },
+            "mandatory" : false,
+            "enabled" : true
+        },
+        "requestedDate" : {
+            "hiddenFor" : {
+                "approver" : [ 
+                    "draft", 
+                    "rejected"
+                ],
+                "admin" : [ 
+                    "draft", 
+                    "rejected", 
+                    "submitted"
+                ],
+                "user" : []
+            },
+            "fieldLabel" : "Requested Disbursement Date",
+            "readOnlyFor" : {
+                "approver" : [ 
+                    "approved", 
+                    "issued", 
+                    "returned", 
+                    "closed"
+                ],
+                "admin" : [ 
+                    "approved", 
+                    "issued", 
+                    "returned", 
+                    "closed"
+                ],
+                "user" : [ 
+                    "submitted", 
+                    "approved", 
+                    "issued", 
+                    "returned", 
+                    "closed", 
+                    "deleted"
+                ]
+            },
+            "mandatory" : true,
+            "enabled" : true
+        },
+        "issuedDate" : {
+            "hiddenFor" : {
+                "approver" : [ 
+                    "draft", 
+                    "rejected", 
+                    "submitted", 
+                    "approved"
+                ],
+                "admin" : [ 
+                    "rejected", 
+                    "submitted"
+                ],
+                "user" : [ 
+                    "draft", 
+                    "rejected", 
+                    "submitted", 
+                    "approved"
+                ]
+            },
+            "fieldLabel" : "Issued Date",
+            "readOnlyFor" : {
+                "approver" : [ 
+                    "approved", 
+                    "issued", 
+                    "returned", 
+                    "closed"
+                ],
+                "admin" : [ 
+                    "issued", 
+                    "returned", 
+                    "closed"
+                ],
+                "user" : [ 
+                    "issued", 
+                    "returned", 
+                    "closed", 
+                    "deleted"
+                ]
+            },
+            "mandatory" : true,
+            "enabled" : true
+        },
+        "type" : {
+            "hiddenFor" : {
+                "approver" : [ 
+                    "draft", 
+                    "rejected"
+                ],
+                "admin" : [ 
+                    "rejected", 
+                    "submitted"
+                ],
+                "user" : []
+            },
+            "widget" : "radio",
+            "fieldLabel" : "Cash Advance Type",
+            "values" : {
+                "nontravel" : "Non-Travel",
+                "travel" : "Travel"
+            },
+            "readOnlyFor" : {
+                "approver" : [ 
+                    "submitted", 
+                    "approved", 
+                    "issued", 
+                    "returned", 
+                    "closed"
+                ],
+                "admin" : [ 
+                    "approved", 
+                    "issued", 
+                    "returned", 
+                    "closed"
+                ],
+                "user" : [ 
+                    "submitted", 
+                    "approved", 
+                    "issued", 
+                    "returned", 
+                    "closed", 
+                    "deleted"
+                ]
+            },
+            "mandatory" : true,
+            "enabled" : true
+        },
+        "tripNumber" : {
+            "hiddenFor" : {
+                "approver" : [ 
+                    "draft", 
+                    "rejected"
+                ],
+                "admin" : [ 
+                    "rejected", 
+                    "submitted"
+                ],
+                "user" : []
+            },
+            "fieldLabel" : "Trip Number",
+            "readOnlyFor" : {
+                "approver" : [ 
+                    "submitted", 
+                    "approved", 
+                    "issued", 
+                    "returned", 
+                    "closed"
+                ],
+                "admin" : [ 
+                    "approved", 
+                    "issued", 
+                    "returned", 
+                    "closed"
+                ],
+                "user" : [ 
+                    "submitted", 
+                    "approved", 
+                    "issued", 
+                    "returned", 
+                    "closed", 
+                    "deleted"
+                ]
+            },
+            "mandatory" : true,
+            "enabled" : true
+        }
+    },
+    "arrayFields" : {
+        "paymentMode" : {
+            "hiddenFor" : {
+                "approver" : [ 
+                    "draft", 
+                    "rejected"
+                ],
+                "admin" : [ 
+                    "rejected", 
+                    "submitted"
+                ],
+                "user" : []
+            },
+            "fieldLabel" : "Payment Mode",
+            "readOnlyFor" : {
+                "approver" : [ 
+                    "approved", 
+                    "issued", 
+                    "returned", 
+                    "closed"
+                ],
+                "admin" : [ 
+                    "issued", 
+                    "returned", 
+                    "closed"
+                ],
+                "user" : [ 
+                    "submitted", 
+                    "approved", 
+                    "issued", 
+                    "returned", 
+                    "closed", 
+                    "deleted"
+                ]
+            },
+            "mandatory" : true,
+            "enabled" : true
+        },
+        "exchangeRate" : {
+            "hiddenFor" : {
+                "approver" : [ 
+                    "draft", 
+                    "rejected", 
+                    "submitted", 
+                    "approved"
+                ],
+                "admin" : [ 
+                    "rejected", 
+                    "submitted"
+                ],
+                "user" : [ 
+                    "draft", 
+                    "rejected", 
+                    "submitted", 
+                    "approved", 
+                    "deleted"
+                ]
+            },
+            "fieldLabel" : "Exchange Rate",
+            "readOnlyFor" : {
+                "approver" : [ 
+                    "submitted", 
+                    "approved", 
+                    "closed"
+                ],
+                "admin" : [ 
+                    "issued", 
+                    "returned", 
+                    "closed"
+                ],
+                "user" : [ 
+                    "issued", 
+                    "returned", 
+                    "closed"
+                ]
+            },
+            "mandatory" : true,
+            "enabled" : true
+        },
+        "description" : {
+            "hiddenFor" : {
+                "approver" : [ 
+                    "draft", 
+                    "rejected"
+                ],
+                "admin" : [ 
+                    "draft", 
+                    "rejected", 
+                    "submitted"
+                ],
+                "user" : []
+            },
+            "fieldLabel" : "Remarks",
+            "readOnlyFor" : {
+                "approver" : [ 
+                    "submitted", 
+                    "approved", 
+                    "issued", 
+                    "returned", 
+                    "closed"
+                ],
+                "admin" : [ 
+                    "approved", 
+                    "issued", 
+                    "returned", 
+                    "closed"
+                ],
+                "user" : [ 
+                    "submitted", 
+                    "approved", 
+                    "issued", 
+                    "returned", 
+                    "closed", 
+                    "deleted"
+                ]
+            },
+            "mandatory" : false,
+            "enabled" : true
+        },
+        "requestedAmount" : {
+            "hiddenFor" : {
+                "approver" : [ 
+                    "draft", 
+                    "rejected"
+                ],
+                "admin" : [ 
+                    "rejected", 
+                    "submitted"
+                ],
+                "user" : []
+            },
+            "fieldLabel" : "Amount",
+            "readOnlyFor" : {
+                "approver" : [ 
+                    "approved", 
+                    "issued", 
+                    "returned", 
+                    "closed"
+                ],
+                "admin" : [ 
+                    "issued", 
+                    "returned", 
+                    "closed"
+                ],
+                "user" : [ 
+                    "submitted", 
+                    "approved", 
+                    "issued", 
+                    "closed", 
+                    "deleted"
+                ]
+            },
+            "mandatory" : true,
+            "enabled" : true
+        },
+        "currency" : {
+            "hiddenFor" : {
+                "approver" : [ 
+                    "draft", 
+                    "rejected"
+                ],
+                "admin" : [ 
+                    "rejected", 
+                    "submitted"
+                ],
+                "user" : []
+            },
+            "fieldLabel" : "Currency",
+            "readOnlyFor" : {
+                "approver" : [ 
+                    "approved", 
+                    "issued", 
+                    "returned", 
+                    "closed"
+                ],
+                "admin" : [ 
+                    "issued", 
+                    "returned", 
+                    "closed"
+                ],
+                "user" : [ 
+                    "submitted", 
+                    "approved", 
+                    "issued", 
+                    "returned", 
+                    "closed", 
+                    "deleted"
+                ]
+            },
+            "mandatory" : true,
+            "enabled" : true
+        },
+        "approvedAmount" : {
+            "hiddenFor" : {
+                "approver" : [ 
+                    "draft", 
+                    "rejected"
+                ],
+                "admin" : [ 
+                    "draft", 
+                    "rejected", 
+                    "submitted"
+                ],
+                "user" : [ 
+                    "draft", 
+                    "rejected", 
+                    "submitted", 
+                    "deleted"
+                ]
+            },
+            "fieldLabel" : "Approved Amount",
+            "readOnlyFor" : {
+                "approver" : [ 
+                    "approved", 
+                    "issued", 
+                    "returned", 
+                    "closed"
+                ],
+                "admin" : [ 
+                    "approved", 
+                    "issued", 
+                    "returned", 
+                    "closed"
+                ],
+                "user" : [ 
+                    "approved", 
+                    "issued", 
+                    "returned", 
+                    "closed"
+                ]
+            },
+            "mandatory" : false,
+            "enabled" : false
+        }
+    },
+    "buttonFields" : {
+        "submitButton" : {
+            "hiddenFor" : {
+                "approver" : [ 
+                    "draft", 
+                    "rejected", 
+                    "submitted", 
+                    "approved", 
+                    "issued", 
+                    "returned", 
+                    "closed", 
+                    "deleted"
+                ],
+                "admin" : [ 
+                    "draft", 
+                    "rejected", 
+                    "submitted", 
+                    "approved", 
+                    "issued", 
+                    "returned", 
+                    "closed", 
+                    "deleted"
+                ],
+                "user" : [ 
+                    "submitted", 
+                    "approved", 
+                    "issued", 
+                    "returned", 
+                    "closed", 
+                    "deleted"
+                ]
+            },
+            "fieldLabel" : "Submit",
+            "mandatory" : true,
+            "enabled" : true
+        },
+        "cancelButton" : {
+            "hiddenFor" : {
+                "approver" : [],
+                "admin" : [],
+                "user" : []
+            },
+            "fieldLabel" : "Cancel",
+            "mandatory" : true,
+            "enabled" : true
+        },
+        "recallButton" : {
+            "hiddenFor" : {
+                "approver" : [ 
+                    "draft", 
+                    "rejected", 
+                    "submitted", 
+                    "approved", 
+                    "issued", 
+                    "returned", 
+                    "closed", 
+                    "deleted"
+                ],
+                "admin" : [ 
+                    "draft", 
+                    "rejected", 
+                    "submitted", 
+                    "approved", 
+                    "issued", 
+                    "returned", 
+                    "closed", 
+                    "deleted"
+                ],
+                "user" : [ 
+                    "draft", 
+                    "rejected", 
+                    "issued", 
+                    "returned", 
+                    "closed", 
+                    "deleted"
+                ]
+            },
+            "fieldLabel" : "Recall",
+            "mandatory" : true,
+            "enabled" : true
+        },
+        "issueButton" : {
+            "hiddenFor" : {
+                "approver" : [ 
+                    "draft", 
+                    "rejected", 
+                    "submitted", 
+                    "approved", 
+                    "issued", 
+                    "returned", 
+                    "closed", 
+                    "deleted"
+                ],
+                "admin" : [ 
+                    "rejected", 
+                    "submitted", 
+                    "issued", 
+                    "returned", 
+                    "closed", 
+                    "deleted"
+                ],
+                "user" : [ 
+                    "draft", 
+                    "rejected", 
+                    "submitted", 
+                    "approved", 
+                    "issued", 
+                    "returned", 
+                    "closed", 
+                    "deleted"
+                ]
+            },
+            "fieldLabel" : "Issue",
+            "mandatory" : true,
+            "enabled" : true
+        },
+        "saveButton" : {
+            "hiddenFor" : {
+                "approver" : [ 
+                    "draft", 
+                    "rejected", 
+                    "submitted", 
+                    "approved", 
+                    "issued", 
+                    "returned", 
+                    "closed", 
+                    "deleted"
+                ],
+                "admin" : [ 
+                    "draft", 
+                    "rejected", 
+                    "submitted", 
+                    "approved", 
+                    "issued", 
+                    "returned", 
+                    "closed", 
+                    "deleted"
+                ],
+                "user" : [ 
+                    "submitted", 
+                    "approved", 
+                    "issued", 
+                    "returned", 
+                    "closed", 
+                    "deleted"
+                ]
+            },
+            "fieldLabel" : "Save",
+            "mandatory" : true,
+            "enabled" : true
+        },
+        "approveButton" : {
+            "hiddenFor" : {
+                "approver" : [ 
+                    "draft", 
+                    "rejected", 
+                    "approved", 
+                    "issued", 
+                    "returned", 
+                    "closed", 
+                    "deleted"
+                ],
+                "admin" : [ 
+                    "draft", 
+                    "rejected", 
+                    "submitted", 
+                    "approved", 
+                    "issued", 
+                    "returned", 
+                    "closed", 
+                    "deleted"
+                ],
+                "user" : [ 
+                    "draft", 
+                    "rejected", 
+                    "submitted", 
+                    "approved", 
+                    "issued", 
+                    "returned", 
+                    "closed", 
+                    "deleted"
+                ]
+            },
+            "fieldLabel" : "Approve",
+            "mandatory" : true,
+            "enabled" : true
+        },
+        "rejectButton" : {
+            "hiddenFor" : {
+                "approver" : [ 
+                    "draft", 
+                    "rejected", 
+                    "approved", 
+                    "issued", 
+                    "returned", 
+                    "closed", 
+                    "deleted"
+                ],
+                "admin" : [ 
+                    "draft", 
+                    "rejected", 
+                    "submitted", 
+                    "issued", 
+                    "returned", 
+                    "closed", 
+                    "deleted"
+                ],
+                "user" : [ 
+                    "draft", 
+                    "rejected", 
+                    "submitted", 
+                    "approved", 
+                    "issued", 
+                    "returned", 
+                    "closed", 
+                    "deleted"
+                ]
+            },
+            "fieldLabel" : "Send Back",
+            "mandatory" : true,
+            "enabled" : true
+        },
+        "addItemButton" : {
+            "hiddenFor" : {
+                "approver" : [ 
+                    "draft", 
+                    "rejected", 
+                    "submitted", 
+                    "approved", 
+                    "issued", 
+                    "returned", 
+                    "closed", 
+                    "deleted"
+                ],
+                "admin" : [ 
+                    "rejected", 
+                    "submitted", 
+                    "approved", 
+                    "issued", 
+                    "returned", 
+                    "closed", 
+                    "deleted"
+                ],
+                "user" : [ 
+                    "submitted", 
+                    "approved", 
+                    "issued", 
+                    "returned", 
+                    "closed", 
+                    "deleted"
+                ]
+            },
+            "fieldLabel" : "Add Item",
+            "mandatory" : true,
+            "enabled" : true
+        }
+    },
+    "caStatusDisplayNames" : {
+        "draft" : "Unsubmitted",
+        "submitted" : "Pending Approval",
+        "rejected" : "Sent Back",
+        "approved" : "Pending Issuance",
+        "issued" : "Issued",
+        "returned" : "Returned",
+        "closed" : "Closed",
+        "deleted" : "Deleted"
+    }
+}
+});
