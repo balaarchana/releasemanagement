@@ -1,0 +1,10 @@
+new collection at platform_db
+
+db.createCollection(hotel_static_hotelmapping)
+db.createCollection(hotel_master_hotelmapping)
+db.createCollection(hotel_static_hotelcontent)
+db.createCollection(hotel_master_hotelcontent)
+
+
+GRNConnect partner configuration will update by partner team below is just for record.
+{"OrgDetails":{"Hotel":{"Partners":{"HTL_GRN":{"Search_Credential":{"GRN_isUnicaContentActive":true,"GRN_maxRspTimeMilliSec":"15000","GRN_rateType":"concise"}}}}}}
