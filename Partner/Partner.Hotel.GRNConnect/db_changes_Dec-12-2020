@@ -1,9 +1,16 @@
 new collection at platform_db
 
-db.createCollection(hotel_static_hotelmapping)
-db.createCollection(hotel_master_hotelmapping)
-db.createCollection(hotel_static_hotelcontent)
-db.createCollection(hotel_master_hotelcontent)
+db.createCollection("partner_static_hotelmapping")
+db.createCollection("partner_master_hotelmapping")
+db.createCollection("partner_static_hotelcontent")
+db.createCollection("partner_master_hotelcontent")
+db.createCollection(“platform_city_master”)
+
+update below servicebus instance at core_config_servicebus collection
+
+"SB_SUBSCRIBE_PART_H_HOTELSEARCH_REQ_PH_SEARCH":"part_h_search_req_subscription_p.h.search"
+"SB_TOPIC_PART_H_SEARCH_REQ":"part_h_hotelsearch_req"
+
 
 
 GRNConnect partner configuration will update by partner team below is just for record.
