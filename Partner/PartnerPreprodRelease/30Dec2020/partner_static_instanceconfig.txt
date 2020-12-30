@@ -1,0 +1,36 @@
+{
+    "partnerName" : "unica",
+    "status" : true,
+    "offset" : "1",
+    "limit" : "100",
+    "opinionatedContent" : true,
+    "allProvidersContent" : true,
+    "providerPreferences" : null,
+    "lastUpdateDateTime" : "2020-01-10T06:30:00Z",
+    "isProdActive" : true,
+    "isManualInsertRequired" : true,
+    "needToUpdateMasterCol" : true,
+    "manualInsertionScheduledTimestamp" : "2020-01-10T06:30:00Z",
+    "dbDetails" : {
+        "masterMappingColName" : "partner_master_hotelmapping",
+        "staticMappingColName" : "partner_static_hotelmapping_updated",
+        "staticContentColName" : "partner_static_hotelcontent_updated",
+        "masterContentColName" : "partner_master_hotelcontent"
+    },
+    "prodCred" : {
+        "accountid" : "wipro",
+        "apikey" : "a19c6d70-ac26-46fe-a0b6-511c7599f3b9",
+        "url" : "http://prod-unica-apis.vervotech.com"
+    },
+    "testCred" : {
+        "accountid" : "johndoe",
+        "apikey" : "06861fcd-1a22-4e49-8321-5d42e78ea68b",
+        "url" : "http://prod-unica-apis.vervotech.com"
+    },
+    "serviceDetails" : {
+        "serviceVersion" : "2.0",
+        "getHotelServiceName" : "gethotels",
+        "getHotelIdsServiceName" : "gethotelids",
+        "getHotelContentServiceName" : "getHotelContent"
+    }
+}
