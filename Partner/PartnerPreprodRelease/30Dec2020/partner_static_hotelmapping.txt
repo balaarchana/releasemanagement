@@ -1,0 +1,4006 @@
+{
+    "AE_DXB" : [ 
+        {
+            "w2gHotelId" : "15306860",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "24.816294",
+            "postalCode" : "8168",
+            "unicaId" : "15306860",
+            "hotelName" : "Bab Al Shams Desert Resort & Spa",
+            "longitude" : "55.230904",
+            "providerInfo" : {
+                "SabreGDS" : "12281",
+                "GRNConnect" : "1847130"
+            }
+        }, 
+        {
+            "w2gHotelId" : "32192073",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.192478",
+            "unicaId" : "32192073",
+            "hotelName" : "29 Boulevard Tower 1 - BURJKHALIFA AND FOUNTAN VIEW",
+            "longitude" : "55.27245",
+            "providerInfo" : {
+                "GRNConnect" : "1847141"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15592395",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.11309",
+            "postalCode" : "450605",
+            "unicaId" : "15592395",
+            "hotelName" : "Abidos Hotel Apartment - Al Barsha",
+            "longitude" : "55.20425",
+            "providerInfo" : {
+                "SabreGDS" : "6945",
+                "GRNConnect" : "1847145"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15764502",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.089277",
+            "postalCode" : "232808",
+            "unicaId" : "15764502",
+            "hotelName" : "Abidos Hotel Apartment, Dubailand",
+            "longitude" : "55.37929",
+            "providerInfo" : {
+                "SabreGDS" : "174671",
+                "GRNConnect" : "1847146"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15305874",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.27723",
+            "postalCode" : "21969",
+            "unicaId" : "15305874",
+            "hotelName" : "Abjad Grand Hotel",
+            "longitude" : "55.347454",
+            "providerInfo" : {
+                "SabreGDS" : "451868",
+                "GRNConnect" : "1847147"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15410163",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.200691",
+            "postalCode" : "214477",
+            "unicaId" : "15410163",
+            "hotelName" : "Address Boulevard",
+            "longitude" : "55.276222",
+            "providerInfo" : {
+                "SabreGDS" : "311058",
+                "GRNConnect" : "1847149"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15244934",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.19406",
+            "postalCode" : "123234",
+            "unicaId" : "15244934",
+            "hotelName" : "Address Downtown",
+            "longitude" : "55.27915",
+            "providerInfo" : {
+                "SabreGDS" : "101601",
+                "GRNConnect" : "1847150"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15425835",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.19964",
+            "postalCode" : "31166",
+            "unicaId" : "15425835",
+            "hotelName" : "Address Dubai Mall Residences",
+            "longitude" : "55.277565",
+            "providerInfo" : {
+                "SabreGDS" : "103613",
+                "TBOMaster" : "5926541",
+                "GRNConnect" : "1847153"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15425835",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.19964",
+            "postalCode" : "31166",
+            "unicaId" : "15425835",
+            "hotelName" : "Address Dubai Mall Residences",
+            "longitude" : "55.277565",
+            "providerInfo" : {
+                "SabreGDS" : "103613",
+                "TBOMaster" : "5926541",
+                "GRNConnect" : "1847153"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15494839",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.077162",
+            "postalCode" : "32923",
+            "unicaId" : "15494839",
+            "hotelName" : "Address Dubai Marina",
+            "longitude" : "55.14099",
+            "providerInfo" : {
+                "SabreGDS" : "113952",
+                "GRNConnect" : "1847156"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15797649",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.194876",
+            "postalCode" : "27443",
+            "unicaId" : "15797649",
+            "hotelName" : "Address Fountain Views",
+            "longitude" : "55.28276",
+            "providerInfo" : {
+                "GRNConnect" : "1847157"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15399607",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.06749",
+            "postalCode" : "36700",
+            "unicaId" : "15399607",
+            "hotelName" : "Address Montgomerie",
+            "longitude" : "55.16445",
+            "providerInfo" : {
+                "SabreGDS" : "105326",
+                "GRNConnect" : "1847158"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15743856",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.201466",
+            "postalCode" : "111969",
+            "unicaId" : "15743856",
+            "hotelName" : "Address Sky View Residences",
+            "longitude" : "55.2707",
+            "providerInfo" : {
+                "GRNConnect" : "1847160"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15388207",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.26022",
+            "postalCode" : "26888",
+            "unicaId" : "15388207",
+            "hotelName" : "Admiral Plaza Hotel Dubai",
+            "longitude" : "55.29105",
+            "providerInfo" : {
+                "GRNConnect" : "1847163"
+            }
+        }, 
+        {
+            "w2gHotelId" : "32233813",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.090847",
+            "unicaId" : "32233813",
+            "hotelName" : "Al Alka",
+            "longitude" : "55.1752",
+            "providerInfo" : {
+                "GRNConnect" : "1847169"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15701879",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.259205",
+            "postalCode" : "04080",
+            "unicaId" : "15701879",
+            "hotelName" : "Al Bandar Arjaan - Creek Dubai",
+            "longitude" : "55.319553",
+            "providerInfo" : {
+                "SabreGDS" : "314304",
+                "GRNConnect" : "1847175"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15615641",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.259405",
+            "postalCode" : "4080",
+            "unicaId" : "15615641",
+            "hotelName" : "Al Bandar Rotana",
+            "longitude" : "55.31941",
+            "providerInfo" : {
+                "SabreGDS" : "315517",
+                "GRNConnect" : "1847176"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15686449",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.268929",
+            "postalCode" : "83163",
+            "unicaId" : "15686449",
+            "hotelName" : "Buraq Hotel By Gemstones",
+            "longitude" : "55.297493",
+            "providerInfo" : {
+                "SabreGDS" : "475011",
+                "GRNConnect" : "1847179"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15288905",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.275028",
+            "postalCode" : "20107",
+            "unicaId" : "15288905",
+            "hotelName" : "Al Bustan Center & Residence",
+            "longitude" : "55.368114",
+            "providerInfo" : {
+                "SabreGDS" : "15046",
+                "GRNConnect" : "1847180"
+            }
+        }, 
+        {
+            "w2gHotelId" : "16353877",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.25298",
+            "unicaId" : "16353877",
+            "hotelName" : "Al Deyafa Hotel Apartments",
+            "longitude" : "55.335087",
+            "providerInfo" : {
+                "GRNConnect" : "1847183"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15770771",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.276138",
+            "unicaId" : "15770771",
+            "hotelName" : "Al Farej Hotel",
+            "longitude" : "55.310574",
+            "providerInfo" : {
+                "GRNConnect" : "1847188"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15516434",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.257198",
+            "postalCode" : "31219",
+            "unicaId" : "15516434",
+            "hotelName" : "Al Faris 2",
+            "longitude" : "55.28812",
+            "providerInfo" : {
+                "GRNConnect" : "1847190"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15542983",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.080772",
+            "postalCode" : "112864",
+            "unicaId" : "15542983",
+            "hotelName" : "Al Habtoor Polo Resort & Club",
+            "longitude" : "55.36883",
+            "providerInfo" : {
+                "SabreGDS" : "312826",
+                "GRNConnect" : "1847195"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15392530",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.254827",
+            "postalCode" : "121711",
+            "unicaId" : "15392530",
+            "hotelName" : "Al Jawhara Gardens Hotel",
+            "longitude" : "55.335194",
+            "providerInfo" : {
+                "SabreGDS" : "314157",
+                "GRNConnect" : "1847200"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15263654",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.255219",
+            "postalCode" : "121711",
+            "unicaId" : "15263654",
+            "hotelName" : "Al Jawhara Hotel Apartments",
+            "longitude" : "55.33528",
+            "providerInfo" : {
+                "SabreGDS" : "446538",
+                "GRNConnect" : "1847201"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15347873",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.268429",
+            "postalCode" : "83163",
+            "unicaId" : "15347873",
+            "hotelName" : "Al Khaleej Grand Hotel",
+            "longitude" : "55.30356",
+            "providerInfo" : {
+                "SabreGDS" : "458491",
+                "GRNConnect" : "1847208"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15289240",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.262794",
+            "postalCode" : "3720",
+            "unicaId" : "15289240",
+            "hotelName" : "Al Khaleej Plaza Hotel",
+            "longitude" : "55.31669",
+            "providerInfo" : {
+                "GRNConnect" : "1847210"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15364687",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.111227",
+            "postalCode" : "6237",
+            "unicaId" : "15364687",
+            "hotelName" : "Al Khoory Atrium Hotel",
+            "longitude" : "55.19592",
+            "providerInfo" : {
+                "SabreGDS" : "309899",
+                "GRNConnect" : "1847212"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15252819",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.23178",
+            "postalCode" : "P.O.Box6237",
+            "unicaId" : "15252819",
+            "hotelName" : "Al Khoory Executive Hotel",
+            "longitude" : "55.270294",
+            "providerInfo" : {
+                "SabreGDS" : "165789",
+                "GRNConnect" : "1847213"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15432224",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.112865",
+            "postalCode" : "6237",
+            "unicaId" : "15432224",
+            "hotelName" : "Al Khoory Hotel Apartments",
+            "longitude" : "55.193336",
+            "providerInfo" : {
+                "SabreGDS" : "88294",
+                "GRNConnect" : "1847214"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15178641",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.248327",
+            "postalCode" : "111695",
+            "unicaId" : "15178641",
+            "hotelName" : "Al Manar Grand Hotel Apartments",
+            "longitude" : "55.296852",
+            "providerInfo" : {
+                "SabreGDS" : "461407",
+                "GRNConnect" : "1847221"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15301155",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.280222",
+            "postalCode" : "111695",
+            "unicaId" : "15301155",
+            "hotelName" : "Al Manar Hotel Apartments",
+            "longitude" : "55.3512",
+            "providerInfo" : {
+                "GRNConnect" : "1847222"
+            }
+        }, 
+        {
+            "w2gHotelId" : "16250552",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.253168",
+            "unicaId" : "16250552",
+            "hotelName" : "Al Mas Hotel Apartment",
+            "longitude" : "55.298286",
+            "providerInfo" : {
+                "GRNConnect" : "1847223"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15763000",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.269505",
+            "postalCode" : "20127",
+            "unicaId" : "15763000",
+            "hotelName" : "Al Muraqabat Plaza Hotel Apartments",
+            "longitude" : "55.327175",
+            "providerInfo" : {
+                "GRNConnect" : "1847227"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15586821",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.291159",
+            "postalCode" : "88189",
+            "unicaId" : "15586821",
+            "hotelName" : "Al Nawras Hotel Apartments Dubai",
+            "longitude" : "55.36854",
+            "providerInfo" : {
+                "GRNConnect" : "1847232"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15770807",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.261868",
+            "postalCode" : "294217",
+            "unicaId" : "15770807",
+            "hotelName" : "Al Raien Hotel Apartment",
+            "longitude" : "55.290478",
+            "providerInfo" : {
+                "GRNConnect" : "1847235"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15235545",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.248999",
+            "postalCode" : "124899",
+            "unicaId" : "15235545",
+            "hotelName" : "Al Raya Hotel Apartments",
+            "longitude" : "55.295486",
+            "providerInfo" : {
+                "GRNConnect" : "1847236"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15351515",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.102156",
+            "postalCode" : "11189",
+            "unicaId" : "15351515",
+            "hotelName" : "AlSalam Grand Hotel & Hotel Apartments",
+            "longitude" : "55.170765",
+            "providerInfo" : {
+                "GRNConnect" : "1847241"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15640605",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.262573",
+            "postalCode" : "113330",
+            "unicaId" : "15640605",
+            "hotelName" : "Al Sarab Hotel",
+            "longitude" : "55.322014",
+            "providerInfo" : {
+                "SabreGDS" : "282190",
+                "GRNConnect" : "1847243"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15370759",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.264074",
+            "postalCode" : "35449",
+            "unicaId" : "15370759",
+            "hotelName" : "Al Seef Heritage Hotel Dubai, Curio Collection by Hilton",
+            "longitude" : "55.305115",
+            "providerInfo" : {
+                "GRNConnect" : "1847245"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15318591",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.252008",
+            "postalCode" : "27961",
+            "unicaId" : "15318591",
+            "hotelName" : "Al Shams Plaza Hotel Apartments",
+            "longitude" : "55.293373",
+            "providerInfo" : {
+                "GRNConnect" : "1847248"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15234922",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.235622",
+            "postalCode" : "120242",
+            "unicaId" : "15234922",
+            "hotelName" : "Al Waleed Palace Hotel Apartments Oud Metha",
+            "longitude" : "55.306465",
+            "providerInfo" : {
+                "SabreGDS" : "171167",
+                "GRNConnect" : "1847253"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15235593",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.111109",
+            "postalCode" : "120242",
+            "unicaId" : "15235593",
+            "hotelName" : "Al Waleed Palace Hotel Apartments - Al Barsha",
+            "longitude" : "55.20349",
+            "providerInfo" : {
+                "SabreGDS" : "186921",
+                "GRNConnect" : "1847254"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15164302",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.263695",
+            "postalCode" : "87749",
+            "unicaId" : "15164302",
+            "hotelName" : "Al Zahabiya Hotel Apartments",
+            "longitude" : "55.316223",
+            "providerInfo" : {
+                "SabreGDS" : "450826",
+                "GRNConnect" : "1847256"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15401240",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.28382",
+            "unicaId" : "15401240",
+            "hotelName" : "All Seasons Dubai",
+            "longitude" : "55.35448",
+            "providerInfo" : {
+                "GRNConnect" : "1847258"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15082392",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.250917",
+            "postalCode" : "00000",
+            "unicaId" : "15082392",
+            "hotelName" : "Aloft City Centre Deira, Dubai",
+            "longitude" : "55.331974",
+            "providerInfo" : {
+                "GRNConnect" : "1847259"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15798763",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "24.867134",
+            "postalCode" : "712778",
+            "unicaId" : "15798763",
+            "hotelName" : "Aloft Dubai South",
+            "longitude" : "55.146893",
+            "providerInfo" : {
+                "GRNConnect" : "1847260"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15720672",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.037931",
+            "postalCode" : "00000",
+            "unicaId" : "15720672",
+            "hotelName" : "Aloft Me'aisam, Dubai",
+            "longitude" : "55.197166",
+            "providerInfo" : {
+                "GRNConnect" : "1847261"
+            }
+        }, 
+        {
+            "w2gHotelId" : "16219668",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.211624",
+            "postalCode" : "118049",
+            "unicaId" : "16219668",
+            "hotelName" : "Al Salam Hotel Suites",
+            "longitude" : "55.274433",
+            "providerInfo" : {
+                "SabreGDS" : "22585",
+                "GRNConnect" : "1847262"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15239943",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.263405",
+            "postalCode" : "P.O.Box3226",
+            "unicaId" : "15239943",
+            "hotelName" : "Ambassador Hotel",
+            "longitude" : "55.29088",
+            "providerInfo" : {
+                "GRNConnect" : "1847263"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15248443",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.07368",
+            "postalCode" : "86834",
+            "unicaId" : "15248443",
+            "hotelName" : "Amwaj Rotana - Jumeirah Beach Residence",
+            "longitude" : "55.1304",
+            "providerInfo" : {
+                "SabreGDS" : "20731",
+                "GRNConnect" : "1847265"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15610850",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.11302",
+            "postalCode" : "0",
+            "unicaId" : "15610850",
+            "hotelName" : "Adagio Premium Dubai Al Barsha",
+            "longitude" : "55.188297",
+            "providerInfo" : {
+                "SabreGDS" : "226473",
+                "GRNConnect" : "1847267"
+            }
+        }, 
+        {
+            "w2gHotelId" : "32530923",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.098011",
+            "unicaId" : "32530923",
+            "hotelName" : "Arabian Court at One&Only Royal Mirage",
+            "longitude" : "55.153034",
+            "providerInfo" : {
+                "GRNConnect" : "1847270"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15335946",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.262405",
+            "postalCode" : "46500",
+            "unicaId" : "15335946",
+            "hotelName" : "Arabian Courtyard Hotel & Spa",
+            "longitude" : "55.297607",
+            "providerInfo" : {
+                "GRNConnect" : "1847271"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15187990",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.249628",
+            "postalCode" : "31993",
+            "unicaId" : "15187990",
+            "hotelName" : "Arabian Dreams Hotel Apartments",
+            "longitude" : "55.28605",
+            "providerInfo" : {
+                "SabreGDS" : "88869",
+                "GRNConnect" : "1847272"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15397619",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.220322",
+            "postalCode" : "1",
+            "unicaId" : "15397619",
+            "hotelName" : "Arabian Park Hotel",
+            "longitude" : "55.328407",
+            "providerInfo" : {
+                "SabreGDS" : "74322",
+                "GRNConnect" : "1847274"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15519650",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.2354",
+            "postalCode" : "62307",
+            "unicaId" : "15519650",
+            "hotelName" : "Arcadia Hotel Apartments",
+            "longitude" : "55.30822",
+            "providerInfo" : {
+                "GRNConnect" : "1847276"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15490638",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.095697",
+            "postalCode" : "502828",
+            "unicaId" : "15490638",
+            "hotelName" : "Arjaan by Rotana Dubai Media City",
+            "longitude" : "55.153652",
+            "providerInfo" : {
+                "SabreGDS" : "33044",
+                "GRNConnect" : "1847277"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15601585",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.074865",
+            "postalCode" : "29591",
+            "unicaId" : "15601585",
+            "hotelName" : "Armada BlueBay Hotel",
+            "longitude" : "55.145336",
+            "providerInfo" : {
+                "GRNConnect" : "1847279"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15506680",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.197088",
+            "postalCode" : "88833",
+            "unicaId" : "15506680",
+            "hotelName" : "Armani Hotel Dubai",
+            "longitude" : "55.274044",
+            "providerInfo" : {
+                "SabreGDS" : "117453",
+                "GRNConnect" : "1847281"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15366662",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.259254",
+            "postalCode" : "52555",
+            "unicaId" : "15366662",
+            "hotelName" : "Ascot Hotel",
+            "longitude" : "55.291702",
+            "providerInfo" : {
+                "SabreGDS" : "148655",
+                "GRNConnect" : "1847282"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15291596",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.224457",
+            "postalCode" : "117452",
+            "unicaId" : "15291596",
+            "hotelName" : "Ascott Park Place Dubai",
+            "longitude" : "55.283413",
+            "providerInfo" : {
+                "SabreGDS" : "103322",
+                "GRNConnect" : "1847283"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15538892",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.269737",
+            "postalCode" : "4483",
+            "unicaId" : "15538892",
+            "hotelName" : "Asiana",
+            "longitude" : "55.325214",
+            "providerInfo" : {
+                "SabreGDS" : "435749",
+                "GRNConnect" : "1847285"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15239462",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.262613",
+            "postalCode" : "457",
+            "unicaId" : "15239462",
+            "hotelName" : "Astoria Hotel",
+            "longitude" : "55.291943",
+            "providerInfo" : {
+                "SabreGDS" : "154812",
+                "GRNConnect" : "1847286"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15625190",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.102222",
+            "postalCode" : "500555",
+            "unicaId" : "15625190",
+            "hotelName" : "Atana Hotel",
+            "longitude" : "55.17851",
+            "providerInfo" : {
+                "SabreGDS" : "467533",
+                "GRNConnect" : "1847287"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15590175",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.117432",
+            "postalCode" : "113139",
+            "unicaId" : "15590175",
+            "hotelName" : "Auris Boutique Hotel Apartments",
+            "longitude" : "55.19536",
+            "providerInfo" : {
+                "SabreGDS" : "466745",
+                "GRNConnect" : "1847291"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15494662",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.265154",
+            "postalCode" : "390677",
+            "unicaId" : "15494662",
+            "hotelName" : "Auris Hotel Apartments Deira",
+            "longitude" : "55.322475",
+            "providerInfo" : {
+                "SabreGDS" : "66523",
+                "GRNConnect" : "1847292"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15243713",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.094538",
+            "postalCode" : "500679",
+            "unicaId" : "15243713",
+            "hotelName" : "Auris Inn Al Muhanna Hotel",
+            "longitude" : "55.17727",
+            "providerInfo" : {
+                "SabreGDS" : "306301",
+                "GRNConnect" : "1847293"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15786546",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.09038",
+            "unicaId" : "15786546",
+            "hotelName" : "Aurora Tower",
+            "longitude" : "55.15281",
+            "providerInfo" : {
+                "GRNConnect" : "1847294"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15429422",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.271084",
+            "postalCode" : "234344",
+            "unicaId" : "15429422",
+            "hotelName" : "AVANI Deira Dubai Hotel",
+            "longitude" : "55.329998",
+            "providerInfo" : {
+                "SabreGDS" : "9985",
+                "GRNConnect" : "1847295"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15253848",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.260464",
+            "postalCode" : "POBox50400",
+            "unicaId" : "15253848",
+            "hotelName" : "Avari Dubai Hotel",
+            "longitude" : "55.326614",
+            "providerInfo" : {
+                "GRNConnect" : "1847298"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15398353",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.262718",
+            "postalCode" : "182244",
+            "unicaId" : "15398353",
+            "hotelName" : "Avenue Hotel Dubai",
+            "longitude" : "55.326176",
+            "providerInfo" : {
+                "SabreGDS" : "54039",
+                "GRNConnect" : "1847299"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15239299",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.24861",
+            "postalCode" : "124052",
+            "unicaId" : "15239299",
+            "hotelName" : "Baity Hotel Apartments",
+            "longitude" : "55.296345",
+            "providerInfo" : {
+                "GRNConnect" : "1847307"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15732797",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.083439",
+            "postalCode" : "644815",
+            "unicaId" : "15732797",
+            "hotelName" : "Barceló Residences Dubai Marina",
+            "longitude" : "55.142483",
+            "providerInfo" : {
+                "GRNConnect" : "1847308"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15710377",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.264622",
+            "postalCode" : "46500",
+            "unicaId" : "15710377",
+            "hotelName" : "Barjeel Heritage Guest House",
+            "longitude" : "55.289654",
+            "providerInfo" : {
+                "GRNConnect" : "1847309"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15588070",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.28776",
+            "unicaId" : "15588070",
+            "hotelName" : "Bavaria City Suites Al Qusais",
+            "longitude" : "55.37135",
+            "providerInfo" : {
+                "GRNConnect" : "1847312"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15541718",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.232655",
+            "postalCode" : "111496",
+            "unicaId" : "15541718",
+            "hotelName" : "Beach Hotel Apartment",
+            "longitude" : "55.265415",
+            "providerInfo" : {
+                "SabreGDS" : "233227",
+                "GRNConnect" : "1847328"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15072346",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.07448",
+            "unicaId" : "15072346",
+            "hotelName" : "Beauport Tower",
+            "longitude" : "55.133347",
+            "providerInfo" : {
+                "GRNConnect" : "1847329"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15289479",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.274908",
+            "postalCode" : "1590",
+            "unicaId" : "15289479",
+            "hotelName" : "Benta Grand Hotel Dubai",
+            "longitude" : "55.317905",
+            "providerInfo" : {
+                "GRNConnect" : "1847331"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15784920",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.267576",
+            "postalCode" : "83163",
+            "unicaId" : "15784920",
+            "hotelName" : "Best Western Plus Pearl Creek",
+            "longitude" : "55.304745",
+            "providerInfo" : {
+                "SabreGDS" : "313212",
+                "GRNConnect" : "1847333"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15544635",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.067968",
+            "postalCode" : "37246",
+            "unicaId" : "15544635",
+            "hotelName" : "Bonnington Jumeirah Lakes Towers",
+            "longitude" : "55.141674",
+            "providerInfo" : {
+                "SabreGDS" : "7068",
+                "GRNConnect" : "1847338"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15322526",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.098145",
+            "postalCode" : "40046",
+            "unicaId" : "15322526",
+            "hotelName" : "Boutique 7 Hotel & Suites",
+            "longitude" : "55.172653",
+            "providerInfo" : {
+                "SabreGDS" : "164670",
+                "GRNConnect" : "1847343"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15255787",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.263031",
+            "postalCode" : "62556",
+            "unicaId" : "15255787",
+            "hotelName" : "Broadway Hotel",
+            "longitude" : "55.32036",
+            "providerInfo" : {
+                "SabreGDS" : "412741",
+                "GRNConnect" : "1847344"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15428967",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.141127",
+            "postalCode" : "74147",
+            "unicaId" : "15428967",
+            "hotelName" : "Burj Al Arab Jumeirah",
+            "longitude" : "55.185646",
+            "providerInfo" : {
+                "SabreGDS" : "49282",
+                "GRNConnect" : "1847346"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15405437",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.25168",
+            "postalCode" : "111397",
+            "unicaId" : "15405437",
+            "hotelName" : "BurJuman Arjaan by Rotana",
+            "longitude" : "55.30185",
+            "providerInfo" : {
+                "SabreGDS" : "63056",
+                "GRNConnect" : "1847358"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15611694",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.210264",
+            "postalCode" : "0",
+            "unicaId" : "15611694",
+            "hotelName" : "Bvlgari Resort Dubai",
+            "longitude" : "55.23629",
+            "providerInfo" : {
+                "SabreGDS" : "318353",
+                "GRNConnect" : "1847359"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15590457",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.09722",
+            "postalCode" : "500234",
+            "unicaId" : "15590457",
+            "hotelName" : "Byblos Hotel",
+            "longitude" : "55.17596",
+            "providerInfo" : {
+                "SabreGDS" : "81021",
+                "GRNConnect" : "1847360"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15800113",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.080744",
+            "postalCode" : "0",
+            "unicaId" : "15800113",
+            "hotelName" : "Caesars Palace Bluewaters Dubai",
+            "longitude" : "55.12065",
+            "providerInfo" : {
+                "GRNConnect" : "1847362"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15533340",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.081238",
+            "postalCode" : "00000",
+            "unicaId" : "15533340",
+            "hotelName" : "Caesars Resort Bluewaters Dubai",
+            "longitude" : "55.121975",
+            "providerInfo" : {
+                "GRNConnect" : "1847363"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15499554",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.273233",
+            "postalCode" : "1590",
+            "unicaId" : "15499554",
+            "hotelName" : "OYO 297 California Hotel",
+            "longitude" : "55.30869",
+            "providerInfo" : {
+                "SabreGDS" : "254943",
+                "GRNConnect" : "1847366"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15221693",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.180624",
+            "postalCode" : "9970",
+            "unicaId" : "15221693",
+            "hotelName" : "Canal Central Hotel – Business Bay",
+            "longitude" : "55.26636",
+            "providerInfo" : {
+                "GRNConnect" : "1847367"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15429714",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.241945",
+            "postalCode" : "33228",
+            "unicaId" : "15429714",
+            "hotelName" : "Capitol Hotel",
+            "longitude" : "55.275043",
+            "providerInfo" : {
+                "SabreGDS" : "67445",
+                "GRNConnect" : "1847368"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15380891",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.209282",
+            "postalCode" : "7143",
+            "unicaId" : "15380891",
+            "hotelName" : "Carlton Downtown",
+            "longitude" : "55.274754",
+            "providerInfo" : {
+                "SabreGDS" : "207068",
+                "GRNConnect" : "1847369"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15399596",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.261806",
+            "postalCode" : "56262",
+            "unicaId" : "15399596",
+            "hotelName" : "Carlton Palace Hotel",
+            "longitude" : "55.319645",
+            "providerInfo" : {
+                "SabreGDS" : "63064",
+                "GRNConnect" : "1847370"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15333154",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.267242",
+            "postalCode" : "1955",
+            "unicaId" : "15333154",
+            "hotelName" : "Carlton Tower Hotel Dubai",
+            "longitude" : "55.307087",
+            "providerInfo" : {
+                "SabreGDS" : "74233",
+                "GRNConnect" : "1847371"
+            }
+        }, 
+        {
+            "w2gHotelId" : "32364155",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.072943",
+            "unicaId" : "32364155",
+            "hotelName" : "Cascades Tower",
+            "longitude" : "55.138107",
+            "providerInfo" : {
+                "GRNConnect" : "1847372"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15586423",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.113476",
+            "postalCode" : "114400",
+            "unicaId" : "15586423",
+            "hotelName" : "Cassells Al Barsha Hotel",
+            "longitude" : "55.19162",
+            "providerInfo" : {
+                "GRNConnect" : "1847373"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15584146",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.112886",
+            "postalCode" : "115060",
+            "unicaId" : "15584146",
+            "hotelName" : "Centro Barsha",
+            "longitude" : "55.194794",
+            "providerInfo" : {
+                "SabreGDS" : "3512",
+                "GRNConnect" : "1847378"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15358041",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.048336",
+            "postalCode" : "124169",
+            "unicaId" : "15358041",
+            "hotelName" : "Chelsea Gardens Hotel Apartments",
+            "longitude" : "55.13076",
+            "providerInfo" : {
+                "SabreGDS" : "104064",
+                "GRNConnect" : "1847380"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15318887",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.235247",
+            "postalCode" : "24621",
+            "unicaId" : "15318887",
+            "hotelName" : "Chelsea Plaza Hotel Dubai",
+            "longitude" : "55.279274",
+            "providerInfo" : {
+                "SabreGDS" : "225653",
+                "GRNConnect" : "1847381"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15364136",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.099413",
+            "postalCode" : "502400",
+            "unicaId" : "15364136",
+            "hotelName" : "Auris Metro Central Hotel Apartments",
+            "longitude" : "55.173225",
+            "providerInfo" : {
+                "GRNConnect" : "1847384"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15175740",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.27408",
+            "postalCode" : "83021",
+            "unicaId" : "15175740",
+            "hotelName" : "City Avenue Hotel",
+            "longitude" : "55.322643",
+            "providerInfo" : {
+                "GRNConnect" : "1847385"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15363931",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.193115",
+            "postalCode" : "0000",
+            "unicaId" : "15363931",
+            "hotelName" : "City Premiere Hotel Apartments",
+            "longitude" : "55.26292",
+            "providerInfo" : {
+                "SabreGDS" : "147591",
+                "GRNConnect" : "1847388"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15607918",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.079775",
+            "postalCode" : "0",
+            "unicaId" : "15607918",
+            "hotelName" : "City Première Marina Hotel Apartments",
+            "longitude" : "55.142677",
+            "providerInfo" : {
+                "GRNConnect" : "1847389"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15366009",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.25567",
+            "postalCode" : "56421",
+            "unicaId" : "15366009",
+            "hotelName" : "City Seasons Hotel Dubai",
+            "longitude" : "55.33601",
+            "providerInfo" : {
+                "SabreGDS" : "88603",
+                "GRNConnect" : "1847390"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15290296",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.25282",
+            "postalCode" : "5847",
+            "unicaId" : "15290296",
+            "hotelName" : "City Seasons Towers",
+            "longitude" : "55.302616",
+            "providerInfo" : {
+                "SabreGDS" : "475351",
+                "GRNConnect" : "1847391"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15549704",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.270016",
+            "postalCode" : "118747",
+            "unicaId" : "15549704",
+            "hotelName" : "City Star Hotel",
+            "longitude" : "55.319004",
+            "providerInfo" : {
+                "GRNConnect" : "1847392"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15306231",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.11325",
+            "postalCode" : "450127",
+            "unicaId" : "15306231",
+            "hotelName" : "Grand Square Stay Hotel Apartments",
+            "longitude" : "55.2018",
+            "providerInfo" : {
+                "SabreGDS" : "220098",
+                "GRNConnect" : "1847393"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15322379",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.11503",
+            "postalCode" : "450127",
+            "unicaId" : "15322379",
+            "hotelName" : "City Stay Hotel Apartment",
+            "longitude" : "55.206",
+            "providerInfo" : {
+                "SabreGDS" : "176337",
+                "GRNConnect" : "1847395"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15628769",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.114",
+            "postalCode" : "450127",
+            "unicaId" : "15628769",
+            "hotelName" : "The Soho Hotel",
+            "longitude" : "55.2025",
+            "providerInfo" : {
+                "SabreGDS" : "478850",
+                "GRNConnect" : "1847396"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15067272",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.1786",
+            "unicaId" : "15067272",
+            "hotelName" : "City Walk 18",
+            "longitude" : "55.2441",
+            "providerInfo" : {
+                "GRNConnect" : "1847402"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15067189",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.20295",
+            "postalCode" : "215088",
+            "unicaId" : "15067189",
+            "hotelName" : "FAM Living - City Walk",
+            "longitude" : "55.263252",
+            "providerInfo" : {
+                "GRNConnect" : "1847408"
+            }
+        }, 
+        {
+            "w2gHotelId" : "37761352",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.20333",
+            "unicaId" : "37761352",
+            "hotelName" : "City Walk by Dream Inn Dubai",
+            "longitude" : "55.261322",
+            "providerInfo" : {
+                "GRNConnect" : "1847409"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15146626",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.11512",
+            "postalCode" : "116121",
+            "unicaId" : "15146626",
+            "hotelName" : "Citymax Hotel Al Barsha",
+            "longitude" : "55.203754",
+            "providerInfo" : {
+                "SabreGDS" : "77280",
+                "GRNConnect" : "1847411"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15146626",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.11512",
+            "postalCode" : "116121",
+            "unicaId" : "15146626",
+            "hotelName" : "Citymax Hotel Al Barsha",
+            "longitude" : "55.203754",
+            "providerInfo" : {
+                "SabreGDS" : "77280",
+                "GRNConnect" : "1847411"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15590098",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.250689",
+            "postalCode" : "116121",
+            "unicaId" : "15590098",
+            "hotelName" : "Citymax Bur Dubai",
+            "longitude" : "55.29182",
+            "providerInfo" : {
+                "SabreGDS" : "136902",
+                "GRNConnect" : "1847413"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15707423",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.179422",
+            "postalCode" : "116121",
+            "unicaId" : "15707423",
+            "hotelName" : "Citymax Hotel Business Bay",
+            "longitude" : "55.27727",
+            "providerInfo" : {
+                "GRNConnect" : "1847414"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15760730",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.270716",
+            "postalCode" : "1833",
+            "unicaId" : "15760730",
+            "hotelName" : "Claridge Hotel",
+            "longitude" : "55.31644",
+            "providerInfo" : {
+                "SabreGDS" : "249314",
+                "GRNConnect" : "1847425"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15740391",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.101738",
+            "postalCode" : "191860",
+            "unicaId" : "15740391",
+            "hotelName" : "Class Hotel Apartments",
+            "longitude" : "55.177387",
+            "providerInfo" : {
+                "GRNConnect" : "1847426"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15366548",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.265045",
+            "postalCode" : "56352",
+            "unicaId" : "15366548",
+            "hotelName" : "Comfort Inn Hotel",
+            "longitude" : "55.316727",
+            "providerInfo" : {
+                "SabreGDS" : "15666",
+                "GRNConnect" : "1847428"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15501388",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.225918",
+            "postalCode" : "115143",
+            "unicaId" : "15501388",
+            "hotelName" : "Conrad Dubai",
+            "longitude" : "55.28363",
+            "providerInfo" : {
+                "SabreGDS" : "159281",
+                "GRNConnect" : "1847431"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15766244",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.254559",
+            "postalCode" : "119311",
+            "unicaId" : "15766244",
+            "hotelName" : "Copthorne Hotel Dubai",
+            "longitude" : "55.32778",
+            "providerInfo" : {
+                "SabreGDS" : "13952",
+                "GRNConnect" : "1847436"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15410264",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.113148",
+            "postalCode" : "124446",
+            "unicaId" : "15410264",
+            "hotelName" : "Coral Boutique Villas",
+            "longitude" : "55.196724",
+            "providerInfo" : {
+                "SabreGDS" : "68224",
+                "GRNConnect" : "1847437"
+            }
+        }, 
+        {
+            "w2gHotelId" : "16040012",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.266085",
+            "postalCode" : "82999",
+            "unicaId" : "16040012",
+            "hotelName" : "Coral Dubai Deira",
+            "longitude" : "55.32565",
+            "providerInfo" : {
+                "SabreGDS" : "54569",
+                "GRNConnect" : "1847438"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15348057",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.275969",
+            "postalCode" : "P.o.boxNo83252",
+            "unicaId" : "15348057",
+            "hotelName" : "Coral Oriental",
+            "longitude" : "55.313385",
+            "providerInfo" : {
+                "GRNConnect" : "1847439"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15753084",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.112852",
+            "postalCode" : "38250",
+            "unicaId" : "15753084",
+            "hotelName" : "Cosmopolitan Hotel",
+            "longitude" : "55.190453",
+            "providerInfo" : {
+                "SabreGDS" : "184657",
+                "GRNConnect" : "1847441"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15601387",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.114754",
+            "postalCode" : "38014",
+            "unicaId" : "15601387",
+            "hotelName" : "Courtyard Al Barsha, Dubai",
+            "longitude" : "55.19714",
+            "providerInfo" : {
+                "GRNConnect" : "1847442"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15393921",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.003397",
+            "postalCode" : "63845",
+            "unicaId" : "15393921",
+            "hotelName" : "Courtyard by Marriott Dubai Green Community",
+            "longitude" : "55.164925",
+            "providerInfo" : {
+                "SabreGDS" : "14156",
+                "GRNConnect" : "1847443"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15308442",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.22385",
+            "postalCode" : "00000",
+            "unicaId" : "15308442",
+            "hotelName" : "Crowne Plaza Dubai - Festival City",
+            "longitude" : "55.349163",
+            "providerInfo" : {
+                "SabreGDS" : "82385",
+                "GRNConnect" : "1847446"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15474009",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.219976",
+            "postalCode" : "31388",
+            "unicaId" : "15474009",
+            "hotelName" : "Crowne Plaza Dubai Apartments",
+            "longitude" : "55.280384",
+            "providerInfo" : {
+                "SabreGDS" : "14695",
+                "GRNConnect" : "1847447"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15284916",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.270588",
+            "postalCode" : "8668",
+            "unicaId" : "15284916",
+            "hotelName" : "Crowne Plaza Dubai Deira",
+            "longitude" : "55.32701",
+            "providerInfo" : {
+                "SabreGDS" : "29705",
+                "GRNConnect" : "1847448"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15744450",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.075142",
+            "postalCode" : "116888",
+            "unicaId" : "15744450",
+            "hotelName" : "Crowne Plaza Dubai Marina",
+            "longitude" : "55.13916",
+            "providerInfo" : {
+                "GRNConnect" : "1847449"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15598410",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.187616",
+            "postalCode" : "7704",
+            "unicaId" : "15598410",
+            "hotelName" : "DAMAC Maison Canal Views",
+            "longitude" : "55.284046",
+            "providerInfo" : {
+                "SabreGDS" : "271120",
+                "GRNConnect" : "1847455"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15604030",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.187534",
+            "postalCode" : "2286",
+            "unicaId" : "15604030",
+            "hotelName" : "DAMAC Maison Cour Jardin",
+            "longitude" : "55.267513",
+            "providerInfo" : {
+                "SabreGDS" : "277847",
+                "GRNConnect" : "1847456"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15614980",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.17637",
+            "postalCode" : "6844",
+            "unicaId" : "15614980",
+            "hotelName" : "DAMAC Maison De Ville Breeze",
+            "longitude" : "55.271805",
+            "providerInfo" : {
+                "GRNConnect" : "1847457"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15639079",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.187862",
+            "postalCode" : "111813",
+            "unicaId" : "15639079",
+            "hotelName" : "DAMAC Maison Distinction",
+            "longitude" : "55.27964",
+            "providerInfo" : {
+                "SabreGDS" : "316930",
+                "GRNConnect" : "1847458"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15714788",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.195213",
+            "postalCode" : "5840",
+            "unicaId" : "15714788",
+            "hotelName" : "DAMAC Maison Mall Street",
+            "longitude" : "55.283848",
+            "providerInfo" : {
+                "SabreGDS" : "218807",
+                "GRNConnect" : "1847459"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15606889",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.192604",
+            "postalCode" : "5828",
+            "unicaId" : "15606889",
+            "hotelName" : "DAMAC Maison The Vogue",
+            "longitude" : "55.288544",
+            "providerInfo" : {
+                "SabreGDS" : "281792",
+                "GRNConnect" : "1847460"
+            }
+        }, 
+        {
+            "w2gHotelId" : "32351616",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "24.96934",
+            "postalCode" : "32173",
+            "unicaId" : "32351616",
+            "hotelName" : "DAMAC Suburbia",
+            "longitude" : "55.08849",
+            "providerInfo" : {
+                "GRNConnect" : "1847461"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15245219",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.267317",
+            "postalCode" : "27275",
+            "unicaId" : "15245219",
+            "hotelName" : "Deebaj Al Khabisi Plaza",
+            "longitude" : "55.329636",
+            "providerInfo" : {
+                "GRNConnect" : "1847465"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15289563",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.261051",
+            "postalCode" : "186256",
+            "unicaId" : "15289563",
+            "hotelName" : "Deira Suites Hotel Apartment",
+            "longitude" : "55.31936",
+            "providerInfo" : {
+                "GRNConnect" : "1847469"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15625459",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.275927",
+            "postalCode" : "PO21969",
+            "unicaId" : "15625459",
+            "hotelName" : "Delmon Boutique Hotel",
+            "longitude" : "55.312527",
+            "providerInfo" : {
+                "SabreGDS" : "75345",
+                "GRNConnect" : "1847470"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15779752",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.260897",
+            "postalCode" : "181705",
+            "unicaId" : "15779752",
+            "hotelName" : "Delmon Palace Hotel",
+            "longitude" : "55.322556",
+            "providerInfo" : {
+                "GRNConnect" : "1847471"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15352019",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.25547",
+            "postalCode" : "44264",
+            "unicaId" : "15352019",
+            "hotelName" : "Desert Rose Hotel Apartments",
+            "longitude" : "55.296207",
+            "providerInfo" : {
+                "SabreGDS" : "469216",
+                "GRNConnect" : "1847473"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15705779",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.206217",
+            "unicaId" : "15705779",
+            "hotelName" : "DHH - Al Wasl 1",
+            "longitude" : "55.261658",
+            "providerInfo" : {
+                "GRNConnect" : "1847475"
+            }
+        }, 
+        {
+            "w2gHotelId" : "31388473",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.016962",
+            "unicaId" : "31388473",
+            "hotelName" : "DHH - Damac Hills-Golf Vista-Akoya",
+            "longitude" : "55.25333",
+            "providerInfo" : {
+                "GRNConnect" : "1847476"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15247125",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.25704",
+            "postalCode" : "52444",
+            "unicaId" : "15247125",
+            "hotelName" : "Dock Masters Hotel Apartments",
+            "longitude" : "55.29043",
+            "providerInfo" : {
+                "GRNConnect" : "1847477"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15195691",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.259914",
+            "postalCode" : "121678",
+            "unicaId" : "15195691",
+            "hotelName" : "Dolphin Hotel Apartments",
+            "longitude" : "55.29468",
+            "providerInfo" : {
+                "GRNConnect" : "1847478"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15252903",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.115623",
+            "postalCode" : "24948",
+            "unicaId" : "15252903",
+            "hotelName" : "Donatello Hotel",
+            "longitude" : "55.193817",
+            "providerInfo" : {
+                "SabreGDS" : "49185",
+                "GRNConnect" : "1847480"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15587235",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.272055",
+            "postalCode" : "71311",
+            "unicaId" : "15587235",
+            "hotelName" : "Dorus Hotel llc",
+            "longitude" : "55.316006",
+            "providerInfo" : {
+                "GRNConnect" : "1847482"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15344437",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.186665",
+            "postalCode" : "391469",
+            "unicaId" : "15344437",
+            "hotelName" : "DoubleTree by Hilton Dubai - Business Bay",
+            "longitude" : "55.280117",
+            "providerInfo" : {
+                "SabreGDS" : "314244",
+                "GRNConnect" : "1847483"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15253181",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.114681",
+            "postalCode" : "00000",
+            "unicaId" : "15253181",
+            "hotelName" : "DoubleTree by Hilton Hotel & Residences Dubai Al Barsha",
+            "longitude" : "55.201065",
+            "providerInfo" : {
+                "SabreGDS" : "140667",
+                "GRNConnect" : "1847484"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15253272",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.072273",
+            "postalCode" : "P.O.Box:227",
+            "unicaId" : "15253272",
+            "hotelName" : "DoubleTree by Hilton Hotel Dubai - Jumeirah Beach",
+            "longitude" : "55.12772",
+            "providerInfo" : {
+                "SabreGDS" : "178015",
+                "GRNConnect" : "1847485"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15235404",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.260593",
+            "postalCode" : "183230",
+            "unicaId" : "15235404",
+            "hotelName" : "Dream City Deluxe Hotel Apartment",
+            "longitude" : "55.32428",
+            "providerInfo" : {
+                "GRNConnect" : "1847488"
+            }
+        }, 
+        {
+            "w2gHotelId" : "17336412",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.08206",
+            "postalCode" : "8651",
+            "unicaId" : "17336412",
+            "hotelName" : "Dream Inn Dubai - Park Island",
+            "longitude" : "55.14198",
+            "providerInfo" : {
+                "GRNConnect" : "1847489"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15299302",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.278847",
+            "postalCode" : "82777",
+            "unicaId" : "15299302",
+            "hotelName" : "Dream Palace Hotel",
+            "longitude" : "55.33094",
+            "providerInfo" : {
+                "GRNConnect" : "1847491"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15763337",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.273567",
+            "postalCode" : "49185",
+            "unicaId" : "15763337",
+            "hotelName" : "Dubai Grand Hotel By Fortune",
+            "longitude" : "55.38139",
+            "providerInfo" : {
+                "GRNConnect" : "1847498"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15468569",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.247864",
+            "postalCode" : "35566",
+            "unicaId" : "15468569",
+            "hotelName" : "Dubai International Hotel",
+            "longitude" : "55.35287",
+            "providerInfo" : {
+                "SabreGDS" : "121236",
+                "GRNConnect" : "1847499"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15433857",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.233805",
+            "postalCode" : "00000",
+            "unicaId" : "15433857",
+            "hotelName" : "Dubai Marine Beach Resort and Spa",
+            "longitude" : "55.263466",
+            "providerInfo" : {
+                "SabreGDS" : "45122",
+                "GRNConnect" : "1847501"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15400451",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.08764",
+            "postalCode" : "7631",
+            "unicaId" : "15400451",
+            "hotelName" : "Dubai Marriott Harbour Hotel & Suites",
+            "longitude" : "55.14621",
+            "providerInfo" : {
+                "SabreGDS" : "58128",
+                "GRNConnect" : "1847502"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15764573",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.273413",
+            "postalCode" : "21969",
+            "unicaId" : "15764573",
+            "hotelName" : "Dubai Palm Hotel",
+            "longitude" : "55.31964",
+            "providerInfo" : {
+                "SabreGDS" : "450840",
+                "GRNConnect" : "1847504"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15768685",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.112259",
+            "postalCode" : "120015",
+            "unicaId" : "15768685",
+            "hotelName" : "Dukes The Palm, a Royal Hideaway Hotel",
+            "longitude" : "55.13799",
+            "providerInfo" : {
+                "SabreGDS" : "311484",
+                "GRNConnect" : "1847507"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15292396",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.082855",
+            "postalCode" : "0000",
+            "unicaId" : "15292396",
+            "hotelName" : "Dusit Princess Residences - Dubai Marina",
+            "longitude" : "55.144653",
+            "providerInfo" : {
+                "GRNConnect" : "1847508"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15253888",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.206057",
+            "postalCode" : "23335",
+            "unicaId" : "15253888",
+            "hotelName" : "Dusit Thani Dubai",
+            "longitude" : "55.27301",
+            "providerInfo" : {
+                "SabreGDS" : "45955",
+                "GRNConnect" : "1847509"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15374982",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.098965",
+            "postalCode" : "71162",
+            "unicaId" : "15374982",
+            "hotelName" : "dusitD2 Kenz Hotel",
+            "longitude" : "55.173275",
+            "providerInfo" : {
+                "SabreGDS" : "312698",
+                "GRNConnect" : "1847510"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15739460",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.035662",
+            "postalCode" : "00000",
+            "unicaId" : "15739460",
+            "hotelName" : "Element Me'aisam, Dubai",
+            "longitude" : "55.199883",
+            "providerInfo" : {
+                "GRNConnect" : "1847513"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15499233",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.113768",
+            "postalCode" : "390531",
+            "unicaId" : "15499233",
+            "hotelName" : "Elite Byblos Hotel",
+            "longitude" : "55.20015",
+            "providerInfo" : {
+                "SabreGDS" : "317736",
+                "GRNConnect" : "1847515"
+            }
+        }, 
+        {
+            "w2gHotelId" : "38032612",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.08952",
+            "unicaId" : "38032612",
+            "hotelName" : "Elite Residence, Dubai Marina",
+            "longitude" : "55.14773",
+            "providerInfo" : {
+                "GRNConnect" : "1847516"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15253188",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.26017",
+            "postalCode" : "64225",
+            "unicaId" : "15253188",
+            "hotelName" : "Emirates Concorde Hotel & Suites",
+            "longitude" : "55.320934",
+            "providerInfo" : {
+                "SabreGDS" : "70526",
+                "GRNConnect" : "1847535"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15196392",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.28893",
+            "postalCode" : "86880",
+            "unicaId" : "15196392",
+            "hotelName" : "Emirates Stars Hotel Apartments",
+            "longitude" : "55.368496",
+            "providerInfo" : {
+                "SabreGDS" : "466737",
+                "GRNConnect" : "1847539"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15438931",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.263853",
+            "postalCode" : "29499",
+            "unicaId" : "15438931",
+            "hotelName" : "Excelsior Hotel Downtown",
+            "longitude" : "55.325333",
+            "providerInfo" : {
+                "SabreGDS" : "5055",
+                "GRNConnect" : "1847545"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15232162",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.226446",
+            "postalCode" : "97555",
+            "unicaId" : "15232162",
+            "hotelName" : "Fairmont Dubai",
+            "longitude" : "55.28454",
+            "providerInfo" : {
+                "SabreGDS" : "61192",
+                "GRNConnect" : "1847561"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15489850",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.097866",
+            "postalCode" : "9970",
+            "unicaId" : "15489850",
+            "hotelName" : "First Central Hotel Suites",
+            "longitude" : "55.17459",
+            "providerInfo" : {
+                "SabreGDS" : "147128",
+                "GRNConnect" : "1847566"
+            }
+        }, 
+        {
+            "w2gHotelId" : "16295854",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.05427",
+            "postalCode" : "118561",
+            "unicaId" : "16295854",
+            "hotelName" : "FIVE Jumeirah Village Dubai",
+            "longitude" : "55.207104",
+            "providerInfo" : {
+                "GRNConnect" : "1847567"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15393905",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.104319",
+            "postalCode" : "6438",
+            "unicaId" : "15393905",
+            "hotelName" : "FIVE Palm Jumeirah Dubai",
+            "longitude" : "55.148552",
+            "providerInfo" : {
+                "SabreGDS" : "311066",
+                "GRNConnect" : "1847568"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15618398",
+            "cityName" : "DUBAI",
+            "countryCode" : "AE",
+            "latitude" : "25.117905",
+            "postalCode" : "8088",
+            "unicaId" : "15618398",
+            "hotelName" : "Flora Al Barsha Hotel",
+            "longitude" : "55.195984",
+            "providerInfo" : {
+                "SabreGDS" : "471244",
+                "GRNConnect" : "1847575"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15291802",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.253265",
+            "postalCode" : "119062",
+            "unicaId" : "15291802",
+            "hotelName" : "Flora Creek Deluxe Hotel Apartments",
+            "longitude" : "55.328022",
+            "providerInfo" : {
+                "GRNConnect" : "1847576"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15711798",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.265026",
+            "postalCode" : "102328",
+            "unicaId" : "15711798",
+            "hotelName" : "Lotus Retreat Hotel",
+            "longitude" : "55.322155",
+            "providerInfo" : {
+                "GRNConnect" : "1847577"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15215663",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.25243",
+            "postalCode" : "125275",
+            "unicaId" : "15215663",
+            "hotelName" : "Flora Inn Hotel",
+            "longitude" : "55.34311",
+            "providerInfo" : {
+                "GRNConnect" : "1847578"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15318505",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.255827",
+            "postalCode" : "114166",
+            "unicaId" : "15318505",
+            "hotelName" : "Flora Park Deluxe Hotel Apartments",
+            "longitude" : "55.328983",
+            "providerInfo" : {
+                "GRNConnect" : "1847579"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15307732",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.26863",
+            "postalCode" : "49530",
+            "unicaId" : "15307732",
+            "hotelName" : "FLORIDA CITY HOTEL APARTMENTS",
+            "longitude" : "55.30587",
+            "providerInfo" : {
+                "GRNConnect" : "1847581"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15792292",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.222858",
+            "postalCode" : "384694",
+            "unicaId" : "15792292",
+            "hotelName" : "FORM Hotel Dubai",
+            "longitude" : "55.334583",
+            "providerInfo" : {
+                "GRNConnect" : "1847584"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15502272",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.268991",
+            "postalCode" : "49185",
+            "unicaId" : "15502272",
+            "hotelName" : "Fortune Classic Hotel Apartments",
+            "longitude" : "55.378956",
+            "providerInfo" : {
+                "SabreGDS" : "462640",
+                "GRNConnect" : "1847586"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15291926",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.25544",
+            "postalCode" : "54142",
+            "unicaId" : "15291926",
+            "hotelName" : "Fortune Grand Hotel Apartments",
+            "longitude" : "55.290962",
+            "providerInfo" : {
+                "GRNConnect" : "1847587"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15588225",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.275845",
+            "postalCode" : "98661",
+            "unicaId" : "15588225",
+            "hotelName" : "Fortune Grand Hotel, Deira, Dubai",
+            "longitude" : "55.315853",
+            "providerInfo" : {
+                "GRNConnect" : "1847588"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15236130",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.274555",
+            "postalCode" : "49185",
+            "unicaId" : "15236130",
+            "hotelName" : "Fortune Hotel Deira",
+            "longitude" : "55.315628",
+            "providerInfo" : {
+                "SabreGDS" : "419433",
+                "GRNConnect" : "1847589"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15399604",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.2425",
+            "postalCode" : "116945",
+            "unicaId" : "15399604",
+            "hotelName" : "Fortune Karama Hotel",
+            "longitude" : "55.297874",
+            "providerInfo" : {
+                "SabreGDS" : "421310",
+                "GRNConnect" : "1847590"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15462991",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.00587",
+            "postalCode" : "49815",
+            "unicaId" : "15462991",
+            "hotelName" : "Fortune Park Hotel",
+            "longitude" : "55.15513",
+            "providerInfo" : {
+                "SabreGDS" : "192047",
+                "GRNConnect" : "1847591"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15499695",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.278778",
+            "postalCode" : "95661",
+            "unicaId" : "15499695",
+            "hotelName" : "Fortune Pearl Hotel, Deira",
+            "longitude" : "55.31374",
+            "providerInfo" : {
+                "SabreGDS" : "408170",
+                "GRNConnect" : "1847592"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15388385",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.267075",
+            "postalCode" : "49185",
+            "unicaId" : "15388385",
+            "hotelName" : "Fortune Plaza Hotel",
+            "longitude" : "55.38071",
+            "providerInfo" : {
+                "SabreGDS" : "286626",
+                "GRNConnect" : "1847593"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15273707",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.25754",
+            "postalCode" : "11111",
+            "unicaId" : "15273707",
+            "hotelName" : "Four Points by Sheraton Bur Dubai",
+            "longitude" : "55.2995",
+            "providerInfo" : {
+                "SabreGDS" : "42079",
+                "GRNConnect" : "1847594"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15278934",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.25203",
+            "postalCode" : "00000",
+            "unicaId" : "15278934",
+            "hotelName" : "Four Points by Sheraton Downtown Dubai",
+            "longitude" : "55.29263",
+            "providerInfo" : {
+                "SabreGDS" : "72703",
+                "GRNConnect" : "1847595"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15279066",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.214144",
+            "postalCode" : "116162",
+            "unicaId" : "15279066",
+            "hotelName" : "Four Points by Sheraton Sheikh Zayed Road, Dubai",
+            "longitude" : "55.276176",
+            "providerInfo" : {
+                "SabreGDS" : "85640",
+                "GRNConnect" : "1847596"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15303781",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.212677",
+            "postalCode" : "128777",
+            "unicaId" : "15303781",
+            "hotelName" : "Four Seasons Dubai International Financial Centre",
+            "longitude" : "55.282555",
+            "providerInfo" : {
+                "SabreGDS" : "284732",
+                "GRNConnect" : "1847597"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15252310",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.202188",
+            "postalCode" : "128777",
+            "unicaId" : "15252310",
+            "hotelName" : "Four Seasons Resort Dubai at Jumeirah Beach",
+            "longitude" : "55.239765",
+            "providerInfo" : {
+                "SabreGDS" : "221210",
+                "GRNConnect" : "1847598"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15591059",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.10833",
+            "postalCode" : "502306",
+            "unicaId" : "15591059",
+            "hotelName" : "Fraser Suites Dubai",
+            "longitude" : "55.178516",
+            "providerInfo" : {
+                "SabreGDS" : "2510",
+                "GRNConnect" : "1847599"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15341269",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.260382",
+            "postalCode" : "125448",
+            "unicaId" : "15341269",
+            "hotelName" : "Gateway Hotel",
+            "longitude" : "55.291073",
+            "providerInfo" : {
+                "GRNConnect" : "1847601"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15741824",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.212473",
+            "postalCode" : "2260",
+            "unicaId" : "15741824",
+            "hotelName" : "Gevora Hotel",
+            "longitude" : "55.27699",
+            "providerInfo" : {
+                "GRNConnect" : "1847602"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15332861",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.0468",
+            "postalCode" : "392360",
+            "unicaId" : "15332861",
+            "hotelName" : "Ghaya Grand Hotel",
+            "longitude" : "55.18212",
+            "providerInfo" : {
+                "SabreGDS" : "305267",
+                "GRNConnect" : "1847603"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15713783",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.25485",
+            "unicaId" : "15713783",
+            "hotelName" : "Gillani",
+            "longitude" : "55.300575",
+            "providerInfo" : {
+                "GRNConnect" : "1847604"
+            }
+        }, 
+        {
+            "w2gHotelId" : "31311041",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.2517",
+            "unicaId" : "31311041",
+            "hotelName" : "Golden Sands Hotel Apartments",
+            "longitude" : "55.2952",
+            "providerInfo" : {
+                "GRNConnect" : "1847610"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15366189",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.1127",
+            "postalCode" : "125962",
+            "unicaId" : "15366189",
+            "hotelName" : "Golden Tulip Al Barsha",
+            "longitude" : "55.19013",
+            "providerInfo" : {
+                "SabreGDS" : "80776",
+                "GRNConnect" : "1847616"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15492299",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.09965",
+            "postalCode" : "500849",
+            "unicaId" : "15492299",
+            "hotelName" : "Golden Tulip Al Thanyah",
+            "longitude" : "55.178223",
+            "providerInfo" : {
+                "SabreGDS" : "247081",
+                "GRNConnect" : "1847617"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15598050",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.221174",
+            "postalCode" : "117966",
+            "unicaId" : "15598050",
+            "hotelName" : "Goldstate Hotel",
+            "longitude" : "55.3347",
+            "providerInfo" : {
+                "GRNConnect" : "1847619"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15592133",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.094873",
+            "postalCode" : "UAE",
+            "unicaId" : "15592133",
+            "hotelName" : "Grand Belle Vue Hotel Apartment",
+            "longitude" : "55.17574",
+            "providerInfo" : {
+                "SabreGDS" : "81252",
+                "GRNConnect" : "1847624"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15183215",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.263811",
+            "postalCode" : "185722",
+            "unicaId" : "15183215",
+            "hotelName" : "Grand Central Hotel",
+            "longitude" : "55.326847",
+            "providerInfo" : {
+                "GRNConnect" : "1847625"
+            }
+        }, 
+        {
+            "w2gHotelId" : "16438457",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.113354",
+            "postalCode" : "38250",
+            "unicaId" : "16438457",
+            "hotelName" : "Grand Cosmopolitan Hotel",
+            "longitude" : "55.192837",
+            "providerInfo" : {
+                "GRNConnect" : "1847626"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15481446",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.111525",
+            "postalCode" : "213434",
+            "unicaId" : "15481446",
+            "hotelName" : "Grand Excelsior Hotel Al Barsha",
+            "longitude" : "55.203423",
+            "providerInfo" : {
+                "SabreGDS" : "146539",
+                "GRNConnect" : "1847627"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15388780",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.250883",
+            "postalCode" : "121545",
+            "unicaId" : "15388780",
+            "hotelName" : "Grand Excelsior Hotel Bur Dubai",
+            "longitude" : "55.292305",
+            "providerInfo" : {
+                "SabreGDS" : "1854",
+                "GRNConnect" : "1847628"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15466100",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.274755",
+            "postalCode" : "5772",
+            "unicaId" : "15466100",
+            "hotelName" : "Grand Excelsior Hotel Deira",
+            "longitude" : "55.32764",
+            "providerInfo" : {
+                "SabreGDS" : "30338",
+                "GRNConnect" : "1847629"
+            }
+        }, 
+        {
+            "w2gHotelId" : "38782322",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.227608",
+            "postalCode" : "7978",
+            "unicaId" : "38782322",
+            "hotelName" : "Grand Hyatt Dubai",
+            "longitude" : "55.328003",
+            "providerInfo" : {
+                "SabreGDS" : "6910",
+                "TBOMaster" : "1216198",
+                "GRNConnect" : "1847632"
+            }
+        }, 
+        {
+            "w2gHotelId" : "38782322",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.227608",
+            "postalCode" : "7978",
+            "unicaId" : "38782322",
+            "hotelName" : "Grand Hyatt Dubai",
+            "longitude" : "55.328003",
+            "providerInfo" : {
+                "SabreGDS" : "6910",
+                "TBOMaster" : "1216198",
+                "GRNConnect" : "1847632"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15714129",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.098366",
+            "postalCode" : "125616",
+            "unicaId" : "15714129",
+            "hotelName" : "Grand Midwest Reve",
+            "longitude" : "55.178623",
+            "providerInfo" : {
+                "GRNConnect" : "1847635"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15626661",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.111704",
+            "postalCode" : "125616",
+            "unicaId" : "15626661",
+            "hotelName" : "Grand Midwest View Hotel Apartments Al Barsha",
+            "longitude" : "55.187096",
+            "providerInfo" : {
+                "SabreGDS" : "458373",
+                "GRNConnect" : "1847636"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15793841",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.1705",
+            "postalCode" : "98678",
+            "unicaId" : "15793841",
+            "hotelName" : "Grand Millennium Business Bay",
+            "longitude" : "55.2343",
+            "providerInfo" : {
+                "GRNConnect" : "1847637"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15488390",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.10147",
+            "postalCode" : "212422",
+            "unicaId" : "15488390",
+            "hotelName" : "Grand Millennium Dubai",
+            "longitude" : "55.177578",
+            "providerInfo" : {
+                "SabreGDS" : "21188",
+                "GRNConnect" : "1847638"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15627181",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.097712",
+            "postalCode" : "00000",
+            "unicaId" : "15627181",
+            "hotelName" : "Grand Plaza Mövenpick Media City",
+            "longitude" : "55.165638",
+            "providerInfo" : {
+                "GRNConnect" : "1847640"
+            }
+        }, 
+        {
+            "w2gHotelId" : "38125406",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.08296",
+            "unicaId" : "38125406",
+            "hotelName" : "Grand Residence",
+            "longitude" : "55.14087",
+            "providerInfo" : {
+                "GRNConnect" : "1847641"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15306231",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.11325",
+            "postalCode" : "450127",
+            "unicaId" : "15306231",
+            "hotelName" : "Grand Square Stay Hotel Apartments",
+            "longitude" : "55.2018",
+            "providerInfo" : {
+                "SabreGDS" : "220098",
+                "GRNConnect" : "1847393"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15312090",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.109535",
+            "postalCode" : "282429",
+            "unicaId" : "15312090",
+            "hotelName" : "Grandeur Hotel",
+            "longitude" : "55.202957",
+            "providerInfo" : {
+                "SabreGDS" : "314623",
+                "GRNConnect" : "1847645"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15170328",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.252914",
+            "postalCode" : "7",
+            "unicaId" : "15170328",
+            "hotelName" : "Grayton Hotel",
+            "longitude" : "55.29667",
+            "providerInfo" : {
+                "GRNConnect" : "1847646"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15346665",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.085598",
+            "postalCode" : "118500",
+            "unicaId" : "15346665",
+            "hotelName" : "Grosvenor House, A Luxury Collection Hotel",
+            "longitude" : "55.14404",
+            "providerInfo" : {
+                "SabreGDS" : "41327",
+                "GRNConnect" : "1847653"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15426226",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.182642",
+            "postalCode" : "32300",
+            "unicaId" : "15426226",
+            "hotelName" : "Gulf Court Hotel Business Bay",
+            "longitude" : "55.27472",
+            "providerInfo" : {
+                "GRNConnect" : "1847654"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15465417",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.094736",
+            "postalCode" : "31272",
+            "unicaId" : "15465417",
+            "hotelName" : "Gulf Oasis Hotel Apartments",
+            "longitude" : "55.17673",
+            "providerInfo" : {
+                "SabreGDS" : "472451",
+                "GRNConnect" : "1847655"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15422274",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.085917",
+            "postalCode" : "24454",
+            "unicaId" : "15422274",
+            "hotelName" : "Habtoor Grand Resort, Autograph Collection",
+            "longitude" : "55.1413",
+            "providerInfo" : {
+                "SabreGDS" : "14539",
+                "GRNConnect" : "1847658"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15628096",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.183395",
+            "postalCode" : "124405",
+            "unicaId" : "15628096",
+            "hotelName" : "Habtoor Palace, LXR Hotels & Resorts",
+            "longitude" : "55.254177",
+            "providerInfo" : {
+                "SabreGDS" : "283297",
+                "GRNConnect" : "1847659"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15074128",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.272373",
+            "postalCode" : "0",
+            "unicaId" : "15074128",
+            "hotelName" : "Hampton by Hilton Dubai Airport",
+            "longitude" : "55.380844",
+            "providerInfo" : {
+                "GRNConnect" : "1847663"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15284197",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.072182",
+            "postalCode" : "120253",
+            "unicaId" : "15284197",
+            "hotelName" : "Ramada Hotel & Suites by Wyndham Dubai JBR",
+            "longitude" : "55.129395",
+            "providerInfo" : {
+                "GRNConnect" : "1847664"
+            }
+        }, 
+        {
+            "w2gHotelId" : "16119098",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.252308",
+            "postalCode" : "182824",
+            "unicaId" : "16119098",
+            "hotelName" : "High End Hotel Apartments",
+            "longitude" : "55.285168",
+            "providerInfo" : {
+                "GRNConnect" : "1847667"
+            }
+        }, 
+        {
+            "w2gHotelId" : "16040023",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.184391",
+            "postalCode" : "124405",
+            "unicaId" : "16040023",
+            "hotelName" : "Hilton Dubai Al Habtoor City",
+            "longitude" : "55.255238",
+            "providerInfo" : {
+                "SabreGDS" : "284235",
+                "GRNConnect" : "1847670"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15437904",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.25997",
+            "postalCode" : "00001",
+            "unicaId" : "15437904",
+            "hotelName" : "Hilton Dubai Creek",
+            "longitude" : "55.31826",
+            "providerInfo" : {
+                "SabreGDS" : "60524",
+                "GRNConnect" : "1847671"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15231108",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.078608",
+            "postalCode" : "2431",
+            "unicaId" : "15231108",
+            "hotelName" : "Hilton Dubai Jumeirah",
+            "longitude" : "55.133923",
+            "providerInfo" : {
+                "SabreGDS" : "55497",
+                "GRNConnect" : "1847672"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15231674",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.07826",
+            "postalCode" : "2431",
+            "unicaId" : "15231674",
+            "hotelName" : "Hilton Dubai The Walk",
+            "longitude" : "55.135075",
+            "providerInfo" : {
+                "TBOMaster" : "1158494",
+                "GRNConnect" : "1847674"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15404405",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.222363",
+            "postalCode" : "0",
+            "unicaId" : "15404405",
+            "hotelName" : "Hilton Garden Inn Dubai Al Jadaf Culture Village",
+            "longitude" : "55.331882",
+            "providerInfo" : {
+                "GRNConnect" : "1847675"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15616702",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.247778",
+            "postalCode" : "00971",
+            "unicaId" : "15616702",
+            "hotelName" : "Hilton Garden Inn Dubai Al Mina",
+            "longitude" : "55.278397",
+            "providerInfo" : {
+                "SabreGDS" : "283958",
+                "GRNConnect" : "1847676"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15617176",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.264917",
+            "postalCode" : "50698",
+            "unicaId" : "15617176",
+            "hotelName" : "Hilton Garden Inn Dubai Al Muraqabat",
+            "longitude" : "55.329803",
+            "providerInfo" : {
+                "SabreGDS" : "284039",
+                "GRNConnect" : "1847677"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15699830",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.11601",
+            "postalCode" : "393971",
+            "unicaId" : "15699830",
+            "hotelName" : "Hilton Garden Inn Dubai Mall Of The Emirates",
+            "longitude" : "55.196377",
+            "providerInfo" : {
+                "SabreGDS" : "305446",
+                "GRNConnect" : "1847678"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15504117",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.252909",
+            "postalCode" : "00000",
+            "unicaId" : "15504117",
+            "hotelName" : "Holiday Inn Bur Dubai - Embassy District",
+            "longitude" : "55.309437",
+            "providerInfo" : {
+                "SabreGDS" : "117547",
+                "GRNConnect" : "1847679"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15426111",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.116228",
+            "postalCode" : "115443",
+            "unicaId" : "15426111",
+            "hotelName" : "Holiday Inn Dubai - Al Barsha",
+            "longitude" : "55.193726",
+            "providerInfo" : {
+                "SabreGDS" : "87128",
+                "GRNConnect" : "1847680"
+            }
+        }, 
+        {
+            "w2gHotelId" : "16178996",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.10231",
+            "postalCode" : "00971",
+            "unicaId" : "16178996",
+            "hotelName" : "Hotel DC Firm",
+            "longitude" : "55.172386",
+            "providerInfo" : {
+                "GRNConnect" : "1847688"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15067196",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.192554",
+            "postalCode" : "00000",
+            "unicaId" : "15067196",
+            "hotelName" : "Hotel Indigo Dubai Downtown",
+            "longitude" : "55.286686",
+            "providerInfo" : {
+                "GRNConnect" : "1847689"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15499109",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.255346",
+            "postalCode" : "52700",
+            "unicaId" : "15499109",
+            "hotelName" : "Hotel Sea View",
+            "longitude" : "55.28496",
+            "providerInfo" : {
+                "SabreGDS" : "58506",
+                "GRNConnect" : "1847690"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15392400",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.260223",
+            "postalCode" : "30329",
+            "unicaId" : "15392400",
+            "hotelName" : "Howard Johnson by Wyndham Bur Dubai",
+            "longitude" : "55.28526",
+            "providerInfo" : {
+                "SabreGDS" : "137096",
+                "GRNConnect" : "2192996"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15478724",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.281855",
+            "postalCode" : "P.O.Box5245",
+            "unicaId" : "15478724",
+            "hotelName" : "Hues Boutique Hotel",
+            "longitude" : "55.31511",
+            "providerInfo" : {
+                "GRNConnect" : "1847692"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15201047",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.26288",
+            "postalCode" : "33178",
+            "unicaId" : "15201047",
+            "hotelName" : "Hyatt Place Dubai Al Rigga",
+            "longitude" : "55.32785",
+            "providerInfo" : {
+                "SabreGDS" : "218798",
+                "GRNConnect" : "1847694"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15201047",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.26288",
+            "postalCode" : "33178",
+            "unicaId" : "15201047",
+            "hotelName" : "Hyatt Place Dubai Al Rigga",
+            "longitude" : "55.32785",
+            "providerInfo" : {
+                "SabreGDS" : "218798",
+                "GRNConnect" : "1847694"
+            }
+        }, 
+        {
+            "w2gHotelId" : "16040024",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.26869",
+            "postalCode" : "33178",
+            "unicaId" : "16040024",
+            "hotelName" : "Hyatt Place Dubai/Baniyas Square",
+            "longitude" : "55.3053",
+            "providerInfo" : {
+                "SabreGDS" : "282631",
+                "GRNConnect" : "1847695"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15142157",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.269854",
+            "postalCode" : "128851",
+            "unicaId" : "15142157",
+            "hotelName" : "Hyatt Place Wasl District Residences",
+            "longitude" : "55.314182",
+            "providerInfo" : {
+                "GRNConnect" : "2149741"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15611574",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.23408",
+            "postalCode" : "5668",
+            "unicaId" : "15611574",
+            "hotelName" : "Hyatt Regency Dubai Creek Heights Residences",
+            "longitude" : "55.32427",
+            "providerInfo" : {
+                "SabreGDS" : "280481",
+                "GRNConnect" : "1847700"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15438972",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.27895",
+            "postalCode" : "5588",
+            "unicaId" : "15438972",
+            "hotelName" : "Hyatt Regency Dubai",
+            "longitude" : "55.30443",
+            "providerInfo" : {
+                "GRNConnect" : "1847698"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15611574",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.23408",
+            "postalCode" : "5668",
+            "unicaId" : "15611574",
+            "hotelName" : "Hyatt Regency Dubai Creek Heights Residences",
+            "longitude" : "55.32427",
+            "providerInfo" : {
+                "SabreGDS" : "280481",
+                "GRNConnect" : "1847700"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15351451",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.109076",
+            "postalCode" : "0",
+            "unicaId" : "15351451",
+            "hotelName" : "ibis Al Barsha",
+            "longitude" : "55.182976",
+            "providerInfo" : {
+                "SabreGDS" : "19166",
+                "GRNConnect" : "1847702"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15585095",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.264835",
+            "postalCode" : "186878",
+            "unicaId" : "15585095",
+            "hotelName" : "ibis Al Rigga",
+            "longitude" : "55.321095",
+            "providerInfo" : {
+                "SabreGDS" : "6790",
+                "GRNConnect" : "1847703"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15426171",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.253544",
+            "postalCode" : "0",
+            "unicaId" : "15426171",
+            "hotelName" : "ibis Deira City Centre",
+            "longitude" : "55.33252",
+            "providerInfo" : {
+                "SabreGDS" : "2505",
+                "GRNConnect" : "1847704"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15351711",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.116722",
+            "postalCode" : "0",
+            "unicaId" : "15351711",
+            "hotelName" : "ibis Dubai Mall of the Emirates Hotel",
+            "longitude" : "55.19599",
+            "providerInfo" : {
+                "SabreGDS" : "42000",
+                "GRNConnect" : "1847705"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15618569",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.221643",
+            "postalCode" : "9914",
+            "unicaId" : "15618569",
+            "hotelName" : "ibis One Central Hotel",
+            "longitude" : "55.286556",
+            "providerInfo" : {
+                "SabreGDS" : "305632",
+                "GRNConnect" : "1847706"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15224780",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.17417",
+            "postalCode" : "68278",
+            "unicaId" : "15224780",
+            "hotelName" : "ibis Styles Dragon Mart Dubai",
+            "longitude" : "55.419704",
+            "providerInfo" : {
+                "SabreGDS" : "305636",
+                "GRNConnect" : "1847707"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15629082",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.238865",
+            "postalCode" : "121252",
+            "unicaId" : "15629082",
+            "hotelName" : "ibis Styles Dubai Jumeira",
+            "longitude" : "55.27274",
+            "providerInfo" : {
+                "SabreGDS" : "284710",
+                "GRNConnect" : "1847708"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15185349",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.273155",
+            "postalCode" : "49725",
+            "unicaId" : "15185349",
+            "hotelName" : "Icon Hotel Apartments",
+            "longitude" : "55.316933",
+            "providerInfo" : {
+                "GRNConnect" : "1847710"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15206531",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.256832",
+            "postalCode" : "25056",
+            "unicaId" : "15206531",
+            "hotelName" : "Imperial Hotel Apartment",
+            "longitude" : "55.293106",
+            "providerInfo" : {
+                "GRNConnect" : "1847713"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15329042",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.256838",
+            "postalCode" : "52444",
+            "unicaId" : "15329042",
+            "hotelName" : "Imperial Suites Hotel",
+            "longitude" : "55.2931",
+            "providerInfo" : {
+                "SabreGDS" : "68073",
+                "GRNConnect" : "1847714"
+            }
+        }, 
+        {
+            "w2gHotelId" : "32366757",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.1786",
+            "unicaId" : "32366757",
+            "hotelName" : "Indigo Tower by Higuests Vacation Homes",
+            "longitude" : "55.2441",
+            "providerInfo" : {
+                "GRNConnect" : "1847718"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15328503",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.223253",
+            "postalCode" : "45777",
+            "unicaId" : "15328503",
+            "hotelName" : "InterContinental Dubai Festival City",
+            "longitude" : "55.349743",
+            "providerInfo" : {
+                "SabreGDS" : "79114",
+                "GRNConnect" : "1847720"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15615308",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.078869",
+            "postalCode" : "393080",
+            "unicaId" : "15615308",
+            "hotelName" : "Intercontinental Dubai Marina",
+            "longitude" : "55.137276",
+            "providerInfo" : {
+                "SabreGDS" : "270593",
+                "GRNConnect" : "1847721"
+            }
+        }, 
+        {
+            "w2gHotelId" : "17435360",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.231895",
+            "postalCode" : "112225",
+            "unicaId" : "17435360",
+            "hotelName" : "InterContinental Residence Suites Dubai Festival City",
+            "longitude" : "55.347137",
+            "providerInfo" : {
+                "GRNConnect" : "1847722"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15240306",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.114435",
+            "postalCode" : "391977",
+            "unicaId" : "15240306",
+            "hotelName" : "Ivory Grand Hotel Apartments",
+            "longitude" : "55.201485",
+            "providerInfo" : {
+                "GRNConnect" : "1847724"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15307704",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.254007",
+            "postalCode" : "33871",
+            "unicaId" : "15307704",
+            "hotelName" : "J5 Hotels - Port Saeed",
+            "longitude" : "55.336056",
+            "providerInfo" : {
+                "SabreGDS" : "49663",
+                "GRNConnect" : "1847725"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15289406",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.264336",
+            "postalCode" : "27070",
+            "unicaId" : "15289406",
+            "hotelName" : "J5 Rimal",
+            "longitude" : "55.32667",
+            "providerInfo" : {
+                "SabreGDS" : "41743",
+                "GRNConnect" : "1847726"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15491641",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "24.986826",
+            "postalCode" : "9522",
+            "unicaId" : "15491641",
+            "hotelName" : "JA Beach Hotel",
+            "longitude" : "55.02385",
+            "providerInfo" : {
+                "SabreGDS" : "76365",
+                "GRNConnect" : "1847727"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15619059",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "24.987362",
+            "postalCode" : "9255",
+            "unicaId" : "15619059",
+            "hotelName" : "JA Lake View Hotel",
+            "longitude" : "55.023106",
+            "providerInfo" : {
+                "GRNConnect" : "1847728"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15400335",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.079632",
+            "postalCode" : "26500",
+            "unicaId" : "15400335",
+            "hotelName" : "JA Oasis Beach Tower",
+            "longitude" : "55.136623",
+            "providerInfo" : {
+                "SabreGDS" : "68950",
+                "GRNConnect" : "1847729"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15231275",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.072962",
+            "postalCode" : "26500",
+            "unicaId" : "15231275",
+            "hotelName" : "JA Ocean View Hotel",
+            "longitude" : "55.130127",
+            "providerInfo" : {
+                "SabreGDS" : "165956",
+                "GRNConnect" : "1847730"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15491734",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "24.987383",
+            "postalCode" : "9522",
+            "unicaId" : "15491734",
+            "hotelName" : "JA Palm Tree Court",
+            "longitude" : "55.0219",
+            "providerInfo" : {
+                "SabreGDS" : "7718",
+                "GRNConnect" : "1847731"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15624874",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.257048",
+            "postalCode" : "83010",
+            "unicaId" : "15624874",
+            "hotelName" : "Jacob's Garden Hotel",
+            "longitude" : "55.289993",
+            "providerInfo" : {
+                "GRNConnect" : "1847732"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15615588",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.068619",
+            "postalCode" : "-",
+            "unicaId" : "15615588",
+            "hotelName" : "Jannah Marina Hotel Apartments",
+            "longitude" : "55.130283",
+            "providerInfo" : {
+                "SabreGDS" : "305307",
+                "GRNConnect" : "1847733"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15601317",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.069519",
+            "postalCode" : "-",
+            "unicaId" : "15601317",
+            "hotelName" : "Jannah Place Dubai Marina",
+            "longitude" : "55.133343",
+            "providerInfo" : {
+                "SabreGDS" : "297586",
+                "GRNConnect" : "1847734"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15764008",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.267578",
+            "postalCode" : "29476",
+            "unicaId" : "15764008",
+            "hotelName" : "Jonrad Hotel",
+            "longitude" : "55.31532",
+            "providerInfo" : {
+                "SabreGDS" : "459768",
+                "GRNConnect" : "1847737"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15238189",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.262215",
+            "postalCode" : "42211",
+            "unicaId" : "15238189",
+            "hotelName" : "Jood Palace Hotel Dubai",
+            "longitude" : "55.32213",
+            "providerInfo" : {
+                "SabreGDS" : "58609",
+                "GRNConnect" : "1847738"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15271455",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.251137",
+            "postalCode" : "191504",
+            "unicaId" : "15271455",
+            "hotelName" : "Jormand Hotel Apartments",
+            "longitude" : "55.293747",
+            "providerInfo" : {
+                "GRNConnect" : "1847739"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15318544",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.248896",
+            "postalCode" : "7470",
+            "unicaId" : "15318544",
+            "hotelName" : "Jormand Suites",
+            "longitude" : "55.285038",
+            "providerInfo" : {
+                "GRNConnect" : "1847740"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15440142",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.237244",
+            "postalCode" : "33640",
+            "unicaId" : "15440142",
+            "hotelName" : "Jumeira Rotana",
+            "longitude" : "55.274323",
+            "providerInfo" : {
+                "SabreGDS" : "43042",
+                "GRNConnect" : "1847742"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15226687",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.137178",
+            "postalCode" : "75157",
+            "unicaId" : "15226687",
+            "hotelName" : "Jumeirah Al Naseem",
+            "longitude" : "55.187126",
+            "providerInfo" : {
+                "SabreGDS" : "305180",
+                "GRNConnect" : "1847743"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15491235",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.132027",
+            "postalCode" : "73311",
+            "unicaId" : "15491235",
+            "hotelName" : "Jumeirah Al Qasr",
+            "longitude" : "55.18424",
+            "providerInfo" : {
+                "SabreGDS" : "44762",
+                "GRNConnect" : "1847744"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15421974",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.141497",
+            "postalCode" : "11416",
+            "unicaId" : "15421974",
+            "hotelName" : "Jumeirah Beach Hotel",
+            "longitude" : "55.190784",
+            "providerInfo" : {
+                "SabreGDS" : "49280",
+                "GRNConnect" : "1847747"
+            }
+        }, 
+        {
+            "w2gHotelId" : "16119202",
+            "cityName" : "DUBAI",
+            "countryCode" : "AE",
+            "latitude" : "25.13938",
+            "postalCode" : "P.O.Box11",
+            "unicaId" : "16119202",
+            "hotelName" : "BEIT AL BAHAR",
+            "longitude" : "55.1883",
+            "providerInfo" : {
+                "GRNConnect" : "1847748"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15444239",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.242682",
+            "postalCode" : "PO78377",
+            "unicaId" : "15444239",
+            "hotelName" : "Jumeirah Creekside Hotel",
+            "longitude" : "55.340424",
+            "providerInfo" : {
+                "SabreGDS" : "143308",
+                "GRNConnect" : "1847749"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15491736",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.132011",
+            "postalCode" : "00000",
+            "unicaId" : "15491736",
+            "hotelName" : "Jumeirah Dar Al Masyaf",
+            "longitude" : "55.182438",
+            "providerInfo" : {
+                "SabreGDS" : "44766",
+                "GRNConnect" : "1847750"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15434653",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.217512",
+            "postalCode" : "72127",
+            "unicaId" : "15434653",
+            "hotelName" : "Jumeirah Emirates Towers",
+            "longitude" : "55.283085",
+            "providerInfo" : {
+                "SabreGDS" : "53398",
+                "GRNConnect" : "1847751"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15351834",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.227085",
+            "postalCode" : "0000",
+            "unicaId" : "15351834",
+            "hotelName" : "Jumeirah Living World Trade Centre Residences",
+            "longitude" : "55.28934",
+            "providerInfo" : {
+                "GRNConnect" : "1847753"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15491445",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.13513",
+            "postalCode" : "P.O.Box75157",
+            "unicaId" : "15491445",
+            "hotelName" : "Jumeirah Mina A'Salam",
+            "longitude" : "55.185978",
+            "providerInfo" : {
+                "SabreGDS" : "3727",
+                "GRNConnect" : "1847755"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15238948",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.185612",
+            "postalCode" : "121000",
+            "unicaId" : "15238948",
+            "hotelName" : "JW Marriott Marquis Hotel Dubai",
+            "longitude" : "55.258137",
+            "providerInfo" : {
+                "SabreGDS" : "168978",
+                "GRNConnect" : "1847757"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15389009",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.118961",
+            "postalCode" : "120679",
+            "unicaId" : "15389009",
+            "hotelName" : "Kempinski Hotel Mall of the Emirates Dubai",
+            "longitude" : "55.19802",
+            "providerInfo" : {
+                "SabreGDS" : "60357",
+                "GRNConnect" : "1847765"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15351392",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.261005",
+            "postalCode" : "63890",
+            "unicaId" : "15351392",
+            "hotelName" : "Khalidia Hotel Apartments",
+            "longitude" : "55.320854",
+            "providerInfo" : {
+                "GRNConnect" : "1847766"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15322221",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.26536",
+            "postalCode" : "13130",
+            "unicaId" : "15322221",
+            "hotelName" : "Kings Park Hotel",
+            "longitude" : "55.324024",
+            "providerInfo" : {
+                "SabreGDS" : "461749",
+                "GRNConnect" : "1847767"
+            }
+        }, 
+        {
+            "w2gHotelId" : "15290223",
+            "cityName" : "Dubai",
+            "countryCode" : "AE",
+            "latitude" : "25.080038",
+            "postalCode" : "127275",
+            "unicaId" : "15290223",
+            "hotelName" : "La Verda Suites & Villas Dubai Marina",
+            "longitude" : "55.143295",
+            "providerInfo" : {
+                "SabreGDS" : "307910",
+                "GRNConnect" : "1847772"
+            }
+        }
+    ]
+}
