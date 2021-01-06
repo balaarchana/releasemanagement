@@ -913,6 +913,7 @@ font-size: 14px;
 {
 font-size: 14px;
 padding-bottom:5px;
+text-align: left;
 }
 
 .nap{
