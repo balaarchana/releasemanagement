@@ -1,0 +1,10 @@
+//use user org id -> 1049
+use cs_xxxx_user
+db.u_cash_advance_details.remove({});
+db.u_expense_data.remove({});
+
+------------------------------------------------------------------------------
+
+//use corresponding sd org id -> 9002
+use cs_xxxx_sd
+db.sd_expense_data.remove({});
