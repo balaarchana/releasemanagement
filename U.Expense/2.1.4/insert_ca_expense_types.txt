@@ -30,32 +30,7 @@ db.u_expense_categories.insert([
 	    "title" : {
 	        "en-in" : "Advance Return"
 	    },
-	    "createdOn_DT_UTC" : "29-12-2020 05:07:02:515 UTC",
-	    "groupFor" : {
-	        "IN" : {
-	            "transactionLimits" : {
-	                "21568194218513" : {
-	                    "active" : true
-	                },
-	                "21568194291508" : {
-	                    "active" : true
-	                }
-	            }
-	        },
-	        "US" : {
-	            "transactionLimits" : {
-	                "21568194218513" : {
-	                    "active" : true
-	                },
-	                "21568194291508" : {
-	                    "active" : true
-	                }
-	            }
-	        }
-	    },
-	    "inUse" : true,
-	    "modifiedOn_DT_UTC" : "29-12-2020 05:10:11:553 UTC",
-	    "modifiedOn_DT_UTC_EPOCH" : NumberLong(1609218611553)
+	    "createdOn_DT_UTC" : "29-12-2020 05:07:02:515 UTC"
 	},
 	{
 	    "parent" : "11609218410632",
@@ -66,32 +41,7 @@ db.u_expense_categories.insert([
 	    "title" : {
 	        "en-in" : "Currency Gain"
 	    },
-	    "createdOn_DT_UTC" : "29-12-2020 05:07:13:267 UTC",
-	    "groupFor" : {
-	        "IN" : {
-	            "transactionLimits" : {
-	                "21568194218513" : {
-	                    "active" : true
-	                },
-	                "21568194291508" : {
-	                    "active" : true
-	                }
-	            }
-	        },
-	        "US" : {
-	            "transactionLimits" : {
-	                "21568194218513" : {
-	                    "active" : true
-	                },
-	                "21568194291508" : {
-	                    "active" : true
-	                }
-	            }
-	        }
-	    },
-	    "inUse" : true,
-	    "modifiedOn_DT_UTC" : "29-12-2020 05:10:11:852 UTC",
-	    "modifiedOn_DT_UTC_EPOCH" : NumberLong(1609218611852)
+	    "createdOn_DT_UTC" : "29-12-2020 05:07:13:267 UTC"
 	},
 	{
 	    "parent" : "11609218410632",
@@ -102,31 +52,6 @@ db.u_expense_categories.insert([
 	    "title" : {
 	        "en-in" : "Currency Loss"
 	    },
-	    "createdOn_DT_UTC" : "29-12-2020 05:07:22:890 UTC",
-	    "inUse" : true,
-	    "modifiedOn_DT_UTC" : "29-12-2020 05:10:12:149 UTC",
-	    "modifiedOn_DT_UTC_EPOCH" : NumberLong(1609218612149),
-	    "groupFor" : {
-	        "IN" : {
-	            "transactionLimits" : {
-	                "21568194218513" : {
-	                    "active" : true
-	                },
-	                "21568194291508" : {
-	                    "active" : true
-	                }
-	            }
-	        },
-	        "US" : {
-	            "transactionLimits" : {
-	                "21568194218513" : {
-	                    "active" : true
-	                },
-	                "21568194291508" : {
-	                    "active" : true
-	                }
-	            }
-	        }
-	    }
+	    "createdOn_DT_UTC" : "29-12-2020 05:07:22:890 UTC"
 	}
 ]);
