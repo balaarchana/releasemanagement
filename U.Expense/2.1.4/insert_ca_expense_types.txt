@@ -55,13 +55,7 @@ db.u_expense_categories.insert([
 	    },
 	    "inUse" : true,
 	    "modifiedOn_DT_UTC" : "29-12-2020 05:10:11:553 UTC",
-	    "modifiedOn_DT_UTC_EPOCH" : NumberLong(1609218611553),
-	    "accountCode" : {
-	        "21571653241235" : "GL020",
-	        "21571653271326" : "GL020",
-	        "universal" : "GL020",
-	        "21602738351718" : "GL020"
-	    }
+	    "modifiedOn_DT_UTC_EPOCH" : NumberLong(1609218611553)
 	},
 	{
 	    "parent" : "11609218410632",
@@ -97,13 +91,7 @@ db.u_expense_categories.insert([
 	    },
 	    "inUse" : true,
 	    "modifiedOn_DT_UTC" : "29-12-2020 05:10:11:852 UTC",
-	    "modifiedOn_DT_UTC_EPOCH" : NumberLong(1609218611852),
-	    "accountCode" : {
-	        "21571653241235" : "GL021",
-	        "21571653271326" : "GL021",
-	        "universal" : "GL021",
-	        "21602738351718" : "GL021"
-	    }
+	    "modifiedOn_DT_UTC_EPOCH" : NumberLong(1609218611852)
 	},
 	{
 	    "parent" : "11609218410632",
@@ -139,12 +127,6 @@ db.u_expense_categories.insert([
 	                }
 	            }
 	        }
-	    },
-	    "accountCode" : {
-	        "21571653241235" : "GL022",
-	        "21571653271326" : "GL022",
-	        "universal" : "GL022",
-	        "21602738351718" : "GL022"
 	    }
 	}
 ]);
