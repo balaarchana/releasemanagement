@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"></meta>
+<title>Expense Report</title>
+<style type="text/css">
+.center {
+    padding: 9px 0;
+}
+caption {
+display: table-caption;
+text-align: left;
+width :102%;
+}
+caption u{ 
+    text-decoration: none;
+	font-size: 10px;
+	text-align: right;
+}
+footer {
+font-size: 9px;
+width:100%;
+height:14px;
+border-top:1px solid black;
+margin: auto;
+bottom: 0;
+}
+header{
+font-size: 9px;
+margin:0px auto;
+top:0px;
+}
+
+@page {
+ 
+  size:A4;
+  border:1px solid white ;
+  border-left-width:10px;  
+  border-left-color:white;
+  margin-left:0px;
+  border-bottom: none;
+  margin-right:0px;
+  margin-top:10px;
+  margin-bottom:0px;
+  border-right: none;
+  border-right-color:white;
+}
+
+@media print {
+table { page-break-after:avoid ;page-break-inside:avoid;}
+tr    { page-break-inside:avoid; page-break-after:auto}
+td    { page-break-inside:avoid; page-break-after:auto }
+th    { page-break-inside:avoid; page-break-after:auto }
+span  { page-break-after:auto ;page-break-inside:avoid;}
+footer {
+position: fixed;
+bottom: 0;
+height:14px;
+border-top:1px solid black;
+}
+header{
+position: fixed;
+top: 0;
+}
+.content-block, p {
+page-break-after: always;
+height : 40%;
+}
+caption u{ 
+    text-decoration: none;
+	font-size: 10px;
+	text-align: right;
+}
+}
+th {
+font-weight: bold;
+font-size: 11px;
+background-color: #eee;
+text-align: left;
+font-family: Helvetica;
+margin-left:30px;
+}
+
+table {
+border-spacing: 0;
+border: 1px solid #000000;
+}
+td p{
+font-size: 11px;
+line-height: 150%
+font-family: Helvetica;
+}
+td {
+font-size: 11px;
+line-height: 150%
+font-family: Helvetica;
+}
+
+caption {
+font-size: 11px;
+padding: 6px;
+font-family: Helvetica;
+width :102%;
+}
+
+</style>
+</head>
+<body height="60%">
+<!-- whole frame -->
+<header><br></br><br></br>
+</header>
+<div style="width:680px;height:650px;background-color: #fff;border-bottom: none;border-right: none;">
+<!-- top bar -->
+
+<div style="width: 117%;height:6%; ">
+<!-- top left -->
+<div style="width:50%;height:80%;float:left;display:inline-block;position: relative;">
+<span style="position: absolute;bottom: 0;left: 0;margin-left: 23px;color:#FFFFFF ;" >
+#if($pdf.has("logo"))
+<img src="data:image/jpg;base64,$pdf.getString("logo")" width="100px" height="40px" alt="no image"></img>
+#else
+<img src="" width="100px" height="40px" alt="logo"></img>
+#end
+</span>
+</div>
+<!-- top right -->
+<div style="width:50%;height:60%;border:0px solid black;display: inline-block;text-align: right;position: relative;float: right;">
+<span class="summary" style="position: absolute;bottom: 0;right: 0;margin-right: 59px; white-space: nowrap; font-size: 13px;">
+<i><i><i><i><i style="font-size: 19px;"><b>$pdfLabel.getString("summaryReport")</b></i></i></i></i></i>
+</span>
+</div>
+</div>
+
+<!-- middle section -->
+<div style="width: 111%;height:50%;border-top: 1px;display:block;">
+<div style="width:91%;height:99%;margin-left:20px;">
+<!-- middle content -->
+<table  style="border: 1px solid #BCB7B7;" cellpadding="8" width="104%" cellspacing="8" border="1" >
+<tr>
+#if($pdf.has("empDetails") && $pdf.getJSONObject("empDetails").length() > 0)
+<td style="background-color: #FFFFFF;border: 3px solid #BCB7B7;" width="52%"><b style="font-size: 12px;font-family: Helvetica;">$pdfLabel.getString("employeeDetails")</b><br></br><br></br>
+<tr>
+<th style="background-color: #FFFFFF;">$pdfLabel.getString("employeeName")</th>
+<td style="background-color: #FFFFFF;padding-left:30px;">$pdf.getJSONObject("empDetails").getString("name")</td>
+</tr>
+<br></br>
+<tr>
+<th style="background-color: #FFFFFF;">$pdfLabel.getString("employeeId")</th>
+<td style="background-color: #FFFFFF;padding-left:49px;">$pdf.getJSONObject("empDetails").getString("empId")</td>
+</tr>
+<br></br>
+<tr>
+<th style="background-color: #FFFFFF;">$pdfLabel.getString("emailId")</th>
+<td style="background-color: #FFFFFF;padding-left:74px;">$pdf.getJSONObject("empDetails").getString("emailId")</td>
+</tr>
+<br></br><br></br><br></br><br></br><br></br><br></br>
+</td>
+#end
+#if($pdf.has("reportDetails") && $pdf.getJSONObject("reportDetails").length() > 0)
+<td style="background-color: #FFFFFF;border: 3px solid #BCB7B7;" width="52%"><b style="font-size: 12px;font-family: Helvetica;">$pdfLabel.getString("reportDetails")</b><br></br><br></br>
+<tr>
+<th style="background-color: #FFFFFF;">$pdfLabel.getString("reportName")</th>
+<td style="background-color: #FFFFFF;padding-left:46px;">$pdf.getJSONObject("reportDetails").getString("reportName")</td>
+</tr>
+<br></br>
+<tr>
+<th style="background-color: #FFFFFF;">$pdfLabel.getString("reportId")</th>
+<td style="background-color: #FFFFFF;padding-left:65px;">$pdf.getJSONObject("reportDetails").getString("reportId")</td>
+</tr>
+<br></br>
+<tr>
+<th style="background-color: #FFFFFF;">$pdfLabel.getString("reportDate")</th>
+<td style="background-color: #FFFFFF;padding-left:52px;">$pdf.getJSONObject("reportDetails").getString("reportDate")</td>
+</tr>
+<br></br>
+<tr>
+<th style="background-color: #FFFFFF;">$pdfLabel.getString("businessPurpose")</th>
+<td style="background-color: #FFFFFF;padding-left:50px;">$pdf.getJSONObject("reportDetails").getString("bp")</td>
+</tr>
+<br></br>
+<tr>
+<th style="background-color: #FFFFFF;">$pdfLabel.getString("approvalStatus")</th>
+<td style="background-color: #FFFFFF;padding-left:32px;">$pdf.getJSONObject("reportDetails").getString("reportStatus")</td>
+</tr><br></br>
+<tr>
+<th style="background-color: #FFFFFF;">$pdfLabel.getString("currency")</th>
+<td style="background-color: #FFFFFF;padding-left:66px;">$pdf.getJSONObject("reportDetails").getString("empBaseCurrency")</td>
+</tr>
+</td>
+#end
+</tr>
+</table>
+<br></br>
+#set($m = $pdf.get("expensesDetails"))
+#set($c = $m.keySet())
+#foreach ($subCategory in $c)
+#set($firstItems = $m.getJSONArray($subCategory))
+#set($tconvertedAmount = $firstItems.getJSONObject(0).getString("totalConvertedAmount"))
+<div style="width:104%;">
+<span style="float:left;font-size: 11px;font-family: Helvetica;"><b>$subCategory</b></span>
+<span style="float:right;font-size: 10px;font-family: Helvetica;">Total Amount: $tconvertedAmount</span>
+</div>
+<br></br>
+<table  cellpadding="8" width="104%" cellspacing="8">
+<tr>
+<th style="background-color: #F5F5F5; text-align:center;">$pdfLabel.getString("transactionDate")</th>
+<th style="background-color: #F5F5F5; text-align:center;">$pdfLabel.getString("paymentType")</th>
+<th style="background-color: #F5F5F5; text-align:center;">$pdfLabel.getString("businessPurpose")</th>
+<th style="background-color: #F5F5F5; text-align:center;">$pdfLabel.getString("vendorDescription")</th>
+<th style="background-color: #F5F5F5; text-align:right;">$pdfLabel.getString("transactionAmount")</th>
+<th style="background-color: #F5F5F5; text-align:right;">Amount (in $pdf.getJSONObject("reportDetails").getString("empBaseCurrency"))</th>
+</tr>
+#set($i = 1)
+#foreach ($items in $m.getJSONArray($subCategory))
+#if($i%2 != 0)
+<tr>
+<td style="text-align:center;">$items.getString("tDate")</td>
+<td style="text-align:center;">$items.getString("paymentTypeDisplay")</td>
+<td style="text-align:center;">$items.getString("bp")</td>
+<td style="text-align:center;">$items.getString("vendor")</td>
+<td style="text-align:right;">$items.getString("tAmount")</td>
+<td style="text-align:right;">$items.getString("convertedAmount")</td>
+</tr>
+#else
+<tr>
+<td style="background-color: #D3D3D3; text-align:center;">$items.getString("tDate")</td>
+<td style="background-color: #D3D3D3; text-align:center;">$items.getString("paymentTypeDisplay")</td>
+<td style="background-color: #D3D3D3; text-align:center;">$items.getString("bp")</td>
+<td style="background-color: #D3D3D3; text-align:center;">$items.getString("vendor")</td>
+<td style="background-color: #D3D3D3; text-align:right;">$items.getString("tAmount")</td>
+<td style="background-color: #D3D3D3; text-align:right;">$items.getString("convertedAmount")</td>
+</tr>
+#end
+#set($i = $i+1)
+#end
+</table>
+<br></br><br/>
+#end
+<table cellpadding="8" width="104%" cellspacing="8">
+<caption><b>$pdfLabel.getString("totals")</b></caption>
+<col width="5"></col>
+<col width="300"></col>
+<tr>
+	<th colspan="2" style="background-color: #F5F5F5;">Expense Report</th>
+</tr>
+#if($pdf.has("totals") && $pdf.getJSONObject("totals").length() > 0)
+<tr>
+	<td>Report Total (A)</td>
+	<td style="text-align:right;">$pdf.getJSONObject("totals").getString("totalExpenses")</td>
+</tr>
+<tr>
+	<td>Less Personal (B)</td>
+	<td style="text-align:right;">$pdf.getJSONObject("totals").getString("totalPersonalAmount")</td>
+</tr>
+<tr>
+	<td>Less Cash Advance Returned(C)</td>
+	<td style="text-align:right;">$pdf.getJSONObject("totals").getString("advanceReturnAmount")</td>
+</tr>
+<tr>
+	<td>Amount Rejected (D)</td>
+	<td style="text-align:right;">$pdf.getJSONObject("totals").getString("totalRejectedAmount")</td>
+</tr>
+<tr>
+	<td>Amount Claimed (E)</td>
+	<td style="text-align:right;">$pdf.getJSONObject("totals").getString("totalAmountClaimed")</td>
+</tr>
+<tr>
+	<th colspan="2" style="background-color: #F5F5F5;">Company Disbursements</th>
+</tr>
+<tr>
+	<td>Amount Due Employee (F)</td>
+	<td style="text-align:right;">$pdf.getJSONObject("totals").getString("amountDueToEmployee")</td>
+</tr>
+<tr>
+	<td>Amount Due Company Card(G)</td>
+	<td style="text-align:right;">$pdf.getJSONObject("totals").getString("amountDueToCompanyCard")</td>
+</tr>
+<tr>
+	<td>Cash Advance Utilised(H)</td>
+	<td style="text-align:right;">$pdf.getJSONObject("totals").getString("assignedBalanceAmount")</td>
+</tr>
+<tr>
+	<td>Total Paid by Company (I)</td>
+	<td style="text-align:right;">$pdf.getJSONObject("totals").getString("totalPaidByCompany")</td>
+</tr>
+<tr>
+	<th colspan="2" style="background-color: #F5F5F5;">Employee Disbursements</th>
+</tr>
+<tr>
+	<td>Amount Due Company (J)</td>
+	<td style="text-align:right;">$pdf.getJSONObject("totals").getString("advanceReturnAmount")</td>
+</tr>
+<tr>
+	<td>Amount Due Company Card(G)</td>
+	<td style="text-align:right;">$pdf.getJSONObject("totals").getString("totalPersonalAmount")</td>
+</tr>
+<tr>
+	<td>Total Owed by Employee (K)</td>
+	<td style="text-align:right;">$pdf.getJSONObject("totals").getString("totalOwedByEmployee")</td>
+</tr>
+#end
+</table>
+<br></br>
+<br></br><br></br>
+<div style="margin-left:300px;clear:both;">
+<img src="data:image/jpg;base64,$pdf.getString("barImage")" height="40" align="center" alt=""></img>
+</div>
+</div>
+</div>
+</div>
+<div style="position: relative;clear:both;">
+<footer class="center" >
+<div height="10" width="100">
+<span style="font-family: Helvetica;font-size: 12px;margin-left:22px;">
+<img src="https://4ctnedevblob.blob.core.windows.net/assets/WAY2GOLOGO.jpg" width="100px" height="20px" alt="no image"></img>
+</span>
+</div>
+</footer>
+</div>
+</body>
+</html>

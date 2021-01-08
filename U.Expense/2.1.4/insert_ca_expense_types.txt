@@ -1,0 +1,150 @@
+use cs_xxxx_user
+db.u_expense_categories.insert([
+	{
+	    "createdBy" : "13210000122",
+	    "groupId" : "11609218410632",
+	    "isAdvanceReturn" : true,
+	    "dynamicFields" : {
+	        "29198236" : {
+	            "status" : "optional"
+	        },
+	        "45270947" : {
+	            "status" : "optional"
+	        },
+	        "92496522" : {
+	            "status" : "optional"
+	        }
+	    },
+	    "createdOn_DT_UTC_EPOCH" : NumberLong(1609218410784),
+	    "title" : {
+	        "en-in" : "Advance Settlement"
+	    },
+	    "createdOn_DT_UTC" : "29-12-2020 05:06:50:784 UTC"
+	},
+	{
+	    "parent" : "11609218410632",
+	    "createdBy" : "13210000122",
+	    "groupId" : "21609218422515",
+	    "createdOn_DT_UTC_EPOCH" : 1609218422515.0,
+	    "ocrCategories" : [],
+	    "title" : {
+	        "en-in" : "Advance Return"
+	    },
+	    "createdOn_DT_UTC" : "29-12-2020 05:07:02:515 UTC",
+	    "groupFor" : {
+	        "IN" : {
+	            "transactionLimits" : {
+	                "21568194218513" : {
+	                    "active" : true
+	                },
+	                "21568194291508" : {
+	                    "active" : true
+	                }
+	            }
+	        },
+	        "US" : {
+	            "transactionLimits" : {
+	                "21568194218513" : {
+	                    "active" : true
+	                },
+	                "21568194291508" : {
+	                    "active" : true
+	                }
+	            }
+	        }
+	    },
+	    "inUse" : true,
+	    "modifiedOn_DT_UTC" : "29-12-2020 05:10:11:553 UTC",
+	    "modifiedOn_DT_UTC_EPOCH" : NumberLong(1609218611553),
+	    "accountCode" : {
+	        "21571653241235" : "GL020",
+	        "21571653271326" : "GL020",
+	        "universal" : "GL020",
+	        "21602738351718" : "GL020"
+	    }
+	},
+	{
+	    "parent" : "11609218410632",
+	    "createdBy" : "13210000122",
+	    "groupId" : "21609218433267",
+	    "createdOn_DT_UTC_EPOCH" : 1609218433267.0,
+	    "ocrCategories" : [],
+	    "title" : {
+	        "en-in" : "Currency Gain"
+	    },
+	    "createdOn_DT_UTC" : "29-12-2020 05:07:13:267 UTC",
+	    "groupFor" : {
+	        "IN" : {
+	            "transactionLimits" : {
+	                "21568194218513" : {
+	                    "active" : true
+	                },
+	                "21568194291508" : {
+	                    "active" : true
+	                }
+	            }
+	        },
+	        "US" : {
+	            "transactionLimits" : {
+	                "21568194218513" : {
+	                    "active" : true
+	                },
+	                "21568194291508" : {
+	                    "active" : true
+	                }
+	            }
+	        }
+	    },
+	    "inUse" : true,
+	    "modifiedOn_DT_UTC" : "29-12-2020 05:10:11:852 UTC",
+	    "modifiedOn_DT_UTC_EPOCH" : NumberLong(1609218611852),
+	    "accountCode" : {
+	        "21571653241235" : "GL021",
+	        "21571653271326" : "GL021",
+	        "universal" : "GL021",
+	        "21602738351718" : "GL021"
+	    }
+	},
+	{
+	    "parent" : "11609218410632",
+	    "createdBy" : "13210000122",
+	    "groupId" : "21609218442890",
+	    "createdOn_DT_UTC_EPOCH" : 1609218442890.0,
+	    "ocrCategories" : [],
+	    "title" : {
+	        "en-in" : "Currency Loss"
+	    },
+	    "createdOn_DT_UTC" : "29-12-2020 05:07:22:890 UTC",
+	    "inUse" : true,
+	    "modifiedOn_DT_UTC" : "29-12-2020 05:10:12:149 UTC",
+	    "modifiedOn_DT_UTC_EPOCH" : NumberLong(1609218612149),
+	    "groupFor" : {
+	        "IN" : {
+	            "transactionLimits" : {
+	                "21568194218513" : {
+	                    "active" : true
+	                },
+	                "21568194291508" : {
+	                    "active" : true
+	                }
+	            }
+	        },
+	        "US" : {
+	            "transactionLimits" : {
+	                "21568194218513" : {
+	                    "active" : true
+	                },
+	                "21568194291508" : {
+	                    "active" : true
+	                }
+	            }
+	        }
+	    },
+	    "accountCode" : {
+	        "21571653241235" : "GL022",
+	        "21571653271326" : "GL022",
+	        "universal" : "GL022",
+	        "21602738351718" : "GL022"
+	    }
+	}
+]);
