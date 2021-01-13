@@ -1,0 +1,14 @@
+use cs_xxxx_user
+db.u_expense_sequence.update({},{
+    $set: {
+    "cashAdvanceSequence" : {
+        "value" : "00000000"
+    },
+    "expenseSequence" : {
+        "value" : "00000000"
+    },
+    "batchSequence" : {
+        "value" : "00000000"
+    }
+}
+});
