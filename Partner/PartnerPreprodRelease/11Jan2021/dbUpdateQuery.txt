@@ -1,0 +1,4 @@
+use platform_db
+db.getCollection('partner_config_partnerV2').update({'PartnerName':'HTL_HGX'},
+{$set:{"ServiceDetails.getCancelChargeServiceName":"getcancellationcharge",
+"ServiceDetails.getCancelChargeServiceVersion":"1.0"}})
