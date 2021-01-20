@@ -1,0 +1,7 @@
+
+// For changing cityCode for kannur
+// DB : platform_db
+
+
+db.getCollection('platform_transit_master').update({'w2GId':'W2G0000T_3021'},
+{$set:{'cityCode':'CNN'}})
