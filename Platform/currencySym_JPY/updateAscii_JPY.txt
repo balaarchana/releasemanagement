@@ -1,0 +1,2 @@
+use platform_db
+db.getCollection('platform_currency_master').updateMany({"currencyCode":"JPY"},{$set:{"ascii":"&#x00a5;"}})
