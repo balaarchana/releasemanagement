@@ -1,0 +1,12 @@
+use cs_xxxx_user
+db.getCollection("u_cash_advance_config").update({}, {
+	$set: {
+		"allowedCurrencyCodes" : [ 
+        		"USD", 
+        		"EUR", 
+        		"GBP", 
+        		"INR",
+                        "JPY"
+   		 ]
+	}
+});
