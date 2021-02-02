@@ -1,0 +1,6 @@
+use cs_xxxx_user
+db.getCollection("u_expense_config").update({}, {
+	$set: {
+		"advanceSettings.universalSettings.disableAuditRuleForBalance" : true
+	}
+});
