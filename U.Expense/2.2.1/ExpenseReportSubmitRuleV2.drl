@@ -1,0 +1,107 @@
+//created on: May 11, 2017
+package client_1001
+
+//list any import classes here.
+import com.wipro.c4.core.rules.module.expense.ExpenseRule;
+import org.json.JSONObject;
+
+
+//declare any global variables here
+
+dialect "java"
+
+rule"ExpenseReportSubmitRule"
+	
+	when
+		eR:ExpenseRule(eR.has("totalAmountClaimed") && eR.has("reportType") && eR.has("totalAvailableAdvance"));
+	then
+		JSONObject outputData=new JSONObject();
+		boolean allowSubmission=false;
+
+		if(eR.getFloat("totalAmountClaimed") > 0f || eR.getFloat("totalAmountClaimed") <= 0f) {
+			outputData.put("allowSubmission",allowSubmission = true);
+		} else {
+			outputData.put("allowSubmission",allowSubmission = false);
+			outputData.put("violation","totalAmountClaimed");
+		}
+ 
+		if(eR.getFloat("totalAvailableAdvance") == 0f) {
+			outputData.put("allowSubmission",allowSubmission = true);
+		} else {
+			String violationType = "HARD_LIMIT";
+
+			if(violationType.equals("SOFT_LIMIT"))
+				allowSubmission = true;
+			else
+				allowSubmission = false;
+
+			outputData.put("allowSubmission", allowSubmission);
+			outputData.put("violationType", violationType);
+			outputData.put("violation", "totalAvailableAdvance");
+			outputData.put("message", "You still have unaccounted Cash Advance Balance assigned to this report. As per company’s policy, please add expenses to fully account for the Assigned Cash Advance.");
+		}
+ 
+		if(eR.getString("reportType").equals("travel") && allowSubmission) {
+			String approvedFlag=eR.has("approvedFlag")?eR.getString("approvedFlag"):"";
+			
+			if(eR.getString("version").equals("0.1") ){
+				String tripStatus= eR.has("tripStatus")?eR.getString("tripStatus"):"";
+				if(approvedFlag.equalsIgnoreCase("Rejected")){
+					outputData.put("allowSubmission",!allowSubmission);
+					outputData.put("violation","tripStatus");
+				}else if(approvedFlag.equalsIgnoreCase("Pending")||approvedFlag.equalsIgnoreCase("Approved")){
+					switch(tripStatus) {
+						case "New": outputData.put("allowSubmission",!allowSubmission);
+								outputData.put("violation","tripStatus");break;
+						case "Requested": outputData.put("allowSubmission",allowSubmission);break;
+						case "WIP": outputData.put("allowSubmission",!allowSubmission);
+								outputData.put("violation","tripStatus");break;
+						case "Booked": outputData.put("allowSubmission",allowSubmission);break;
+						case "OnTrip": outputData.put("allowSubmission",allowSubmission);break;
+						case "Close": outputData.put("allowSubmission",allowSubmission);break;
+						case "CancelRequested": outputData.put("allowSubmission",allowSubmission);break;
+						case "Cancelled": outputData.put("allowSubmission",allowSubmission);break;
+
+					}
+				}
+			}
+	 
+			if(eR.getString("version").equals("0.2") ){
+				String flightStatus= eR.has("flightStatus")?eR.getString("flightStatus"):null;
+				String hotelStatus= eR.has("hotelStatus")?eR.getString("hotelStatus"):"";
+				if(approvedFlag.equalsIgnoreCase("REJECTED")){
+					outputData.put("allowSubmission",false);
+					
+				}else if(approvedFlag.equalsIgnoreCase("PENDING")||approvedFlag.equalsIgnoreCase("APPROVED")){
+						if(flightStatus!=null && flightStatus.equalsIgnoreCase("BookConfirmed") && hotelStatus!=null  && hotelStatus.equalsIgnoreCase("BookConfirmed")) {
+								outputData.put("allowSubmission",true);
+								
+						}
+						else {	
+							String status = flightStatus!=null?flightStatus: hotelStatus;
+							switch(status) {
+							case "New": outputData.put("allowSubmission",false);
+								outputData.put("violation","status");break;
+							case "SellPending": outputData.put("allowSubmission",true);break;
+							case "SellFailed": outputData.put("allowSubmission",false);
+								outputData.put("violation","status");break;
+							case "SellConfirmed": outputData.put("allowSubmission",true);break;
+							case "BookPending": outputData.put("allowSubmission",true);break;
+							case "BookFailed": outputData.put("allowSubmission",true);break;
+							case "BookConfirmed": outputData.put("allowSubmission",true);break;
+							case "Requested": outputData.put("allowSubmission",true);break;
+							case "CancelRequested": outputData.put("allowSubmission",true);break;
+							case "CancelConfirmed": outputData.put("allowSubmission",true);break;
+							case "Abandon": outputData.put("allowSubmission",true);break;
+							default :outputData.put("allowSubmission",false);
+								outputData.put("violation","status");break;
+							}
+					     }
+				}
+			}
+			
+		}
+		eR.setData(new JSONObject().put("outputData",outputData).toString());
+
+    end
+
