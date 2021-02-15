@@ -1,0 +1,14 @@
+// For preparing Policy Number
+// DB : cs_****_user
+
+//Create statement
+create collection u_nodeedgeprocessorsbt_config
+
+
+//update statement
+db.getCollection('u_nodeedge_client_sequence').insert({
+
+    "name" : "policyNumber",
+    "value" : "000000"
+
+})
