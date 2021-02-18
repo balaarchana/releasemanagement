@@ -1,0 +1,35 @@
+// execute in 1003 org and required orgs where offline booking is there
+
+//bookingDate change in schema
+db.getCollection('product_config').update({},{$set:{"schema.offline_form_hotel_booking.properties.hotel.properties.bookingDate":{
+                            "type" : "string",
+                            "title" : "Booking Date Time*",
+                            "fieldType" : "common",
+                            "options" : {
+                                "enableTime" : true
+                            }
+                        }}})
+
+//	cancellationDueDate change in uiSchema					
+db.getCollection('product_config').update({},{$set:{"uiSchema.offline_form_hotel_booking.hotel.cancellationDueDate":{
+          "ui:widget": "DateTimePickerWidget",
+          "classNames": "mui-col-md-3"
+        }}})
+		
+//	checkInDate change in uiSchema					
+db.getCollection('product_config').update({},{$set:{"uiSchema.offline_form_hotel_booking.hotel.checkInDate":{
+          "ui:widget": "DateTimePickerWidget",
+          "classNames": "mui-col-md-3"
+        }}})
+		
+//	checkOutDate change in uiSchema					
+db.getCollection('product_config').update({},{$set:{"uiSchema.offline_form_hotel_booking.hotel.checkOutDate":{
+          "ui:widget": "DateTimePickerWidget",
+          "classNames": "mui-col-md-3"
+        }}})
+		
+//	bookingDate change in uiSchema					
+db.getCollection('product_config').update({},{$set:{"uiSchema.offline_form_hotel_booking.hotel.bookingDate":{
+          "ui:widget": "DateTimePickerWidget",
+          "classNames": "mui-col-md-3"
+        }}})
