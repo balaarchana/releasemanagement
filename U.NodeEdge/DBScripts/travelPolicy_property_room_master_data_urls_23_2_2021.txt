@@ -1,0 +1,13 @@
+
+//do the below changes in platform_db collection
+
+
+db.getCollection('core_config_url').update({"type" : "url"},
+{$set:{"env_set_property_types" : "org/residence/property/create"}});
+
+
+db.getCollection('core_config_url').update({"type" : "url"},
+{$set:{"env_set_room_types" : "org/residence/roomCategory/create"}});
+
+
+
