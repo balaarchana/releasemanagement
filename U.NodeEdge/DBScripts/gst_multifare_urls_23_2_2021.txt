@@ -1,0 +1,9 @@
+//do the below changes in platform_db collection
+
+
+db.getCollection('core_config_url').update({"type" : "url"},
+{$set:{"env_get_gst_details" : "invoice.engine/invoice/getHotelGST"}});
+
+
+db.getCollection('core_config_url').update({"type" : "url"},
+{$set:{"env_get_search_config_details" : "org/master/multiFareSearch/detail"}});
