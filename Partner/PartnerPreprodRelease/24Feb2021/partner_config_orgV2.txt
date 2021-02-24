@@ -1,0 +1,348 @@
+{
+  "Status": true,
+  "OrgDetails": {
+    "Air": {
+      "IN": {
+        "Partners": {},
+        "Default": true
+      },
+      "FOP": {
+        "DefaultFOP": [
+          {
+            "cardHolderName": "",
+            "cardCode": "",
+            "cardExpireDate": "",
+            "cardType": "CA",
+            "active": true,
+            "remark": "",
+            "cardAuthCode": "",
+            "cardNumber": ""
+          }
+        ],
+        "DOM": {
+          "AIR_G8": [
+            {
+              "cardHolderName": "",
+              "cardCode": "",
+              "cardExpireDate": "",
+              "cardType": "CA",
+              "active": true,
+              "remark": "",
+              "cardAuthCode": "",
+              "cardNumber": ""
+            }
+          ],
+          "AIR_6E": [
+            {
+              "cardHolderName": "",
+              "cardCode": "",
+              "cardExpireDate": "",
+              "cardType": "CA",
+              "active": true,
+              "remark": "",
+              "cardAuthCode": "",
+              "cardNumber": ""
+            }
+          ],
+          "AIR_SBR": [
+            {
+              "cardHolderName": "",
+              "cardCode": "",
+              "cardExpireDate": "",
+              "cardType": "CA",
+              "active": true,
+              "remark": "",
+              "cardAuthCode": "",
+              "cardNumber": ""
+            }
+          ],
+          "AIR_SG": [
+            {
+              "cardHolderName": "",
+              "cardCode": "",
+              "cardExpireDate": "",
+              "cardType": "CA",
+              "active": true,
+              "remark": "",
+              "cardAuthCode": "",
+              "cardNumber": ""
+            }
+          ]
+        },
+        "INT": {
+          "AIR_G8": [
+            {
+              "cardHolderName": "",
+              "cardCode": "",
+              "cardExpireDate": "",
+              "cardType": "CA",
+              "active": true,
+              "remark": "",
+              "cardAuthCode": "",
+              "cardNumber": ""
+            }
+          ],
+          "AIR_6E": [
+            {
+              "cardHolderName": "",
+              "cardCode": "",
+              "cardExpireDate": "",
+              "cardType": "CA",
+              "active": true,
+              "remark": "",
+              "cardAuthCode": "",
+              "cardNumber": ""
+            }
+          ],
+          "AIR_SBR": [
+            {
+              "cardHolderName": "",
+              "cardCode": "",
+              "cardExpireDate": "",
+              "cardType": "CA",
+              "active": true,
+              "remark": "",
+              "cardAuthCode": "",
+              "cardNumber": ""
+            }
+          ],
+          "AIR_SG": [
+            {
+              "cardHolderName": "",
+              "cardCode": "",
+              "cardExpireDate": "",
+              "cardType": "CA",
+              "active": true,
+              "remark": "",
+              "cardAuthCode": "",
+              "cardNumber": ""
+            }
+          ]
+        }
+      },
+      "Commission": {
+        "DOM": {
+          "9W": "0"
+        },
+        "INT": {
+          "9W": "0"
+        }
+      }
+    },
+    "Hotel": {
+      "IN": {
+        "Partners": {
+          "HTL_HGX": {
+            "Status": true,
+            "POSCountry": "IN",
+            "Active_For_Country": {
+              "ActiveForAll": true,
+              "List": []
+            },
+            "Book_Credentail": {
+              "HGX_Dom": true,
+              "HGX_DistanceDirection": "20",
+              "HGX_Hotel_Policy_Url": "",
+              "HGX_Ipcc_Details": {
+                "HTLHGX": {
+                  "default": true,
+                  "Dom": true,
+                  "agencyDetails": {
+                    "phoneNumber": "9831128226",
+                    "cityName": "Bangalore",
+                    "streetNumber": "123 ec1",
+                    "cityCode": "BLR",
+                    "countryCode": "IN",
+                    "postalCode": "711106",
+                    "stateCode": "KA",
+                    "emailId": "hospitality.international@wipro.com",
+                    "addressLine": "Wipro Travel",
+                    "phoneUseType": "A"
+                  },
+                  "List": [
+                    "IN"
+                  ],
+                  "isProdActive": false,
+                  "prodCredential": {
+                    "password": "123456",
+                    "secretKey": "DD3E38A5DCBA13C8D01286D903F3D1AA0F517ED1",
+                    "id": "web@hotelogix.com",
+                    "consumerKey": "8E86B9B8EB197D60E526753F51ED14915205CFD6",
+                    "url": "https://crs.staygrid.com"
+                  },
+                  "testCredential": {
+                    "password": "123456",
+                    "secretKey": "DD3E38A5DCBA13C8D01286D903F3D1AA0F517ED1",
+                    "id": "web@hotelogix.com",
+                    "consumerKey": "8E86B9B8EB197D60E526753F51ED14915205CFD6",
+                    "url": "https://crs.staygrid.com"
+                  },
+                  "Int": true
+                }
+              },
+              "HGX_Int": true,
+              "HGX_Negociated_Code": [],
+              "HGX_NoOfResponse": "50",
+              "HGX_Book": true
+            },
+            "Dom": true,
+            "isBookingAllow": true,
+            "Int": true,
+            "Search_Credentail": {
+              "HGX_Dom": true,
+              "HGX_DistanceDirection": "20",
+              "HGX_Hotel_Policy_Url": "",
+              "HGX_Ipcc_Details": {
+                "HTLHGX": {
+                  "default": true,
+                  "Dom": true,
+                  "agencyDetails": {
+                    "phoneNumber": "9831128226",
+                    "cityName": "Bangalore",
+                    "streetNumber": "123 ec1",
+                    "cityCode": "BLR",
+                    "countryCode": "IN",
+                    "postalCode": "711106",
+                    "stateCode": "KA",
+                    "emailId": "hospitality.international@wipro.com",
+                    "addressLine": "Wipro Travel",
+                    "phoneUseType": "A"
+                  },
+                  "List": [
+                    "IN"
+                  ],
+                  "isProdActive": false,
+                  "prodCredential": {
+                    "secretKey": "DD3E38A5DCBA13C8D01286D903F3D1AA0F517ED1",
+                    "consumerKey": "8E86B9B8EB197D60E526753F51ED14915205CFD6",
+                    "url": "https://crs.staygrid.com"
+                  },
+                  "testCredential": {
+                    "secretKey": "DD3E38A5DCBA13C8D01286D903F3D1AA0F517ED1",
+                    "consumerKey": "8E86B9B8EB197D60E526753F51ED14915205CFD6",
+                    "url": "https://crs.staygrid.com"
+                  },
+                  "Int": true
+                }
+              },
+              "HGX_Int": true,
+              "HGX_Negociated_Code": [],
+              "isLiveFareNeeded": false,
+              "HGX_NoOfResponse": "50",
+              "hotelCode": {
+                "35702": {
+                  "counterId": "WWZIMmE2Qy9HaEk9",
+                  "latitude": "12.8384",
+                  "longitude": "77.6578"
+                },
+                "35703": {
+                  "counterId": "eXptZERBQXVocDQ9",
+                  "latitude": "12.9135",
+                  "longitude": "77.6858"
+                },
+                "35704": {
+                  "counterId": "YXlaWklUK0Rsd0U9",
+                  "latitude": "22.5798",
+                  "longitude": "88.4284"
+                },
+                "35705": {
+                  "counterId": "Tm10ZzF0UUh1cnM9",
+                  "latitude": "10.011",
+                  "longitude": "76.3655"
+                },
+                "35706": {
+                  "counterId": "TEJFSnBvb2xKQ1k9",
+                  "latitude": "17.385",
+                  "longitude": "78.3427"
+                },
+                "35707": {
+                  "counterId": "R05BbCs2Z2d0dVE9",
+                  "latitude": "20.3433",
+                  "longitude": "85.8034"
+                },
+                "35708": {
+                  "latitude": "12.9787",
+                  "longitude": "80.2537"
+                }
+              },
+              "HGX_Book": true,
+              "isLiveSearchRequired": true,
+              "searchSeqId": "1"
+            }
+          }
+        },
+        "Default": true
+      },
+      "FOP": {
+        "DefaultFOP": [
+          {
+            "cardHolderName": "",
+            "depositAccount": "124169600",
+            "cardCode": "",
+            "cardExpireDate": "",
+            "cardType": "IHSkC2H3NxIYH/YsRN9L0nkHWFMP/QKbirH/Rku7MXbnM70RDqQZliPm4UW7+0dlIc4GtcHleqvp4u8iYSBNDx7UIEomYa/aiQAr1C0G044hE5jO0yD05SqEEGKMwUhzFGwCQiy7JNU=",
+            "active": true,
+            "remark": "",
+            "cardNumber": "",
+            "cardAuthCode": ""
+          }
+        ],
+        "DOM": {
+          "HTL_AXI": [
+            {
+              "cardHolderName": "",
+              "cardCode": "",
+              "cardExpireDate": "",
+              "cardType": "CA",
+              "active": true,
+              "remark": "",
+              "cardNumber": "",
+              "cardAuthCode": ""
+            }
+          ],
+          "HTL_SBR": [
+            {
+              "cardHolderName": "",
+              "cardCode": "",
+              "cardExpireDate": "",
+              "cardType": "CA",
+              "active": true,
+              "remark": "",
+              "cardNumber": "",
+              "cardAuthCode": ""
+            }
+          ],
+          "HTL_CLR": [
+            {
+              "cardHolderName": "",
+              "depositAccount": "124169600",
+              "cardCode": "",
+              "cardExpireDate": "",
+              "cardType": "DA",
+              "active": true,
+              "remark": "",
+              "cardNumber": "",
+              "cardAuthCode": ""
+            }
+          ]
+        },
+        "INT": {
+          "HTL_SBR": [
+            {
+              "cardHolderName": "",
+              "cardCode": "",
+              "cardExpireDate": "",
+              "cardType": "CA",
+              "active": true,
+              "remark": "",
+              "cardNumber": "",
+              "cardAuthCode": ""
+            }
+          ]
+        }
+      }
+    }
+  },
+  "orgCode": "",
+  "key": ""
+}
