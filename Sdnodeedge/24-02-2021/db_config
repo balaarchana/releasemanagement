@@ -1,0 +1,10 @@
+//update in required orgs
+
+use cs_xxxx_prodct
+db.getCollection('product_config').update({},{$set:{"schema.offline_form_hotel_booking.properties.hotel.properties.bookingDate.options":
+                          
+                            {
+                                "enableTime" : true,
+                                "maxDate": "today"
+                            }
+                        }})
