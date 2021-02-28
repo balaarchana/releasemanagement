@@ -1,0 +1,12 @@
+use cs_xxxx_user
+db.u_cash_advance_audit_rule.update({"ruleName" : "unsettledCAcount"},{
+	$set:
+	{
+	    "ruleName" : "unsettledCAcount",
+	    "ruleDescription" : "No. of allowed advance requests by a user",
+	    "limit" : 5,
+	    "ruleViolationType" : "soft",
+	    "ruleViolationMessage" : "You have more than 5 Active Cash Advances that are yet to be settled",
+	    "status" : "ACTIVE"
+	}
+});
