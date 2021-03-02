@@ -1,0 +1,140 @@
+package client_1001
+
+import com.wipro.c4.core.rules.module.expense.ExpenseRule;
+import org.json.JSONArray;
+import org.json.JSONObject;
+
+dialect "java"
+
+rule "Rule 1"
+	when
+	eR:ExpenseRule(eR.getString("others","role") == "REQUESTOR" &&  eR.getString("others","action") == "REPORT_CREATED" );
+	then
+	eR.put("permission",true);
+end
+
+rule "Rule 2"
+	when
+	eR:ExpenseRule( eR.getString("others","role") == "REQUESTOR" &&  eR.getString("others","action") == "REPORT_HEADER_EDITED"  && ( eR.getString("report","expenseReportStatus") == "DRAFT" || eR.getString("report","expenseReportStatus") == "RETURNED" ) );
+	then
+	eR.put("permission",true);
+end
+
+rule "Rule 3"
+	when
+	eR:ExpenseRule( eR.getString("others","role") == "PROCESSOR" &&  eR.getString("others","action") == "REPORT_HEADER_EDITED"  && eR.getString("report","expenseReportStatus") == "APPROVED" );
+	then
+	eR.put("permission",true);
+end
+
+rule "Rule 4"
+	when
+	eR:ExpenseRule( eR.getString("others","role") == "REQUESTOR" &&  eR.getString("others","action") == "ITEM_EDITED"  && ( eR.getString("report","expenseReportStatus") == "DRAFT" || eR.getString("report","expenseReportStatus") == "RETURNED" ) );
+	then
+	eR.put("permission",true);
+end
+
+rule "Rule 5"
+	when
+	eR:ExpenseRule( eR.getString("others","role") == "APPROVER" &&  eR.getString("others","action") == "ITEM_EDITED"  &&  eR.getString("report","expenseReportStatus") == "SUBMITTED" );
+	then
+	eR.put("permission",true);
+end
+
+rule "Rule 6"
+	when
+	eR:ExpenseRule( eR.getString("others","role") == "PROCESSOR" &&  eR.getString("others","action") == "ITEM_EDITED"  &&  eR.getString("report","expenseReportStatus") == "APPROVED" );
+	then
+	eR.put("permission",true);
+end
+
+rule "Rule 7"
+	when
+	eR:ExpenseRule( eR.getString("others","role") == "REQUESTOR" &&  eR.getString("others","action") == "ITEM_ADDED"  && ( eR.getString("report","expenseReportStatus") == "DRAFT" || eR.getString("report","expenseReportStatus") == "RETURNED" ) );
+	then
+	eR.put("permission",true);
+end
+
+rule "Rule 8"
+	when
+	eR:ExpenseRule( eR.getString("others","role") == "REQUESTOR" &&  eR.getString("others","action") == "ITEM_REMOVED"  && (eR.getString("report","expenseReportStatus") == "DRAFT" || eR.getString("report","expenseReportStatus") == "RETURNED") );
+	then
+	eR.put("permission",true);
+end
+
+rule "Rule 9"
+	when
+	eR:ExpenseRule( eR.getString("others","role") == "REQUESTOR" &&  eR.getString("others","action") == "REPORT_DELETED"  && (eR.getString("report","expenseReportStatus") == "DRAFT" || eR.getString("report","expenseReportStatus") == "RETURNED") );
+	then
+	eR.put("permission",true);
+end
+
+rule "Rule 10"
+	when
+	eR:ExpenseRule( eR.getString("others","role") == "REQUESTOR" &&  eR.getString("others","action") == "REPORT_SUBMITTED"  && (eR.getString("report","expenseReportStatus") == "DRAFT" || eR.getString("report","expenseReportStatus") == "RETURNED") );
+	then
+	eR.put("permission",true);
+end
+
+rule "Rule 11"
+	when
+	eR:ExpenseRule( eR.getString("others","role") == "REQUESTOR" &&  eR.getString("others","action") == "REPORT_RECALLED"  && eR.getString("report","expenseReportStatus") == "SUBMITTED" );
+	then
+	eR.put("permission",true);
+end
+
+rule "Rule 12"
+	when
+	eR:ExpenseRule( eR.getString("others","role") == "PROCESSOR" &&  eR.getString("others","action") == "REPORT_RECALLED"  && eR.getString("report","expenseReportStatus") == "PROCESSED" );
+	then
+	eR.put("permission",false);
+end
+
+rule "Rule 13"
+	when
+	eR:ExpenseRule( eR.getString("others","role") == "APPROVER" &&  eR.getString("others","action") == "REPORT_APPROVED"  && eR.getString("report","expenseReportStatus") == "SUBMITTED"  );
+	then
+	eR.put("permission",true);
+end
+
+rule "Rule 14"
+	when
+	eR:ExpenseRule( eR.getString("others","role") == "APPROVER"  &&  eR.getString("others","action") == "REPORT_RETURNED"  && eR.getString("report","expenseReportStatus") == "SUBMITTED" );
+	then
+	eR.put("permission",true);
+end
+
+rule "Rule 15"
+	when
+	eR:ExpenseRule( eR.getString("others","role") == "PROCESSOR"  &&  eR.getString("others","action") == "REPORT_RETURNED"  && eR.getString("report","expenseReportStatus") == "APPROVED" );
+	then
+	eR.put("permission",true);
+end
+
+rule "Rule 16"
+	when
+	eR:ExpenseRule(  eR.getString("others","role") == "PROCESSOR"  &&  eR.getString("others","action") == "REPORT_PROCESSED"  && eR.getString("report","expenseReportStatus") == "APPROVED" );
+	then
+	eR.put("permission",true);
+end
+
+rule "Rule 17"
+	when
+	eR:ExpenseRule(  eR.getString("others","role") == "PROCESSOR"  &&  eR.getString("others","action") == "REPORT_CLOSED"  && eR.getString("report","expenseReportStatus") == "PROCESSED" );
+	then
+	eR.put("permission",true);
+end
+
+rule "Rule 18"
+	when
+	eR:ExpenseRule(  eR.getString("others","role") == "PROCESSOR"  &&  eR.getString("others","action") == "REPORT_REVIEWED"  && eR.getString("report","expenseReportStatus") == "APPROVED" );
+	then
+	eR.put("permission",true);
+end
+
+rule "Rule 19"
+	when
+	eR:ExpenseRule(  eR.getString("others","role") == "REQUESTOR"  &&  eR.getString("others","action") == "ITEM_ADDITIONAL_EDITED"  && ( eR.getString("report","expenseReportStatus") == "DRAFT" || eR.getString("report","expenseReportStatus") == "RETURNED" ) );
+	then
+	eR.put("permission",true);
+end
