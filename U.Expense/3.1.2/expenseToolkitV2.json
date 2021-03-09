@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Advance Administration",
+    "description": "You can issue forex advance, topup(reload),record the returned amount and perform regular audit/maintenance with respect advance administration.",
+    "url": "expense/cashAdvance"
+  },
+  {
+    "name": "Payment Batch",
+    "description": " Approved and processed expense reports can be batched up together as payment batch. The batch file will be generated on closure of a batch.",
+    "url": "expense/payment"
+  },
+  {
+    "name": "Budget Administration",
+    "url": "budget/budget",
+    "description": "Budget Administration helps finance managers and admins in creating budget. The available budget can be blocked and consumed by the downstream applications such as Travel & Expense."
+  },
+  {
+    "name": "Card Administration",
+    "url": "expense/card",
+    "description": "The quick brown fox jumps over the lazy dog."
+  }
+]
