@@ -1,0 +1,955 @@
+{
+    "Status": true,
+    "OrgDetails": {
+        "Air": {
+            "IN": {
+                "Partners": {
+                    "AIR_TLP": {
+                        "Status": false,
+                        "POSCountry": "IN",
+                        "Active_For_Country": {
+                            "ActiveForAll": true,
+                            "List": []
+                        },
+                        "Book_Credentail": {
+                            "TLP_TargetBranch": "P7123731",
+                            "TLP_AccountCode": [],
+                            "TLP_Int": true,
+                            "TLP_Receiver_Name": "wipro test",
+                            "includeAirlinePref": [
+                                ""
+                            ],
+                            "TLP_Book": true,
+                            "TLP_Convid": "sabretest@wipro.com",
+                            "excludeAirlinePref": [
+                                ""
+                            ],
+                            "TLP_CorporateCode": [],
+                            "TLP_NoOfOptions": "50ITINS",
+                            "TLP_Ipcc_Details": {
+                                "676M": {
+                                    "default": true,
+                                    "password": "7t=Si$T96G",
+                                    "Dom": true,
+                                    "agencyDetails": {
+                                        "phoneNumber": "9831128226",
+                                        "cityName": "Bangalore",
+                                        "streetNumber": "123 Ashwarya Enclave",
+                                        "cityCode": "BLR",
+                                        "countryCode": "91",
+                                        "postalCode": "711106",
+                                        "stateCode": "KA",
+                                        "emailId": "pramod.kumar42@wipro.com",
+                                        "addressLine": "Aster Travel",
+                                        "phoneUseType": "H"
+                                    },
+                                    "List": [
+                                        "IN"
+                                    ],
+                                    "userName": "Universal API/uAPI7721130693-0f2f1bbc",
+                                    "Int": false,
+                                    "url": "https://apac.universal-api.pp.travelport.com"
+                                }
+                            },
+                            "TLP_TKT_Type": "ETR",
+                            "TLP_Dom": true,
+                            "TLP_Country": "IN",
+                            "TLP_Ticket": true,
+                            "TLP_CurrencyCode": "",
+                            "TLP_IsPhaseIVActive": false,
+                            "TLP_VendorProdCodes": [
+                                "1G"
+                            ],
+                            "TLP_NeedToChangePcc": false,
+                            "TLP_MaxConnFlights": "",
+                            "TLP_Domain": "DEFAULT",
+                            "TLP_TKT_Ipcc_Details": {
+                                "9GK8": {
+                                    "default": true,
+                                    "Dom": true,
+                                    "Airline_List": [],
+                                    "PrinterId": "",
+                                    "Int": true,
+                                    "Country_List": [
+                                        "IN"
+                                    ]
+                                },
+                                "676M": {
+                                    "default": true,
+                                    "Dom": true,
+                                    "Airline_List": [],
+                                    "PrinterId": "",
+                                    "Int": true,
+                                    "Country_List": [
+                                        "IN"
+                                    ]
+                                }
+                            }
+                        },
+                        "Dom": true,
+                        "isBookingAllow": true,
+                        "Active_For_IATA_Airport": {
+                            "Dom": {
+                                "ActiveForAll": true,
+                                "List": []
+                            },
+                            "Int": {
+                                "ActiveForAll": true,
+                                "List": []
+                            }
+                        },
+                        "includeAirlinePref": [
+                            ""
+                        ],
+                        "excludeAirlinePref": [
+                            ""
+                        ],
+                        "isTicketingAllow": true,
+                        "Int": true,
+                        "Search_Credentail": {
+                            "TLP_TargetBranch": "P7123731",
+                            "TLP_AccountCode": [
+                                "WIPRO"
+                            ],
+                            "TLP_Int": true,
+                            "TLP_Receiver_Name": "wipro test",
+                            "TLP_Book": true,
+                            "TLP_Convid": "sabretest@wipro.com",
+                            "TLP_CorporateCode": [],
+                            "TLP_NoOfOptions": "50ITINS",
+                            "TLP_Ipcc_Details": {
+                                "676M": {
+                                    "default": true,
+                                    "password": "7t=Si$T96G",
+                                    "Dom": true,
+                                    "agencyDetails": {
+                                        "phoneNumber": "9831128226",
+                                        "cityName": "Bangalore",
+                                        "streetNumber": "123 ec1",
+                                        "cityCode": "IN",
+                                        "countryCode": "IN",
+                                        "postalCode": "711106",
+                                        "stateCode": "KA",
+                                        "emailId": "pramod.kumar42@wipro.com",
+                                        "addressLine": "Aster Travel",
+                                        "phoneUseType": "H"
+                                    },
+                                    "List": [
+                                        "IN"
+                                    ],
+                                    "userName": "Universal API/uAPI7721130693-0f2f1bbc",
+                                    "Int": true,
+                                    "url": "https://apac.universal-api.pp.travelport.com"
+                                }
+                            },
+                            "TLP_TKT_Type": "ETR",
+                            "TLP_Dom": true,
+                            "TLP_Country": "IN",
+                            "TLP_Ticket": true,
+                            "TLP_CurrencyCode": "",
+                            "TLP_IsPhaseIVActive": false,
+                            "TLP_VendorProdCodes": [
+                                "1G"
+                            ],
+                            "TLP_NeedToChangePcc": true,
+                            "TLP_Domain": "DEFAULT",
+                            "TLP_MaxConnFlights": "",
+                            "TLP_TKT_Ipcc_Details": {
+                                "9GK8": {
+                                    "default": true,
+                                    "Dom": true,
+                                    "Airline_List": [],
+                                    "PrinterId": "05A83D",
+                                    "Int": true,
+                                    "Country_List": [
+                                        "IN"
+                                    ]
+                                },
+                                "676M": {
+                                    "default": true,
+                                    "Dom": true,
+                                    "Airline_List": [],
+                                    "PrinterId": "05A83D",
+                                    "Int": true,
+                                    "Country_List": [
+                                        "IN"
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    "AIR_SBR": {
+                        "Status": true,
+                        "POSCountry": "IN",
+                        "Active_For_Country": {
+                            "ActiveForAll": true,
+                            "List": []
+                        },
+                        "Book_Credentail": {
+                            "SBR_Book": true,
+                            "SBR_TKT_Ipcc_Details": {},
+                            "SBR_Convid": "sabretest@wipro.com",
+                            "SBR_AccountCode": [],
+                            "SBR_Int": true,
+                            "SBR_CorporateCode": [],
+                            "SBR_Receiver_Name": "wipro test",
+                            "includeAirlinePref": [
+                                ""
+                            ],
+                            "excludeAirlinePref": [
+                                ""
+                            ],
+                            "SBR_CurrencyCode": "",
+                            "SBR_TKT_Type": "ETR",
+                            "SBR_Dom": true,
+                            "SBR_IsPhaseIVActive": false,
+                            "SBR_NeedToChangePcc": true,
+                            "SBR_IsTicketingAllow": true,
+                            "SBR_Ticket": true,
+                            "SBR_Country": "IN",
+                            "SBR_NoOfOptions": "50ITINS",
+                            "SBR_Domain": "DEFAULT",
+                            "SBR_Ipcc_Details": {
+                                "QI6D": {
+                                    "default": true,
+                                    "password": "focus16",
+                                    "Dom": true,
+                                    "agencyDetails": {
+                                        "phoneNumber": "9831128226",
+                                        "cityName": "Bangalore",
+                                        "streetNumber": "123 ec1",
+                                        "cityCode": "BLR",
+                                        "countryCode": "IN",
+                                        "postalCode": "711106",
+                                        "stateCode": "KA",
+                                        "emailId": "pramod.kumar42@wipro.com",
+                                        "addressLine": "Wipro Travel",
+                                        "phoneUseType": "H"
+                                    },
+                                    "List": [
+                                        "IN"
+                                    ],
+                                    "userName": "9102",
+                                    "Int": false,
+                                    "url": "https://sws-crt.cert.havail.sabre.com"
+                                }
+                            },
+                            "SBR_MaxConnFlights": ""
+                        },
+                        "Dom": true,
+                        "isBookingAllow": true,
+                        "Active_For_IATA_Airport": {
+                            "Dom": {
+                                "ActiveForAll": true,
+                                "List": []
+                            },
+                            "Int": {
+                                "ActiveForAll": true,
+                                "List": []
+                            }
+                        },
+                        "includeAirlinePref": [
+                            ""
+                        ],
+                        "excludeAirlinePref": [
+                            ""
+                        ],
+                        "isTicketingAllow": false,
+                        "Int": true,
+                        "Search_Credentail": {
+                            "SBR_Book": true,
+                            "SBR_TKT_Ipcc_Details": {},
+                            "SBR_Convid": "sabretest@wipro.com",
+                            "SBR_AccountCode": [],
+                            "SBR_Int": true,
+                            "SBR_CorporateCode": [],
+                            "SBR_Receiver_Name": "wipro test",
+                            "SBR_CurrencyCode": "",
+                            "SBR_TKT_Type": "ETR",
+                            "SBR_Dom": true,
+                            "SBR_IsPhaseIVActive": false,
+                            "SBR_NeedToChangePcc": true,
+                            "SBR_Ticket": true,
+                            "SBR_Country": "IN",
+                            "SBR_NoOfOptions": "50ITINS",
+                            "SBR_Domain": "DEFAULT",
+                            "SBR_Ipcc_Details": {
+                                "QI6D": {
+                                    "default": true,
+                                    "password": "focus16",
+                                    "Dom": true,
+                                    "agencyDetails": {
+                                        "phoneNumber": "9831128226",
+                                        "cityName": "Bangalore",
+                                        "streetNumber": "123 ec1",
+                                        "cityCode": "BLR",
+                                        "countryCode": "IN",
+                                        "postalCode": "711106",
+                                        "stateCode": "KA",
+                                        "emailId": "pramod.kumar42@wipro.com",
+                                        "addressLine": "Wipro Travel",
+                                        "phoneUseType": "H"
+                                    },
+                                    "List": [
+                                        "IN"
+                                    ],
+                                    "userName": "9102",
+                                    "Int": true,
+                                    "url": "https://sws-crt.cert.havail.sabre.com"
+                                }
+                            },
+                            "SBR_MaxConnFlights": ""
+                        }
+                    },
+                    "AIR_TBO": {
+                        "Status": true,
+                        "POSCountry": "IN",
+                        "Active_For_Country": {
+                            "ActiveForAll": false,
+                            "List": [
+                                "IN"
+                            ]
+                        },
+                        "Book_Credentail": {
+                            "TBO_Book": true,
+                            "TBO_Int": true,
+                            "TBO_Negociated_Code": [],
+                            "TBO_Dom": true,
+                            "TBO_Ipcc_Details": {
+                                "AIR_TBO": {
+                                    "prodCred": {
+                                        "Tbo_Password": "Aster@1234",
+                                        "Tbo_Username": "AsterTravel",
+                                        "Tbo_ClientId": "ApiIntegrationNew",
+                                        "Tbo_URL": "http://api.tektravels.com"
+                                    },
+                                    "default": true,
+                                    "Dom": true,
+                                    "agencyDetails": {
+                                        "phoneNumber": "9831128226",
+                                        "cityName": "Bangalore",
+                                        "streetNumber": "123 ec1",
+                                        "stateName": "Karnataka",
+                                        "cityCode": "IN",
+                                        "countryCode": "IN",
+                                        "postalCode": "711106",
+                                        "stateCode": "KA",
+                                        "emailId": "pramod.kumar42@wipro.com",
+                                        "countryName": "India",
+                                        "addressLine": "Wipro Travel",
+                                        "phoneUseType": "H"
+                                    },
+                                    "List": [
+                                        "IN"
+                                    ],
+                                    "isProdActive": false,
+                                    "testCred": {
+                                        "Tbo_Password": "Aster@1234",
+                                        "Tbo_Username": "AsterTravel",
+                                        "Tbo_ClientId": "ApiIntegrationNew",
+                                        "Tbo_URL": "http://api.tektravels.com"
+                                    },
+                                    "Int": true
+                                }
+                            },
+                            "TBO_NoOfResponse": "50"
+                        },
+                        "Dom": true,
+                        "isBookingAllow": true,
+                        "Active_For_IATA_Airport": {
+                            "Dom": {
+                                "ActiveForAll": true,
+                                "List": []
+                            },
+                            "Int": {
+                                "ActiveForAll": false,
+                                "List": []
+                            }
+                        },
+                        "isTicketingAllow": true,
+                        "Int": true,
+                        "Search_Credentail": {
+                            "TBO_Book": true,
+                            "TBO_Int": true,
+                            "TBO_Negociated_Code": [],
+                            "TBO_Dom": true,
+                            "TBO_Ipcc_Details": {
+                                "AIR_TBO": {
+                                    "prodCred": {
+                                        "Tbo_Password": "Aster@1234",
+                                        "Tbo_Username": "AsterTravel",
+                                        "Tbo_ClientId": "ApiIntegrationNew",
+                                        "Tbo_URL": "http://api.tektravels.com"
+                                    },
+                                    "default": true,
+                                    "Dom": true,
+                                    "List": [
+                                        "IN"
+                                    ],
+                                    "isProdActive": false,
+                                    "testCred": {
+                                        "Tbo_Password": "Aster@1234",
+                                        "Tbo_Username": "AsterTravel",
+                                        "Tbo_ClientId": "ApiIntegrationNew",
+                                        "Tbo_URL": "http://api.tektravels.com"
+                                    },
+                                    "Int": true
+                                }
+                            },
+                            "TBO_NoOfResponse": "50"
+                        }
+                    }
+                },
+                "Default": true
+            },
+            "FOP": {
+                "DefaultFOP": [
+                    {
+                        "cardHolderName": "",
+                        "cardCode": "",
+                        "cardExpireDate": "",
+                        "cardType": "CA",
+                        "active": true,
+                        "remark": "",
+                        "cardAuthCode": "",
+                        "cardNumber": ""
+                    }
+                ],
+                "DOM": {
+                    "AIR_G8": [
+                        {
+                            "cardHolderName": "",
+                            "cardCode": "",
+                            "cardExpireDate": "",
+                            "cardType": "CA",
+                            "active": true,
+                            "remark": "",
+                            "cardAuthCode": "",
+                            "cardNumber": ""
+                        }
+                    ],
+                    "AIR_6E": [
+                        {
+                            "cardHolderName": "",
+                            "cardCode": "",
+                            "cardExpireDate": "",
+                            "cardType": "CA",
+                            "active": true,
+                            "remark": "",
+                            "cardAuthCode": "",
+                            "cardNumber": ""
+                        }
+                    ],
+                    "AIR_SBR": [
+                        {
+                            "cardHolderName": "",
+                            "cardCode": "",
+                            "cardExpireDate": "",
+                            "cardType": "CA",
+                            "active": true,
+                            "remark": "",
+                            "cardAuthCode": "",
+                            "cardNumber": ""
+                        }
+                    ],
+                    "AIR_SG": [
+                        {
+                            "cardHolderName": "",
+                            "cardCode": "",
+                            "cardExpireDate": "",
+                            "cardType": "CA",
+                            "active": true,
+                            "remark": "",
+                            "cardAuthCode": "",
+                            "cardNumber": ""
+                        }
+                    ]
+                },
+                "INT": {
+                    "AIR_G8": [
+                        {
+                            "cardHolderName": "",
+                            "cardCode": "",
+                            "cardExpireDate": "",
+                            "cardType": "CA",
+                            "active": true,
+                            "remark": "",
+                            "cardAuthCode": "",
+                            "cardNumber": ""
+                        }
+                    ],
+                    "AIR_6E": [
+                        {
+                            "cardHolderName": "",
+                            "cardCode": "",
+                            "cardExpireDate": "",
+                            "cardType": "CA",
+                            "active": true,
+                            "remark": "",
+                            "cardAuthCode": "",
+                            "cardNumber": ""
+                        }
+                    ],
+                    "AIR_SBR": [
+                        {
+                            "cardHolderName": "",
+                            "cardCode": "",
+                            "cardExpireDate": "",
+                            "cardType": "CA",
+                            "active": true,
+                            "remark": "",
+                            "cardAuthCode": "",
+                            "cardNumber": ""
+                        }
+                    ],
+                    "AIR_SG": [
+                        {
+                            "cardHolderName": "",
+                            "cardCode": "",
+                            "cardExpireDate": "",
+                            "cardType": "CA",
+                            "active": true,
+                            "remark": "",
+                            "cardAuthCode": "",
+                            "cardNumber": ""
+                        }
+                    ]
+                }
+            },
+            "Commission": {
+                "DOM": {
+                    "9W": "0"
+                },
+                "INT": {
+                    "9W": "0"
+                }
+            }
+        },
+        "Hotel": {
+            "IN": {
+                "Partners": {
+                    "HTL_AXI": {
+                        "Status": false,
+                        "POSCountry": "IN",
+                        "Active_For_Country": {
+                            "ActiveForAll": false,
+                            "List": [
+                                "IN"
+                            ]
+                        },
+                        "Book_Credentail": {},
+                        "Dom": true,
+                        "isBookingAllow": true,
+                        "Int": false,
+                        "Search_Credentail": {
+                            "AXI_corporate_buyer_id": 123,
+                            "AXI_MODIFY_ORDER": "http://hex.axisrooms.com/hexapi/modifyorder",
+                            "AXI_key": "AXR-WPR",
+                            "agencyDetails": {
+                                "phoneNumber": "9831128226",
+                                "cityName": "Bangalore",
+                                "streetNumber": "123 ec1",
+                                "cityCode": "BLR",
+                                "countryCode": "IN",
+                                "postalCode": "711106",
+                                "stateCode": "KA",
+                                "emailId": "hospitality.international@wipro.com",
+                                "addressLine": "Wipro Travel",
+                                "phoneUseType": "H"
+                            },
+                            "AXI_SELECTED_ROOM_URL": "http://test.axisrooms.com/hexapi/selectedroom",
+                            "AXI_Property_And_Rate_URL": "http://test.axisrooms.com/hexapi/checkavailibility",
+                            "AXI_CONFIRM_BOOKING": "http://test.axisrooms.com/hexapi/confirmbooking",
+                            "AXI_buyer_id": 3,
+                            "AXI_CANCEL_BOOKING": "http://test.axisrooms.com/hexapi/cancelorder",
+                            "AXI_URL": "http://test.axisrooms.com/hexapi/hotelsearch",
+                            "AXI_BOOKING_DETAILS": "http://test.axisrooms.com/hexapi/orderDetails",
+                            "AXI_selected_buyer_id": 123,
+                            "AXI_radius": 100.1
+                        }
+                    },
+                    "HTL_TBO": {
+                        "Status": true,
+                        "POSCountry": "IN",
+                        "Book_Credentail": {
+                            "TBO_Book": true,
+                            "TBO_Int": true,
+                            "TBO_Negociated_Code": [],
+                            "TBO_Dom": true,
+                            "TBO_DistanceDirection": "20",
+                            "TBO_Hotel_Policy_Url": "",
+                            "TBO_Ipcc_Details": {
+                                "HTLTBO": {
+                                    "prodCred": {
+                                        "password": "Aster@1234",
+                                        "clientId": "ApiIntegrationNew",
+                                        "userName": "AsterTravel",
+                                        "url": "http://api.tektravels.com"
+                                    },
+                                    "default": true,
+                                    "Dom": true,
+                                    "agencyDetails": {
+                                        "phoneNumber": "9831128226",
+                                        "cityName": "Bangalore",
+                                        "streetNumber": "123 ec1",
+                                        "cityCode": "BLR",
+                                        "countryCode": "IN",
+                                        "postalCode": "711106",
+                                        "stateCode": "KA",
+                                        "emailId": "hospitality.international@wipro.com",
+                                        "addressLine": "Wipro Travel",
+                                        "phoneUseType": "A"
+                                    },
+                                    "List": [
+                                        "IN"
+                                    ],
+                                    "isProdActive": false,
+                                    "testCred": {
+                                        "password": "Aster@1234",
+                                        "clientId": "ApiIntegrationNew",
+                                        "userName": "AsterTravel",
+                                        "url": "http://api.tektravels.com"
+                                    },
+                                    "Int": true
+                                }
+                            },
+                            "TBO_NoOfResponse": "50"
+                        },
+                        "Active_For_Country": {
+                            "ActiveForAll": true,
+                            "List": []
+                        },
+                        "Dom": true,
+                        "isBookingAllow": true,
+                        "Int": true,
+                        "Search_Credentail": {
+                            "TBO_Book": true,
+                            "TBO_Int": true,
+                            "TBO_Negociated_Code": [],
+                            "TBO_Dom": true,
+                            "TBO_DistanceDirection": "20",
+                            "TBO_Hotel_Policy_Url": "",
+                            "TBO_Ipcc_Details": {
+                                "HTLTBO": {
+                                    "prodCred": {
+                                        "password": "Aster@1234",
+                                        "clientId": "ApiIntegrationNew",
+                                        "userName": "AsterTravel",
+                                        "url": "http://api.tektravels.com"
+                                    },
+                                    "default": true,
+                                    "Dom": true,
+                                    "agencyDetails": {
+                                        "phoneNumber": "9831128226",
+                                        "cityName": "Bangalore",
+                                        "streetNumber": "123 ec1",
+                                        "cityCode": "BLR",
+                                        "countryCode": "IN",
+                                        "postalCode": "711106",
+                                        "stateCode": "KA",
+                                        "emailId": "hospitality.international@wipro.com",
+                                        "addressLine": "Wipro Travel",
+                                        "phoneUseType": "A"
+                                    },
+                                    "List": [
+                                        "IN"
+                                    ],
+                                    "isProdActive": false,
+                                    "testCred": {
+                                        "password": "Aster@1234",
+                                        "clientId": "ApiIntegrationNew",
+                                        "userName": "AsterTravel",
+                                        "url": "http://api.tektravels.com"
+                                    },
+                                    "Int": true
+                                }
+                            },
+                            "TBO_NoOfResponse": "50"
+                        }
+                    },
+                    "HTL_GRN": {
+                        "Status": true,
+                        "POSCountry": "IN",
+                        "Book_Credentail": {
+                            "GRN_Ipcc_Details": {
+                                "HTLGRN": {
+                                    "prodCred": {
+                                        "apikey": "38ae12c7c6e940c33b91e90d1b85ddf8",
+                                        "url": "https://api-sandbox.grnconnect.com"
+                                    },
+                                    "default": true,
+                                    "Dom": true,
+                                    "agencyDetails": {
+                                        "phoneNumber": "9831128226",
+                                        "cityName": "Bangalore",
+                                        "streetNumber": "123 ec1",
+                                        "cityCode": "BLR",
+                                        "countryCode": "IN",
+                                        "postalCode": "711106",
+                                        "stateCode": "KA",
+                                        "emailId": "hospitality.international@wipro.com",
+                                        "addressLine": "Wipro Travel",
+                                        "phoneUseType": "A"
+                                    },
+                                    "List": [
+                                        "IN"
+                                    ],
+                                    "isProdActive": false,
+                                    "testCred": {
+                                        "apikey": "38ae12c7c6e940c33b91e90d1b85ddf8",
+                                        "url": "https://api-sandbox.grnconnect.com"
+                                    },
+                                    "Int": true
+                                }
+                            },
+                            "GRN_Book": true,
+                            "GRN_DistanceDirection": "20",
+                            "GRN_Hotel_Policy_Url": "",
+                            "GRN_ChildDOB": "2016-11-10",
+                            "GRN_Dom": true,
+                            "GRN_Negociated_Code": [],
+                            "GRN_Int": true,
+                            "GRN_NoOfResponse": "50",
+                            "GRN_isUnicaContentActive": true
+                        },
+                        "Active_For_Country": {
+                            "ActiveForAll": true,
+                            "List": []
+                        },
+                        "Dom": true,
+                        "isBookingAllow": true,
+                        "Int": true,
+                        "Search_Credentail": {
+                            "GRN_ChildAge": "5",
+                            "GRN_Ipcc_Details": {
+                                "HTLGRN": {
+                                    "prodCred": {
+                                        "apikey": "38ae12c7c6e940c33b91e90d1b85ddf8",
+                                        "url": "https://api-sandbox.grnconnect.com"
+                                    },
+                                    "default": true,
+                                    "Dom": true,
+                                    "agencyDetails": {
+                                        "phoneNumber": "9831128226",
+                                        "cityName": "Bangalore",
+                                        "streetNumber": "123 ec1",
+                                        "cityCode": "BLR",
+                                        "countryCode": "IN",
+                                        "postalCode": "711106",
+                                        "stateCode": "KA",
+                                        "emailId": "hospitality.international@wipro.com",
+                                        "addressLine": "Wipro Travel",
+                                        "phoneUseType": "A"
+                                    },
+                                    "List": [
+                                        "IN"
+                                    ],
+                                    "isProdActive": false,
+                                    "testCred": {
+                                        "apikey": "38ae12c7c6e940c33b91e90d1b85ddf8",
+                                        "url": "https://api-sandbox.grnconnect.com"
+                                    },
+                                    "Int": true
+                                }
+                            },
+                            "GRN_Book": true,
+                            "GRN_DistanceDirection": "20",
+                            "GRN_Hotel_Policy_Url": "",
+                            "GRN_Dom": true,
+                            "GRN_Negociated_Code": [],
+                            "GRN_Int": true,
+                            "GRN_NoOfResponse": "100",
+                            "GRN_isUnicaContentActive": true
+                        }
+                    },
+                    "HTL_SBR": {
+                        "Status": true,
+                        "POSCountry": "IN",
+                        "Active_For_Country": {
+                            "ActiveForAll": true,
+                            "List": []
+                        },
+                        "Book_Credentail": {
+                            "SBR_Book": true,
+                            "SBR_TKT_Ipcc_Details": {},
+                            "SBR_OrganisationCode": "",
+                            "SBR_AccountCode": [],
+                            "SBR_Int": true,
+                            "SBR_Index": "C",
+                            "SBR_IsCardRequired": true,
+                            "SBR_DistanceDirection": "20",
+                            "SBR_ContentSources": [
+                                "100",
+                                "113"
+                            ],
+                            "SBR_CId": "",
+                            "SBR_Ticket": true,
+                            "SBR_NoOfResponse": "50",
+                            "SBR_NoOfOptions": "",
+                            "SBR_Domain": "DEFAULT",
+                            "SBR_Ipcc_Details": {
+                                "QI6D": {
+                                    "default": true,
+                                    "password": "focus16",
+                                    "Dom": true,
+                                    "agencyDetails": {
+                                        "phoneNumber": "9831128226",
+                                        "cityName": "Bangalore",
+                                        "streetNumber": "123 ec1",
+                                        "cityCode": "BLR",
+                                        "countryCode": "IN",
+                                        "postalCode": "711106",
+                                        "stateCode": "KA",
+                                        "emailId": "hospitality.international@wipro.com",
+                                        "addressLine": "Wipro Travel",
+                                        "phoneUseType": "A"
+                                    },
+                                    "List": [
+                                        "IN"
+                                    ],
+                                    "userName": "9102",
+                                    "Int": true,
+                                    "url": "https://sws-crt.cert.havail.sabre.com"
+                                }
+                            },
+                            "SBR_Negociated_Code": [],
+                            "SBR_Convid": "sabretest@wipro.com",
+                            "SBR_GeoCode": true,
+                            "SBR_Max_Image_Size": "5",
+                            "SBR_CompanyName": "",
+                            "SBR_Default_RatePlan_Code": "ALL",
+                            "SBR_CorporateCode": [],
+                            "SBR_Receiver_Name": "wipro test",
+                            "SBR_isUnicaContentActive": true,
+                            "SBR_CurrencyCode": "",
+                            "SBR_Dom": true,
+                            "SBR_DomainName": "",
+                            "SBR_Sort": "DESC",
+                            "SBR_Country": "IN"
+                        },
+                        "Dom": true,
+                        "isBookingAllow": true,
+                        "Int": true,
+                        "Search_Credentail": {
+                            "SBR_Book": true,
+                            "SBR_TKT_Ipcc_Details": {},
+                            "SBR_AccountCode": [],
+                            "SBR_Int": true,
+                            "SBR_Index": "C",
+                            "SBR_DistanceDirection": "20",
+                            "SBR_fareDetails": {
+                                "default": "Retail Rate",
+                                "sortfare": "Corporate",
+                                "sortby": "Cheapest",
+                                "fareType": "Singlefare",
+                                "WIP": "Wipro Rate"
+                            },
+                            "SBR_ContentSources": [
+                                "100",
+                                "113"
+                            ],
+                            "SBR_CId": "",
+                            "SBR_Ticket": true,
+                            "SBR_NoOfResponse": "50",
+                            "SBR_NoOfOptions": "",
+                            "SBR_Domain": "DEFAULT",
+                            "SBR_Ipcc_Details": {
+                                "QI6D": {
+                                    "default": true,
+                                    "password": "focus16",
+                                    "Dom": true,
+                                    "agencyDetails": {
+                                        "phoneNumber": "9831128226",
+                                        "cityName": "Bangalore",
+                                        "streetNumber": "123 ec1",
+                                        "cityCode": "BLR",
+                                        "countryCode": "IN",
+                                        "postalCode": "711106",
+                                        "stateCode": "KA",
+                                        "emailId": "hospitality.international@wipro.com",
+                                        "addressLine": "Wipro Travel",
+                                        "phoneUseType": "A"
+                                    },
+                                    "List": [
+                                        "IN"
+                                    ],
+                                    "userName": "9102",
+                                    "Int": true,
+                                    "url": "https://sws-crt.cert.havail.sabre.com"
+                                }
+                            },
+                            "SBR_MaxConnFlights": "",
+                            "SBR_Negociated_Code": [],
+                            "SBR_Convid": "sabretest@wipro.com",
+                            "SBR_GeoCode": true,
+                            "SBR_Max_Image_Size": "5",
+                            "SBR_CompanyName": "",
+                            "SBR_Default_RatePlan_Code": "ALL",
+                            "SBR_CorporateCode": [],
+                            "SBR_Receiver_Name": "wipro test",
+                            "SBR_isUnicaContentActive": true,
+                            "SBR_CurrencyCode": "",
+                            "SBR_Dom": true,
+                            "SBR_DomainName": "",
+                            "SBR_Sort": "DESC",
+                            "SBR_Country": "IN"
+                        }
+                    }
+                },
+                "Default": true
+            },
+            "FOP": {
+                "DefaultFOP": [
+                    {
+                        "cardHolderName": "WiproTest",
+                        "cardCode": "VI",
+                        "cardExpireDate": "2021-12",
+                        "cardType": "CC",
+                        "active": true,
+                        "remark": "testbookingcard1",
+                        "cardNumber": "4111111111111111"
+                    }
+                ],
+                "DOM": {
+                    "HTL_AXI": [
+                        {
+                            "cardHolderName": "",
+                            "cardCode": "",
+                            "cardExpireDate": "",
+                            "cardType": "CA",
+                            "active": true,
+                            "remark": "",
+                            "cardNumber": ""
+                        }
+                    ],
+                    "HTL_SBR": [
+                        {
+                            "cardHolderName": "WiproTest",
+                            "cardCode": "VI",
+                            "cardExpireDate": "2021-12",
+                            "cardType": "CC",
+                            "active": true,
+                            "remark": "testbookingcard3",
+                            "cardNumber": "4111111111111111"
+                        }
+                    ]
+                },
+                "INT": {
+                    "HTL_SBR": [
+                        {
+                            "cardHolderName": "WiproTest",
+                            "cardCode": "VI",
+                            "cardExpireDate": "2021-12",
+                            "cardType": "CC",
+                            "active": true,
+                            "remark": "testbookingcard3",
+                            "cardNumber": "4111111111111111"
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "orgCode": "1313",
+    "key": ""
+}
