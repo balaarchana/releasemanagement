@@ -1,0 +1,12 @@
+use cs_xxxx_user
+db.u_expense_sequence.update({}, {
+	$set : {
+		"cardSequence" : {
+			"value" : "00000000"
+		}
+	}
+}, 
+{
+	upsert : false,
+	multi:true
+});
